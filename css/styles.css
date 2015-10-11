@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "devdojo";
+  src:url("../fonts/devdojo.eot");
+  src:url("../fonts/devdojo.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/devdojo.woff") format("woff"),
+    url("../fonts/devdojo.ttf") format("truetype"),
+    url("../fonts/devdojo.svg#devdojo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "devdojo" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="dojo-"]:before,
+[class*=" dojo-"]:before {
+  font-family: "devdojo" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dojo-lessons:before {
+  content: "a";
+}
+.dojo-book:before {
+  content: "b";
+}
+.dojo-home-house-streamline:before {
+  content: "c";
+}
+.dojo-gift:before {
+  content: "d";
+}
+.dojo-courses2:before {
+  content: "e";
+}
+.dojo-heart-bubble:before {
+  content: "f";
+}
+.dojo-heart:before {
+  content: "g";
+}
+.dojo-microwave:before {
+  content: "h";
+}
+.dojo-money:before {
+  content: "i";
+}
+.dojo-articles:before {
+  content: "j";
+}
+.dojo-course:before {
+  content: "k";
+}
+.dojo-wallet:before {
+  content: "l";
+}
+.dojo-beer:before {
+  content: "m";
+}
+.dojo-beaker:before {
+  content: "n";
+}
+.dojo-pizza:before {
+  content: "o";
+}
+.dojo-wine:before {
+  content: "p";
+}
+.dojo-home:before {
+  content: "q";
+}
+.dojo-search:before {
+  content: "r";
+}
+.dojo-gist:before {
+  content: "s";
+}
+.dojo-user-circle-outline:before {
+  content: "t";
+}
+.dojo-user-circle:before {
+  content: "u";
+}
+.dojo-vcard:before {
+  content: "v";
+}
+.dojo-cup:before {
+  content: "w";
+}
+.dojo-star:before {
+  content: "x";
+}
+.dojo-credit-cards:before {
+  content: "y";
+}
+.dojo-close-delete:before {
+  content: "z";
+}
+.dojo-check-mark-circle-two:before {
+  content: "A";
+}
+.dojo-check-mark-circle:before {
+  content: "B";
+}
+.dojo-sheriff-badge:before {
+  content: "C";
+}
+.dojo-new-sign:before {
+  content: "D";
+}
+.dojo-bomb-bug:before {
+  content: "E";
+}
+.dojo-megaphone:before {
+  content: "F";
+}
+.dojo-jersey:before {
+  content: "G";
+}
+.dojo-gear:before {
+  content: "H";
+}
+.dojo-terminal:before {
+  content: "I";
+}
+.dojo-zap:before {
+  content: "J";
+}
+.dojo-star-1:before {
+  content: "K";
+}
+.dojo-credit-card:before {
+  content: "L";
+}
+.dojo-screen-full:before {
+  content: "M";
+}
+.dojo-light-bulb:before {
+  content: "N";
+}
+
+
+.rsContent{background-size:cover; background-position:center center;}

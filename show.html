@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎来到轻课网</title>
+    <meta name="description" content="Welcome to the Qingke">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/noty.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/rrssb.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+
+
+	<style type="text/css">.theme_color_background, #signup-form .panel-heading, .post .post-img h3, .block .block-contents p.date .label.label-success, .btn.btn-primary, .second-nav.navbar-default .navbar-nav li.active a, .second-nav.navbar-default .navbar-nav li a:hover, .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level{ background: #DB1D1B; }.btn.btn-primary, .form-control:focus, .second-nav.navbar-default .navbar-nav li:hover, .second-nav.navbar-default .navbar-nav li.active{ border-color:#DB1D1B; }.post .post-img h6{ background: #ef312f; }.theme_color, a, .page a, footer ul li a, .home footer ul li a{ color:#DB1D1B; }footer ul li a:hover, .home footer ul li a:hover{ color:#ef312f; }
+	</style>
+
+	<style type="text/css">.series .block{ margin-bottom:20px; }</style>
+
+	<!-- <script>if (!window.jQuery) { document.write('<script src="http://code.jquery.com/jquery-1.11.2.min.js"><\/script>'); }</script> -->
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- <link rel="icon" href="/content/uploads/settings/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/content/uploads//settings/favicon.png" type="image9sx-icon"> -->
+
+</head>
+
+
+<body class="">
+	<nav class="navbar navbar-default navbar-static-top headroom headroom--top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a id="nav-toggle" href="#"><span></span></a>
+				<a href="/" class="navbar-brand"><!--<img src="img/logo.png">--></a>
+			</div>
+
+			<div class="collapse navbar-collapse right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="/">首页</a></li>
+					<li class="dropdown">
+						<a href="/videos" class="dropdown-toggle">视频</a>
+						<ul class="dropdown-menu multi-level" role="menu">
+							<li><a href="/videos">常规课程</a></li>
+							<li><a href="/shows">简短视频</a></li>
+							<li><a href="/series">系列教学</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="/posts" class="dropdown-toggle">文章</a>
+						<ul class="dropdown-menu multi-level" role="menu">
+							<li><a href="/posts/category/tutorials">教程</a></li>
+							<li><a href="/posts/category/how-to">有问必答</a></li>
+							<li><a href="/posts/category/technology">前瞻技术</a></li>
+							<li><a href="/posts/category/chitchat">热门讨论</a></li>
+						</ul>
+					</li>
+					<li><a href="/page/laravel-survival-guide">移动端UX设计</a></li>
+				</ul>
+
+				<!--ul class="navbar-right">
+				    <li>
+				        <div id="navbar-search-form">
+				            <form role="search" action="/search" method="GET">
+				                <i class="fa fa-search"></i>
+				                <input type="text" id="value" name="value" placeholder="Type and Find">
+				            </form>
+				        </div>
+				    </li>
+				</ul-->
+
+				<ul class="nav navbar-nav navbar-right">
+		        	<li class="login-desktop"><a href="/login"><i class="fa fa-lock"></i> 登录</a></li>
+		        	<li class="signup-desktop"><a href="/signup"><i class="dojo-user-circle"></i> 注册</a></li>
+		        </ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="clear"></div>
+	<div class="dimLights"></div>
+	<div id="video_title">
+		<div class="container">
+			<span class="label" style="background:#DB1D1B">您正在观看的是:</span> 
+			<h1>灌灌灌灌灌灌灌灌灌灌灌灌灌灌灌 </h1>
+			<div id="video_options">
+				<div id="movie_mode" class="btn">
+					<i class="dojo-screen-full"></i>电影模式
+				</div>
+				<div id="dim_mode" class="btn">
+					<i class="dojo-light-bulb"></i>关灯
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="video_bg" style="background-image:url(img/faker.jpg)">
+		<div id="video_bg_overlay"></div>
+	</div>
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8" id="left_column"style="padding-right:0px;" >
+				<div id="video_left">
+					<div id="video_container" class="fitvid">
+						<div class="fluid-width-video-wrapper"  id="preview-player">
+							<!--<iframe>-->
+								<video id="my-video" class="video-js" controls preload="auto" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}" >
+								    <source src="oceans-clip.mp4" type='video/mp4'>
+								    <source src="oceans-clip.mp4" type='video/webm'>
+								    <p class="vjs-no-js">
+								      To view this video please enable JavaScript, and consider upgrading to a web browser that
+								      <a href="javascript:;" target="_blank">supports HTML5 video</a>
+								    </p>
+							  </video>
+							<!--</iframe>-->
+							<!--<iframe  src="oceans-clip.mp4" frameborder="0" allowfullscreen width="720" height="450" autoplay="0"></iframe>-->
+						</div>								
+					</div>
+					<div id="left_content">
+						<h3 class="video_title">
+							灌灌灌灌灌灌灌灌							
+							<span class="view-count">
+								<i class="fa fa-eye"></i> 已观看978次 </span>
+							<div class="favorite btn btn-default " data-authenticated="" data-videoid="75">
+								<i class="fa fa-heart"></i> 收藏
+							</div>							
+						</h3>
+					</div>
+
+				</div>
+				<div class="ds">
+					<!-- 多说评论框 start -->
+						<div class="ds-thread" data-thread-key="show" data-title="欢迎来到轻课网" data-url="../qingke_new/show.html"></div>
+					<!-- 多说评论框 end -->
+				</div>
+				
+			</div>
+
+
+			
+			
+			
+
+			<div class="col-md-4" id="right_column" style="margin-left:0px; padding-left:0px;">
+				<div id="video_right">
+					<div id="video_sidebar">
+						<h3>您可能也喜欢</h3>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<article class="block">
+									<a class="block-thumbnail" href="javascript:;">
+										<span class="play-button-small"></span>
+										<img src="img/simple-css-rotations-medium (1).jpg" >
+									</a>
+								</article>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="details">
+									<h2><a href="javascript:;">Simple CSS Rotations</a></h2>
+									<small>April 25th, 2015</small>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<article class="block">
+									<a class="block-thumbnail" href="javascript:;">
+										<span class="play-button-small"></span>
+										<img src="img/how-to-use-trello-medium.jpg">
+									</a>
+								</article>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="details">
+									<h2><a href="javascript:;">How to use Trello</a></h2>
+									<small>May 31st, 2015</small>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<article class="block">
+									<a class="block-thumbnail" href="javascript:;">
+										<span class="play-button-small"></span>
+										<img src="img/install-laravel-medium.jpg">
+									</a>
+								</article>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="details">
+									<h2><a href="javascript:;">Installing Laravel</a></h2>
+									<small>April 14th, 2015</small>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="row">
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<article class="block">
+									<a class="block-thumbnail" href="javascript:;">
+										<span class="play-button-small"></span>
+										<img src="img/javascript-prototypal-inheritance-medium.jpg">
+									</a>
+								</article>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="details">
+									<h2><a href="javascript:;">JavaScript Prototypal Inheritance</a></h2>
+									<small>May 14th, 2015</small>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="row">
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<article class="block">
+									<a class="block-thumbnail" href="javascript:;">
+										<span class="play-button-small"></span>
+										<img src="img/animate-css-medium.jpg">
+										
+									</a>
+								</article>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="details">
+									<h2><a href="javascript:;">Animate CSS</a></h2>
+									<small>April 25th, 2015</small>
+								</div>
+							</div>
+
+						</div>
+
+								
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<article class="block">
+									<a class="block-thumbnail" href="javascript:;">
+										<span class="play-button-small"></span>
+										<img src="img/object-oriented-javascript-medium.jpg">
+									</a>
+								</article>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="details">
+									<h2><a href="javascript:;">Object Oriented Javascript</a></h2>
+									<small>May 14th, 2015</small>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="row">
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<article class="block">
+									<a class="block-thumbnail" href="javascript:;">
+										<span class="play-button-small"></span>
+										<img src="img/mamp-wall-medium.jpg">
+									</a>
+								</article>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="details">
+									<h2><a href="javascript:;">MAMP Introduction</a></h2>
+									<small>April 12th, 2015</small>
+								</div>
+							</div>
+						</div>
+
+								
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<article class="block">
+									<a class="block-thumbnail" href="javascript:;">
+										<span class="play-button-small"></span>
+										<img src="img/image-uploads-with-laravel-medium.jpg">
+									</a>
+								</article>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="details">
+									<h2><a href="javascript:;">Image Uploads with Laravel</a></h2>
+									<small>June 3rd, 2015</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+						
+
+	<link rel="stylesheet" href="css/rs-default.css">
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/jquery.royalslider.min.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<script type="text/javascript" src="js/videojs-ie8.min.js"></script>
+	<style type="text/css">
+		.rsDefault .rsBullets{height:30px;background:none;}
+		.rsDefault .rsBullet{padding:6px 6px 6px;}
+	</style>
+
+
+
+
+	
+
+	<div class="bottom_bar">
+	    <div class="container">
+	        <div class="notification">
+	            <h1>Copyright © 2015 轻课网 - 你的私人轻学习专家. </h1>
+	        </div>
+	        <div class="social">
+	            <h3>关注我们</h3>
+	            <a href="javascript:;" target="_blank" class="share"><i class="fa fa-facebook"></i></a>
+	            <a href="javascript:;" target="_blank" class="share"><i class="fa fa-twitter"></i></a>
+	            <a href="javascript:;" target="_blank" class="share"><i class="fa fa-google-plus"></i></a>
+	            <a href="javascript:;" target="_blank" class="share"><i class="fa fa-youtube"></i></a>
+	        </div>
+	    </div>
+	</div>
+
+
+	<footer>
+		<div class="container">
+
+		</div>
+	</footer>
+
+
+
+
+	<script src="js/rrssb.min.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/jquery.noty.js"></script>
+	<script type="text/javascript" src="js/default.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+
+
+
+	<script type="text/javascript">
+
+		//********** Headroom js functionality **********/
+			// grab an element
+			var myElement = document.querySelector(".navbar");
+			// construct an instance of Headroom, passing the element
+			var headroom  = new Headroom(myElement, { offset: 65 });
+			// initialise
+			headroom.init();
+
+
+		  $('document').ready(function(){
+
+
+			    $('.dropdown').hover(function(){
+			        $(this).addClass('open');
+			    }, function(){
+			        $(this).removeClass('open');
+			    });
+
+
+		    $('#nav-toggle').click(function(){
+		    	$(this).toggleClass('active');
+		    	$('.navbar-collapse').toggle();
+		    	$('body').toggleClass('nav-open');
+		    });
+
+		    $('#mobile-subnav').click(function(){
+		    	if($('.second-nav .navbar-left').css('display') == 'block'){
+		    		$('.second-nav .navbar-left').slideUp(function(){
+		    			$(this).addClass('not-visible');
+		    		});
+		    		$(this).html('<i class="fa fa-bars"></i> Open Submenu');
+		    	} else {
+		    		$('.second-nav .navbar-left').slideDown(function(){
+		    			$(this).removeClass('not-visible');
+		    		});
+		    		$(this).html('<i class="fa fa-close"></i> Close Submenu');
+		    	}
+
+		    });
+
+		  });
+
+
+		  /********** LOGIN MODAL FUNCTIONALITY **********/
+
+		  var loginSignupModal = $('<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Login Below</h4></div><div class="modal-body"></div></div></div></div>');
+
+			$(document).ready(function(){
+
+				// Load the Modal Window for login signup when they are clicked
+				$('.login-desktop a').click(function(e){
+					e.preventDefault();
+					$('body').prepend(loginSignupModal);
+					$('#loginSignupModal .modal-body').load($(this).attr('href') + '?redirect=' + document.URL + ' .form-signin', function(){
+						$('#loginSignupModal').show(200, function(){
+							setTimeout(function() { $('#email').focus() }, 300);
+
+
+						});
+						$('#loginSignupModal').modal();
+
+					});
+
+					// Be sure to remove the modal from the DOM after it is closed
+					$('#loginSignupModal').on('hidden.bs.modal', function (e) {
+				    	$('#loginSignupModal').remove();
+					});
+
+				});
+
+
+
+
+			});
+
+			/********** END LOGIN MODAL FUNCTIONALITY **********/
+
+		</script>
+
+
+
+		<script src="http://devdojo.com/content/themes/devdojo/assets/js/jquery.fitvid.js"></script>
+			<script src="js/prism.js"></script>
+			<script type="text/javascript">
+
+				$(document).ready(function(){
+					$('#video_container').fitVids();
+					$('.favorite').click(function(){
+						if($(this).data('authenticated')){
+							$.post('/favorite', { video_id : $(this).data('videoid'), _token: 'eofvyCB7U0YiJMCkQrX9heyeELUyFgXoqF47em4w' }, function(data){});
+							$(this).toggleClass('active');
+						} else {
+							window.location = '/signup';
+						}
+					});
+
+					$('#movie_mode').click(function(){
+						$(this).toggleClass('active');
+						$('#left_column').toggleClass('full_column');
+						$('#right_column').toggleClass('full_column');
+					});
+
+					$('#dim_mode').click(function(){
+						$(this).toggleClass('active');
+						$('#video_container').toggleClass('bringToFront');
+						$('#video_options').toggleClass('static');
+						$('.dimLights').fadeToggle();
+					});
+				});
+
+			</script>
+
+
+
+
+
+
+			<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+			<!--<script type="text/javascript">
+				var duoshuoQuery = {short_name:"iymeng"};
+				(function() {
+					var ds = document.createElement('script');
+					ds.type = 'text/javascript';ds.async = true;
+					ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+					ds.charset = 'UTF-8';
+					(document.getElementsByTagName('head')[0]
+					 || document.getElementsByTagName('body')[0]).appendChild(ds);
+				})();
+			</script>-->
+			<!-- 多说公共JS代码 end -->
+
+
+
+
+			<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+			<script type="text/javascript">
+			var duoshuoQuery = {short_name:"qingkeshow"};
+				(function() {
+					var ds = document.createElement('script');
+					ds.type = 'text/javascript';ds.async = true;
+					ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+					ds.charset = 'UTF-8';
+					(document.getElementsByTagName('head')[0] 
+					 || document.getElementsByTagName('body')[0]).appendChild(ds);
+				})();
+				</script>
+			<!-- 多说公共JS代码 end -->
+
+
+
+
+
+
+			
+
+
+					
+
+</body>
+
+</html>
