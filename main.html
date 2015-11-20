@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/prism.css">
+	<link rel="stylesheet" href="css/main.css">
 	<!--[if gte IE 9]>
 	  <style type="text/css">
 		.gradient {
@@ -82,7 +83,7 @@
 				</ul-->
 
 				<ul class="nav navbar-nav navbar-right">
-					<li class="login-desktop"><a href="/login"><i class="fa fa-lock"></i> 登录</a></li>
+					<li class="login-desktop"><a href="javascript:;" data-toggle="modal" data-target="#loginSignupModal"><i class="fa fa-lock"></i> 登录</a></li>
 					<li class="signup-desktop"><a href="/signup"><i class="dojo-user-circle"></i> 注册</a></li>
 				</ul>
 
@@ -487,6 +488,34 @@
 
 		</div>
 	</footer>
+	<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<h4 class="modal-title" id="myModalLabel">登录</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group"><label for="login-email">E-mail</label><input type="email" class="form-control" id="login-email" placeholder="E-mail"></div>
+						<div class="form-group"><label for="login-password">密码</label><input type="password" class="form-control" id="login-password" placeholder="密码"></div>
+						<div class="form-group clearfix">
+							<div class="checkbox pull-left"><label><input type="checkbox"> 记住登录状态</label></div>
+							<button type="submit" class="btn btn-primary pull-right">登录</button>
+						</div>
+					</form>
+					<div class="quick-login">
+						<div class="quick-login-title text-muted hidden-xs">快速登录</div>
+						<a href="javascript:;" class="btn btn-sm btn-sn-github"><span class="icon-sn-github"></span> <strong class="visible-xs-inline">Github 账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-weibo"><span class="icon-sn-weibo"></span> <strong class="visible-xs-inline">新浪微博账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-qq"><span class="icon-sn-qq"></span> <strong class="visible-xs-inline">QQ 账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-wechat"><span class="icon-sn-wechat"></span> <strong class="visible-xs-inline">微信账号</strong></a>
+						<a href="javascript:;" class="btn btn-sn-douban btn-sm hidden"><span class="icon-sn-douban"></span> <strong class="visible-xs-inline">豆瓣账号</strong></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -581,35 +610,35 @@
 
 		  /********** LOGIN MODAL FUNCTIONALITY **********/
 
-		  var loginSignupModal = $('<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button><h4 class="modal-title" id="myModalLabel">登录</h4></div><div class="modal-body"><form><div class="form-group"><label for="login-email">E-mail</label><input type="email" class="form-control" id="login-email" placeholder="E-mail"></div><div class="form-group"><label for="login-password">密码</label><input type="password" class="form-control" id="login-password" placeholder="密码"></div><div class="form-group clearfix"><div class="checkbox pull-left"><label><input type="checkbox"> 记住登录状态</label></div><button type="submit" class="btn btn-primary pull-right">登录</button></div></form></div></div></div></div>');
+		 //  var loginSignupModal = $('<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button><h4 class="modal-title" id="myModalLabel">登录</h4></div><div class="modal-body"><form><div class="form-group"><label for="login-email">E-mail</label><input type="email" class="form-control" id="login-email" placeholder="E-mail"></div><div class="form-group"><label for="login-password">密码</label><input type="password" class="form-control" id="login-password" placeholder="密码"></div><div class="form-group clearfix"><div class="checkbox pull-left"><label><input type="checkbox"> 记住登录状态</label></div><button type="submit" class="btn btn-primary pull-right">登录</button></div></form></div></div></div></div>');
 
-			$(document).ready(function(){
+			// $(document).ready(function(){
 
-				// Load the Modal Window for login signup when they are clicked
-				$('.login-desktop a').click(function(e){
-					e.preventDefault();
-					$('body').prepend(loginSignupModal);
-					$('#loginSignupModal .modal-body').load($(this).attr('href') + '?redirect=' + document.URL + ' .form-signin', function(){
-						$('#loginSignupModal').show(200, function(){
-							setTimeout(function() { $('#email').focus() }, 300);
-
-
-						});
-						$('#loginSignupModal').modal();
-
-					});
-
-					// Be sure to remove the modal from the DOM after it is closed
-					$('#loginSignupModal').on('hidden.bs.modal', function (e) {
-						$('#loginSignupModal').remove();
-					});
-
-				});
+			// 	// Load the Modal Window for login signup when they are clicked
+			// 	$('.login-desktop a').click(function(e){
+			// 		e.preventDefault();
+			// 		$('body').prepend(loginSignupModal);
+			// 		$('#loginSignupModal .modal-body').load($(this).attr('href') + '?redirect=' + document.URL + ' .form-signin', function(){
+			// 			$('#loginSignupModal').show(200, function(){
+			// 				setTimeout(function() { $('#email').focus() }, 300);
 
 
+			// 			});
+			// 			$('#loginSignupModal').modal();
+
+			// 		});
+
+			// 		// Be sure to remove the modal from the DOM after it is closed
+			// 		$('#loginSignupModal').on('hidden.bs.modal', function (e) {
+			// 			$('#loginSignupModal').remove();
+			// 		});
+
+			// 	});
 
 
-			});
+
+
+			// });
 
 			/********** END LOGIN MODAL FUNCTIONALITY **********/
 
