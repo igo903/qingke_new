@@ -25,7 +25,7 @@
 
 
 
-	<style type="text/css">.theme_color_background, #signup-form .panel-heading, .post .post-img h3, .block .block-contents p.date .label.label-success, .btn.btn-primary, .second-nav.navbar-default .navbar-nav li.active a, .second-nav.navbar-default .navbar-nav li a:hover, .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level{ background: #DB1D1B; }.btn.btn-primary, .form-control:focus, .second-nav.navbar-default .navbar-nav li:hover, .second-nav.navbar-default .navbar-nav li.active{ border-color:#DB1D1B; }.post .post-img h6{ background: #ef312f; }.theme_color, a, .page a, footer ul li a, .home footer ul li a{ color:#DB1D1B; }footer ul li a:hover, .home footer ul li a:hover{ color:#ef312f; }
+	<style type="text/css">.theme_color_background, #signup-form .panel-heading, .post .post-img h3, .block .block-contents p.date .label.label-success, .btn.btn-primary, .second-nav.navbar-default .navbar-nav li.active a, .second-nav.navbar-default .navbar-nav li a:hover, .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level{ background: #DB1D1B; }.btn.btn-primary, .form-control:focus, .second-nav.navbar-default .navbar-nav li:hover, .second-nav.navbar-default .navbar-nav li.active{ border-color:#DB1D1B; }.post .post-img h6{ background: #ef312f; }.theme_color, a, .page a, footer ul li a, .home footer ul li a{ color:#DB1D1B; }.theme_color:hover, a:hover, .page a:hover, footer ul li a:hover, .home footer ul li a:hover{ color:#A50F0E; }footer ul li a:hover, .home footer ul li a:hover{ color:#ef312f; }
 	</style>
 
 	<style type="text/css">.series .block{ margin-bottom:20px; }</style>
@@ -83,8 +83,8 @@
 				</ul-->
 
 				<ul class="nav navbar-nav navbar-right">
-					<li class="login-desktop"><a href="javascript:;" data-toggle="modal" data-target="#loginSignupModal"><i class="fa fa-lock"></i> 登录</a></li>
-					<li class="signup-desktop"><a href="/signup"><i class="dojo-user-circle"></i> 注册</a></li>
+					<li class="login-desktop"><a href="javascript:;" data-toggle="modal" data-target="#loginDialog"><i class="fa fa-lock"></i> 登录</a></li>
+					<li class="signup-desktop"><a href="javascript:;" data-toggle="modal" data-target="#regDialog"><i class="dojo-user-circle"></i> 注册</a></li>
 				</ul>
 
 			</div>
@@ -488,7 +488,7 @@
 
 		</div>
 	</footer>
-	<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal fade animated bounceInDown" id="loginDialog" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -497,10 +497,20 @@
 				</div>
 				<div class="modal-body">
 					<form>
-						<div class="form-group"><label for="login-email">E-mail</label><input type="email" class="form-control" id="login-email" placeholder="E-mail"></div>
-						<div class="form-group"><label for="login-password">密码</label><input type="password" class="form-control" id="login-password" placeholder="密码"></div>
+						<div class="form-group">
+							<label for="login-email">E-mail</label>
+							<input type="email" class="form-control" id="login-email" placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<label for="login-password">密码</label>
+							<input type="password" class="form-control" id="login-password" placeholder="密码">
+						</div>
 						<div class="form-group clearfix">
-							<div class="checkbox pull-left"><label><input type="checkbox"> 记住登录状态</label></div>
+							<div class="checkbox pull-left">
+								<label>
+									<input type="checkbox"> 记住登录状态
+								</label>
+							</div>
 							<button type="submit" class="btn btn-primary pull-right">登录</button>
 						</div>
 					</form>
@@ -512,6 +522,36 @@
 						<a href="javascript:;" class="btn btn-sm btn-sn-wechat"><span class="icon-sn-wechat"></span> <strong class="visible-xs-inline">微信账号</strong></a>
 						<a href="javascript:;" class="btn btn-sn-douban btn-sm hidden"><span class="icon-sn-douban"></span> <strong class="visible-xs-inline">豆瓣账号</strong></a>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade animated bounceInDown" id="regDialog" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<h4 class="modal-title" id="myModalLabel">注册</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="reg-username">用户名</label>
+							<input type="text" class="form-control" id="reg-username" placeholder="字母、数字等，用户名唯一">
+						</div>
+						<div class="form-group">
+							<label for="reg-email">E-mail</label>
+							<input type="email" class="form-control" id="reg-email" placeholder="ilove@qingke.me">
+						</div>
+						<div class="form-group">
+							<label for="reg-password">密码</label>
+							<input type="password" class="form-control" id="reg-password" placeholder="不少于 6 位">
+						</div>
+						<div class="form-group clearfix">
+							<div class="checkbox pull-left">同意并接受<a href="javascript:;" target="_blank">《服务条款》</a></div>
+							<button type="submit" class="btn btn-primary pull-right">注册</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
