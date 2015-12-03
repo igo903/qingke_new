@@ -271,7 +271,6 @@ label {
   padding-top: 10px;
   padding-bottom: 10px;
   height: auto;
-  border-width: 2px;
 }
 .form-signin {
   max-width: 330px;
@@ -2314,4 +2313,31 @@ Navbar Toggle
 .col-lg-12 {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.theme_color_background, #signup-form .panel-heading, .post .post-img h3, .block .block-contents p.date .label.label-success, .btn-primary, .second-nav.navbar-default .navbar-nav li.active a, .second-nav.navbar-default .navbar-nav li a:hover, .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level {
+  background: #DB1D1B;
+}
+.btn-primary, .form-control:focus, .second-nav.navbar-default .navbar-nav li:hover, .second-nav.navbar-default .navbar-nav li.active {
+  border-color: #DB1D1B;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus {
+  background-color: #BD1917;
+  border-color: #BB1816;
+}
+.post .post-img h6 {
+  background: #ef312f;
+}
+.theme_color, a, .page a, footer ul li a, .home footer ul li a {
+  color: #DB1D1B;
+}
+footer ul li a:hover, .home footer ul li a:hover {
+  color: #ef312f;
+}
+
+input[type="file"]:focus {
+  outline: none;
 }

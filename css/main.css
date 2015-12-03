@@ -181,6 +181,11 @@
 
 
 
+.rsDefault .rsBullets{height:30px;background:none;}
+.rsDefault .rsBullet{width: auto; height: auto;}
+
+
+
 .quick-login-title {
 	float: left;
 	margin: 5px 0.5em 0 0;
