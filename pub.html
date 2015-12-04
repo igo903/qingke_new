@@ -108,7 +108,7 @@
 							<div class="form-group">
 								<div class="file">
 									<input type="file" class="form-control" id="video" />
-									<button type="button" class="btn btn-default"><i class="fa fa-cloud-upload"></i>上传视频</button>
+									<label for="video" class="btn btn-default"><i class="fa fa-cloud-upload"></i>上传视频</label>
 								</div>
 							</div>
 							<div class="form-group">
@@ -123,12 +123,14 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="code-original">原始代码</label>
-								<input type="file" class="form-control" id="code-original" />
-							</div>
-							<div class="form-group">
-								<label for="code-finished">完成代码</label>
-								<input type="file" class="form-control" id="code-finished" />
+								<div class="file">
+									<input type="file" class="form-control" id="code-original" />
+									<label for="code-original" class="btn btn-default"><i class="fa fa-cloud-upload"></i>上传原始代码</label>
+								</div>
+								<div class="file">
+									<input type="file" class="form-control" id="code-finished" />
+									<label for="code-finished" class="btn btn-default"><i class="fa fa-cloud-upload"></i>上传完成代码</label>
+								</div>
 							</div>
 							<div class="form-group">
 								<label>讲义</label>
