@@ -20,6 +20,22 @@
 	top: -1000%;
 	visibility: hidden;
 }
+.file-obj {
+	display: none;
+	color: #555;
+	margin-top: 0.5em;
+}
+.file-selected .file-obj {
+	display: block;
+}
+.file-delete {
+	padding: 0;
+	border: none;
+	background: none;
+}
+.file-delete .fa {
+	margin-right: 0;
+}
 
 
 
