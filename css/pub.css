@@ -25,6 +25,7 @@
 	color: #555;
 	margin-left: 0.5em;
 	-webkit-animation: fadein 0.5s;
+	animation: fadein 0.5s;
 }
 .file-selected .file-obj {
 	display: inline-block;
@@ -59,6 +60,14 @@
 
 
 @-webkit-keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadein {
 	0% {
 		opacity: 0;
 	}
