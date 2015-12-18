@@ -113,15 +113,19 @@ ul {
 	border-radius: 50%;
 	margin-top: -50%;
 	-webkit-animation: zoomin 4s linear infinite backwards;
+	animation: zoomin 4s linear infinite backwards;
 }
 .ripple:nth-child(2) {
 	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
 }
 .ripple:nth-child(3) {
 	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
 }
 .ripple:nth-child(4) {
 	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
 }
 
 
@@ -312,5 +316,13 @@ ul {
 	}
 	100% {
 		-webkit-transform: scale(1);
+	}
+}
+@keyframes zoomin {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
 	}
 }
