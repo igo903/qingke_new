@@ -140,11 +140,17 @@ img {
 }
 
 .section-1 .royalSlider {
-	height: 340px !important;
+	height: 420px !important;
+}
+.section-1 .text {
+	margin-top: 1em;
 }
 
 .cover {
 	text-align: center;
+}
+.cover-img {
+	margin: auto;
 }
 
 .cover-1 .slogans {
@@ -207,6 +213,14 @@ img {
 .rsActiveSlide .cover-1 .icon-logo {
 	-webkit-animation: jump 1.5s 0.9s backwards;
 	animation: jump 1.5s 0.9s backwards;
+}
+.rsActiveSlide .cover-1 .text {
+	-webkit-animation: fadein 1s 2s backwards;
+	animation: fadein 1s 2s backwards;
+}
+
+.cover-2 {
+	background: #3db6ff;
 }
 
 
@@ -470,7 +484,7 @@ img {
 
 @-webkit-keyframes jump {
 	0% {
-		-webkit-transform: translate(0, 120%) rotate(-90deg);
+		-webkit-transform: translate(0, 170%) rotate(-90deg);
 	}
 	60% {
 		-webkit-transform: translate(0, 0) rotate(-90deg);
@@ -481,7 +495,7 @@ img {
 }
 @keyframes jump {
 	0% {
-		transform: translate(0, 120%) rotate(-90deg);
+		transform: translate(0, 170%) rotate(-90deg);
 	}
 	60% {
 		transform: translate(0, 0) rotate(-90deg);
