@@ -1,0 +1,14 @@
+body {
+	padding: 450px 0 50px;
+	background: url(../img/devices.jpg) no-repeat 50% 0, url(../img/bg.png) repeat-x #fff;
+}
+
+
+
+.news-title {
+	font-size: 36px;
+	text-align: center;
+}
+.news-body p {
+	text-indent: 2em;
+}

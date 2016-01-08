@@ -2334,6 +2334,9 @@ Navbar Toggle
 .theme_color, a, .page a, footer ul li a, .home footer ul li a {
   color: #DB1D1B;
 }
+.theme_color:hover, a:hover, .page a:hover, footer ul li a:hover, .home footer ul li a:hover {
+  color: #BB1816;
+}
 footer ul li a:hover, .home footer ul li a:hover {
   color: #ef312f;
 }
