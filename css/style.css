@@ -2344,3 +2344,14 @@ footer ul li a:hover, .home footer ul li a:hover {
 input[type="file"]:focus {
   outline: none;
 }
+
+
+
+.modal {
+  display: block;
+}
+.modal.boring-dialog {
+  left: 0;
+  top: 0;
+  margin: 0 !important;
+}

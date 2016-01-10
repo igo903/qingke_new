@@ -1,0 +1,49 @@
+/*!
+ * Author: Boring
+ * Update: 2015-09-10
+ */
+
+
+
+.boring-tab-panels > * {
+	display: none;
+}
+.boring-tab-panels .boring-tab-current {
+	display: block;
+}
+
+
+
+.boring-dialog-mask,
+.boring-dialog {
+	position: fixed;
+	z-index: 9999;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	visibility: hidden;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+.boring-dialog-mask {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #000;
+}
+.boring-dialog {
+	left: 50%;
+	top: 50%;
+}
+.boring-dialog-mask-opened,
+.boring-dialog-opened {
+	visibility: visible;
+}
+.boring-dialog-mask-opened {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+.boring-dialog-opened {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
