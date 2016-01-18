@@ -18,6 +18,7 @@
 	    }
 	  </style>
 	<![endif]-->
+	<link rel="stylesheet" href="css/boring-plugin.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/rrssb.css">
 	<link rel="stylesheet" href="css/animate.min.css">
@@ -82,9 +83,9 @@
 				</ul-->
 
 				<ul class="nav navbar-nav navbar-right">
-		        	<li class="login-desktop"><a href="/login"><i class="fa fa-lock"></i> 登录</a></li>
-		        	<li class="signup-desktop"><a href="/signup"><i class="dojo-user-circle"></i> 注册</a></li>
-		        </ul>
+					<li class="login-desktop"><a href="javascript:;" class="j-login-btn"><i class="fa fa-lock"></i> 登录</a></li>
+					<li class="signup-desktop"><a href="javascript:;" class="j-reg-btn"><i class="dojo-user-circle"></i> 注册</a></li>
+				</ul>
 
 			</div>
 		</div>
@@ -95,7 +96,7 @@
 	<div class="dimLights"></div>
 	<div id="video_title">
 		<div class="container">
-			<span class="label" style="background:#DB1D1B">您正在观看的是:</span> 
+			<span class="label" style="background:#DB1D1B">您正在观看的是:</span>
 			<h1>灌灌灌灌灌灌灌灌灌灌灌灌灌灌灌 </h1>
 			<div id="video_options">
 				<div id="movie_mode" class="btn">
@@ -130,16 +131,16 @@
 							  </video>
 							<!--</iframe>-->
 							<!--<iframe  src="oceans-clip.mp4" frameborder="0" allowfullscreen width="720" height="450" autoplay="0"></iframe>-->
-						</div>								
+						</div>
 					</div>
 					<div id="left_content">
 						<h3 class="video_title">
-							灌灌灌灌灌灌灌灌							
+							灌灌灌灌灌灌灌灌
 							<span class="view-count">
 								<i class="fa fa-eye"></i> 已观看978次 </span>
 							<div class="favorite btn btn-default " data-authenticated="" data-videoid="75">
 								<i class="fa fa-heart"></i> 收藏
-							</div>							
+							</div>
 						</h3>
 					</div>
 
@@ -149,13 +150,13 @@
 						<div class="ds-thread" data-thread-key="show" data-title="欢迎来到轻课网" data-url="../qingke_new/show.html"></div>
 					<!-- 多说评论框 end -->
 				</div>
-				
+
 			</div>
 
 
-			
-			
-			
+
+
+
 
 			<div class="col-md-4" id="right_column" style="margin-left:0px; padding-left:0px;">
 				<div id="video_right">
@@ -178,7 +179,7 @@
 							</div>
 						</div>
 
-								
+
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<article class="block">
@@ -196,7 +197,7 @@
 							</div>
 						</div>
 
-								
+
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<article class="block">
@@ -214,7 +215,7 @@
 							</div>
 						</div>
 
-								
+
 						<div class="row">
 
 							<div class="col-md-6 col-sm-6 col-xs-12">
@@ -233,7 +234,7 @@
 							</div>
 						</div>
 
-								
+
 						<div class="row">
 
 							<div class="col-md-6 col-sm-6 col-xs-12">
@@ -241,7 +242,7 @@
 									<a class="block-thumbnail" href="javascript:;">
 										<span class="play-button-small"></span>
 										<img src="img/animate-css-medium.jpg">
-										
+
 									</a>
 								</article>
 							</div>
@@ -255,7 +256,7 @@
 
 						</div>
 
-								
+
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<article class="block">
@@ -273,7 +274,7 @@
 							</div>
 						</div>
 
-								
+
 						<div class="row">
 
 							<div class="col-md-6 col-sm-6 col-xs-12">
@@ -292,7 +293,7 @@
 							</div>
 						</div>
 
-								
+
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<article class="block">
@@ -317,8 +318,8 @@
 
 
 
-	
-						
+
+
 
 	<link rel="stylesheet" href="css/rs-default.css">
 	<link rel="stylesheet" href="css/video-js.css">
@@ -333,7 +334,7 @@
 
 
 
-	
+
 
 	<div class="bottom_bar">
 	    <div class="container">
@@ -356,6 +357,74 @@
 
 		</div>
 	</footer>
+	<div class="modal boring-dialog" id="loginDialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<h4 class="modal-title" id="myModalLabel">登录</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="login-email">E-mail</label>
+							<input type="email" class="form-control" id="login-email" placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<label for="login-password">密码</label>
+							<input type="password" class="form-control" id="login-password" placeholder="密码">
+						</div>
+						<div class="form-group clearfix">
+							<div class="checkbox pull-left">
+								<label>
+									<input type="checkbox"> 记住登录状态
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary pull-right">登录</button>
+						</div>
+					</form>
+					<div class="quick-login">
+						<div class="quick-login-title text-muted hidden-xs">快速登录</div>
+						<a href="javascript:;" class="btn btn-sm btn-sn-github"><span class="icon-sn-github"></span> <strong class="visible-xs-inline">Github 账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-weibo"><span class="icon-sn-weibo"></span> <strong class="visible-xs-inline">新浪微博账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-qq"><span class="icon-sn-qq"></span> <strong class="visible-xs-inline">QQ 账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-wechat"><span class="icon-sn-wechat"></span> <strong class="visible-xs-inline">微信账号</strong></a>
+						<a href="javascript:;" class="btn btn-sn-douban btn-sm hidden"><span class="icon-sn-douban"></span> <strong class="visible-xs-inline">豆瓣账号</strong></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal boring-dialog" id="regDialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<h4 class="modal-title" id="myModalLabel">注册</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="reg-username">用户名</label>
+							<input type="text" class="form-control" id="reg-username" placeholder="字母、数字等，用户名唯一">
+						</div>
+						<div class="form-group">
+							<label for="reg-email">E-mail</label>
+							<input type="email" class="form-control" id="reg-email" placeholder="ilove@qingke.me">
+						</div>
+						<div class="form-group">
+							<label for="reg-password">密码</label>
+							<input type="password" class="form-control" id="reg-password" placeholder="不少于 6 位">
+						</div>
+						<div class="form-group clearfix">
+							<div class="checkbox pull-left">同意并接受<a href="javascript:;" target="_blank">《服务条款》</a></div>
+							<button type="submit" class="btn btn-primary pull-right">注册</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -367,6 +436,7 @@
 	<script type="text/javascript" src="js/jquery.noty.js"></script>
 	<script type="text/javascript" src="js/default.js"></script>
 	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/boring.js"></script>
 
 
 
@@ -414,41 +484,18 @@
 
 		  });
 
+		  (function () {
+		  	var loginDialog = boring.dialog('loginDialog'),
+		  		regDialog = boring.dialog('regDialog');
 
-		  /********** LOGIN MODAL FUNCTIONALITY **********/
+		  	$('.j-login-btn').on('click', function () {
+		  		loginDialog.open();
+		  	});
 
-		  var loginSignupModal = $('<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Login Below</h4></div><div class="modal-body"></div></div></div></div>');
-
-			$(document).ready(function(){
-
-				// Load the Modal Window for login signup when they are clicked
-				$('.login-desktop a').click(function(e){
-					e.preventDefault();
-					$('body').prepend(loginSignupModal);
-					$('#loginSignupModal .modal-body').load($(this).attr('href') + '?redirect=' + document.URL + ' .form-signin', function(){
-						$('#loginSignupModal').show(200, function(){
-							setTimeout(function() { $('#email').focus() }, 300);
-
-
-						});
-						$('#loginSignupModal').modal();
-
-					});
-
-					// Be sure to remove the modal from the DOM after it is closed
-					$('#loginSignupModal').on('hidden.bs.modal', function (e) {
-				    	$('#loginSignupModal').remove();
-					});
-
-				});
-
-
-
-
-			});
-
-			/********** END LOGIN MODAL FUNCTIONALITY **********/
-
+		  	$('.j-reg-btn').on('click', function () {
+		  		regDialog.open();
+		  	});
+		  }());
 		</script>
 
 
@@ -514,7 +561,7 @@
 					ds.type = 'text/javascript';ds.async = true;
 					ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
 					ds.charset = 'UTF-8';
-					(document.getElementsByTagName('head')[0] 
+					(document.getElementsByTagName('head')[0]
 					 || document.getElementsByTagName('body')[0]).appendChild(ds);
 				})();
 				</script>
@@ -525,10 +572,10 @@
 
 
 
-			
 
 
-					
+
+
 
 </body>
 

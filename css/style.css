@@ -2353,5 +2353,6 @@ input[type="file"]:focus {
 .modal.boring-dialog {
   left: 0;
   top: 0;
+  z-index: 999999;
   margin: 0 !important;
 }

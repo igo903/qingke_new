@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/rs-default.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/prism.css">
+	<link rel="stylesheet" href="css/boring-plugin.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!--[if gte IE 9]>
 	  <style type="text/css">
@@ -84,8 +85,8 @@
 				</ul-->
 
 				<ul class="nav navbar-nav navbar-right">
-					<li class="login-desktop"><a href="javascript:;" data-toggle="modal" data-target="#loginDialog"><i class="fa fa-lock"></i> 登录</a></li>
-					<li class="signup-desktop"><a href="javascript:;" data-toggle="modal" data-target="#regDialog"><i class="dojo-user-circle"></i> 注册</a></li>
+					<li class="login-desktop"><a href="javascript:;" class="j-login-btn"><i class="fa fa-lock"></i> 登录</a></li>
+					<li class="signup-desktop"><a href="javascript:;" class="j-reg-btn"><i class="dojo-user-circle"></i> 注册</a></li>
 				</ul>
 
 			</div>
@@ -482,11 +483,11 @@
 
 		</div>
 	</footer>
-	<div class="modal fade animated bounceInDown" id="loginDialog" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal boring-dialog" id="loginDialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
 					<h4 class="modal-title" id="myModalLabel">登录</h4>
 				</div>
 				<div class="modal-body">
@@ -520,11 +521,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade animated bounceInDown" id="regDialog" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal boring-dialog" id="regDialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
 					<h4 class="modal-title" id="myModalLabel">注册</h4>
 				</div>
 				<div class="modal-body">
@@ -594,6 +595,7 @@
 	<script type="text/javascript" src="js/jquery.noty.js"></script>
 	<script type="text/javascript" src="js/default.js"></script>
 	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/boring.js"></script>
 
 
 
@@ -676,6 +678,18 @@
 
 			/********** END LOGIN MODAL FUNCTIONALITY **********/
 
+			(function () {
+				var loginDialog = boring.dialog('loginDialog'),
+					regDialog = boring.dialog('regDialog');
+
+				$('.j-login-btn').on('click', function () {
+					loginDialog.open();
+				});
+
+				$('.j-reg-btn').on('click', function () {
+					regDialog.open();
+				});
+			}());
 		</script>
 
 

@@ -18,6 +18,7 @@
 	    }
 	  </style>
 	<![endif]-->
+	<link rel="stylesheet" href="css/boring-plugin.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/rrssb.css">
 	<link rel="stylesheet" href="css/animate.min.css">
@@ -82,9 +83,9 @@
 				</ul-->
 
 				<ul class="nav navbar-nav navbar-right">
-		        	<li class="login-desktop"><a href="/login"><i class="fa fa-lock"></i> 登录</a></li>
-		        	<li class="signup-desktop"><a href="/signup"><i class="dojo-user-circle"></i> 注册</a></li>
-		        </ul>
+					<li class="login-desktop"><a href="javascript:;" class="j-login-btn"><i class="fa fa-lock"></i> 登录</a></li>
+					<li class="signup-desktop"><a href="javascript:;" class="j-reg-btn"><i class="dojo-user-circle"></i> 注册</a></li>
+				</ul>
 
 			</div>
 		</div>
@@ -346,6 +347,74 @@
 
 		</div>
 	</footer>
+	<div class="modal boring-dialog" id="loginDialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<h4 class="modal-title" id="myModalLabel">登录</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="login-email">E-mail</label>
+							<input type="email" class="form-control" id="login-email" placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<label for="login-password">密码</label>
+							<input type="password" class="form-control" id="login-password" placeholder="密码">
+						</div>
+						<div class="form-group clearfix">
+							<div class="checkbox pull-left">
+								<label>
+									<input type="checkbox"> 记住登录状态
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary pull-right">登录</button>
+						</div>
+					</form>
+					<div class="quick-login">
+						<div class="quick-login-title text-muted hidden-xs">快速登录</div>
+						<a href="javascript:;" class="btn btn-sm btn-sn-github"><span class="icon-sn-github"></span> <strong class="visible-xs-inline">Github 账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-weibo"><span class="icon-sn-weibo"></span> <strong class="visible-xs-inline">新浪微博账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-qq"><span class="icon-sn-qq"></span> <strong class="visible-xs-inline">QQ 账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-wechat"><span class="icon-sn-wechat"></span> <strong class="visible-xs-inline">微信账号</strong></a>
+						<a href="javascript:;" class="btn btn-sn-douban btn-sm hidden"><span class="icon-sn-douban"></span> <strong class="visible-xs-inline">豆瓣账号</strong></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal boring-dialog" id="regDialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<h4 class="modal-title" id="myModalLabel">注册</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="reg-username">用户名</label>
+							<input type="text" class="form-control" id="reg-username" placeholder="字母、数字等，用户名唯一">
+						</div>
+						<div class="form-group">
+							<label for="reg-email">E-mail</label>
+							<input type="email" class="form-control" id="reg-email" placeholder="ilove@qingke.me">
+						</div>
+						<div class="form-group">
+							<label for="reg-password">密码</label>
+							<input type="password" class="form-control" id="reg-password" placeholder="不少于 6 位">
+						</div>
+						<div class="form-group clearfix">
+							<div class="checkbox pull-left">同意并接受<a href="javascript:;" target="_blank">《服务条款》</a></div>
+							<button type="submit" class="btn btn-primary pull-right">注册</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -357,6 +426,7 @@
 	<script type="text/javascript" src="js/jquery.noty.js"></script>
 	<script type="text/javascript" src="js/default.js"></script>
 	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/boring.js"></script>
 
 
 
@@ -404,40 +474,18 @@
 
 		  });
 
+		  (function () {
+		  	var loginDialog = boring.dialog('loginDialog'),
+		  		regDialog = boring.dialog('regDialog');
 
-		  /********** LOGIN MODAL FUNCTIONALITY **********/
+		  	$('.j-login-btn').on('click', function () {
+		  		loginDialog.open();
+		  	});
 
-		  var loginSignupModal = $('<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Login Below</h4></div><div class="modal-body"></div></div></div></div>');
-
-			$(document).ready(function(){
-
-				// Load the Modal Window for login signup when they are clicked
-				$('.login-desktop a').click(function(e){
-					e.preventDefault();
-					$('body').prepend(loginSignupModal);
-					$('#loginSignupModal .modal-body').load($(this).attr('href') + '?redirect=' + document.URL + ' .form-signin', function(){
-						$('#loginSignupModal').show(200, function(){
-							setTimeout(function() { $('#email').focus() }, 300);
-
-
-						});
-						$('#loginSignupModal').modal();
-
-					});
-
-					// Be sure to remove the modal from the DOM after it is closed
-					$('#loginSignupModal').on('hidden.bs.modal', function (e) {
-				    	$('#loginSignupModal').remove();
-					});
-
-				});
-
-
-
-
-			});
-
-			/********** END LOGIN MODAL FUNCTIONALITY **********/
+		  	$('.j-reg-btn').on('click', function () {
+		  		regDialog.open();
+		  	});
+		  }());
 
 		</script>
 
