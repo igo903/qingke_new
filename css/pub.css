@@ -13,6 +13,7 @@
 
 .file {
 	display: inline-block;
+	margin-right: 1em;
 }
 .file input {
 	position: absolute;
@@ -41,13 +42,63 @@
 
 
 
+.pub-types {
+	margin-bottom: 2em;
+}
+
+
+
+.pub-form {
+	display: none;
+	-webkit-animation: fadein 0.5s;
+	animation: fadein 0.5s;
+}
+
+
+
+.qk-chapters {
+	margin-bottom: 2em;
+}
+.qk-chapter,
+.qk-section {
+	-webkit-animation: fadein 0.5s;
+	animation: fadein 0.5s;
+}
+.qk-chapter {
+	counter-increment: qk-chapter;
+	margin: 2em 0;
+}
+.qk-chapter-title {
+	font-size: 26px;
+}
+.qk-chapter-title:before {
+	content: "第 " counter(qk-chapter) " 章";
+}
+
+.qk-section {
+	counter-increment: qk-section;
+}
+.qk-section-title {
+	color: inherit;
+	padding-bottom: 0;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-bottom: none;
+}
+.qk-section-title:before {
+	content: "第 " counter(qk-section) " 节";
+}
+
+.qk-add {
+	display: inline-block;
+}
+
+
+
 .pub-box {
 	padding: 20px;
 	background: #fff;
 	margin: 20px 0;
-}
-.pub-form textarea.form-control {
-	height: 10em;
 }
 .pub-labels .label {
 	display: inline-block;

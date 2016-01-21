@@ -2331,10 +2331,23 @@ Navbar Toggle
 .post .post-img h6 {
   background: #ef312f;
 }
-.theme_color, a, .page a, footer ul li a, .home footer ul li a {
+.theme_color,
+a,
+.page a,
+footer ul li a,
+.home footer ul li a {
   color: #DB1D1B;
 }
-.theme_color:hover, a:hover, .page a:hover, footer ul li a:hover, .home footer ul li a:hover {
+.theme_color:hover,
+.theme_color:focus,
+a:hover,
+a:focus,
+.page a:hover,
+.page a:focus,
+footer ul li a:hover,
+footer ul li a:focus,
+.home footer ul li a:hover,
+.home footer ul li a:focus {
   color: #BB1816;
 }
 footer ul li a:hover, .home footer ul li a:hover {

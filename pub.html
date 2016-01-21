@@ -107,7 +107,15 @@
 				<div class="col col-md-9">
 					<section class="pub-box">
 						<h1 class="pub-title">创建轻课</h1>
-						<form class="pub-form">
+						<div class="pub-types">
+							<label class="radio-inline">
+								<input type="radio" name="type" />单篇轻课
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="type" />系列轻课
+							</label>
+						</div>
+						<form class="pub-form j-pub-form">
 							<div class="form-group">
 								<label for="title">标题</label>
 								<input type="text" class="form-control" id="title" />
@@ -118,8 +126,10 @@
 							</div>
 							<div class="form-group">
 								<div class="file j-file">
-									<input type="file" class="form-control" id="video" />
-									<label for="video" class="btn btn-default"><i class="fa fa-cloud-upload"></i>上传视频</label>
+									<label class="btn btn-default">
+										<input type="file" class="form-control" />
+										<i class="fa fa-cloud-upload"></i>上传视频
+									</label>
 									<div class="file-obj">
 										<i class="fa fa-file-o"></i><span class="file-name j-file-name"></span>
 										<button type="button" class="file-delete j-file-delete"><i class="fa fa-remove"></i></button>
@@ -139,8 +149,10 @@
 							</div>
 							<div class="form-group">
 								<div class="file j-file">
-									<input type="file" class="form-control" id="code-original" />
-									<label for="code-original" class="btn btn-default"><i class="fa fa-cloud-upload"></i>上传原始代码</label>
+									<label class="btn btn-default">
+										<input type="file" class="form-control" />
+										<i class="fa fa-cloud-upload"></i>上传原始代码
+									</label>
 									<div class="file-obj">
 										<i class="fa fa-file-o"></i><span class="file-name j-file-name"></span>
 										<button type="button" class="file-delete j-file-delete"><i class="fa fa-remove"></i></button>
@@ -149,8 +161,10 @@
 							</div>
 							<div class="form-group">
 								<div class="file j-file">
-									<input type="file" class="form-control" id="code-finished" />
-									<label for="code-finished" class="btn btn-default"><i class="fa fa-cloud-upload"></i>上传完成代码</label>
+									<label class="btn btn-default">
+										<input type="file" class="form-control" />
+										<i class="fa fa-cloud-upload"></i>上传完成代码
+									</label>
 									<div class="file-obj">
 										<i class="fa fa-file-o"></i><span class="file-name j-file-name"></span>
 										<button type="button" class="file-delete j-file-delete"><i class="fa fa-remove"></i></button>
@@ -160,6 +174,78 @@
 							<div class="form-group">
 								<label>讲义</label>
 								<textarea id="handout"></textarea>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" checked />提交审核
+								</label>
+								<div class="help-block">如不想提交审核，请取消勾选，您可以在我的轻课列表中提交审核。</div>
+							</div>
+							<div class="pub-btns">
+								<button type="submit" class="btn btn-primary">提交</button>
+								<button type="button" class="btn btn-default">取消</button>
+							</div>
+						</form>
+						<form class="pub-form j-pub-form">
+							<div class="form-group">
+								<label for="series-title">系列标题</label>
+								<input type="text" class="form-control" id="series-title" />
+							</div>
+							<div class="form-group">
+								<label for="series-summary">系列简介</label>
+								<textarea class="form-control" id="series-summary" rows="5"></textarea>
+							</div>
+							<div class="qk-chapters">
+								<div class="qk-chapter" id="chapter">
+									<h2 class="qk-chapter-title"></h2>
+									<div class="form-group">
+										<label>章标题</label>
+										<input type="text" class="form-control" />
+									</div>
+									<div class="qk-sections">
+										<div class="qk-section" id="section">
+											<h3 class="qk-section-title"></h3>
+											<div class="form-group">
+												<label>节标题</label>
+												<input type="text" class="form-control" />
+											</div>
+											<div class="form-group">
+												<div class="file j-file">
+													<label class="btn btn-default">
+														<input type="file" class="form-control" />
+														<i class="fa fa-cloud-upload"></i>上传视频
+													</label>
+													<div class="file-obj">
+														<i class="fa fa-file-o"></i><span class="file-name j-file-name"></span>
+														<button type="button" class="file-delete j-file-delete"><i class="fa fa-remove"></i></button>
+													</div>
+												</div>
+												<div class="file j-file">
+													<label class="btn btn-default">
+														<input type="file" class="form-control" />
+														<i class="fa fa-cloud-upload"></i>上传原始代码
+													</label>
+													<div class="file-obj">
+														<i class="fa fa-file-o"></i><span class="file-name j-file-name"></span>
+														<button type="button" class="file-delete j-file-delete"><i class="fa fa-remove"></i></button>
+													</div>
+												</div>
+												<div class="file j-file">
+													<label class="btn btn-default">
+														<input type="file" class="form-control" />
+														<i class="fa fa-cloud-upload"></i>上传完成代码
+													</label>
+													<div class="file-obj">
+														<i class="fa fa-file-o"></i><span class="file-name j-file-name"></span>
+														<button type="button" class="file-delete j-file-delete"><i class="fa fa-remove"></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<a href="javascript:;" class="qk-add j-qk-add" data-target="section"><i class="fa fa-plus-circle"></i>添加节</a>
+									</div>
+								</div>
+								<a href="javascript:;" class="qk-add j-qk-add" data-target="chapter"><i class="fa fa-plus-circle"></i>添加章</a>
 							</div>
 							<div class="checkbox">
 								<label>
@@ -348,7 +434,7 @@
 				});
 			}());
 
-			(function () {
+			var fileManager = (function () {
 				var
 					initFiles = function (fileBoxes) {
 						var i;
@@ -388,6 +474,83 @@
 					FILE_SELECTED_CLASS = 'file-selected';
 
 				initFiles(document.getElementsByClassName('j-file'));
+
+				return {
+					initFiles: initFiles
+				};
+			}());
+
+			(function () {
+				var typeRadios = document.getElementsByName('type'),
+					$forms = $('.j-pub-form'),
+					i;
+
+				for (i = 0; i < typeRadios.length; i++) {
+					(function (i) {
+						typeRadios[i].addEventListener('click', function () {
+							$forms.hide();
+							$($forms[i]).show();
+						});
+					}(i));
+				}
+
+				typeRadios[0].click();
+			}());
+
+			(function () {
+				var
+					init = function () {
+						bindGroups();
+						listenAdd();
+					},
+
+					bindGroups = function () {
+						var handles = document.getElementsByClassName(ADD_HANDLE_CLASS),
+							groupId,
+							group,
+							i;
+
+						for (i = 0; i < handles.length; i++) {
+							groupId = getGroupId(handles[i]);
+							group = document.getElementById(groupId);
+							groups[groupId] = {
+								origin: group,
+								template: clearGroup(group.cloneNode(true))
+							};
+						}
+					},
+
+					getGroupId = function (handle) {
+						return handle.dataset.target;
+					},
+
+					listenAdd = function () {
+						document.addEventListener('click', function (e) {
+							var t = e.target;
+
+							if (t.classList.contains(ADD_HANDLE_CLASS)) {
+								cloneGroup(groups[getGroupId(t)], t);
+							}
+						});
+					},
+
+					cloneGroup = function (groupData, handle) {
+						var newGroup = groupData.template.cloneNode(true);
+
+						handle.parentNode.insertBefore(newGroup, handle);
+						fileManager.initFiles(newGroup.getElementsByClassName('j-file'));
+					},
+
+					clearGroup = function (group) {
+						group.removeAttribute('id');
+
+						return group;
+					},
+
+					ADD_HANDLE_CLASS = 'j-qk-add',
+					groups = {};
+
+				init();
 			}());
 
 			(function () {
