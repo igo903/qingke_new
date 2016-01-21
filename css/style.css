@@ -2356,3 +2356,25 @@ input[type="file"]:focus {
   z-index: 999999;
   margin: 0 !important;
 }
+
+
+
+.navbar-default .navbar-nav > .user-info > a {
+  padding-left: 50px;
+}
+.user-avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: auto;
+}
+.logout > a:before {
+  content: "|";
+  position: absolute;
+  left: -7px;
+  cursor: text;
+}
