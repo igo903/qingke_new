@@ -2356,3 +2356,9 @@ input[type="file"]:focus {
   z-index: 999999;
   margin: 0 !important;
 }
+
+.block-contents{font-size: 12px;}
+p.people{margin:0.5em 0;}
+p.time{margin-top:1em;margin-bottom: 0;}
+ .avatar{height:24px;border-radius: 50%;vertical-align: middle;}
+ .label-info{background: #c0c0c0;float: right;text-align: center;}
