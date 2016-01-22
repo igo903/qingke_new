@@ -140,3 +140,282 @@
 		opacity: 1;
 	}
 }
+
+/*.user-detail-info{
+	position: relative;
+	padding-left:80px;
+	min-height: 80px;
+	text-align: left;
+	overflow: hidden;
+}
+.user-detail-info .user-pic{
+	position: absolute;
+	width:80px;
+	height: 80px;
+	left: 0;
+	top: 0;
+	border-radius: 40px;
+	overflow: hidden;
+}
+
+.user-detail-info img{
+	width:100%;
+	height: 100%;
+}
+ul{
+	list-style: none;
+}
+
+.user-detail-info .user-lay .user-name{
+	font-size: 18px;
+	font-weight: bold;
+	color: #14191e;
+	line-height: 24px;
+}
+.user-detail-info .user-lay .user-site{
+	color: #787d82;
+	display: inline-block;
+	font-size: 12px;
+	margin:2px 0 10px;
+}
+.user-detail-info .user-lay .user-setup{
+	color: #b5b9bc;
+	font-size: 12px;
+}
+.user-desc{
+	margin:20px 0 17px;
+	font-size: 12px;
+	color: #14191e;
+	line-height: 20px;
+	position: relative;
+}
+.user-desc .sign-wrap{
+	position: relative;
+}
+.user-desc .signed{
+	word-wrap:break-word;
+	word-break:break-all;
+	line-height: 20px;
+	font-size: 12px;
+	color: #787d82;
+	visibility: visible;
+}
+.user-desc strong{
+	font-weight: normal;
+}
+.user-desc .publish-sign{
+	background: url(../img/mycourselisticon.png) no-repeat 5px -106px;
+	width:20px;
+	height: 20px;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.user-desc .sign-editor{
+	word-wrap:break-word;
+	word-break:break-all;
+	line-height: 20px;
+	font-size: 12px;
+	color: #99a1a6;
+	visibility: visible;
+	position: absolute;
+	top:0;
+	left: 0;
+	width:238px;
+	resize:none;
+	margin:0;
+	height: 20px;
+	border:1px solid #e6e8e9;
+	display: none;
+}
+.user-desc .rlf-tip-wrap{
+	color: red;
+	margin-top: 10px;
+}
+.mp .mp-item{
+	width:50%;
+	float: left;
+	text-align: left;
+}
+.mp .mp-num{
+	font-weight: bolder;
+	color: #14191e;
+	margin-bottom: 4px;
+}*/
+.sidebar, .main{
+	padding:20px;
+	background: #fff;
+	margin:20px 0;
+}
+.sidebar ul{
+	list-style: none;
+	padding-left: 0;
+}
+.user-detail-info .user-img{
+	width:80px;
+	height: 80px;
+	display: inline-block;
+	
+
+
+}
+.user-detail-info{
+	position: relative;
+
+}
+.user-detail-info img{
+	border-radius: 40px;
+	width:100%;
+	height: 100%;
+}
+.sidebar .user-message{
+	position: absolute;
+	left: 0;
+	top:0;
+	padding-left: 100px;
+	
+	font-size: 12px;
+
+}
+.user-detail-info .user-name{
+	font-size: 18px;
+	font-weight: bold;
+	color: #14191e;
+}
+.user-detail-info .user-site{
+	color: #787d82;
+	margin:4px 0 10px;
+}
+.user-detail-info .user-set{
+	color:#b5b9bc ;
+	
+}
+.user-detail-info .user-set:hover, .user-detail-info .experience:hover p{
+	color:#db1d1b;
+	text-decoration: none;
+}
+.user-detail-info .user-slogan {
+	font-size: 12px;
+	margin:20px 0;
+	color: #787d82;
+
+}
+.user-detail-info .slogan-set{
+	background: url(../img/mycourselisticon.png) 5px -106px;
+	width:20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.user-detail-info .user-time li{
+	float: left;
+	width: 50%;
+}
+.user-detail-info .user-num{
+	font-weight: bold;
+	color: #14191e;
+	margin-bottom: 4px;
+}
+.user-detail-info .num-item{
+	font-size: 12px;
+	color: #787d82;
+}
+.user-time a:hover{
+	color: #db1d1b;
+	text-decoration: none;
+
+}
+.user-detail-info .course-list {
+	border-top: 1px solid #efefef;
+}
+.user-detail-info .course-list li{
+	border-bottom: 1px solid #efefef;
+	position: relative;
+
+	
+
+}
+
+.user-detail-info .course-list a{
+	color: #14191e;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	height: 60px;
+	line-height: 60px;
+	
+}
+.user-detail-info .course-list a.active{
+	color:#db1d1b;
+}
+.user-detail-info .course-list a:hover{
+	color:#db1d1b;
+}
+.user-detail-info .icon-nav{
+	position: absolute;
+	left: 0;
+	top:0;
+	width:20px;
+	height: 20px;
+}
+.user-detail-info  .course-num{
+	font-weight: normal;
+	padding-left: 5px;
+}
+.user-detail-info li.community{
+	padding:10px 0 4px;
+}
+.user-detail-info a.my-community{
+	font-weight: normal;
+	color: #14191e;
+	line-height: 30px;
+}
+.user-detail-info p.interseting{
+	font-size: 12px;
+	color: #b5b9bc;
+}
+.user-detail-info .visitor{
+	margin-top: 60px;
+}
+.user-detail-info p.current-visitors{
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 16px;
+}
+.user-detail-info .visitor-pic{
+	width:20%;
+	height: 20%;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left:3%;
+	margin-top: 20px;
+}
+.user-detail-info .visitor-pic img{
+	width:100%;
+	height: 100%;
+	display:block;
+
+}
+.main .course-tool-bar{
+	background: #f9f9f9;
+	border-top: 1px solid #d0d6d9;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+}
+.main .course-tool-bar *{
+	margin:0 10px;
+
+}
+.main .course-tool-bar a{
+	color:#787d82;
+	text-decoration: none;
+}
+.main .course-tool-bar a.active{
+	color: #1c191e;
+}
+.main .course-tool-bar a:hover{
+	color: #1c191e;
+}
+.
