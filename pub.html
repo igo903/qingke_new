@@ -196,7 +196,7 @@
 								<textarea class="form-control" id="series-summary" rows="5"></textarea>
 							</div>
 							<div class="qk-chapters">
-								<div class="qk-chapter" id="chapter">
+								<div class="qk-chapter j-qk-group" id="chapter">
 									<h2 class="qk-chapter-title">
 										<a href="javascript:;" class="qk-remove j-qk-remove"><i class="fa fa-minus-circle"></i>删除该章</a>
 									</h2>
@@ -205,7 +205,7 @@
 										<input type="text" class="form-control" />
 									</div>
 									<div class="qk-sections">
-										<div class="qk-section" id="section">
+										<div class="qk-section j-qk-group" id="section">
 											<h3 class="qk-section-title">
 												<a href="javascript:;" class="qk-remove j-qk-remove"><i class="fa fa-minus-circle"></i>删除该节</a>
 											</h3>
@@ -548,7 +548,9 @@
 							});
 
 							if (handle && handle.classList.contains(REMOVE_HANDLE_CLASS)) {
-								removeGroup(handle.parentNode.parentNode);
+								removeGroup(boring.bubbleElement(handle, function (elm) {
+									return elm.classList.contains('j-qk-group');
+								}));
 							}
 						});
 					},
