@@ -197,14 +197,18 @@
 							</div>
 							<div class="qk-chapters">
 								<div class="qk-chapter" id="chapter">
-									<h2 class="qk-chapter-title"></h2>
+									<h2 class="qk-chapter-title">
+										<a href="javascript:;" class="qk-remove j-qk-remove"><i class="fa fa-minus-circle"></i>删除该章</a>
+									</h2>
 									<div class="form-group">
 										<label>章标题</label>
 										<input type="text" class="form-control" />
 									</div>
 									<div class="qk-sections">
 										<div class="qk-section" id="section">
-											<h3 class="qk-section-title"></h3>
+											<h3 class="qk-section-title">
+												<a href="javascript:;" class="qk-remove j-qk-remove"><i class="fa fa-minus-circle"></i>删除该节</a>
+											</h3>
 											<div class="form-group">
 												<label>节标题</label>
 												<input type="text" class="form-control" />
@@ -502,6 +506,7 @@
 					init = function () {
 						bindGroups();
 						listenAdd();
+						listenRemove();
 					},
 
 					bindGroups = function () {
@@ -526,10 +531,24 @@
 
 					listenAdd = function () {
 						document.addEventListener('click', function (e) {
-							var t = e.target;
+							var handle = boring.bubbleElement(e.target, function (elm) {
+								return elm.classList.contains(ADD_HANDLE_CLASS);
+							});
 
-							if (t.classList.contains(ADD_HANDLE_CLASS)) {
-								cloneGroup(groups[getGroupId(t)], t);
+							if (handle && handle.classList.contains(ADD_HANDLE_CLASS)) {
+								cloneGroup(groups[getGroupId(handle)], handle);
+							}
+						});
+					},
+
+					listenRemove = function () {
+						document.addEventListener('click', function (e) {
+							var handle = boring.bubbleElement(e.target, function (elm) {
+								return elm.classList.contains(REMOVE_HANDLE_CLASS);
+							});
+
+							if (handle && handle.classList.contains(REMOVE_HANDLE_CLASS)) {
+								removeGroup(handle.parentNode.parentNode);
 							}
 						});
 					},
@@ -541,6 +560,10 @@
 						fileManager.initFiles(newGroup.getElementsByClassName('j-file'));
 					},
 
+					removeGroup = function (group) {
+						group.parentNode.removeChild(group);
+					},
+
 					clearGroup = function (group) {
 						group.removeAttribute('id');
 
@@ -548,6 +571,7 @@
 					},
 
 					ADD_HANDLE_CLASS = 'j-qk-add',
+					REMOVE_HANDLE_CLASS = 'j-qk-remove',
 					groups = {};
 
 				init();

@@ -89,8 +89,22 @@
 	content: "第 " counter(qk-section) " 节";
 }
 
+.qk-add:hover,
+.qk-add:focus,
+.qk-remove:hover,
+.qk-remove:focus {
+	text-decoration: none;
+}
 .qk-add {
 	display: inline-block;
+}
+.qk-remove {
+	font-size: 14px;
+}
+.qk-chapter:first-child > .qk-chapter-title .qk-remove,
+.qk-section:first-child > .qk-section-title .qk-remove {
+	display: none;
+	pointer-events: none;
 }
 
 
