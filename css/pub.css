@@ -141,107 +141,7 @@
 	}
 }
 
-/*.user-detail-info{
-	position: relative;
-	padding-left:80px;
-	min-height: 80px;
-	text-align: left;
-	overflow: hidden;
-}
-.user-detail-info .user-pic{
-	position: absolute;
-	width:80px;
-	height: 80px;
-	left: 0;
-	top: 0;
-	border-radius: 40px;
-	overflow: hidden;
-}
 
-.user-detail-info img{
-	width:100%;
-	height: 100%;
-}
-ul{
-	list-style: none;
-}
-
-.user-detail-info .user-lay .user-name{
-	font-size: 18px;
-	font-weight: bold;
-	color: #14191e;
-	line-height: 24px;
-}
-.user-detail-info .user-lay .user-site{
-	color: #787d82;
-	display: inline-block;
-	font-size: 12px;
-	margin:2px 0 10px;
-}
-.user-detail-info .user-lay .user-setup{
-	color: #b5b9bc;
-	font-size: 12px;
-}
-.user-desc{
-	margin:20px 0 17px;
-	font-size: 12px;
-	color: #14191e;
-	line-height: 20px;
-	position: relative;
-}
-.user-desc .sign-wrap{
-	position: relative;
-}
-.user-desc .signed{
-	word-wrap:break-word;
-	word-break:break-all;
-	line-height: 20px;
-	font-size: 12px;
-	color: #787d82;
-	visibility: visible;
-}
-.user-desc strong{
-	font-weight: normal;
-}
-.user-desc .publish-sign{
-	background: url(../img/mycourselisticon.png) no-repeat 5px -106px;
-	width:20px;
-	height: 20px;
-	cursor: pointer;
-	display: inline-block;
-	vertical-align: text-bottom;
-}
-.user-desc .sign-editor{
-	word-wrap:break-word;
-	word-break:break-all;
-	line-height: 20px;
-	font-size: 12px;
-	color: #99a1a6;
-	visibility: visible;
-	position: absolute;
-	top:0;
-	left: 0;
-	width:238px;
-	resize:none;
-	margin:0;
-	height: 20px;
-	border:1px solid #e6e8e9;
-	display: none;
-}
-.user-desc .rlf-tip-wrap{
-	color: red;
-	margin-top: 10px;
-}
-.mp .mp-item{
-	width:50%;
-	float: left;
-	text-align: left;
-}
-.mp .mp-num{
-	font-weight: bolder;
-	color: #14191e;
-	margin-bottom: 4px;
-}*/
 .sidebar, .main{
 	padding:20px;
 	background: #fff;
@@ -255,9 +155,6 @@ ul{
 	width:80px;
 	height: 80px;
 	display: inline-block;
-	
-
-
 }
 .user-detail-info{
 	position: relative;
@@ -384,8 +281,8 @@ ul{
 	padding-bottom: 16px;
 }
 .user-detail-info .visitor-pic{
-	width:20%;
-	height: 20%;
+	width:40px;
+	height: 40px;
 	border-radius: 50%;
 	display: inline-block;
 	margin-left:3%;
@@ -418,4 +315,139 @@ ul{
 .main .course-tool-bar a:hover{
 	color: #1c191e;
 }
-.
+.main .course-list{
+	padding-left: 0;
+}
+.main .course-list li{
+	margin:30px auto 0;
+	list-style: none;
+	border-bottom: 1px solid #efefef;
+	height: 152px;
+	position: relative;
+}
+.main .course-list .box-left{
+	width:220px;
+	margin-right: 30px;
+	height: 123px;
+	position: relative;
+	overflow: hidden;
+}
+.main .course-list-img{
+	position: relative;
+	height: 123px;
+}
+.main .box-left img{
+	width:100%;
+	height: 100%;
+}
+.main .box-left .pro-bg{
+	position: absolute;
+	background: #000;
+	left: 0;
+	top:89px;
+	width:220px;
+	height: 30px;
+	opacity: 0.4;
+	filter:alpha(opacity=40);
+}
+.main .box-left .course-progress{
+	color: #fff;
+	font-size: 20px;
+	background: none;
+	position: absolute;
+	top:89px;
+	text-align: left;
+	width:auto;
+	height: 30px;
+	line-height: 30px;
+	left: 10px;
+	font-style: normal;
+}
+
+.main .box-left .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #656e73;
+    width:100%;
+}
+.main .box-left .bar{
+	display: block;
+	height: 4px;
+	background-color: #00b33b;
+	z-index: 1;
+
+}
+.main .box-left, .main .box-right{
+	float: left;
+}
+.main .course-name{
+	font-size: 14px;
+	color: #14191e;
+	font-weight: bold;
+}
+.main .course-date{
+	color: #787d82;
+	padding-left: 20px;
+	font-size: 12px;
+}
+.main .span-left{
+	padding-right: 20px;
+	white-space: nowrap;
+	max-width: 280px;
+}
+.main .span-mid{
+	padding-right: 20px;
+}
+.main .span-common{
+	font-size: 12px;
+	color: #b5b9bc;
+	display: inline-block;
+	overflow: hidden;
+}
+.main .study-points{
+	margin: 10px 0 30px;
+}
+.main .begin-study{
+	height: 30px;
+	width:100px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #00b33b;
+	color: #fff;
+	line-height: 31px;
+	display: inline-block;
+	text-decoration: none;
+}
+.main .page{
+	margin: 25px 0 auto;
+	text-align: center;
+
+}
+.main .page a{
+	display: inline-block;
+	margin:0 5px;
+	padding:0 5px;
+	min-width: 20px;
+	height: 29px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #787d82;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+	box-sizing:content-box;
+
+}
+
+.main .page a:hover{
+	color: #cc0000;
+	border-bottom-color: #cc0000;
+}
+.main .page a.active{
+	background:#cc0000;
+	color: #fff;
+	border-color: transparent;
+
+}
