@@ -309,7 +309,7 @@
 	color:#787d82;
 	text-decoration: none;
 }
-.main .course-tool-bar .tool-left  a.boring-tab-current{
+.main .course-tool-bar a.active{
 	color: #1c191e;
 }
 .main .course-tool-bar a:hover{
@@ -420,14 +420,6 @@
 	line-height: 31px;
 	display: inline-block;
 	text-decoration: none;
-	-o-transition: 0.4s;
-	-webkit-transition: 0.4s;
-	-moz-transition: 0.4s;
-	transition: 0.4s;
-}
-.main .begin-study:hover{
-	opacity: 0.8;
-	filter:alpha(opacity=80);
 }
 .main .page{
 	margin: 25px 0 auto;
