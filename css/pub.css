@@ -294,6 +294,9 @@
 	display:block;
 
 }
+.main a{
+	text-decoration: none;
+}
 .main .course-tool-bar{
 	background: #f9f9f9;
 	border-top: 1px solid #d0d6d9;
@@ -322,8 +325,9 @@
 	margin:30px auto 0;
 	list-style: none;
 	border-bottom: 1px solid #efefef;
-	height: 152px;
+	/*height: 152px;*/
 	position: relative;
+	padding-bottom: 30px;
 }
 .main .course-list .box-left{
 	width:220px;
@@ -331,16 +335,19 @@
 	height: 123px;
 	position: relative;
 	overflow: hidden;
+	
 }
 .main .course-list-img{
 	position: relative;
 	height: 123px;
+	width:220px;
 }
 .main .box-left img{
 	width:100%;
 	height: 100%;
+
 }
-.main .box-left .pro-bg{
+.main .box-left .pro-bg, .main .pro-bg{
 	position: absolute;
 	background: #000;
 	left: 0;
@@ -350,7 +357,7 @@
 	opacity: 0.4;
 	filter:alpha(opacity=40);
 }
-.main .box-left .course-progress{
+.main .box-left .course-progress, .main .course-progress{
 	color: #fff;
 	font-size: 20px;
 	background: none;
@@ -364,7 +371,7 @@
 	font-style: normal;
 }
 
-.main .box-left .progress-bar {
+.main .box-left .progress-bar, .main .progress-bar {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -373,7 +380,7 @@
     background-color: #656e73;
     width:100%;
 }
-.main .box-left .bar{
+.main .box-left .bar, .main .bar{
 	display: block;
 	height: 4px;
 	background-color: #00b33b;
@@ -382,6 +389,7 @@
 }
 .main .box-left, .main .box-right{
 	float: left;
+	min-width: 200px;
 }
 .main .course-name{
 	font-size: 14px;
@@ -436,11 +444,11 @@
 }
 .main .page a{
 	display: inline-block;
-	margin:0 5px;
-	padding:0 5px;
-	min-width: 20px;
-	height: 29px;
-	line-height: 30px;
+	margin:0 4px;
+	padding:0 4px;
+	min-width: 10px;
+	height: 20px;
+	line-height: 21px;
 	font-size: 14px;
 	color: #787d82;
 	border-bottom: 1px solid transparent;
@@ -458,4 +466,147 @@
 	color: #fff;
 	border-color: transparent;
 
+}
+.main .studying-courses{
+	margin-top: 10px;
+	padding:20px 0 0 64px;
+}
+.main .studying-course{
+	position: relative;
+	padding-left: 15px;
+	border-left: 1px solid #efefef;
+}
+.main .clearfix:before{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.main .studying-courses .time{
+	position: absolute;
+	left: 0;
+	top:20px;margin-left: -64px;
+	color: #8a8c8f;
+	font-size: 12px;
+	line-height: 16px;
+}
+.main .studying-courses .time b{
+	font-size:18px;
+	font-weight: normal; 
+}
+.main .studying-courses .time em{
+	font-style: normal;
+	display: block;
+	margin-top: 1px;
+	
+}
+.main .studying-courses .time:before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 60px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #d0d6d9;
+}
+.main .studying-courses .time-last:before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: -4px;
+	width: 8px;
+	height: 8px;
+	bottom:0px;
+	border-radius: 50%;
+	background-color: #d0d6d9;
+
+}
+.main .studying-course ul{
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.main .studying-courses li{
+  width:252px;
+  padding: 16px;
+  position: relative;
+  list-style: none;
+  float: left;
+  margin:0 -4px;
+  -moz-transition: box-shadow 0.3s;
+  -webkit-transition: box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  box-sizing:border-box;
+	  
+}
+.main .studying-courses li:hover,
+.main .studying-courses li.link {
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.main .studying-courses li h5 {
+	margin-top: 15px;
+	height: 18px;
+	line-height: 18px;
+	color: #14191e;
+	text-align: left;
+	font-weight: bold;
+}
+.main .studying-courses  .tips{
+	font-size: 12px;
+	color: #b4bbbf;
+}
+.main .studying-courses p{
+	margin:8px 0;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.main .studying-courses .tips .update-latest{
+	color: #00dc50;
+	margin-right: 20px;
+	
+}
+.main .studying-courses .tips .completed{
+	color: inherit;
+}
+
+
+.main .studying-courses .time-first:before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    left: -1px;
+    top: 0;
+    background-color: white;
+}
+.main .studying-courses .time-label {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 3px;
+  visibility: hidden;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.main .studying-courses li:hover .time-label {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
