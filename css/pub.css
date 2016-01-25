@@ -477,7 +477,7 @@
 	padding-left: 15px;
 	border-left: 1px solid #efefef;
 }
-.main .clearfix:before{
+.clearfix:before{
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -614,4 +614,31 @@
 .main .editor, .main .delete{
 	padding-left: 10px;
 }
-
+.screenShot{
+	background: #ffffff;
+	margin: 30px 0;
+}
+.screenShot h3{
+	border-bottom: 0;
+	color: #767676;
+}
+.screenShot .video-name a{
+	color:#333; 
+}
+.screenShot a{text-decoration: none;}
+.screenShot-top, .list-item{border:1px solid #ebebeb;padding: 30px;}
+.screenShot .video-lg, .screenShot .video-small{float: left;vertical-align: middle;}
+.screenShot .video-name{font-weight:bold;font-size: 20px;}
+.screenShot .video-message{padding-left: 480px;}
+.screenShot .video-author{font-size: 18px;color: #767676;}
+.screenShot .video-message h1 a{color:inherit;text-decoration: none;}
+.screenShot .video-message .video-link a{border:1px solid #d3d3d3;background: #f8f8f8;color: #000;text-decoration: none;margin-right:20px;padding:10px 20px;margin-top: 20px;display: inline-block;border-radius: 4px;}
+.screenShot .video-message span{display:inline-block;vertical-align: middle;width:28px;padding:0 20px;height: 28px;}
+.screenShot .video-message .play-all{background: url(../img/play-all.png)left 50% no-repeat;}
+.screenShot .video-message .share{background: url(../img/share.png)left 50% no-repeat;}
+.screenShot .video-message .add{background: url(../img/add.png) no-repeat;}
+.screenShot .list-item{counter-increment: list-item;position: relative;}
+.screenShot .video-small:before{content: counter(list-item);padding-right:20px;font-size: 20px;}
+.screenShot .time{position: absolute;right:2%;top:50%;font-size: 20px;}
+.screenShot .list-message{vertical-align: middle;padding-left: 210px;}
+.screenShot .video-small{padding:15px 0;}
