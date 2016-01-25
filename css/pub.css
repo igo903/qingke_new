@@ -383,13 +383,14 @@
 .main .box-left .bar, .main .bar{
 	display: block;
 	height: 4px;
-	background-color: #00b33b;
+	background-color: #db1d1b;
 	z-index: 1;
 
 }
 .main .box-left, .main .box-right{
 	float: left;
 	min-width: 200px;
+	position: relative;
 }
 .main .course-name{
 	font-size: 14px;
@@ -423,7 +424,7 @@
 	width:100px;
 	font-size: 12px;
 	text-align: center;
-	background-color: #00b33b;
+	background-color: #db1d1b;
 	color: #fff;
 	line-height: 31px;
 	display: inline-block;
@@ -458,11 +459,11 @@
 }
 
 .main .page a:hover{
-	color: #cc0000;
-	border-bottom-color: #cc0000;
+	color: #db1d1b;
+	border-bottom-color: #db1d1b;
 }
 .main .page a.active{
-	background:#cc0000;
+	background:#db1d1b;
 	color: #fff;
 	border-color: transparent;
 
@@ -610,3 +611,7 @@
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
+.main .editor, .main .delete{
+	padding-left: 10px;
+}
+
