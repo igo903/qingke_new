@@ -627,9 +627,13 @@
 }
 .screenShot a{text-decoration: none;}
 .screenShot-top, .list-item{border:1px solid #ebebeb;padding: 30px;}
-.screenShot .video-lg, .screenShot .video-small{float: left;vertical-align: middle;}
+.screenShot .video-lg, .screenShot .video-small{float:left; vertical-align: middle;
+margin-right: 30px;}
+.screenShot .video-lg img{width:100%;}
+.screenShot .video-small{float: left;vertical-align: middle;margin-right: 10px;}
 .screenShot .video-name{font-weight:bold;font-size: 20px;}
-.screenShot .video-message{padding-left: 480px;}
+/*.screenShot .video-message{padding-left: 480px;}*/
+.screenShot .video-message, .screenShot .list-message{float: left;}
 .screenShot .video-author{font-size: 18px;color: #767676;}
 .screenShot .video-message h1 a{color:inherit;text-decoration: none;}
 .screenShot .video-message .video-link a{border:1px solid #d3d3d3;background: #f8f8f8;color: #000;text-decoration: none;margin-right:20px;padding:10px 20px;margin-top: 20px;display: inline-block;border-radius: 4px;}
@@ -640,5 +644,5 @@
 .screenShot .list-item{counter-increment: list-item;position: relative;}
 .screenShot .video-small:before{content: counter(list-item);padding-right:20px;font-size: 20px;}
 .screenShot .time{position: absolute;right:2%;top:50%;font-size: 20px;}
-.screenShot .list-message{vertical-align: middle;padding-left: 210px;}
+.screenShot .list-message{vertical-align: middle;/*padding-left: 210px;*/}
 .screenShot .video-small{padding:15px 0;}
