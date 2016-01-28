@@ -207,7 +207,7 @@
 									<div class="qk-sections">
 										<div class="qk-section j-qk-group" id="section">
 											<h3 class="qk-section-title">
-												<a href="javascript:;" class="qk-remove j-qk-remove"><i class="fa fa-minus-circle"></i>删除该节</a>
+												<a href="javascript:;" class="qk-remove j-qk-remove" onclick="remove(this)"><i class="fa fa-minus-circle"></i>删除该节</a>
 											</h3>
 											<div class="form-group">
 												<label>节标题</label>
@@ -246,8 +246,26 @@
 												</div>
 											</div>
 										</div>
-										<a href="javascript:;" class="qk-add j-qk-add" data-target="section"><i class="fa fa-plus-circle"></i>添加节</a>
+										<a href="javascript:;" class="qk-add j-qk-add" data-target="section" id="j-qk-add"><i class="fa fa-plus-circle"></i>添加节</a>
 									</div>
+									<script type="text/javascript">
+										var flag=0;
+										var sectionId= $("#section").parent().children("div:first-child");
+										var oldId=sectionId.attr("id") //获取现在的元素id
+										$("#j-qk-add").click(function(e){
+											var Id="section"+flag
+											flag++;
+											sectionId.attr("id",function(){return Id;})
+											var html=sectionId.prop('outerHTML');
+											sectionId.attr("id",function(){return oldId})
+											$(e.target).before(html)
+										})
+
+										/*function remove(e){
+											var parentNow
+
+										}*/
+									</script>
 								</div>
 								<a href="javascript:;" class="qk-add j-qk-add" data-target="chapter"><i class="fa fa-plus-circle"></i>添加章</a>
 							</div>
@@ -504,9 +522,9 @@
 			(function () {
 				var
 					init = function () {
-						bindGroups();
-						listenAdd();
-						listenRemove();
+						//bindGroups();
+						//listenAdd();
+						//listenRemove();
 					},
 
 					bindGroups = function () {

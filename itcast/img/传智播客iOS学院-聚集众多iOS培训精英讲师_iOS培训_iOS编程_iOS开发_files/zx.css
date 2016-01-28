@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 右侧咨询 S */
+.zx{width: 35px; position:fixed; right:0; top:50%; margin-top:-180px; z-index: 99999;}
+.zx li{width: 35px; height: 35px; margin-bottom:1px;}
+.zx li span.icon_s{ display:block; width: 25px; height: 25px; background:#484848; padding:5px; text-align:center; line-height:25px; color:#fff; position:relative;}
+.zx li span.icon_s img{ display:block; width:25px; height:25px;}
+.zx li.li_gd span.icon_s{background:#e60012;}
+.zx li.li_c{position: relative; z-index: 99999;}
+.zx li.li_c div{position: absolute; right: 0px; top:0px; background:#e60012;  display:none; z-index:9999;}
+.zx li.li_c div a{ width:105px; height:35px; display:block; background:url(/images/zx/zx_qq.jpg) no-repeat 1px 1px; padding-left:35px; color:#fff; overflow:hidden;}
+.zx li.li_c div a p{ display:inline-block; width:105px; height:35px; line-height:35px; font-size:12px; text-align:center;}
+.zx li.li2 div a{ width:55px; padding-left:35px;}
+.zx li.li2 div a p{width:55px;}
+.zx li.li3 div a{ width:85px; padding-left:35px;}
+.zx li.li_gd div{ background:#484848;}
+.zx li.li_gd .nm{opacity:0; position:absolute;}
+.zx li.li_gd div a{width:70px; background:url(/images/zx/zx_qqn.png) no-repeat 8px 5px; padding-left:30px; }
+.zx li.li_gd div a p{ width:70px;}
+.zx li.li3 div a p{width:85px;}
+.zxs{width:45px; position:fixed; right:0; top:50%; margin-top:-110px; z-index: 99999;}
+.zxs li{width:45px; height:45px;}
+.zxs li span.icon_s{ width: 35px; height: 35px; padding:5px;}
+.zxs li span.icon_s img{ width:35px; height:35px;}
+.zxs li.li_c div a{ height:45px;  background:url(/images/zx/zx_qq2.jpg) no-repeat 2px 2px;  padding-left:43px;}
+.zxs li.li_c div a p{ height:45px; line-height:45px; font-size:12px;}
+.zxs li.li_gd div{ background:#484848; }
+.zxs li.li_gd div a{ width:80px; background:url(/images/zx/zx_qqn.png) no-repeat 9px 9px; padding-left:30px;}
+.zxs li.li_gd div a p{ width:80px; font-size:14px;}
+.zxs li.li_yu div a{ width:75px; background:url(/images/zx/zx_13.png) no-repeat 7px 5px;}
+/* 右侧咨询 E */
