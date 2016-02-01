@@ -6,6 +6,7 @@
 	<meta name="description" content="轻课网iOS学院一直发扬实战务实的教育精神,用薪资高,口碑好的学生成绩在不断前行,并提供着iOS培训,iOS培训班,iOS工程师培训,iOS程序员培训,iOS开发,iOS编程,iOS系统开发等一系列培训服务。">
 	<link type="image/x-icon" rel="shortcut icon" href="http://www.itcast.cn/favicon.ico"> 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/subject.css">
 	<title>轻课网iOS学院-聚集众多iOS培训精英讲师|iOS培训|iOS编程|iOS开发</title>
@@ -233,10 +234,6 @@
 								<h3>零基础</h3>
 								<p>对iOS有兴趣，希望从事iOS开发</p>
 							</li>
-							<!--<li>
-								<h3>有基础</h3>
-								<p>强化自己能力，加强专业技能</p>
-							</li>-->
 							<li>
 								<h3>在校大学生</h3>
 								<p>丰富职场技能，毕业不失业</p>
@@ -254,22 +251,10 @@
 			<!-- iOS适合人群 -->			
 			<!-- iOS就业资讯 -->
 			<div class="lay lay_3">
-				<div class="inner"  onClick="javascript:window.open('http://bbs.itcast.cn/thread-85684-1-1.html?i','_blank')" >
-					<h2>2016年iOS最新就业资讯</h2>
-					<p class="h_down">iOS精选课程+实用实战演练+雄厚教学实力，让学员薪资一路走高！</p>
-					<a href="http://bbs.itcast.cn/thread-85684-1-1.html?i" target="_blank">一张贴看完iOS学员就业薪资 &gt; </a>
-				</div>
-			</div>
-			<!-- iOS就业资讯 -->			
-			<!-- iOS课程更新 -->
-			<div class="lay lay_4">
 				<div class="inner">
-					<!--<h2>iOS课程与iOS9发布同步更新</h2>
-					<p class="h_down">轻课网iOS就业课程2.2版本与2015年9月苹果秋季新产品发布会同步</p>
-					<a href="/course/ios.shtml" target="_blank">了解课程详情 &gt;</a> <a href="/ios/updateios.shtml" target="_blank">查看课程更新历史&gt;</a>-->
 					<div class="group-bd clearfix">
 					    <!-- the first group from 01-08 -->
-					    <ol class="order-list item1">
+					    <ol class="order-list item1" id="order-list">
 					        <li >
 					          <div class="wrap">
 					                <div class="layer-title bg-opacity bg-red">
@@ -283,11 +268,137 @@
 					            <div class="layer-title bg-opacity bg-red">
 					            	<span>技术改变生活！</span>
 					            </div>
-					            <img class="img" src="img/ourgroup_01.jpg" alt="">
+					            <img class="img" src="img/ourgroup_13.jpg"  alt="">
+					            </div>
+					        </li>
+					        <li >
+					          <div class="wrap">
+					                <div class="layer-title bg-opacity bg-red">
+					                	<span>我为有这样的团队而骄傲，慕课网，大有所为！</span>
+					                </div>
+					            	<img class="img" src="img/ourgroup_01.jpg"  alt="">
+					            </div>
+					        </li>
+					        <li >
+					          <div class="wrap">
+					            <div class="layer-title bg-opacity bg-red">
+					            	<span>技术改变生活！</span>
+					            </div>
+					            <img class="img" src="img/ourgroup_13.jpg" alt="">
+					            </div>
+					        </li>
+					        <li >
+					          <div class="wrap">
+					                <div class="layer-title bg-opacity bg-red">
+					                	<span>我为有这样的团队而骄傲，慕课网，大有所为！</span>
+					                </div>
+					            	<img class="img" src="img/ourgroup_01.jpg"  alt="">
+					            </div>
+					        </li>
+					        <li >
+					          <div class="wrap">
+					            <div class="layer-title bg-opacity bg-red">
+					            	<span>技术改变生活！</span>
+					            </div>
+					            <img class="img" src="img/ourgroup_13.jpg" alt="">
+					            </div>
+					        </li>
+					          <li >
+					          <div class="wrap">
+					                <div class="layer-title bg-opacity bg-red">
+					                	<span>我为有这样的团队而骄傲，慕课网，大有所为！</span>
+					                </div>
+					            	<img class="img" src="img/ourgroup_01.jpg"  alt="">
+					            </div>
+					        </li>
+					        <li >
+					          <div class="wrap">
+					            <div class="layer-title bg-opacity bg-red">
+					            	<span>技术改变生活！</span>
+					            </div>
+					            <img class="img" src="img/ourgroup_13.jpg" alt="">
+					            </div>
+					        </li>
+					          <li >
+					          <div class="wrap">
+					                <div class="layer-title bg-opacity bg-red">
+					                	<span>我为有这样的团队而骄傲，慕课网，大有所为！</span>
+					                </div>
+					            	<img class="img" src="img/ourgroup_01.jpg"  alt="">
+					            </div>
+					        </li>
+					        <li >
+					          <div class="wrap">
+					            <div class="layer-title bg-opacity bg-red">
+					            	<span>技术改变生活！</span>
+					            </div>
+					            <img class="img" src="img/ourgroup_13.jpg" alt="">
 					            </div>
 					        </li>
 					              
 					    </ol>
+					</div>
+				</div>
+			</div>
+			<!-- iOS就业资讯 -->			
+			<!-- iOS课程更新 -->
+			<div class="lay lay_4">
+				<div class="inner">
+					<!--<h2>iOS课程与iOS9发布同步更新</h2>
+					<p class="h_down">轻课网iOS就业课程2.2版本与2015年9月苹果秋季新产品发布会同步</p>
+					<a href="/course/ios.shtml" target="_blank">了解课程详情 &gt;</a> <a href="/ios/updateios.shtml" target="_blank">查看课程更新历史&gt;</a>-->
+					<div class="group-bd clearfix">
+					    <!-- the first group from 01-08 -->
+					      <ol class="order-list item1" id="order-list">
+					    					        <li >
+					    					          <div class="wrap">
+					    					                <div class="layer-title bg-opacity bg-red">
+					    					                	<span>我为有这样的团队而骄傲，慕课网，大有所为！</span>
+					    					                </div>
+					    					            	<img class="img" src="img/ourgroup_01.jpg"  alt="">
+					    					            </div>
+					    					        </li>
+					    					        <li >
+					    					          <div class="wrap">
+					    					            <div class="layer-title bg-opacity bg-red">
+					    					            	<span>技术改变生活！</span>
+					    					            </div>
+					    					            <img class="img" src="img/ourgroup_13.jpg"  alt="">
+					    					            </div>
+					    					        </li>
+					    					        <li >
+					    					          <div class="wrap">
+					    					                <div class="layer-title bg-opacity bg-red">
+					    					                	<span>我为有这样的团队而骄傲，慕课网，大有所为！</span>
+					    					                </div>
+					    					            	<img class="img" src="img/ourgroup_01.jpg"  alt="">
+					    					            </div>
+					    					        </li>
+					    					        <li >
+					    					          <div class="wrap">
+					    					            <div class="layer-title bg-opacity bg-red">
+					    					            	<span>技术改变生活！</span>
+					    					            </div>
+					    					            <img class="img" src="img/ourgroup_13.jpg" alt="">
+					    					            </div>
+					    					        </li><li >
+					    					          <div class="wrap">
+					    					                <div class="layer-title bg-opacity bg-red">
+					    					                	<span>我为有这样的团队而骄傲，慕课网，大有所为！</span>
+					    					                </div>
+					    					            	<img class="img" src="img/ourgroup_01.jpg"  alt="">
+					    					            </div>
+					    					        </li>
+					    					        <li >
+					    					          <div class="wrap">
+					    					            <div class="layer-title bg-opacity bg-red">
+					    					            	<span>技术改变生活！</span>
+					    					            </div>
+					    					            <img class="img" src="img/ourgroup_13.jpg" alt="">
+					    					            </div>
+					    					        </li>
+					    					              
+					    					    </ol>
 					</div>
 				</div>
 			</div>
@@ -478,57 +589,6 @@
 	</div>	
 	<!-- 底部  S -->
 	<div class="footer">
-		<!--  底部列表区  -->
-		<!--<div class="foot_ch about">
-			<div class="div_list">
-				<h3>关于我们</h3>
-				<ul>
-					<li><a class="a_gd" href="/channel/about/about.shtml" target="_blank">轻课网简介</a></li>
-					<li><a class="a_gd" href="/subject/zhaopin/index.shtml" target="_blank">加入轻课网</a></li>
-					<li><a class="a_gd" href="/channel/about/about.shtml" target="_blank">联系轻课网</a></li>
-				</ul>
-			</div>
-			<div class="div_list">
-				<h3>旗下品牌</h3>
-				<ul>
-					<li><a class="a_gd" href="http://www.itheima.com" target="_blank">黑马程序员</a></li>
-					<li><a class="a_gd" href="http://www.boxuegu.com" target="_blank">博学谷</a></li>
-				</ul>
-			</div>
-			<div class="div_list">
-				<h3>校区攻略</h3>
-				<ul>
-					<li><a class="a_gd" href="http://bbs.itcast.cn/thread-85619-1-1.html" target="_blank">校区环境</a></li>
-					<li><a class="a_gd" href="http://bbs.itcast.cn/thread-85619-1-1.html" target="_blank">住宿攻略</a></li>
-					<li><a class="a_gd" href="http://bbs.itcast.cn/thread-85797-1-1.html" target="_blank">来校路线</a></li>
-				</ul>
-			</div>
-			<div class="div_list">
-				<h3>学习资源</h3>
-				<ul>
-					<li><a class="a_gd" href="http://dvd.boxuegu.com" target="_blank">视频库</a></li>
-					<li><a class="a_gd" href="http://open.itcast.cn" target="_blank">公开课</a></li>
-					<li><a class="a_gd" href="http://yun.itcast.cn" target="_blank">云课堂</a></li>
-				</ul>
-			</div>
-			<div class="div_list">
-				<h3>轻课网故事</h3>
-				<ul>
-					<li><a class="a_gd" href="http://i.itcast.cn" target="_blank">影像故事</a></li>
-					<li><a class="a_gd" href="http://bbs.itcast.cn/forum.php?mod=forumdisplay&amp;fid=239" target="_blank">科技喵喵喵</a></li>
-				</ul>
-			</div>
-			<div class="div_list div_wx">
-			<div style="margin-right:30px;"><img src="img/wx_cz.jpg">
-			<p>轻课网官方微信</p>
-			</div>
-			<div><img src="img/wx_hm.jpg" >
-			<p>黑马程序员官方微信</p>
-			</div>
-			</div>
-		</div>-->
-
-		<!--  底部列表区  -->
 		<!--  iOS友情链接区  -->
 		
 		<br />
@@ -583,5 +643,23 @@
 <script type="text/javascript">
 	jQuery(".slideBox").slide({mainCell:".bd ul",titCell:".hd ul",effect:"fold", autoPage:"<li></li>",autoPlay:true,interTime:4000,});
 </script>
+<script src="js/slick.min.js"></script>
+<script type="text/javascript">
+		(function () {
+			$('#order-list').slick({
+				arrows: false,
+				infinite: false,
+				autoplaySpeed:500,
+				infinite:true,
+				dots: true,
+				speed:500,
+				cssEase: 'ease-in-out',
+				autoplay: true,
+				pauseOnDotsHover: true,
+				slidesToShow:6,
+				slidesToScroll:1
+			});
+		}());
+	</script>
 </body>
 </html>

@@ -40,7 +40,7 @@
 
 /*学院页面内容样式--ios范本*/
 .con_txt .lay{width:100%; text-align: center; padding:70px 0 45px; overflow: hidden;}
-.con_txt .lay .inner{width:1200px; margin: 0 auto; overflow: hidden;}
+.con_txt .lay .inner{/*width:1200px;*/ margin: 0 auto; overflow: hidden;}
 .con_txt .lay h2{font-size:44px; text-align: center; margin-bottom: 25px;}
 .con_txt .lay .h_down{font-size:16px; line-height: 32px; text-align: center; margin-bottom: 30px;}
 .con_txt .lay a:hover{text-decoration: underline;}
@@ -52,14 +52,14 @@
 .con_txt .lay_2 .list ul li{float:left; /*width:224px;*/width:30%;height: 124px; color:#fff; border: 1px solid #8B8B8B; margin-right:20px; border-radius: 3px;}
 .con_txt .lay_2 .list ul li h3{font-size:22px; color: #00aaff; margin:36px 0 16px 0;}
 .con_txt .lay_2 .list ul li p{font-size:13px;}
-.con_txt .lay_3{background: #FAFAFA; text-align: left;}
+.con_txt .lay_3{background: #FAFAFA; text-align: center;}
 .con_txt .lay_3 h2{text-align: left; padding:144px 0 0 120px;}
 .con_txt .lay_3 .h_down{text-align: left; font-size:18px; padding-left:75px;}
 .con_txt .lay_3 .h_down span{color:#e60012; font-size: 22px;}
 .con_txt .lay_3 .inner{background: url(../img/laybox_03.jpg) no-repeat right top; height: 601px;}
 .con_txt .lay_3 a{font-size:18px; color: #3688FF; padding-left: 206px; display: inline-block; margin-top:40px;}
-.con_txt .lay_4{background: url(../img/laybox_04.jpg) no-repeat center bottom; height: 500px;text-align: right;}
-.con_txt .lay_4 .inner{width:1080px; padding-right: 120px;}
+.con_txt .lay_4{background: url(../img/laybox_04.jpg) no-repeat center bottom; height: 500px;/*text-align: right;*/margin:0 auto;}
+/*.con_txt .lay_4 .inner{width:1080px; padding-right: 120px;}*/
 .con_txt .lay_4 h2{text-align: right; padding-top:20px; }
 .con_txt .lay_4 .h_down{text-align: right; font-size:18px;}
 .con_txt .lay_4 a{font-size:18px; color: #3688FF; padding-right: 96px; display: inline-block; margin-top:30px;}
@@ -150,14 +150,30 @@
   height: 184px;
   color: white;
   display: none;
+ 
+
 }
 
-.wrap:hover .layer-title {
+li:hover .layer-title {
   display: table;
+  opacity: 1;
 }
 .wrap .layer-title span {
     display: table-cell;
     vertical-align: middle;
-     line-height: 20px;
-    padding: 10px;
+    line-height: 20px;
+    padding:10px ;
+}
+.order-list li{
+  float: left;
+  margin:13px;
+}
+.order-list .slick-dots{
+  bottom: -30px;
+  text-align: center;
+  left: 50%;
+  margin-left: -114px;
+}
+.slick-dots li button:before{
+  font-size: 40px;
 }
