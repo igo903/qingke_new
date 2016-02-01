@@ -58,7 +58,7 @@
 .con_txt .lay_3 .h_down span{color:#e60012; font-size: 22px;}
 .con_txt .lay_3 .inner{background: url(../img/laybox_03.jpg) no-repeat right top; height: 601px;}
 .con_txt .lay_3 a{font-size:18px; color: #3688FF; padding-left: 206px; display: inline-block; margin-top:40px;}
-.con_txt .lay_4{background: url(../img/laybox_04.jpg) no-repeat center bottom; height: 500px;text-align: left;}
+.con_txt .lay_4{background: url(../img/laybox_04.jpg) no-repeat center bottom; height: 500px;text-align: right;}
 .con_txt .lay_4 .inner{width:1080px; padding-right: 120px;}
 .con_txt .lay_4 h2{text-align: right; padding-top:20px; }
 .con_txt .lay_4 .h_down{text-align: right; font-size:18px;}
@@ -148,17 +148,16 @@
   position: absolute;
   width: 184px;
   height: 184px;
-  display: table;
-  vertical-align: middle;
   color: white;
   display: none;
 }
+
 .wrap:hover .layer-title {
   display: table;
 }
 .wrap .layer-title span {
     display: table-cell;
     vertical-align: middle;
-    line-height: 20px;
+     line-height: 20px;
     padding: 10px;
 }
