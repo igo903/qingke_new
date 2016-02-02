@@ -150,9 +150,7 @@
   height: 184px;
   color: white;
   display: none;
-}
-.bg-red{
- 
+  z-index: 99999;
 }
 .wrap .layer-title span {
   display: table-cell;
