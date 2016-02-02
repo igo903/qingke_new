@@ -150,19 +150,20 @@
   height: 184px;
   color: white;
   display: none;
- 
-
 }
-
-li:hover .layer-title {
-  display: table;
-  opacity: 1;
+.bg-red{
+ 
 }
 .wrap .layer-title span {
-    display: table-cell;
-    vertical-align: middle;
-    line-height: 20px;
-    padding:10px ;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 20px;
+  padding:10px ;
+}
+li:hover .layer-title {
+  display: table;
+  opacity:1;
+  background: rgba(201,57,74,0.8);
 }
 .order-list li{
   float: left;
