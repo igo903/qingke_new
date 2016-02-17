@@ -53,7 +53,7 @@
 .con_txt .lay_2 .list ul li h3{font-size:22px; color: #00aaff; margin:36px 0 16px 0;}
 .con_txt .lay_2 .list ul li p{font-size:13px;}
 .con_txt .lay_3{background: #FAFAFA; text-align: center;}
-.con_txt .lay_3 h2{text-align: left; padding:144px 0 0 120px;}
+.con_txt .lay_3 h2{text-align:center;}
 .con_txt .lay_3 .h_down{text-align: left; font-size:18px; padding-left:75px;}
 .con_txt .lay_3 .h_down span{color:#e60012; font-size: 22px;}
 
@@ -219,8 +219,88 @@ li:hover .layer-title {
 }
 .logo-img img{
   height: 53px;
-
 }
 .foot_ch{
   text-align: center;
 }
+.project-show{
+  padding-top:40px;
+  position: relative;
+  height: 440px;
+ }
+ .show-item{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  margin: auto;
+ }
+.project-show .show-phone{
+  background: url(../img/phone.png) 50%;
+  width:332px;
+  height: 362px;
+  margin:0 auto;
+  position: relative;
+  -webkit-animation:up .6s ease-in-out .3s backwards;
+  animation:up .6s ease-in-out .3s backwards;
+}
+
+.show-phone-views{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 292px;
+  height: 281px;
+  margin: auto;
+  overflow: hidden;
+}
+.project-show .show-slogan{
+  -webkit-animation:zoomin .4s 1s backwards;
+  animation:zoomin .4s 1s backwards;
+}
+.project-show .show-slogan-1{
+  background: url(../img/bubble-1.png) no-repeat;
+  width:173px;
+  height: 142px;
+  position: absolute;
+  bottom:80%;
+  left: 23%;
+ 
+
+}
+.project-show .show-slogan-2{
+  background: url(../img/bubble-2.png);
+  width:226px;
+  height: 212px;
+  position: absolute;
+  bottom: 20%;
+  left: 18%;
+  -webkit-animation-delay:1.2s;
+  animation-delay:1.2s;
+}
+.project-show .show-slogan-3{
+  background: url(../img/bubble-3.png) no-repeat;
+  width: 295px;
+  height: 294px;
+  position: absolute;
+  bottom:40%;
+  right: 10%;
+  -webkit-animation-delay:1.8s;
+  animation-delay:1.8s;
+}
+@-webkit-keyframes up{
+  0%{-webkit-transform:translateY(100%)}
+  100%{-webkit-transform:translateY(0)}}
+@keyframes up{
+  0%{transform:translate(0,100%)}
+  100%{transform:translate(0,0)}}
+
+@-webkit-keyframes zoomin{
+  0%{-webkit-transform:scale(0)}
+  100%{-webkit-transform:scale(1)}
+  }
+@keyframes zoomin{
+  0%{transform:scale(0)}
+  100%{transform:scale(1)}
+  }
