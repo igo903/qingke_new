@@ -39,12 +39,12 @@
 .city_subject ul li a:hover{border-color:#3688ff;}
 
 /*学院页面内容样式--ios范本*/
-.con_txt .lay{width:100%; text-align: center; padding:70px 0 45px; overflow: hidden;}
+.con_txt .lay{width:100%; text-align: center; /* padding:70px 0 45px; */ overflow: hidden;}
 .con_txt .lay .inner{/*width:1200px;*/ margin: 0 auto; overflow: hidden;}
 .con_txt .lay h2{font-size:44px; text-align: center; margin-bottom: 25px;}
 .con_txt .lay .h_down{font-size:16px; line-height: 32px; text-align: center; margin-bottom: 30px;}
 .con_txt .lay a:hover{text-decoration: underline;}
-.con_txt .lay_2{background: url(../img/laybox_02.jpg) no-repeat center top; padding-bottom: 80px;} 
+.con_txt .lay_2{/* background: url(../img/laybox_02.jpg) no-repeat center top; */ padding-bottom: 80px;} 
 .con_txt .lay_2 h2{font-size:30px; color: #fff;}
 .con_txt .lay_2 .h_down{color:#fff;}
 .con_txt .lay_2 .list{width:964px; margin:0 auto; overflow: hidden;}
@@ -56,14 +56,14 @@
 .con_txt .lay_3 h2{text-align: left; padding:144px 0 0 120px;}
 .con_txt .lay_3 .h_down{text-align: left; font-size:18px; padding-left:75px;}
 .con_txt .lay_3 .h_down span{color:#e60012; font-size: 22px;}
-.con_txt .lay_3 .inner{background: url(../img/laybox_03.jpg) no-repeat right top; height: 601px;}
+
 .con_txt .lay_3 a{font-size:18px; color: #3688FF; padding-left: 206px; display: inline-block; margin-top:40px;}
-.con_txt .lay_4{background: url(../img/laybox_04.jpg) no-repeat center bottom; height: 500px;/*text-align: right;*/margin:0 auto;}
+
 /*.con_txt .lay_4 .inner{width:1080px; padding-right: 120px;}*/
 .con_txt .lay_4 h2{text-align: right; padding-top:20px; }
 .con_txt .lay_4 .h_down{text-align: right; font-size:18px;}
 .con_txt .lay_4 a{font-size:18px; color: #3688FF; padding-right: 96px; display: inline-block; margin-top:30px;}
-.con_txt .lay_5{background-image: url(../img/laybox_05.jpg); height: 600px;}
+
 .con_txt .lay_5 .inner{width:1020px; padding-right: 180px;}
 .con_txt .lay_5 h2{padding:95px 30px 0 0; }
 .con_txt .lay_5 a{padding-right: 156px; display: inline-block; margin-top:20px; font-size:18px; color: #3688FF;}
@@ -137,16 +137,22 @@
 .con_m .lay_5 a{ padding-right:568px; display: inline-block; margin-top:20px;}
 
 
-
+.group-bd{
+  width:960px;
+  margin: 0 auto;
+}
 .wrap{
     position: relative;
-    width: 184px;
-    height: 184px;
+    width: 160px;
+    height: 160px;
+}
+.wrap img{
+  width:100%;
 }
 .layer-title {
   position: absolute;
-  width: 184px;
-  height: 184px;
+  width: 160px;
+  height: 160px;
   color: white;
   display: none;
   z-index: 99999;
@@ -155,7 +161,7 @@
   display: table-cell;
   vertical-align: middle;
   line-height: 20px;
-  padding:0 10px;
+  padding:0 10px; 
 }
 li:hover .layer-title {
   display: table;
@@ -163,15 +169,15 @@ li:hover .layer-title {
   background: rgb(201,57,74) \9;
   filter:alpha(opacity=80);
   background: rgba(201,57,74,0.8) ;
-  -webkit-animation:bg 0.8s ease-in-out;
-  animation:bg 0.8s ease-in-out;
+ /*  -webkit-animation:bg 0.8s ease-in-out;
+ animation:bg 0.8s ease-in-out; */
  
 }
 
 
 .order-list li{
   float: left;
-  margin:0 13px;
+  
 
 
 }
@@ -196,6 +202,7 @@ li:hover .layer-title {
   color: #40a6d9 \9;
   opacity: 1 \9;
 }
+
 @-webit-keyframes bg{
   0%{-webkit-transform:translateY(100%);}
   100%{-webkit-transform:translateY(0);}
@@ -203,4 +210,17 @@ li:hover .layer-title {
 @keyframes bg{
   0%{transform:translateY(100%);}
   100%{transform:translateY(0);}
+}
+
+.logo-img{
+  width:166px;
+  height: 53px;
+  display: inline-block;
+}
+.logo-img img{
+  height: 53px;
+
+}
+.foot_ch{
+  text-align: center;
 }

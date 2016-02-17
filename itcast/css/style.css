@@ -126,7 +126,7 @@
 .footer .fl .lk a:hover{color: #0099E5;}
 .footer .fl .miss_zhang{position: absolute; top:49px; right:0; display: block; width:292px; height: 64px; background: #F3F3F3; font-size: 20px; line-height: 64px; text-align: center;}
 .footer .add h2{float: left;}
-.footer .add p{float: left; font-size: 12px; line-height: 24px; margin-left: 20px;}
+.footer .add p{/* float: left; */ font-size: 12px; line-height: 24px; margin-left: 20px;}
 .footer .add ul{float:right; overflow: hidden;}
 .footer .add ul li{float: left; margin-left: 4px;}
 
