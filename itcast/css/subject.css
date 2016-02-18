@@ -201,12 +201,10 @@ li:hover .layer-title {
 
 
 }
-  .slick-dots{
-  
+.slick-dots li{
+  margin:0 1px 5px;
   text-align: center;
-  /* left: 50%; */
-  
- } 
+} 
 .slick-dots li button:before{
   font-size: 40px;
   top:100%;
