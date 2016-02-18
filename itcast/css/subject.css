@@ -46,7 +46,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .con_txt .lay h2{font-size:24px; text-align: center; padding: 50px 0 25px;}
 .con_txt .lay .h_down{font-size:16px; line-height: 32px; text-align: center; margin-bottom: 30px;}
 .con_txt .lay a:hover{text-decoration: underline;}
-.con_txt .lay_2{/* background: url(../img/laybox_02.jpg) no-repeat center top; */ padding-bottom: 80px;} 
+.con_txt .lay_2{background: url(../img/laybox_02.jpg) no-repeat center top; padding-bottom: 80px;} 
 .con_txt .lay_2 h2{font-size:30px; color: #fff;}
 .con_txt .lay_2 .h_down{color:#fff;}
 .con_txt .lay_2 .list{width:964px; margin:0 auto; overflow: hidden;}
@@ -66,19 +66,17 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
  */.con_txt .lay_4 .h_down{text-align: right; font-size:18px;}
 .con_txt .lay_4 a{font-size:18px; color: #3688FF; padding-right: 96px; display: inline-block; margin-top:30px;}
 
-.con_txt .lay_5 .inner{width:1020px; padding-right: 180px;}
-.con_txt .lay_5 h2{padding:95px 30px 0 0; }
-.con_txt .lay_5 a{padding-right: 156px; display: inline-block; margin-top:20px; font-size:18px; color: #3688FF;}
-.con_txt .lay_6{padding-bottom: 20px;}
+.con_txt .lay_5{margin-bottom: 50px;
+}
+/* .con_txt .lay_6{padding-bottom: 20px;}
 .con_txt .lay_6 img{display:inline-block;}
-.con_txt .lay_6 a{line-height:100px; color: #3688ff; font-size: 18px;}
-
-/*学院页面内容样式--android学科*/
+.con_txt .lay_6 a{line-height:100px; color: #3688ff; font-size: 18px;} */
+学院页面内容样式--android学科
 .con_android .lay_2{background-image: url(../images/android/android_02.jpg);} 
 .con_android .lay_4{background-image: url(../images/android/android_03.jpg); height: 600px;}
 .con_android .lay_5{background-image: url(../images/android/android_04.jpg); height: 490px; color: #fff;}
 
-/*学院页面内容样式--JavaEE学科*/
+学院页面内容样式--JavaEE学科
 .con_java .lay_2{background-image: url(../images/javaee/java_02.jpg);} 
 .con_java .lay_4{background-image: none; height:600px; padding-bottom:0;}
 .con_java .lay_4 .inner{background: url(../images/javaee/java_03.jpg) no-repeat left bottom; height:600px; padding-right:80px; width:1120px;}
@@ -89,7 +87,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .con_java .lay_5 .h_down{text-align: left; font-size:18px;}
 .con_java .lay_5 a{ padding-right:568px; display: inline-block; margin-top:20px;}
 
-/*学院页面内容样式--php学科*/
+学院页面内容样式--php学科
 .con_php .lay_2{background-image: url(../images/php/php_02.jpg);} 
 .con_php .lay_4{background-image: url(../images/php/php_03.jpg); height: 540px;}
 .con_php .lay_4 .inner{ padding-right:40px; width:1160px; height: 540px;}
@@ -100,7 +98,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .con_php .lay_5 h2{text-align: right; padding-top:160px; color: #000; }
 .con_php .lay_5 .h_down{ text-align:right; margin-right:20px; }
 
-/*学院页面内容样式--C++/C学科*/
+/* 学院页面内容样式--C++/C学科 */
 .con_c .lay_2{background-image: url(../images/c/c_02.jpg);} 
 .con_c .lay_4{background-image: none; height:600px; padding-bottom:0;}
 .con_c .lay_4 .inner{background: url(../images/c/c_03.jpg) no-repeat left bottom; height:600px; padding-right:50px; width:1150px;}
@@ -111,7 +109,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .con_c .lay_5 .h_down{text-align: left; font-size:18px; padding-left:140px;}
 .con_c .lay_5 a{ padding-right:368px; display: inline-block; margin-top:20px;}
 
-/*学院页面内容样式--ui学科*/
+/* 学院页面内容样式--ui学科 */
 .con_ui .lay_2{background-image: url(../images/ui/ui_02.jpg);} 
 .con_ui .lay_2 h2{ color:#921943;} 
 .con_ui .lay_2 .h_down{ color:#921943; margin-bottom:70px;} 
@@ -126,7 +124,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .con_ui .lay_5 .h_down{ text-align:right;} 
 .con_ui .lay_5 a{ color:#fff; padding-left:800px; padding-right:0;} 
 
-/*学院页面内容样式--网络营销学科*/
+/* 学院页面内容样式--网络营销学科 */
 .con_m .lay_2{background-image: url(../images/m/m_02.jpg);} 
 .con_m .lay_4{background-image: none; height:600px; padding-bottom:0;}
 .con_m .lay_4 .inner{background: url(../images/m/m_03.jpg) no-repeat left bottom; height:600px; padding-right:40px; width:1160px;}
@@ -138,14 +136,15 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .con_m .lay_5 .h_down{text-align: left; font-size:18px;}
 .con_m .lay_5 a{ padding-right:568px; display: inline-block; margin-top:20px;}
 
+
 .bd{
   width:100%;
 }
 .bd-item{
   width:100%;
   height: 290px;
-  
 }
+
 .bd-item1{
   background: url(../img/blackboard.png) no-repeat;
   background-size: 100%;
@@ -159,6 +158,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
   background: url(../img/ios_improve.png) no-repeat;
   background-size: 100%;
 }
+
 .group-bd{
   width:960px;
   margin: 0 auto;
@@ -304,6 +304,80 @@ li:hover .layer-title {
   -webkit-animation-delay:1.8s;
   animation-delay:1.8s;
 }
+.lay .news{
+  width:960px;
+  margin:0 auto;
+}
+
+.lay .news-item{
+  float: left;
+  width:30%;
+  text-align: left;
+  margin-right: 3%;
+}
+.lay .news-item:last-child{
+  margin-right: 0;
+}
+.lay .news-item-title{
+  font-size: 18px;
+  border-left: 2px solid #39a9ea;
+  line-height: 18px;
+  padding-left: 4px;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.lay .news-item-content li{
+  background: url(../img/top_bg_f32315c.png) left -270px no-repeat ;
+  text-align: left;
+  padding-left: 8px;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.lay .news-item-content a:hover{
+  color: #39a9ea;
+}
+.lay .news-item-content li.bold-item{
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 3px;
+  padding-top: 6px;
+  background:none;
+  padding-left: 10px;
+}
+.lay .news-item-content .dots{
+  width:5px;
+  height: 5px;
+  display: inline-block;
+  background: #da4453;
+  position: absolute;
+  left: 0;
+  top:0px;
+  bottom:0;
+  margin:auto;
+}
+.lay_6{
+  padding:50px 0;
+}
+.lay_6 .enroll{
+  font-size: 16px;
+  background: #39a9ea;
+  color: #fff;
+  line-height: 2.375;
+  display:inline-block;
+  padding: 0 2em;
+  border-radius: 6px;
+  border: 1px solid;
+  cursor:pointer;
+}
+
+
 @-webkit-keyframes up{
   0%{-webkit-transform:translateY(100%)}
   100%{-webkit-transform:translateY(0)}}
