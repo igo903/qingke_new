@@ -1,6 +1,8 @@
 /* 通用 css*/
 /* by nana */
 /*学院页面二级导航样式*/
+body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
 .sub_nav{width:100%; height:40px; line-height: 40px; overflow: hidden; background:#F5F5F5;}
 .sub_nav .inner{width:1200px; margin:0 auto; overflow: hidden;}
 .sub_nav h2{float:left; font-size:18px;}
@@ -197,9 +199,6 @@ li:hover .layer-title {
 
 .order-list li{
   float: left;
-  
-
-
 }
 .slick-dots li{
   margin:0 1px 5px;
