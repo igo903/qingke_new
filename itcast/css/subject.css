@@ -14,8 +14,8 @@
 .subject_ban{ width:100%; height: auto; overflow:hidden; position:relative; border-bottom: 1px solid #c9c9c9;}
 .subject_ban .bd{ position:relative; z-index:0;   }
 .subject_ban .bd ul{ width:100% !important  }
-.subject_ban .bd li{ width:100% !important; height:450px; position:relative; zoom:1; vertical-align:middle; }
-.subject_ban .bd li a{display: block; width:100% !important; height:450px; position:relative;}
+/* .subject_ban .bd li{ width:100% !important; height:450px; position:relative; zoom:1; vertical-align:middle; } */
+/* .subject_ban .bd li a{display: block; width:100% !important; height:450px; position:relative;} */
 .subject_ban .txt{width:1200px; position:absolute; left: 50%; margin-left: -600px; top:38px; z-index: 40;}
 .subject_ban .txt .inner{width:307px; height: 317px; padding:60px 35px 0 35px;  background: url(../img/subject_bg.png); position: absolute; right:0; color: #fff;}
 .subject_ban .txt h3{font-size:30px; line-height:60px; margin-bottom: 10px;}
@@ -41,7 +41,7 @@
 /*学院页面内容样式--ios范本*/
 .con_txt .lay{width:100%; text-align: center; /* padding:70px 0 45px; */ overflow: hidden;}
 .con_txt .lay .inner{/*width:1200px;*/ margin: 0 auto; overflow: hidden;}
-.con_txt .lay h2{font-size:44px; text-align: center; margin-bottom: 25px;}
+.con_txt .lay h2{font-size:24px; text-align: center; padding: 50px 0 25px;}
 .con_txt .lay .h_down{font-size:16px; line-height: 32px; text-align: center; margin-bottom: 30px;}
 .con_txt .lay a:hover{text-decoration: underline;}
 .con_txt .lay_2{/* background: url(../img/laybox_02.jpg) no-repeat center top; */ padding-bottom: 80px;} 
@@ -60,8 +60,8 @@
 .con_txt .lay_3 a{font-size:18px; color: #3688FF; padding-left: 206px; display: inline-block; margin-top:40px;}
 
 /*.con_txt .lay_4 .inner{width:1080px; padding-right: 120px;}*/
-.con_txt .lay_4 h2{text-align: right; padding-top:20px; }
-.con_txt .lay_4 .h_down{text-align: right; font-size:18px;}
+/* .con_txt .lay_4 h2{ text-align: right; padding-top:20px; }
+ */.con_txt .lay_4 .h_down{text-align: right; font-size:18px;}
 .con_txt .lay_4 a{font-size:18px; color: #3688FF; padding-right: 96px; display: inline-block; margin-top:30px;}
 
 .con_txt .lay_5 .inner{width:1020px; padding-right: 180px;}
@@ -136,7 +136,27 @@
 .con_m .lay_5 .h_down{text-align: left; font-size:18px;}
 .con_m .lay_5 a{ padding-right:568px; display: inline-block; margin-top:20px;}
 
-
+.bd{
+  width:100%;
+}
+.bd-item{
+  width:100%;
+  height: 290px;
+  
+}
+.bd-item1{
+  background: url(../img/blackboard.png) no-repeat;
+  background-size: 100%;
+}
+.bd-item2{
+  
+  background: url(../img/chicken.png) no-repeat;
+  background-size: 100%;
+}
+.bd-item3{
+  background: url(../img/ios_improve.png) no-repeat;
+  background-size: 100%;
+}
 .group-bd{
   width:960px;
   margin: 0 auto;
@@ -169,8 +189,8 @@ li:hover .layer-title {
   background: rgb(201,57,74) \9;
   filter:alpha(opacity=80);
   background: rgba(201,57,74,0.8) ;
- /*  -webkit-animation:bg 0.8s ease-in-out;
- animation:bg 0.8s ease-in-out; */
+ -webkit-animation:bg 0.8s ease-in-out;
+ animation:bg 0.8s ease-in-out;
  
 }
 
@@ -181,16 +201,17 @@ li:hover .layer-title {
 
 
 }
-.order-list .slick-dots{
-  bottom: -30px;
+  .slick-dots{
+  
   text-align: center;
-  left: 50%;
-  margin-left: -114px;
-}
+  /* left: 50%; */
+  
+ } 
 .slick-dots li button:before{
   font-size: 40px;
+  top:100%;
 }
-.slick-dots li button:hover:before,
+ .slick-dots li button:hover:before,
 .slick-dots li button:focus:before{
   color: #0088cc \9;
 }
@@ -202,16 +223,14 @@ li:hover .layer-title {
   color: #40a6d9 \9;
   opacity: 1 \9;
 }
-
-@-webit-keyframes bg{
+/* @-webit-keyframes bg{
   0%{-webkit-transform:translateY(100%);}
   100%{-webkit-transform:translateY(0);}
 }
 @keyframes bg{
   0%{transform:translateY(100%);}
   100%{transform:translateY(0);}
-}
-
+} */
 .logo-img{
   width:166px;
   height: 53px;
@@ -224,7 +243,6 @@ li:hover .layer-title {
   text-align: center;
 }
 .project-show{
-  padding-top:40px;
   position: relative;
   height: 440px;
  }
@@ -303,4 +321,4 @@ li:hover .layer-title {
 @keyframes zoomin{
   0%{transform:scale(0)}
   100%{transform:scale(1)}
-  }
+  } 

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="iOS培训,iOS培训班,iOS工程师培训,iOS程序员培训,iOS开发,iOS编程,iOS系统开发">
 	<meta name="description" content="轻课网iOS学院一直发扬实战务实的教育精神,用薪资高,口碑好的学生成绩在不断前行,并提供着iOS培训,iOS培训班,iOS工程师培训,iOS程序员培训,iOS开发,iOS编程,iOS系统开发等一系列培训服务。">
-	<!--  <link type="image/x-icon" rel="shortcut icon" href="http://www.itcast.cn/favicon.ico"> -->
+	<link rel="shortcut icon" href="img/logo.png">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -113,7 +113,7 @@
 		<!-- main  S -->
 		<!--学院页面banner S-->
 		<div id="slideBox" class="slideBox subject_ban">
-			<div class="txt">
+			<!-- <div class="txt">
 				<div class="inner">
 					<h3>iOS培训最新动态</h3>
 					<ul>
@@ -125,17 +125,18 @@
 					<p><a href="/news/ios.shtml" target="_blank">iOS培训更多资讯 &gt;</a></p>
 					<p><a href="http://bbs.itcast.cn/thread-85684-1-1.html" target="_blank">iOS学员就业薪资汇总 &gt; </a></p>
 				</div>
-			</div>
-			<div class="bd">
+			</div> -->
+			<div class="bd" id="bd">
 				<!-- iOS幻灯图 -->
-				<ul >
+				<!-- <ul >
 					<li style="background: url(img/chicken.png) 10% 0 no-repeat;"></li>
 					<li style="background:url(img/blackboard.png) 50% 0 no-repeat;"></li>
 					<li style="background:url(img/iOS_improve.png) 50% 0 no-repeat;"></li>
-					<!--<li style="background:#20B1AA"></li>
-					<li style="background:#055C92"></li>-->
-				</ul>
-				<!-- iOS幻灯图 -->				
+				</ul> -->
+				<!-- iOS幻灯图 -->
+				<div class="bd-item bd-item1"></div>
+				<div class="bd-item bd-item2"></div>
+				<div class="bd-item bd-item3"></div>
 			</div>
 		</div>
 		<!--学院页面banner E-->
@@ -176,7 +177,7 @@
 						<span class="span_timeout" id="time38"><script type="text/javascript">setInterval(difference('2016-02-20','time38',38),1000);</script></span>
 						<a href="" schoolid="BEIJING" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
 					</li>
-	    			<li style="background: rgb(247, 247, 247);">
+			    			<li style="background: rgb(247, 247, 247);">
 						<span class="span_name">iOS提升班</span>
 						<span class="span_time">2016-03-06</span>
 						<span class="span_status">火爆报名中</span>
@@ -190,14 +191,14 @@
 						<span class="span_timeout" id="time40"><script type="text/javascript">setInterval(difference('2016-02-20','time40',40),1000);</script></span>
 						<a href="" schoolid="BEIJING" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
 					</li>
-	    			<li style="background: rgb(247, 247, 247);">
+			    			<li style="background: rgb(247, 247, 247);">
 						<span class="span_name">iOS在线学习班</span>
 						<span class="span_time">2016-03-06</span>
 						<span class="span_status">火爆报名中</span>
 						<span class="span_timeout" id="time41"><script type="text/javascript">setInterval(difference('2016-02-06','time41',41),1000);</script></span>
 						<a href="" schoolid="BEIJING" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
 					</li>
-	    		</ul>
+			    		</ul>
 			</div>	
 		</div>
 			
@@ -354,9 +355,13 @@
 			<!-- iOS课程更新 -->
 			<div class="lay lay_4">
 				<div class="inner">
+					<h2>轻课网学生成功案例</h2>
 					<div class="project-show">
+
 						<div class="show-item">
+
 							<div class="show-phone" >
+
 								<div class="show-phone-views" id="views">
 									<img src="img/app-view-1.png" >
 									<img src="img/app-view-2.png">
@@ -451,7 +456,21 @@
 <script src="js/slick.min.js"></script>
 <!--首页banner特效-->
 <script type="text/javascript">
-	jQuery(".slideBox").slide({mainCell:".bd ul",titCell:".hd ul",effect:"fold", autoPage:"<li></li>",autoPlay:true,interTime:4000,});
+	/*jQuery(".slideBox").slide({mainCell:".bd ul",titCell:".hd ul",effect:"fold", autoPage:"<li></li>",autoPlay:true,interTime:4000,});*/
+	(function(){
+		$('#bd').slick({
+			autoplaySpeed:2000,
+			dots: true,
+			speed:600,
+			/*autoplay: true,*/
+			pauseOnDotsHover: true,
+
+							
+			
+		});
+	}());
+		
+	
 	(function () {
 	$('#views').slick({
 		arrows: false,
