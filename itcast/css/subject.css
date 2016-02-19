@@ -58,85 +58,18 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .con_txt .lay_3 h2{text-align:center;}
 .con_txt .lay_3 .h_down{text-align: left; font-size:18px; padding-left:75px;}
 .con_txt .lay_3 .h_down span{color:#e60012; font-size: 22px;}
-
 .con_txt .lay_3 a{font-size:18px; color: #3688FF; padding-left: 206px; display: inline-block; margin-top:40px;}
 
 /*.con_txt .lay_4 .inner{width:1080px; padding-right: 120px;}*/
 /* .con_txt .lay_4 h2{ text-align: right; padding-top:20px; }
- */.con_txt .lay_4 .h_down{text-align: right; font-size:18px;}
+ */
+.con_txt .lay_4 .h_down{text-align: right; font-size:18px;}
 .con_txt .lay_4 a{font-size:18px; color: #3688FF; padding-right: 96px; display: inline-block; margin-top:30px;}
-
 .con_txt .lay_5{margin-bottom: 50px;
 }
 /* .con_txt .lay_6{padding-bottom: 20px;}
 .con_txt .lay_6 img{display:inline-block;}
 .con_txt .lay_6 a{line-height:100px; color: #3688ff; font-size: 18px;} */
-学院页面内容样式--android学科
-.con_android .lay_2{background-image: url(../images/android/android_02.jpg);} 
-.con_android .lay_4{background-image: url(../images/android/android_03.jpg); height: 600px;}
-.con_android .lay_5{background-image: url(../images/android/android_04.jpg); height: 490px; color: #fff;}
-
-学院页面内容样式--JavaEE学科
-.con_java .lay_2{background-image: url(../images/javaee/java_02.jpg);} 
-.con_java .lay_4{background-image: none; height:600px; padding-bottom:0;}
-.con_java .lay_4 .inner{background: url(../images/javaee/java_03.jpg) no-repeat left bottom; height:600px; padding-right:80px; width:1120px;}
-.con_java .lay_4 .h_down{text-align: center; padding-left:410px;}
-.con_java .lay_4 a.newa{ padding-right:170px;}
-.con_java .lay_5{background-image: url(../images/javaee/java_04.jpg); height:485px; color:#fff;}
-.con_java .lay_5 h2{text-align:left; padding-top:105px; }
-.con_java .lay_5 .h_down{text-align: left; font-size:18px;}
-.con_java .lay_5 a{ padding-right:568px; display: inline-block; margin-top:20px;}
-
-学院页面内容样式--php学科
-.con_php .lay_2{background-image: url(../images/php/php_02.jpg);} 
-.con_php .lay_4{background-image: url(../images/php/php_03.jpg); height: 540px;}
-.con_php .lay_4 .inner{ padding-right:40px; width:1160px; height: 540px;}
-.con_php .lay_4 h2{text-align: right; padding-top:130px; }
-.con_php .lay_4 a.newa{padding-right:25px; }
-.con_php .lay_5{background-image:none; background-color:#d0d8e0; height:500px;}
-.con_php .lay_5 .inner{background: url(../images/php/php_04.jpg) no-repeat left center; height: 500px;  width:1200px; text-align:right;}
-.con_php .lay_5 h2{text-align: right; padding-top:160px; color: #000; }
-.con_php .lay_5 .h_down{ text-align:right; margin-right:20px; }
-
-/* 学院页面内容样式--C++/C学科 */
-.con_c .lay_2{background-image: url(../images/c/c_02.jpg);} 
-.con_c .lay_4{background-image: none; height:600px; padding-bottom:0;}
-.con_c .lay_4 .inner{background: url(../images/c/c_03.jpg) no-repeat left bottom; height:600px; padding-right:50px; width:1150px;}
-.con_c .lay_4 .h_down{text-align: center; padding-left:410px;}
-.con_c .lay_4 a.newa{ padding-right:170px;}
-.con_c .lay_5{background-image: url(../images/c/c_05.jpg); height:485px; color:#fff;}
-.con_c .lay_5 h2{text-align:left; padding:105px 0 0 140px;}
-.con_c .lay_5 .h_down{text-align: left; font-size:18px; padding-left:140px;}
-.con_c .lay_5 a{ padding-right:368px; display: inline-block; margin-top:20px;}
-
-/* 学院页面内容样式--ui学科 */
-.con_ui .lay_2{background-image: url(../images/ui/ui_02.jpg);} 
-.con_ui .lay_2 h2{ color:#921943;} 
-.con_ui .lay_2 .h_down{ color:#921943; margin-bottom:70px;} 
-.con_ui .lay_2 li{ background:url(../images/ui/ui_bg.png);} 
-.con_ui .lay_2 li p{ color:#000;} 
-.con_ui .lay_4{background-image: none; height:660px; padding:0;}
-.con_ui .lay_4 .inner{background: url(../images/ui/ui_03.jpg) no-repeat left top; height:660px; padding-right:50px; width:1150px; overflow:hidden;}
-.con_ui .lay_4 h2{ margin-top:165px;} 
-.con_ui .lay_5{background-image:none; background:#0095db; color:#fff; height:550px; padding-bottom:0;}
-.con_ui .lay_5 .inner{height:550px; width:1150px; padding-right:50px; background: url(../images/ui/ui_04.jpg) no-repeat left bottom; overflow:hidden;}
-.con_ui .lay_5 h2{ text-align:right; padding-right:0; margin-top:55px;} 
-.con_ui .lay_5 .h_down{ text-align:right;} 
-.con_ui .lay_5 a{ color:#fff; padding-left:800px; padding-right:0;} 
-
-/* 学院页面内容样式--网络营销学科 */
-.con_m .lay_2{background-image: url(../images/m/m_02.jpg);} 
-.con_m .lay_4{background-image: none; height:600px; padding-bottom:0;}
-.con_m .lay_4 .inner{background: url(../images/m/m_03.jpg) no-repeat left bottom; height:600px; padding-right:40px; width:1160px;}
-.con_m .lay_4 h2{ padding-right:90px;}
-.con_m .lay_4 .h_down{text-align: center; padding-left:520px;}
-.con_m .lay_4 a.newa{ padding-right:143px;}
-.con_m .lay_5{background-image: url(../images/m/m_04.jpg); height:485px; color:#fff;}
-.con_m .lay_5 h2{text-align:left; padding-top:180px; }
-.con_m .lay_5 .h_down{text-align: left; font-size:18px;}
-.con_m .lay_5 a{ padding-right:568px; display: inline-block; margin-top:20px;}
-
-
 .bd{
   width:100%;
 }
@@ -144,7 +77,6 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
   width:100%;
   height: 290px;
 }
-
 .bd-item1{
   background: url(../img/blackboard.png) no-repeat;
   background-size: 100%;
@@ -158,7 +90,6 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
   background: url(../img/ios_improve.png) no-repeat;
   background-size: 100%;
 }
-
 .group-bd{
   width:960px;
   margin: 0 auto;
@@ -195,8 +126,6 @@ li:hover .layer-title {
  animation:bg 0.8s ease-in-out;
  
 }
-
-
 .order-list li{
   float: left;
 }
@@ -274,7 +203,7 @@ li:hover .layer-title {
   -webkit-animation:zoomin .4s 1s backwards;
   animation:zoomin .4s 1s backwards;
   color: #fff;
-  font-size: 22px;
+  font-size:16px;
   text-align: center;
 }
 .project-show .show-slogan-1{
@@ -333,7 +262,6 @@ li:hover .layer-title {
   margin-bottom: 6px;
   margin-top: 14px;
 }
-
 .lay .news-item-content li{
   background: url(../img/top_bg_f32315c.png) left -270px no-repeat ;
   text-align: left;
@@ -347,8 +275,6 @@ li:hover .layer-title {
   overflow: hidden;
   white-space: nowrap;
 }
-
-
 .lay .news-item-content a:hover{
   color: #39a9ea;
 }
@@ -402,7 +328,6 @@ li:hover .layer-title {
   0%{transform:scale(0)}
   100%{transform:scale(1)}
   } 
-
 .fn-clear:after{
   content: "";
   height: 0;
@@ -411,11 +336,11 @@ li:hover .layer-title {
   visibility: hidden;
   clear: both;
 }
-.article{
+.article, .article-detail{
   background: #f5f5f5;
   padding-bottom: 40px;
 }
-.article-main{
+.article-main, .article-detail-main{
    width:960px;
   margin:0 auto;
   background: #fff;
@@ -468,8 +393,6 @@ li:hover .layer-title {
 .article .article-foot .next{
   background: url(../img/next.jpg) no-repeat center;
   vertical-align: middle;
-
-
 }
 .article .article-foot a{
   width:30px;
@@ -477,15 +400,39 @@ li:hover .layer-title {
  display: inline-block;
   line-height: 38px;
   border: 1px solid #fff;
- 
   margin-left: 6px;
 }
 .article .article-foot a.active{
   background: #39a9ea;
   color: #fff;
   border: 1px solid #39a9ea;
-  
 }
 .article .article-foot a:hover{
   border: 1px solid #39a9ea;
+}
+.article-detail-main{
+  padding: 42px 50px;
+}
+.article-detail .main-top{
+  border-bottom: 1px solid #efefef;
+  padding: 40px 50px 10px;
+
+
+}
+.article-detail .main-title{
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 28px;
+}
+.article-detail .main-top p{
+  line-height: 1.858;
+}
+.article-detail .main-body p{
+  text-indent: 2em;
+  line-height: 1.429em;
+  padding-bottom: 20px;
+}
+.article-detail .main-body{
+  padding: 40px 50px 0;
 }
