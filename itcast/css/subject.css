@@ -165,16 +165,16 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 }
 .wrap{
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
 }
 .wrap img{
   width:100%;
 }
 .layer-title {
   position: absolute;
-  width: 160px;
-  height: 160px;
+  width: 240px;
+  height: 240px;
   color: white;
   display: none;
   z-index: 99999;
@@ -273,6 +273,9 @@ li:hover .layer-title {
 .project-show .show-slogan{
   -webkit-animation:zoomin .4s 1s backwards;
   animation:zoomin .4s 1s backwards;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
 }
 .project-show .show-slogan-1{
   background: url(../img/bubble-1.png) no-repeat;
@@ -281,18 +284,21 @@ li:hover .layer-title {
   position: absolute;
   bottom:80%;
   left: 23%;
+  padding-top: 25px;
  
 
 }
 .project-show .show-slogan-2{
-  background: url(../img/bubble-2.png);
+  background: url(../img/bubble-2.png) no-repeat;
   width:226px;
   height: 212px;
   position: absolute;
-  bottom: 20%;
+  bottom: 12%;
   left: 18%;
   -webkit-animation-delay:1.2s;
   animation-delay:1.2s;
+  padding-top: 50px;
+  
 }
 .project-show .show-slogan-3{
   background: url(../img/bubble-3.png) no-repeat;
@@ -303,6 +309,7 @@ li:hover .layer-title {
   right: 10%;
   -webkit-animation-delay:1.8s;
   animation-delay:1.8s;
+  padding-top: 80px;
 }
 .lay .news{
   width:960px;
@@ -336,9 +343,11 @@ li:hover .layer-title {
   line-height: 24px;
   position: relative;
   text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+
 
 .lay .news-item-content a:hover{
   color: #39a9ea;
@@ -393,3 +402,90 @@ li:hover .layer-title {
   0%{transform:scale(0)}
   100%{transform:scale(1)}
   } 
+
+.fn-clear:after{
+  content: "";
+  height: 0;
+  font-size: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.article{
+  background: #f5f5f5;
+  padding-bottom: 40px;
+}
+.article-main{
+   width:960px;
+  margin:0 auto;
+  background: #fff;
+}
+.article .item-list{
+  padding: 20px;
+  border-bottom:1px solid #efefef;
+}
+.article .item-list-picture{
+  width:226px;
+  height: 160px;
+  float: left;
+}
+.article .item-list-picture img{
+  width:100%;
+}
+.article .item-list-info{
+  margin-left: 246px;
+}
+.article  .item-info-title{
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+}
+.article .item-list-info .info-time{
+  color: #888;
+  font-size: 12px;
+  line-height: 26px;
+  background: url(../img/icons.png) left 2px no-repeat;
+  padding-left: 20px;
+}
+.article .item-list-info span{
+  padding-right: 20px;
+}
+.article .info-detail{
+  padding-top: 20px;
+  padding-right: 28px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.article .article-foot{
+  padding: 20px 0;
+  text-align: center;
+}
+.article .article-foot .prev{
+  background: url(../img/prev.jpg) no-repeat center;
+ vertical-align: middle;
+ 
+}
+.article .article-foot .next{
+  background: url(../img/next.jpg) no-repeat center;
+  vertical-align: middle;
+
+
+}
+.article .article-foot a{
+  width:30px;
+  height: 38px;
+ display: inline-block;
+  line-height: 38px;
+  border: 1px solid #fff;
+ 
+  margin-left: 6px;
+}
+.article .article-foot a.active{
+  background: #39a9ea;
+  color: #fff;
+  border: 1px solid #39a9ea;
+  
+}
+.article .article-foot a:hover{
+  border: 1px solid #39a9ea;
+}
