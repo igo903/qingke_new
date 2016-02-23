@@ -14,7 +14,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 
 /*学院页面banner新样式*/
 .subject_ban{ width:100%; height: auto; overflow:hidden; position:relative; border-bottom: 1px solid #c9c9c9;}
-.subject_ban .bd{ position:relative; z-index:0;   }
+.subject_ban .bd{ position:relative; z-index:0;}
 .subject_ban .bd ul{ width:100% !important  }
 /* .subject_ban .bd li{ width:100% !important; height:450px; position:relative; zoom:1; vertical-align:middle; } */
 /* .subject_ban .bd li a{display: block; width:100% !important; height:450px; position:relative;} */
@@ -314,20 +314,22 @@ li:hover .layer-title {
 
 
 @-webkit-keyframes up{
-  0%{-webkit-transform:translateY(100%)}
-  100%{-webkit-transform:translateY(0)}}
-@keyframes up{
-  0%{transform:translate(0,100%)}
-  100%{transform:translate(0,0)}}
+  0%{-webkit-transform:translateY(100%);}
+  100%{-webkit-transform:translateY(0%);}
 
+}
+@keyframes up{
+  0%{transform:translateY(100%);}
+  100%{transform:translateY(0%);}
+}
 @-webkit-keyframes zoomin{
-  0%{-webkit-transform:scale(0)}
-  100%{-webkit-transform:scale(1)}
-  }
+  0%{-webkit-transform:scale(0);}
+  100%{-webkit-transform:scale(1);}
+}
 @keyframes zoomin{
-  0%{transform:scale(0)}
-  100%{transform:scale(1)}
-  } 
+  0%{transform:scale(0);}
+  100%{transform:scale(1);}
+}
 .fn-clear:after{
   content: "";
   height: 0;
@@ -336,11 +338,11 @@ li:hover .layer-title {
   visibility: hidden;
   clear: both;
 }
-.article, .article-detail{
+.article, .article-detail, .enroll{
   background: #f5f5f5;
   padding-bottom: 40px;
 }
-.article-main, .article-detail-main{
+.article-main, .article-detail-main, .enroll-main{
    width:960px;
   margin:0 auto;
   background: #fff;
@@ -435,4 +437,10 @@ li:hover .layer-title {
 }
 .article-detail .main-body{
   padding: 40px 50px 0;
+}
+.enroll-main{
+  padding: 40px;
+}
+.enroll-main img{
+  width:100%;
 }
