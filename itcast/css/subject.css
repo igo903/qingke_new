@@ -118,12 +118,11 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 }
 li:hover .layer-title {
   display: table;
-  opacity:1;
+   opacity:1; 
   background: rgb(201,57,74) \9;
   filter:alpha(opacity=80);
   background: rgba(201,57,74,0.8) ;
- -webkit-animation:bg 0.8s ease-in-out;
- animation:bg 0.8s ease-in-out;
+ 
  
 }
 .order-list li{
@@ -195,7 +194,7 @@ li:hover .layer-title {
   right: 0;
   bottom: 0;
   width: 292px;
-  height: 281px;
+   height: 281px; 
   margin: auto;
   overflow: hidden;
 }
@@ -439,8 +438,55 @@ li:hover .layer-title {
   padding: 40px 50px 0;
 }
 .enroll-main{
-  padding: 40px;
+  padding:0 40px 40px;
 }
 .enroll-main img{
   width:100%;
+}
+.enroll-main-item{
+ padding-bottom: 40px;
+}
+.enroll-main-item h1{
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.8em;
+  padding: 20px 0;
+}
+.enroll-main-item h2{
+  font-size: 16px;
+  line-height: 1.5;
+}
+.enroll-main-item h3{
+  font-size: 14px;
+  line-height: 1.6;
+  text-indent: 2em;
+
+}
+.enroll-form {
+  padding: 20px 0;
+}
+.enroll-form input{
+  border:1px solid #c9c9c9;
+  padding: 10px;
+  box-shadow: inset 1px 2px 3px #f1f1f1;
+  border-radius: 4px;
+}
+.enroll-form li{
+  float: left;
+  width:33.3333%;
+}
+.enroll-form span{
+  font-size: 18px;
+  line-height: 40px;
+  padding-right: 4px;
+}
+ .enroll-form span s{
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+  line-height: 40px;
+ 
+} 
+.enroll-main .purchase{
+  padding-bottom: 10px;
 }
