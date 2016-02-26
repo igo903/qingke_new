@@ -35,11 +35,14 @@
 				<h1><a href="javascript:;" class="logo-img"><img src="img/qklogo.png"    alt="轻课网"  ></a></h1>
 				<div class="nav">
 					<ul class="nav_li">
-						<li><a href="javascript:;" class="a_gd a_default a2_js">首页</a></li>
+						<li><a href="javascript:;" class="a_gd a_default a_js">首页</a></li>
 						<li><a href="javascript:;" class="a_gd a_default a_js">免费学习资源</a></li>
-						<li><a href="/course.shtml" class="a_gd a_default a2_js" target="_blank">课程中心</a></li>
-						<li><a href="/subject/book/index.shtml" class="a_gd a_default a2_js" target="_blank">学员风采</a></li>
-						<li><a href="/subject/book/index.shtml" class="a_gd a_default a2_js" target="_blank">就业前景</a></li>
+						<li><a href="/course.shtml" class="a_gd a_default a2_js course" target="_blank">课程中心</a>
+							
+
+						</li>
+						<li><a href="/subject/book/index.shtml" class="a_gd a_default a_js" target="_blank">学员风采</a></li>
+						<li><a href="/subject/book/index.shtml" class="a_gd a_default a_js" target="_blank">就业前景</a></li>
 					</ul>
 				</div>
 				<div class="bmbtn">
@@ -47,12 +50,18 @@
 				</div>		
 			</div>
 		</div>
+		<div class="fdnav" >
+			<ul>
+				<li><a href="javascript:;">iOS培训</a></li>
+				<li class="Android"><a href="javascript:;" >Android培训</a></li>
+			</ul>
+		</div>
 	</div>
 	<!-- 首页导航区域 E --> 	
 	<div>
 		<div class="sub_nav" id="sub_nav">
 			<div class="inner">
-				<h2>iOS培训</h2>
+				<!-- <h2>iOS培训</h2> -->
 				<!-- 课程页面统一导航 -->
 				<!-- 课程页面统一导航 -->
 				<ul>
@@ -78,7 +87,7 @@
 		</div>
 		<!--学院页面banner E-->
 		<!--学院页面报名板块 S-->		
-		<script type="text/javascript">
+		 <script type="text/javascript">
 			//开班倒计时
 			function difference(starttime,classname,rand){
 				return function (){
@@ -102,40 +111,85 @@
 					}
 					document.getElementById(classname).innerHTML = "距离开班"+hh;
 				}
-			}						
-		</script>
+				
+
+			}	
+			
+
+
+			
+		 </script>
 		<div class="lay lay_kbinfo">
-			<div class="city_class city_subject">
-				<ul class="cur">
+			<div class="city_tab">
+				<div class="inner">
+					<a href="javascript:;" class="cur" >
+						<div class="colorbg a_gd"></div>
+						<span>iOS培训</span>
+					</a>
+					<a href="javascript:;" >
+						<div class="colorbg a_gd"></div>
+						<span>Android培训</span>
+					</a>
+				</div>
+			</div>
+			<div class="city_class city_subject" >
+				<ul class="cur " >
 					<li>
 						<span class="span_name">iOS基础班</span>
-						<span class="span_time">2016-02-20</span>
+						<span class="span_time">2016-04-20</span>
 						<span class="span_status">火爆报名中</span>
 						<span class="span_timeout" id="time38"><script type="text/javascript">setInterval(difference('2016-04-20','time38',38),1000);</script></span>
 						<a href="" schoolid="BEIJING" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
 					</li>
-			    			<li style="background: rgb(247, 247, 247);">
+			    	<li style="background: rgb(247, 247, 247);">
 						<span class="span_name">iOS提升班</span>
-						<span class="span_time">2016-03-06</span>
+						<span class="span_time">2016-05-06</span>
 						<span class="span_status">火爆报名中</span>
 						<span class="span_timeout" id="time39"><script type="text/javascript">setInterval(difference('2016-05-06','time39',39),1000);</script></span>
 						<a href="" schoolid="BEIJING" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
 					</li>
 					<li>
 						<span class="span_name">iOS基础周末班</span>
-						<span class="span_time">2016-02-20</span>
+						<span class="span_time">2016-05-20</span>
 						<span class="span_status">火爆报名中</span>
 						<span class="span_timeout" id="time40"><script type="text/javascript">setInterval(difference('2016-05-20','time40',40),1000);</script></span>
 						<a href="" schoolid="BEIJING" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
 					</li>
-			    			<li style="background: rgb(247, 247, 247);">
+			    	<li style="background: rgb(247, 247, 247);">
 						<span class="span_name">iOS在线学习班</span>
-						<span class="span_time">2016-03-06</span>
+						<span class="span_time">2016-04-06</span>
 						<span class="span_status">火爆报名中</span>
 						<span class="span_timeout" id="time41"><script type="text/javascript">setInterval(difference('2016-04-06','time41',41),1000);</script></span>
 						<a href="" schoolid="BEIJING" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
 					</li>
 			    </ul>
+			    <ul >
+			    	<li>
+						<span class="span_name">Android基础班</span>
+						<span class="span_time">2016-04-10</span>
+						<span class="span_status">火爆报名中</span>
+						<span class="span_timeout" id="time208"><script type="text/javascript">setInterval(difference('2016-04-10','time208',208),1000);</script></span>
+						<a href="" schoolid="SHENZHEN" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
+					</li>
+				    					<li>
+						<span class="span_name">Android基础班</span>
+						<span class="span_time">2016-05-30</span>
+						<span class="span_status">火爆报名中</span>
+						<span class="span_timeout" id="time209"><script type="text/javascript">setInterval(difference('2016-05-30','time209',209),1000);</script></span>
+						<a href="" schoolid="SHENZHEN" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
+					</li>
+				    					<li>
+						<span class="span_name">Android基础班</span>
+						<span class="span_time">2016-07-19</span>
+						<span class="span_status">火爆报名中</span>
+						<span class="span_timeout" id="time406"><script type="text/javascript">setInterval(difference('2016-07-19','time406',406),1000);</script></span>
+						<a href="" schoolid="SHENZHEN" subject="ios" class="a_gd a_zx" target="_blank">在线报名</a>
+					</li>
+				</ul>
+
+			   
+
+
 			</div>	
 		</div>
 			
@@ -149,7 +203,7 @@
 					<p class="h_down">“我从没学过技术，但对iOS很感兴趣；我即将毕业，但是基础不扎实；我想提升自己能力，升职加薪。” 轻课网从初阶入门开始到高阶实战拔高，不管你是零基础的新兵蛋子，还是驰骋沙场多年的革命老兵，我们都能满足你的要求。世界那么大，没两把刷子怎敢走天下。 </p>
 					<div class="list">
 						<ul>
-							<li>
+							<!-- <li>
 								<h3>零基础</h3>
 								<p>对iOS有兴趣，希望从事iOS开发</p>
 							</li>
@@ -160,6 +214,12 @@
 							<li>
 								<h3>不满于现状</h3>
 								<p>提升专业水平，轻松升职加薪</p>
+							</li> -->
+							<li>
+								<img src="img/student.png" >
+							</li>
+							<li>
+								<img src="img/worker.png"  >
 							</li>
 						</ul>
 					</div>
@@ -347,7 +407,8 @@
 	<!-- 底部  E -->
 </div>
 <!-- 全局js -->
-<script src="js/jquery-1.7.2.min.js"></script> 
+<!-- <script src="js/jquery-1.7.2.min.js"></script>  -->
+<script src="../../../YM/jiaoyucard-web/js/jquery.js"></script>
 <script src="js/global.js"></script>
 <!-- ie7error提示 -->
 <style type="text/css">

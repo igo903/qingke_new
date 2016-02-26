@@ -29,7 +29,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .subject_ban .txt p a{font-size:16px; color: #FFCC00; line-height: 30px;}
 
 /*开班信息板块样式*/
-.lay_kbinfo{width:1200px; margin:0 auto; margin-top: -2px;}
+.lay_kbinfo{width:1200px; margin:0 auto; margin-top: -1px;}
 .lay_kbinfo .city_tab a{border-bottom: 1px solid #DFDFDF;}
 .lay_kbinfo .city_class{padding-bottom:0;}
 .city_subject ul li{width:100%; height: 72px; line-height: 72px; padding:0 20px; overflow: hidden; font-size: 16px; position:relative;}
@@ -41,17 +41,18 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .city_subject ul li a:hover{border-color:#3688ff;}
 
 /*学院页面内容样式--ios范本*/
-.con_txt .lay{width:100%; text-align: center; /* padding:70px 0 45px; */ overflow: hidden;}
-.con_txt .lay .inner{/*width:1200px;*/ margin: 0 auto; overflow: hidden;}
+.con_txt .lay{width:100%; text-align: center;  /*padding:70px 0 45px;*/  overflow: hidden;}
+.con_txt .lay .inner{width:1200px; margin: 0 auto; overflow: hidden;}
 .con_txt .lay h2{font-size:24px; text-align: center; padding: 50px 0 25px;}
 .con_txt .lay .h_down{font-size:16px; line-height: 32px; text-align: center; margin-bottom: 30px;}
 .con_txt .lay a:hover{text-decoration: underline;}
-.con_txt .lay_2{background: url(../img/laybox_02.jpg) no-repeat center top; padding-bottom: 80px;} 
-.con_txt .lay_2 h2{font-size:30px; color: #fff;}
-.con_txt .lay_2 .h_down{color:#fff;}
+.con_txt .lay_2{/*background: url(../img/laybox_02.jpg) no-repeat center top; */padding-bottom: 80px;} 
+.con_txt .lay_2 h2{font-size:30px; /*color: #fff;*/}
+.con_txt .lay_2 .h_down{/*color:#fff;*/}
 .con_txt .lay_2 .list{width:964px; margin:0 auto; overflow: hidden;}
 .con_txt .lay_2 .list ul{width:990px;}
-.con_txt .lay_2 .list ul li{float:left; /*width:224px;*/width:30%;height: 124px; color:#fff; border: 1px solid #8B8B8B; margin-right:20px; border-radius: 3px;}
+.con_txt .lay_2 .list ul li{float:left; width:45%;/*height: 124px; */color:#fff; /*border: 1px solid #8B8B8B;*/ margin-right:20px; border-radius: 3px;}
+.con_txt .lay_2 .list ul li img{width:100%;}
 .con_txt .lay_2 .list ul li h3{font-size:22px; color: #00aaff; margin:36px 0 16px 0;}
 .con_txt .lay_2 .list ul li p{font-size:13px;}
 .con_txt .lay_3{background: #FAFAFA; text-align: center;}
@@ -70,6 +71,12 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 /* .con_txt .lay_6{padding-bottom: 20px;}
 .con_txt .lay_6 img{display:inline-block;}
 .con_txt .lay_6 a{line-height:100px; color: #3688ff; font-size: 18px;} */
+.nav .train{
+  
+}
+.nav  a:hover .train{
+  display: block;
+}
 .bd{
   width:100%;
 }
@@ -299,7 +306,7 @@ li:hover .layer-title {
 .lay_6{
   padding:50px 0;
 }
-.lay_6 .enroll{
+.lay_6 .enroll, .enroll .submit-btn{
   font-size: 16px;
   background: #39a9ea;
   color: #fff;
@@ -309,6 +316,10 @@ li:hover .layer-title {
   border-radius: 6px;
   border: 1px solid;
   cursor:pointer;
+  
+}
+.enroll .submit{
+  text-align: center;
 }
 
 

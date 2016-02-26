@@ -9,10 +9,10 @@ $(".top_r .li_js").mouseleave(function(){
 })
 
 //导航处下拉列表
-$(".nav .a_js").mouseenter(function(){
+$(".nav .a2_js").mouseenter(function(){
 	$(".fdnav").slideDown();
 })
-$(".header .a2_js").mouseenter(function(){
+$(".header .a_js").mouseenter(function(){
 	$(".fdnav").stop().slideUp("fast");
 })
 $(".header").mouseleave(function(){
@@ -58,15 +58,17 @@ var hrefMap = {
 			};
 
 			
-var sid = $(".city_class .cur a").attr("schoolid");
-$(".city_class ul.cur a").attr({"href":hrefMap[sid]});
+// var sid = $(".city_class .cur a").attr("schoolid");
+// $(".city_class ul.cur a").attr({"href":hrefMap[sid]});
 
-$(".city_tab a").attr("href","javascript:;")
+//  $(".city_tab a").attr("href","javascript:;")
 $(".city_tab a").mouseenter(function(){
 	$(this).addClass("cur").siblings().removeClass("cur").parent().parent().siblings(".city_class").children("ul").eq($(this).index()).addClass("cur").siblings().removeClass("cur");
-	var city=$(this).parent().parent().siblings(".city_class").children(".cur").find("a");
-	var sid = city.attr("schoolid");
-	city.attr({"href":hrefMap[sid]});
+	var a=$(this).parent().parent().siblings(".city_class").children("ul").eq($(this).index()).siblings();
+	console.log(a);
+	// var city=$(this).parent().parent().siblings(".city_class").children(".cur").find("a");
+	// var sid = city.attr("schoolid");
+	// city.attr({"href":hrefMap[sid]});
 })
 
 //各校区开班信息板块颜色奇偶
