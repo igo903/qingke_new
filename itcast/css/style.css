@@ -41,7 +41,7 @@
 .header_con .bmbtn{position: absolute; right: 0;}
 .header_con .bmbtn a{display: block; width:109px; height: 33px; line-height: 33px; background: #F9F9F9; text-align: center; border: 1px solid #E0E0E0; margin-top: 39px;}
 .header_con .bmbtn a:hover{background: #39a9ea; border-color:#39a9ea; color: #fff;}
-.fdnav{position:absolute; top:87px; width:100%; border-top:1px solid #DFDFDF; border-bottom:1px solid #DFDFDF; background: #fff; z-index: 99; display: none;}
+.fdnav{position:absolute; top:66px;  /*border-top:1px solid #DFDFDF; border-bottom:1px solid #DFDFDF;*/ background: #fff; z-index: 99; display: none;}
 /* .fdnav ul{width:1200px; margin:0 auto; padding:22px 0; overflow: hidden;}
 .fdnav ul li{float:left; width:239px; border-right: 1px solid #DFDFDF;}
 .fdnav ul li a{display: block; width:239px; height:81px;}
@@ -49,12 +49,12 @@
 .fdnav ul li span{float: right; line-height: 81px; margin-right: 30px; font-size: 16px;}
 .fdnav ul li.li_last{border-right:0;}*/
 
-.fdnav ul{overflow: hidden;margin-left: 34.5%;}
+.fdnav {overflow: hidden;margin-left: 34.5%;}
 @media screen and (min-width: 1263px) { 
-.fdnav ul {margin-left: 35%;} 
+.fdnav  {margin-left: 35%;} 
 }
 
-.fdnav ul li {margin:10px 0;}
+.fdnav ul li {margin:4px 0;}
 .fdnav ul li a{display:block;}
 .fdnav .Android{border-right: none;}
 
