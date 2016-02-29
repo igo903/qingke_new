@@ -13,7 +13,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .sub_fixd{position:fixed; top:0; left: 0; z-index: 400;}
 
 /*学院页面banner新样式*/
-.subject_ban{ width:100%; height: auto; overflow:hidden; position:relative; border-bottom: 1px solid #c9c9c9;}
+.subject_ban{ width:100%; height: auto; overflow:hidden; position:relative; /*border-bottom: 1px solid #c9c9c9;*/margin-bottom: 40px;}
 .subject_ban .bd{ position:relative; z-index:0;}
 .subject_ban .bd ul{ width:100% !important  }
 /* .subject_ban .bd li{ width:100% !important; height:450px; position:relative; zoom:1; vertical-align:middle; } */
@@ -79,6 +79,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 }
 .bd{
   width:100%;
+
 }
 .bd-item{
   width:100%;
