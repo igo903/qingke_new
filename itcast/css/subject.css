@@ -98,6 +98,9 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
   background: url(../img/ios_improve.png) no-repeat;
   background-size: 100%;
 }
+.bd img{
+  width:100%;
+}
 .group-bd{
   width:960px;
   margin: 0 auto;
