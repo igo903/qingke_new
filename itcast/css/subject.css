@@ -183,6 +183,7 @@ li:hover .layer-title {
 .project-show{
   position: relative;
   height: 440px;
+
  }
  .show-item{
   position: absolute;
@@ -212,8 +213,8 @@ li:hover .layer-title {
   overflow: hidden;
 }
 .project-show .show-slogan{
-  -webkit-animation:zoomin .4s 1s backwards;
-  animation:zoomin .4s 1s backwards;
+  -webkit-animation:zoomin .4s  1s backwards  ;
+  animation:zoomin .4s  1s backwards   ;
   color: #fff;
   font-size:16px;
   text-align: center;
@@ -226,6 +227,8 @@ li:hover .layer-title {
   bottom:80%;
   left: 23%;
   padding-top: 25px;
+   -webkit-animation-delay:1s;
+  animation-delay:1s;
  
 
 }
@@ -236,12 +239,40 @@ li:hover .layer-title {
   position: absolute;
   bottom: 12%;
   left: 17%;
-  -webkit-animation-delay:1.2s;
-  animation-delay:1.2s;
- 
+  /*-webkit-animation-delay:1.2s;
+  animation-delay:1.2s;*/
+  -webkit-animation-delay:2s;
+  animation-delay:2s;
   padding-top: 50px;
-  
 }
+#slogan{
+  width:332px;
+  margin:0 auto;
+}
+ .slogan-1{
+ /* background: url(../img/bubble-1.png) no-repeat 50% 70% ;*/
+  width:173px;
+  height: 142px;
+  font-size: 16px;
+  /*position: absolute;
+  left:50%;
+  top:50%;*/
+
+}
+.slogan-2{
+/* background: url(../img/bubble-2.png) no-repeat; 50%
+ width:173px;
+  height: 142px;*/
+   font-size: 16px;
+   background-size: 100%;
+}
+.slogan-3{
+ /* background: url(../img/bubble-3.png) no-repeat 50%;
+ background-size: 100%;*/
+   font-size: 16px;
+   width:173px;
+  height: 142px;
+  }
 .project-show .show-slogan-3{
   background: url(../img/bubble-3.png) no-repeat;
   width: 295px;
@@ -249,9 +280,8 @@ li:hover .layer-title {
   position: absolute;
   bottom:40%;
   right: 10%;
-  -webkit-animation-delay:1.8s;
-  animation-delay:1.8s;
-  
+  -webkit-animation-delay:4s;
+  animation-delay:4s;
   padding-top: 80px;
 }
 .lay .news{
@@ -342,11 +372,11 @@ li:hover .layer-title {
 }
 @-webkit-keyframes zoomin{
   0%{-webkit-transform:scale(0);}
-  100%{-webkit-transform:scale(1);}
+    100%{-webkit-transform:scale(1);}
 }
 @keyframes zoomin{
   0%{transform:scale(0);}
-  100%{transform:scale(1);}
+    100%{transform:scale(1);}
 }
 .fn-clear:after{
   content: "";
@@ -444,6 +474,14 @@ li:hover .layer-title {
   line-height: 22px;
   text-align: center;
   padding-bottom: 28px;
+}
+.article-detail .main-picture{
+  margin-bottom: 20px;
+}
+.article-detail img{
+  display: block;
+  max-width:100%;
+  margin: 0 auto;
 }
 .article-detail .main-top p{
   line-height: 1.858;
