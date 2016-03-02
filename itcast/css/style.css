@@ -102,13 +102,16 @@
 /*各校区开班信息样式*/
 .city_tab{width:100%; overflow: hidden; background: #fff;}
 .city_tab .inner{width:1201px;}
-.city_tab a{display: block; float:left; width:108px; border-right:1px solid #DFDFDF; background: #fff; text-align: center; height: 29px; line-height: 29px; position:relative;}
-.city_tab a span{position:relative; z-index: 2;}
+.city_tab a{display: block; float:left; width:108px; /*border-right:1px solid #DFDFDF;*/ background: #fff; text-align: center; height: 29px; line-height: 29px; position:relative;}
+/*.city_tab a span{position:relative; z-index: 2;}
 .city_tab .colorbg{position:absolute; top:0; left: 0; width:108px; height: 2px; line-height: 0; font-size: 0; background: #3688FF; z-index: 1;}
 .city_tab a:hover .colorbg{height:29px;}
 .city_tab a:hover span{color: #fff;}
 .city_tab a.cur .colorbg{height:29px;}
-.city_tab a.cur span{color: #fff;}
+.city_tab a.cur span{color: #fff;}*/
+.city_tab a{border-bottom: 2px solid #ccc;}
+.city_tab a.cur{border-bottom: 2px solid #39a9ea;}
+
 .city_class{width:100%; overflow: hidden; background:#fff; padding: 5px 0;}
 .city_class ul{display: none;}
 .city_class ul.cur{display:block;}

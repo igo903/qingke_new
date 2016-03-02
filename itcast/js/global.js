@@ -73,3 +73,4 @@ $(".city_tab a").mouseenter(function(){
 
 //各校区开班信息板块颜色奇偶
 $(".city_subject ul li:odd").css("background","#F7F7F7");
+
