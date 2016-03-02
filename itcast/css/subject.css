@@ -11,7 +11,8 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .sub_nav ul li a{ padding:0 8px; border-right: 1px solid #333;}
 .sub_nav ul a.onbm{border-right: 0; padding-right: 0; position:absolute; right:0;}
 .sub_fixd{position:fixed; top:0; left: 0; z-index: 400;}
-
+a:hover{text-decoration: none;}
+#sub_nav a:hover{color: #333;}
 /*学院页面banner新样式*/
 .subject_ban{ width:100%; height: auto; overflow:hidden; position:relative; /*border-bottom: 1px solid #c9c9c9;*/margin-bottom: 40px;}
 .subject_ban .bd{ position:relative; z-index:0;}
@@ -35,7 +36,7 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .city_subject ul li{width:100%; height: 72px; line-height: 72px; padding:0 20px; overflow: hidden; font-size: 16px; position:relative;}
 .city_subject ul li span{float:left; margin-right:60px;}
 .city_subject ul li span.span_name{width:192px; text-align:center;}
-.city_subject ul li span.span_status{background: url(../img/hot.png) no-repeat right center; padding-right:25px; width:80px; text-align:right;}
+.city_subject ul li span.span_status{background: url(../img/hot.png) no-repeat right center; padding-right:25px;/* width:80px;*/ text-align:right;}
 .city_subject ul li span em{font-style: normal; display:inline-block; min-width:25px; height: 33px; padding:0; text-align: center; line-height: 33px; background: #636C76; color: #fff; font-size: 24px; margin: 0 10px; border-radius: 3px; padding:0 5px;}
 .city_subject ul li a{float:left; display:block; width:147px; height: 38px; line-height: 38px; text-align: center; color:#3688ff; border: 1px solid #6A6C6F; margin-top: 15px; position:absolute; right:95px;}
 .city_subject ul li a:hover{border-color:#3688ff;}
@@ -542,8 +543,145 @@ li:hover .layer-title {
   color: red;
   font-size: 15px;
   line-height: 40px;
- 
 } 
 .enroll-main .purchase{
   padding-bottom: 10px;
 }
+
+
+
+
+
+.teachers {
+  font-size: 0.86em;
+  line-height: 1.5;
+  color: #fff;
+  margin-left: 0;
+  margin-right: 0;
+}
+.teacher {
+  height: 140px;
+  overflow: hidden;
+}
+.teacher-photo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: no-repeat 50%;
+  background-size: cover;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.teacher:hover .teacher-photo {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.teacher-intro {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.2em;
+  background: rgba(0,0,0,0.6);
+  font-size: 12px;
+  line-height: 1.2;
+}
+.royalSlider{
+  width:100%!important;
+}
+.rsDefault .rsBullets {
+  position: static;
+  background: none;
+  margin-top: 20px;
+}
+ .rsDefault .rsBullet {
+  width: auto;
+  height: auto;
+}
+ .rsDefault .rsBullet span {
+  width: 10px;
+  height: 10px;
+  background: #dfdfdf;
+}
+ .rsDefault .rsBullet.rsNavSelected span {
+  background: #4b7ff7;
+}
+@media (min-width: 992px) {
+  .container {
+    width: 930px;
+    margin: 0 auto;
+  }
+
+   .royalSlider {
+    height: 280px!important;
+  }
+  .teachers {
+    position: relative;
+  }
+  .teacher {
+    position: absolute;
+  }
+  .teacher:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 310px;
+  }
+  .teacher:nth-child(2) {
+    left: 0;
+    top: 140px;
+    width: 155px;
+  }
+
+  .teacher:nth-child(3) {
+    left: 155px;
+    top: 140px;
+    width: 155px;
+  }
+  .teacher:nth-child(4) {
+    left: 310px;
+    top: 0;
+    width: 220px;
+  }
+  .teacher:nth-child(5) {
+    left: 310px;
+    top: 140px;
+    width: 220px;
+  }
+  .teacher:nth-child(6) {
+    left: 530px;
+    top: 0;
+    width: 180px;
+    height: 280px;
+  }
+  .teacher:nth-child(7) {
+    left: 710px;
+    top: 0;
+    width: 220px;
+  }
+  .teacher:nth-child(8) {
+    left: 710px;
+    top: 140px;
+    width: 220px;
+  }
+}
+
+
+.menu_pop .menu_pop_arrow {
+    position: absolute;
+    width: 18px;
+    height: 9px;
+    overflow: hidden;
+    font-size: 0px;
+    z-index: 2;
+    top: -9px;
+    left: 56px;
+    text-align: left;
+}
+
+
+
+
+
+

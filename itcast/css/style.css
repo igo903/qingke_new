@@ -49,13 +49,14 @@
 .fdnav ul li span{float: right; line-height: 81px; margin-right: 30px; font-size: 16px;}
 .fdnav ul li.li_last{border-right:0;}*/
 
-.fdnav {overflow: hidden;margin-left: 34.5%;}
+.fdnav {overflow: hidden;/*margin-left: 34%;*/margin-left: 33.4%; }
 @media screen and (min-width: 1263px) { 
-.fdnav  {margin-left: 35%;} 
+.fdnav  {/*margin-left: 35%;*/margin-left: 34.2%;} 
 }
-
-.fdnav ul li {margin:4px 0;}
-.fdnav ul li a{display:block;}
+.fdnav ul{background-color: #fff;border:1px solid #efefef;margin-top: 8px;text-align: center;}
+.fdnav ul a:hover{background: #39a9ea;color: #fff;}
+.fdnav ul li {}
+.fdnav ul li a{display:block;padding: 4px 5px;}
 .fdnav .Android{border-right: none;}
 
 /* 通用lay样式 */
@@ -136,8 +137,8 @@
 .footer .fl .lk a{display:inline-block; font-size:12px; color: #8d8d8d; float: left; margin-right: 10px; line-height: 26px;}
 .footer .fl .lk a:hover{color: #0099E5;}
 .footer .fl .miss_zhang{position: absolute; top:49px; right:0; display: block; width:292px; height: 64px; background: #F3F3F3; font-size: 20px; line-height: 64px; text-align: center;}
-.footer .add h2{float: left;}
-.footer .add p{/* float: left; */ font-size: 12px; line-height: 24px; margin-left: 20px;}
+.footer .add h2{float: left; }
+.footer .add p{/* float: left; */ font-size: 12px; line-height: 28px; margin-left: 20px;}
 .footer .add ul{float:right; overflow: hidden;}
 .footer .add ul li{float: left; margin-left: 4px;}
 
