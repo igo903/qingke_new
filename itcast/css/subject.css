@@ -45,6 +45,8 @@ a:hover{text-decoration: none;}
 .con_txt .lay{width:100%; text-align: center;  /*padding:70px 0 45px;*/  overflow: hidden;}
 .con_txt .lay .inner{width:1200px; margin: 0 auto; overflow: hidden;}
 .con_txt .lay h2{font-size:24px; text-align: center; padding: 50px 0 25px;font-weight: bold;}
+.con_txt .lay .teacher-wrap h2{padding-bottom: 0;}
+.con_txt .lay .teacher-wrap {padding-bottom: 25px;line-height: 1.5;}
 .con_txt .lay .h_down{font-size:16px; line-height: 32px; text-align: center; margin-bottom: 30px;}
 .con_txt .lay a:hover{text-decoration: underline;}
 .con_txt .lay_2{/*background: url(../img/laybox_02.jpg) no-repeat center top; */padding-bottom: 80px;} 
@@ -343,7 +345,7 @@ li:hover .layer-title {
   margin:auto;
 }
 .lay_6{
-  padding:100px 0;
+  padding-bottom: 50px;
 }
 .lay_6 .enroll, .enroll .submit-btn{
   font-size: 16px;
