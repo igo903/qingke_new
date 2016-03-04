@@ -132,7 +132,7 @@ a:hover{text-decoration: none;}
   line-height: 20px;
   padding:0 10px; 
 }
-li:hover .layer-title {
+li .layer-title {
   display: table;
    opacity:1; 
   background: rgb(201,57,74) \9;
@@ -725,9 +725,23 @@ li:hover .layer-title {
   background: #fff;
   padding: 10px;
 }
-.course .course-list div{
+/*.course .course-list div{
+  float: left;
+}*/
+.course-title-wrap, .course-detail-wrap, .course-price-wrap{
   float: left;
 }
+.course-detail-wrap, .course-price{
+  display: table;
+}
+.course-detail-wrap div, .course-price div{
+  display: table-cell;
+  vertical-align: middle;
+  
+  font-size: 16px;
+  line-height: 2;
+}
+
 
 .course .course-list{
  margin-bottom: 10px;
