@@ -696,6 +696,9 @@ li:hover .layer-title {
   background: #f5f5f5;
   padding-bottom: 88px;
 }
+ #course-center .course{
+  background: #f5f5f5;
+ }
 .title{
   text-align: center;
   
@@ -711,6 +714,9 @@ li:hover .layer-title {
   font-size: 30px;
   line-height: 1;
   display: inline-block;
+}
+#iOS .course-wrap{
+  width:1000px;
 }
 .course .course-wrap{
  width:1172px;
@@ -764,6 +770,10 @@ li:hover .layer-title {
 .course .course-title4{
   background-color: #35cbf1;
 }
+#iOS .course-detail-wrap{
+  max-width: 696px;
+}
+
 .course .course-detail-wrap{
   padding: 0 30px ;
   background: #f5f5f5;
@@ -772,9 +782,7 @@ li:hover .layer-title {
   line-height: 2;
   max-width: 560px;
   vertical-align: middle;
-
   height: 234px;
-  vertical-align: middle;
 }
 .course .course-price-wrap{
   background: #f5f5f5;
@@ -869,6 +877,7 @@ li:hover .layer-title {
   margin:0 auto;
   width:1200px;
 }
+
 .salary{
   width: 796px;
   float: left;
@@ -916,7 +925,7 @@ li:hover .layer-title {
 }
 .salary .survey-num{
   font-size: 12px;
-  color: #e7e7e7;
+ 
 }
 .salary .survey-num-select{
   color: #ff7c21;
@@ -937,6 +946,47 @@ li:hover .layer-title {
 }
 .career-prospect .contact{
   padding-top: 0;
+}
+.course-contact{
+  text-align: center;
+  padding-top: 90px;
+  background: url(../img/contact-bg.jpg);
+  padding-bottom: 90px;
+  margin-top: 90px;
+
+}
+.course-contact .contact-btn{
+  background-color: #f3ff6a;
+  color: #40aae7;
+}
+.course-contact .contact-num{
+  color: #fff;
+}
+.story{
+  background: #f5f5f5;
+  padding-bottom: 130px;
+
+}
+.story ul{
+  width:1190px;
+  margin: 0 auto;
+}
+.story li{
+  float: left;
+  width:288px;
+  margin-right: 10px;
+  box-sizing:border-box;
+  display: inline-block;
+  border:1px solid #efefef;
+  background-color: #fff;
+}
+.story li:last-child{
+  margin-right: 0;
+}
+.story-name{
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
 }
 
 
