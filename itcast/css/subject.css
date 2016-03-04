@@ -731,13 +731,12 @@ li .layer-title {
 .course-title-wrap, .course-detail-wrap, .course-price-wrap{
   float: left;
 }
-.course-detail-wrap, .course-price{
+.course-detail-wrap, .course-wrap{
   display: table;
 }
-.course-detail-wrap div, .course-price div{
+.course-detail-wrap div, .course-price{
   display: table-cell;
   vertical-align: middle;
-  
   font-size: 16px;
   line-height: 2;
 }
@@ -785,7 +784,7 @@ li .layer-title {
   background-color: #35cbf1;
 }
 #iOS .course-detail-wrap{
-  max-width: 696px;
+  max-width: 756px;
 }
 
 .course .course-detail-wrap{
@@ -803,10 +802,12 @@ li .layer-title {
   margin-left: 10px;
   height: 234px;
   
+  
 }
 .course-price{
-  width:296px;
+  width:358px;
   text-align: center;
+  height: 234px;
 }
 .course .course-price p{
   /*padding: 0 90px;*/
