@@ -395,6 +395,10 @@ li .layer-title {
   background: #f5f5f5;
   padding-bottom: 40px;
 }
+ .iOS-article-detail{
+  padding:10px 0 20px;
+
+}
 .article-main, .article-detail-main, .enroll-main{
    width:960px;
   margin:0 auto;
@@ -466,7 +470,7 @@ li .layer-title {
   border: 1px solid #39a9ea;
 }
 .article-detail-main{
-  padding: 42px 50px;
+  padding: 0px 50px 42px;
 }
 .article-detail .main-top{
   border-bottom: 1px solid #efefef;
@@ -819,7 +823,7 @@ li .layer-title {
   font-size: 30px;
   color: #fe2929;
 }
-#iOS .teachers-wrap{
+ .teachers-wrap{
   width:1072px;
   margin:0 auto;
 }
