@@ -1345,6 +1345,44 @@ h4.modal-title {
   top: -10px;
   position: relative;
 }
+
+.block-contents .title {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.block-contents .title a {
+  color: #666;
+}
+.block-contents .heat,
+.block-contents .duration {
+  color: #9a9a9a;
+}
+.block-contents .heat {
+  float: right;
+}
+.block-contents .label-info {
+  margin-top: 5px;
+}
+
+.course-cover {
+  border: 1px solid #bbb;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+.course-name {
+  font-size: 1.5em;
+  color: inherit;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.course-intro {
+  color: #666;
+}
+.course-info {
+  color: #9a9a9a;
+  margin-top: 1em;
+}
+
 .signup-sidebar {
   background: #e74c3c;
   height: 335px;
@@ -2311,8 +2349,8 @@ Navbar Toggle
 .col-sm-12,
 .col-md-12,
 .col-lg-12 {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .theme_color_background, #signup-form .panel-heading, .post .post-img h3, .block .block-contents p.date .label.label-success, .btn-primary, .second-nav.navbar-default .navbar-nav li.active a, .second-nav.navbar-default .navbar-nav li a:hover, .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level {
@@ -2363,11 +2401,20 @@ input[type="file"]:focus {
 .modal {
   display: block;
 }
+.modal.boring-dialog,
+.boring-dialog-mask {
+  z-index: 999999;
+}
 .modal.boring-dialog {
   left: 0;
   top: 0;
-  z-index: 999999;
   margin: 0 !important;
+  -webkit-transform: translate(0, -10px);
+  transform: translate(0, -10px);
+}
+.modal.boring-dialog-opened {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .block-contents{font-size: 12px;}
