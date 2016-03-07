@@ -479,10 +479,11 @@ li .layer-title {
 
 }
 .article-detail .main-title{
-  font-size: 18px;
+  font-size: 22px;
   line-height: 22px;
   text-align: center;
   padding-bottom: 28px;
+  
 }
 .article-detail .main-picture{
   margin-bottom: 20px;
