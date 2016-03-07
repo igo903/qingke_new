@@ -101,18 +101,90 @@
 						<span class="period-show"><i class="fa fa-plus"></i></span>
 					</li>
 					<li class="period">
-						<i class="circle"></i>
-						<span >第1章：开启Swift开发之旅</span>
-						
+						<a href="javascript:;">
+							<i class="circle"></i>
+							<span>课时1：《Swift开发指南》的故事</span>
 							<span class="date">08:19</span>
-						<span class="course-type">
-							<i class="fa fa-file-video-o"></i>
-						</span>
-						
-						
+							<span class="course-type">
+								<i class="fa fa-file-video-o"></i>
+							</span>
+						</a>
+					</li>
+					<li class="period">
+						<a href="javascript:;">
+							<i class="circle"></i>
+							<span>课时2：《Swift开发指南》的故事</span>
+							<span class="date">08:19</span>
+							<span class="course-type">
+								<i class="fa fa-file-video-o"></i>
+							</span>
+						</a>
+					</li>
+					<li class="period">
+						<a href="javascript:;">
+							<i class="circle"></i>
+							<span>课时3：《Swift开发指南》的故事</span>
+							<span class="date">08:19</span>
+							<span class="course-type">
+								<i class="fa fa-file-video-o"></i>
+							</span>
+						</a>
+					</li>
+					<li class="period">
+						<a href="javascript:;">
+							<i class="circle"></i>
+							<span>课时4：《Swift开发指南》的故事</span>
+							<span class="date">08:19</span>
+							<span class="course-type">
+								<i class="fa fa-file-video-o"></i>
+							</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="period-list">
+					<li class="chapter">
+						<i class="es-icon es-icon-toc"></i>
+						<span >第2章：开启Swift开发之旅</span>
+						<span class="period-show"><i class="fa fa-plus"></i></span>
+					</li>
+					<li class="period">
+						<a href="javascript:;">
+							<i class="circle"></i>
+							<span>课时5：《Swift开发指南》的故事</span>
+							<span class="date">08:19</span>
+							<span class="course-type">
+								<i class="fa fa-file-video-o"></i>
+							</span>
+						</a>
+					</li>
+					<li class="period">
+						<a href="javascript:;">
+							<i class="circle"></i>
+							<span>课时6：《Swift开发指南》的故事</span>
+							<span class="date">08:19</span>
+							<span class="course-type">
+								<i class="fa fa-file-video-o"></i>
+							</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="period-list">
+					<li class="chapter">
+						<i class="es-icon es-icon-toc"></i>
+						<span >第3章：开启Swift开发之旅</span>
+						<span class="period-show"><i class="fa fa-plus"></i></span>
+					</li>
+					<li class="period">
+						<a href="javascript:;">
+							<i class="circle"></i>
+							<span>课时7：《Swift开发指南》的故事</span>
+							<span class="date">08:19</span>
+							<span class="course-type">
+								<i class="fa fa-file-video-o"></i>
+							</span>
+						</a>
 					</li>
 					
-
 				</ul>
 			</div>
 		</div>
@@ -173,6 +245,21 @@
 </div>
 <script src="../js/jquery-1.11.2.min.js"></script>
 <script src="js/global.js"></script>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+ 	$('.chapter').click(function(){
+ 		$(this).siblings().toggle();
+ 		$(this).children('.period-show').children().toggleClass('pe');
+ 	});
+ 	$('.period').mouseenter(function(){
+ 		$(this).css('background','#f5f5f5')
+ 	});
+ 	$('.period').mouseleave(function(){
+ 		$(this).css('background','#fff')
+ 	})
+ })
+</script>
 
 
 </body>

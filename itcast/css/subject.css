@@ -1015,6 +1015,10 @@ li .layer-title {
   text-align: center;
   font-size: 20px;
 }
+.course-page a{
+  text-decoration: none;
+  color: #333;
+}
 .course-page .period-list .chapter{
   position: relative;
   margin-bottom: 10px;
@@ -1023,9 +1027,10 @@ li .layer-title {
 
 }
 .course-page .period-list .period{
-  padding:10px 15px;
-
+  padding:10px 100px 10px 15px;
+  position: relative;
 }
+
 .course-page .circle{
   width:16px;
   height:16px;
@@ -1033,9 +1038,29 @@ li .layer-title {
   border:1px solid #ccc;
   display: inline-block;
   vertical-align: middle;
+  margin-right:10px;
 }
 .course-page .period-show{
   float: right;
+}
+.pe{
+  color: red;
+}
+.course-page .date{
+  position: absolute;
+  right: 50px;
 
 }
+.course-page .course-type{
+  position: absolute;
+  right: 15px;
+}
+.course-page .period > a{
+  display: block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+
+}
+
 
