@@ -1010,3 +1010,32 @@ li .layer-title {
 }
 
 
+
+.course-page .course-page-title{
+  text-align: center;
+  font-size: 20px;
+}
+.course-page .period-list .chapter{
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background: #f5f5f5;
+
+}
+.course-page .period-list .period{
+  padding:10px 15px;
+
+}
+.course-page .circle{
+  width:16px;
+  height:16px;
+  border-radius: 50%;
+  border:1px solid #ccc;
+  display: inline-block;
+  vertical-align: middle;
+}
+.course-page .period-show{
+  float: right;
+
+}
+
