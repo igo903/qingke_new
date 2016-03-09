@@ -12,6 +12,9 @@ body{font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","M
 .sub_nav ul a.onbm{border-right: 0; padding-right: 0; position:absolute; right:0;}
 .sub_fixd{position:fixed; top:0; left: 0; z-index: 400;}
 a:hover{text-decoration: none;}
+a{
+  color: inherit;
+}
 #sub_nav a:hover{color: #333;}
 /*学院页面banner新样式*/
 .subject_ban{ width:100%; height: auto; overflow:hidden; position:relative; /*border-bottom: 1px solid #c9c9c9;*/margin-bottom: 40px;}
