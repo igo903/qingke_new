@@ -825,6 +825,13 @@ li .layer-title {
   font-size: 30px;
   color: #fe2929;
 }
+.course .more-price{
+  text-decoration: underline;
+  color: #40aae7;
+}
+/*.course .more-price:hover{
+  color: #40aae7;
+}*/
  .teachers-wrap{
   width:1072px;
   margin:0 auto;
