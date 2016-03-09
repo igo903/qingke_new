@@ -744,6 +744,7 @@ li .layer-title {
   vertical-align: middle;
   font-size: 16px;
   line-height: 2;
+  -ms-display:table-cell;
 }
 
 
@@ -788,9 +789,7 @@ li .layer-title {
 .course .course-title4{
   background-color: #35cbf1;
 }
-#iOS .course-detail-wrap{
-  max-width: 756px;
-}
+
 
 .course .course-detail-wrap{
   padding: 0 30px ;
@@ -798,9 +797,20 @@ li .layer-title {
   margin-left: 10px;
   font-size: 16px;
   line-height: 2;
-  max-width: 560px;
+  /*max-width: 560px;*/
   vertical-align: middle;
   height: 234px;
+ -o-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+#iOS .course-detail-wrap{
+  width: 756px;
+}
+#course-center .course-detail-wrap{
+  width:560px;
 }
 .course .course-price-wrap{
   background: #f5f5f5;
@@ -813,6 +823,7 @@ li .layer-title {
   width:358px;
   text-align: center;
   height: 234px;
+  -o-width:298px;
 }
 .course .course-price p{
   /*padding: 0 90px;*/
