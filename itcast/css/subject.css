@@ -726,13 +726,10 @@ li .layer-title {
 .course .course-wrap{
  width:1172px;
  margin:0 auto;
- /* margin:0 140px;*/
-  background: #fff;
-  padding: 10px;
+ background: #fff;
+ padding: 10px;
 }
-/*.course .course-list div{
-  float: left;
-}*/
+
 .course-title-wrap, .course-detail-wrap, .course-price-wrap{
   float: left;
 }
@@ -744,10 +741,7 @@ li .layer-title {
   vertical-align: middle;
   font-size: 16px;
   line-height: 2;
-  -ms-display:table-cell;
 }
-
-
 .course .course-list{
  margin-bottom: 10px;
 }
@@ -767,7 +761,6 @@ li .layer-title {
   padding:34px;
 }
 .course .course-title{
-  /*padding: 46px 38px;*/
   font-size: 30px;
   text-align: center;
   color: #fff;
@@ -816,14 +809,11 @@ li .layer-title {
   background: #f5f5f5;
   margin-left: 10px;
   height: 234px;
-  
-  
 }
 .course-price{
   width:358px;
   text-align: center;
   height: 234px;
-  -o-width:298px;
 }
 .course .course-price p{
   /*padding: 0 90px;*/
@@ -844,7 +834,6 @@ li .layer-title {
   width:20%;
   text-align: center;
   margin-right: 6.667%;
-  
 }
 .teacher-list:last-child{
   margin-right: 0;
@@ -885,7 +874,6 @@ li .layer-title {
 }
 .contact-num{
   margin-top: 14px;
-
 }
 .contact-btn{
   font-size: 26px;
@@ -899,7 +887,6 @@ li .layer-title {
 }
 .career-prospect{
    background: #f5f5f5;
-
 }
 .salary-top{
   background: #f5f5f5;
@@ -912,7 +899,6 @@ li .layer-title {
 .salary{
   width: 796px;
   float: left;
- 
 }
 .salary-title{
   background: #f1f1f1;
@@ -929,7 +915,6 @@ li .layer-title {
   background: #fff;
   padding-left: 464px;
   padding-top: 54px;
-
 }
 .salary .credibility{
   font-size: 14px;
@@ -943,7 +928,6 @@ li .layer-title {
 }
 .salary .survey li{
   float: left;
-
 }
 .salary .survey-btn{
   height: 30px;
@@ -956,7 +940,6 @@ li .layer-title {
 }
 .salary .survey-num{
   font-size: 12px;
- 
 }
 .salary .survey-num-select{
   color: #ff7c21;
@@ -984,7 +967,6 @@ li .layer-title {
   background: url(../img/contact-bg.jpg);
   padding-bottom: 90px;
   margin-top: 90px;
-
 }
 .course-contact .contact-btn{
   background-color: #f3ff6a;
@@ -996,7 +978,6 @@ li .layer-title {
 .story{
   background: #f5f5f5;
   padding-bottom: 130px;
-
 }
 .story ul{
   width:1190px;
