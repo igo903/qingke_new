@@ -92,7 +92,13 @@ a{
 .bd-item{
   width:100%;
   height: 290px;
+ 
 }
+.bold-item{
+   box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+}
+
 .bd-item1{
   background: url(../img/blackboard.png) no-repeat;
   background-size: 100%;
