@@ -7,8 +7,20 @@
 /* 通用间距样式 */
 .clear{width:100%; height:40px; line-height:0; font-size:0; clear:both;}
 .clear_s{height:30px;}
-a:link, a:visited, a:active, a:hover{
+ .header_con a:link, .header_con a:visited,  .header_con a:active, .header_con a:hover{
 	text-decoration: none;
+	color: inherit;
+	
+}
+.sub_nav a:link, .sub_nav a:visited,  .sub_nav a:active, .sub_nav a:hover{
+	text-decoration: none;
+	color: inherit;
+	
+}
+.header_con a:hover{
+	color: #39a9ea;
+}
+.header a:visited{
 	color: inherit;
 }
 /* 头部快速通道样式 */
@@ -26,13 +38,15 @@ a:link, a:visited, a:active, a:hover{
 .graybg{background: #F3F3F3; width:100%;}
 .header{ position: relative; z-index: 88;}
 .header_con .inner{width:1200px; margin: 0 auto; height: 113px; position: relative;}
-.header_con h1{float:left; padding:30px 0;}
+.header_con h1{float:left; padding:30px 0;margin:0 auto;}
 .header_con h1 img{display: block;}
 .header_con .nav{float:left; margin-left: 65px;}
-.header_con .nav ul{overflow: hidden;}
-.header_con .nav ul li{float:left; font-size: 16px; line-height: 113px; margin-right:25px;}
-.header_con .nav ul li a{display:block;}
-.header_con .nav ul li a.cur{color:#0099E5;}
+.header_con .nav ul, .top-nav ul{overflow: hidden;}
+.header_con .nav ul li, .top-nav ul li{float:left; font-size: 16px; line-height: 113px; margin-right:25px;}
+.header_con .nav ul li a, .top-nav ul li a{display:block;}
+.header_con .nav ul li a.cur, .top-nav ul li a.cur{color:#0099E5;}
+.header .top-nav-logo{position: absolute;}
+.header_con .top-nav{margin-left: 98px;}
 .header_con .school_btn{position:absolute; right:121px; display: block; width:109px; height: 33px; line-height: 33px; background: #F9F9F9; text-align: center; border: 1px solid #E0E0E0; margin-top: 39px;}
 .header_con .school_btn .sfont{font-size: 13px;}
 .header_con .school_btn:hover{background: #fff;}
@@ -52,11 +66,11 @@ a:link, a:visited, a:active, a:hover{
 .fdnav ul li span{float: right; line-height: 81px; margin-right: 30px; font-size: 16px;}
 .fdnav ul li.li_last{border-right:0;}*/
 
-.fdnav {overflow: hidden;/*margin-left: 34%;*//*margin-left: 33.4%;*/margin-left: 44%; }
+.fdnav {overflow: hidden;/*margin-left: 34%;*/margin-left: 33.4%;/*margin-left: 44%;*/ }
 @media screen and (min-width: 1263px) { 
-.fdnav  {/*margin-left: 35%;*//*margin-left: 34.2%;*/margin-left: 44.5%;} 
+.fdnav  {/*margin-left: 35%;*/margin-left: 34.2%;/*margin-left: 44.5%;*/} 
 }
-.fdnav ul{background-color: #fff;border:1px solid #efefef;margin-top: 8px;text-align: center;}
+.fdnav ul{background-color: #fff;border:1px solid #efefef;margin-top: 8px;text-align: center;margin-bottom: 0;}
 .fdnav ul a:hover{background: #39a9ea;color: #fff;}
 .fdnav ul li {}
 .fdnav ul li a{display:block;padding: 4px 5px;}
