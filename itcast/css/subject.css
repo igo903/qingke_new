@@ -580,6 +580,7 @@ li .layer-title {
   margin-left: 30%;
   text-align: left;
   padding-left:8px;
+  display: none;
 }
 
 
