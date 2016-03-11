@@ -565,7 +565,11 @@ li .layer-title {
 .enroll-main .purchase{
   padding-bottom: 10px;
 }
-
+.enroll .tip-message{
+  text-align: center;
+  color: red;
+  font-size: 12px;
+}
 
 
 
