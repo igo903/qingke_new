@@ -540,6 +540,7 @@ li .layer-title {
 }
 .enroll-form {
   padding: 20px 0;
+  margin:0 140px;
 }
 .enroll-form input{
   border:1px solid #c9c9c9;
@@ -549,12 +550,19 @@ li .layer-title {
 }
 .enroll-form li{
   float: left;
-  width:33.3333%;
+  width:44%;
+  margin:0 3%;
+  margin-bottom: 10px;
+  height: 57px;
+ 
 }
-.enroll-form span{
+.enroll-form .red-star{
   font-size: 18px;
   line-height: 40px;
   padding-right: 4px;
+  width:30%;
+  display: inline-block;
+  text-align: right;
 }
  .enroll-form span s{
   text-decoration: none;
@@ -569,6 +577,9 @@ li .layer-title {
   text-align: center;
   color: red;
   font-size: 12px;
+  margin-left: 30%;
+  text-align: left;
+  padding-left:8px;
 }
 
 
