@@ -7,7 +7,7 @@
 /* 通用间距样式 */
 .clear{width:100%; height:40px; line-height:0; font-size:0; clear:both;}
 .clear_s{height:30px;}
- .header_con a:link, .header_con a:visited,  .header_con a:active, .header_con a:hover{
+ .header a:link, .header a:visited,  .header a:active, .header a:hover{
 	text-decoration: none;
 	color: inherit;
 	
@@ -158,6 +158,7 @@
 .footer .add p{/* float: left; */ font-size: 12px; line-height: 28px; margin-left: 20px;}
 .footer .add ul{float:right; overflow: hidden;}
 .footer .add ul li{float: left; margin-left: 4px;}
+.foot_ch h2{padding: 0;margin: 0;}
 
 /*面包屑*/
 .bread_nav{background: #f3f3f3;}
