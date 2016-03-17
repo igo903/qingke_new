@@ -194,8 +194,8 @@ li .layer-title {
 }
 .project-show{
   position: relative;
-  height: 440px;
-
+/*  height: 440px;*/
+  height: 500px;
  }
  .show-item{
   position: absolute;
@@ -205,13 +205,16 @@ li .layer-title {
   margin: auto;
  }
 .project-show .show-phone{
-  background: url(../img/phone.png) 50%;
-  width:332px;
-  height: 362px;
+  background: url(../img/phone1.png) 50%;
+  /*width:332px;*/
+  /*height: 362px;*/
+  width:320px;
+  height: 421px;
   margin:0 auto;
   position: relative;
   -webkit-animation:up .6s ease-in-out .3s backwards;
   animation:up .6s ease-in-out .3s backwards;
+  background-color: #fff;
 }
 
 .show-phone-views{
@@ -219,8 +222,10 @@ li .layer-title {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 292px;
-   height: 281px; 
+ /* width: 292px;
+   height: 281px; */
+   width:276px;
+   height: 344px;
   margin: auto;
   overflow: hidden;
 }
