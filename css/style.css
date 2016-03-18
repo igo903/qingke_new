@@ -710,9 +710,13 @@ input {
 .sectionHeader i {
   float: left;
   font-size: 38px;
-  margin-top: 7px;
-  line-height: 65px;
+  /*margin-top: 7px;
+  line-height: 65px;*/
   color: #ddd;
+}
+.sectionHeader i:before{
+  line-height: 72px;
+  vertical-align: middle;
 }
 ul.invoices {
   margin-left: 0px;
