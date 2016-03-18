@@ -1349,9 +1349,14 @@ h4.modal-title {
 .block-contents .title {
   font-size: 14px;
   margin-top: 10px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .block-contents .title a {
   color: #666;
+  overflow: hidden;
 }
 .block-contents .heat,
 .block-contents .duration {
