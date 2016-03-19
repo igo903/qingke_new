@@ -19,7 +19,7 @@ $(".header").mouseleave(function(){
 	$(".fdnav").stop().slideUp("fast");
 })
 
-//lay通用板块tab选项卡
+// //lay通用板块tab选项卡
 $(".lay .hd_rr li").mouseenter(function(){
 	$(this).addClass("cur").siblings().removeClass("cur").parent().parent().parent().siblings(".lay_con").children("ul").eq($(this).index()).show().siblings().hide();
 })

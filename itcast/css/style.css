@@ -7,7 +7,7 @@
 /* 通用间距样式 */
 .clear{width:100%; height:40px; line-height:0; font-size:0; clear:both;}
 .clear_s{height:30px;}
- .header_con a:link, .header_con a:visited,  .header_con a:active, .header_con a:hover{
+ .header a:link, .header a:visited,  .header a:active, .header a:hover{
 	text-decoration: none;
 	color: inherit;
 	
@@ -17,11 +17,12 @@
 	color: inherit;
 	
 }
-.header_con a:hover{
-	color: #39a9ea;
-}
+
 .header a:visited{
 	color: inherit;
+}
+.header_con a:hover{
+	color: #39a9ea;
 }
 /* 头部快速通道样式 */
 .topbar{width:100%; height: 40px; background: #39A9EA;}
@@ -37,7 +38,7 @@
 .whitebg{background: #fff;}
 .graybg{background: #F3F3F3; width:100%;}
 .header{ position: relative; z-index: 88;}
-.header_con .inner{width:1200px; margin: 0 auto; height: 113px; position: relative;}
+.header_con .inner, .fdnav-wrap{width:1200px; margin: 0 auto; height: 113px; position: relative;}
 .header_con h1{float:left; padding:30px 0;margin:0 auto;}
 .header_con h1 img{display: block;}
 .header_con .nav{float:left; margin-left: 65px;}
@@ -58,7 +59,8 @@
 .header_con .bmbtn{position: absolute; right: 0;}
 .header_con .bmbtn a{display: block; width:109px; height: 33px; line-height: 33px; background: #F9F9F9; text-align: center; border: 1px solid #E0E0E0; margin-top: 39px;}
 .header_con .bmbtn a:hover{background: #39a9ea; border-color:#39a9ea; color: #fff;}
-.fdnav{position:absolute; top:66px;  /*border-top:1px solid #DFDFDF; border-bottom:1px solid #DFDFDF;*/ background: #fff; z-index: 99; display: none;}
+.fdnav-wrap{height: 0;}
+.fdnav{position:absolute; /*top:66px;*/top:-46px;left: 33.33%;   background: #fff; z-index: 99; display: none;}
 /* .fdnav ul{width:1200px; margin:0 auto; padding:22px 0; overflow: hidden;}
 .fdnav ul li{float:left; width:239px; border-right: 1px solid #DFDFDF;}
 .fdnav ul li a{display: block; width:239px; height:81px;}
@@ -66,10 +68,10 @@
 .fdnav ul li span{float: right; line-height: 81px; margin-right: 30px; font-size: 16px;}
 .fdnav ul li.li_last{border-right:0;}*/
 
-.fdnav {overflow: hidden;/*margin-left: 34%;*/margin-left: 33.4%;/*margin-left: 44%;*/ }
+/*.fdnav {overflow: hidden;margin-left: 33.4%;}
 @media screen and (min-width: 1263px) { 
-.fdnav  {/*margin-left: 35%;*/margin-left: 34.2%;/*margin-left: 44.5%;*/} 
-}
+.fdnav  {margin-left: 34.2%;} 
+}*/
 .fdnav ul{background-color: #fff;border:1px solid #efefef;margin-top: 8px;text-align: center;margin-bottom: 0;}
 .fdnav ul a:hover{background: #39a9ea;color: #fff;}
 .fdnav ul li {}
@@ -138,8 +140,9 @@
 .city_class ul li .iconfont{font-size:12px; padding-right: 5px; position:relative; top:-1px;}
 
 /* 底部   */ 
-.footer{width:1200px; margin:0 auto; overflow: hidden;}
-.footer .foot_ch{padding:25px 0; overflow: hidden; /*border-top: 1px solid #E0E0E0;*/}
+
+.footer{ overflow: hidden;border-top: 1px solid #E0E0E0;}
+.footer .foot_ch{width:1200px; margin:0 auto;padding:25px 0; overflow: hidden; /*border-top: 1px solid #E0E0E0;*/}
 .footer .foot_ch h3{padding-bottom: 10px;}
 .footer .about {border-top: 0;}
 .footer .about .div_list{float:left; margin-right: 115px;}
@@ -158,6 +161,7 @@
 .footer .add p{/* float: left; */ font-size: 12px; line-height: 28px; margin-left: 20px;}
 .footer .add ul{float:right; overflow: hidden;}
 .footer .add ul li{float: left; margin-left: 4px;}
+.foot_ch h2{padding: 0;margin: 0;}
 
 /*面包屑*/
 .bread_nav{background: #f3f3f3;}
