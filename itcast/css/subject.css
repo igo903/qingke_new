@@ -1064,5 +1064,21 @@ li .layer-title {
   text-overflow:ellipsis;
   white-space: nowrap;
 }
+.planning{
+    text-decoration: underline;
+    color: #40aae7;
 
+}
+.planning-img{
+ background: url(../img/pdf.jpg);
+  width:30px;
+  height: 30px;
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.planning:hover{
+  text-decoration: underline;
+}
 
