@@ -1126,4 +1126,116 @@ li .layer-title {
   transform:scale(2);
 
 }
+.resume{
+  background: #f5f5f5;
+}
+.resume-content{
+  background: #fff;
+  text-align: center;
+  width:1060px;
+  margin: 0 auto 40px;
+  padding: 40px 50px 10px;
+}
 
+.resume p{
+  font-size: 20px;
+  line-height: 2em;
+}
+.resume-top h2{
+  font-size: 26px;
+  color: #ff0000;
+}
+.resume-section-title{
+  font-size: 24px;
+  line-height: 42px;
+  color: #39a9ea;
+  padding: 10px 0;
+}
+.resume-teacher{
+  width: 192px;
+  vertical-align: middle;
+}
+p.teacher-detail{
+  display: inline-block;
+  max-width: 600px;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.resume-table{
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  
+}
+.resume-table tr{
+  padding: 10px 10px;
+}
+.resume-table th{
+  width:33.333%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #5B9BD5;
+  color: #fff;
+  font-size: 18px;
+  border-right: 1px solid #fff;
+  height: 84px;
+  box-sizing:border-box;
+}
+.resume-table td{
+  padding: 0 10px;
+  font-size: 16px;
+  width: 33.333%;
+  background-color: #D2DEEF;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  height: 84px;
+  box-sizing:border-box;
+}
+tr.odd td{
+  background-color: #EAEFF7;
+}
+.resume-experience-list{
+  padding-bottom: 20px;
+  width:800px;
+  margin: 0 auto;
+}
+.list-title{
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.list-img{
+  width:100%;
+}
+#app{
+  width:250px;
+  margin:0 auto 20px;
+}
+.app-list{
+  display: inline-block;
+  width:50%;
+}
+.app-list img{
+  width:100%;
+  background-size: contain;
+}
+.app{
+  width:800px;
+  margin: 0 auto;
+}
+.app li{
+  width:30%;
+  display: inline-block;
+}
+.app li img{
+  width:100%;
+}
+.app-name{
+  font-size: 16px;
+}
+#app .slick-dots li button:before {
+    top: 230%;
+}
