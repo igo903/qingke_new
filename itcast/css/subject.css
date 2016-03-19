@@ -1089,7 +1089,7 @@ li .layer-title {
   text-overflow:ellipsis;
   white-space: nowrap;
 }
-<<<<<<< HEAD
+
 .planning{
     text-decoration: underline;
     color: #40aae7;
@@ -1106,7 +1106,7 @@ li .layer-title {
 }
 .planning:hover{
   text-decoration: underline;
-=======
+
 .qingke-qrcode{
   position: fixed;
   right:1%;
@@ -1124,6 +1124,6 @@ li .layer-title {
 .qingke-qrcode:hover .qingke-qrcode-img{
   -webkit-transform:scale(2);
   transform:scale(2);
->>>>>>> origin/master
+
 }
 
