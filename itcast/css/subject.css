@@ -1128,13 +1128,14 @@ li .layer-title {
 }
 .resume{
   background: #f5f5f5;
+  padding-bottom: 40px;
 }
 .resume-content{
   background: #fff;
   text-align: center;
   width:1060px;
-  margin: 0 auto 40px;
-  padding: 40px 50px 10px;
+  margin: 0 auto;
+  padding: 40px 50px 40px;
 }
 
 .resume p{
