@@ -1245,3 +1245,18 @@ tr.odd td{
   max-width: 800px;
   margin: 30px auto 0;
 }
+.section-img{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.resume .train{
+  color: #ff0000;
+}
+.resume-section .great{
+  color: #ff0000;
+  width:800px;
+  margin: 0 auto;
+  text-align: left;
+  font-size:26px;
+}
