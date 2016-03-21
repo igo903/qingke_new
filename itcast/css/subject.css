@@ -1235,7 +1235,12 @@ tr.odd td{
 }
 .app-name{
   font-size: 16px;
+  margin:4px 0;
 }
 #app .slick-dots li button:before {
     top: 230%;
+}
+.app-text{
+  max-width: 800px;
+  margin: 30px auto 0;
 }
