@@ -56,7 +56,7 @@
 .header_con .school_btn .linebg{width:109px; height: 1px; line-height: 0; font-size:0; background: #fff; left:0; bottom:-1px; position: absolute; z-index:101; display: none;}
 .header_con .school_btn ul{position: absolute; top:33px; left: -1px; width:230px; padding:7px 0; background: #fff; border:1px solid #E0E0E0; display: none; z-index: 100;}
 .header_con .school_btn ul li{float:left; font-size:12px; width:65px; margin-left:7px; line-height: 26px;}
-.header_con .bmbtn{position: absolute; right: 0;}
+.header_con .bmbtn{position: absolute; right:100px;}
 .header_con .bmbtn a{display: block; width:109px; height: 33px; line-height: 33px; background: #F9F9F9; text-align: center; border: 1px solid #E0E0E0; margin-top: 39px;}
 .header_con .bmbtn a:hover{background: #39a9ea; border-color:#39a9ea; color: #fff;}
 .fdnav-wrap{height: 0;}

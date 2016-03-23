@@ -1260,3 +1260,17 @@ tr.odd td{
   text-align: left;
   font-size:26px;
 }
+.consult{
+  position: absolute;
+  right: 0;
+
+
+}
+.consult a{
+  display: block;
+  height: 33px;
+  line-height: 33px;
+  margin-top: 39px;
+  padding-left: 33px;
+  background: url(../../itcast/img/zx_qq.jpg) left center no-repeat;
+}
