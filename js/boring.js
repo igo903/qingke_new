@@ -1,6 +1,6 @@
 /*!
  * Author: Boring
- * Update: 2016-01-08 11:15
+ * Update: 2016-03-28 10:14
  */
 
 (function () {
@@ -61,16 +61,30 @@
 			}
 		},
 
+		preventEventDefault = function (e) {
+			if (e.preventDefault) {
+				e.preventDefault();
+			} else {
+				e.returnValue = false;
+			}
+		},
+
 		getClassList = function (elm) {
 			return elm.classList || {
 				add: function (className) {
+					if (this.contains(className)) {
+						return;
+					}
+
 					elm.className += " " + className;
 				},
 
 				remove: function (className) {
-					if (this.contains(className)) {
-						elm.className = elm.className.replace(className, "");
+					if (!this.contains(className)) {
+						return;
 					}
+
+					elm.className = elm.className.replace(className, "");
 				},
 
 				toggle: function (className) {
@@ -82,9 +96,51 @@
 				},
 
 				contains: function (className) {
-					return elm.className.indexOf(className) !== -1;
+					var elmClasses = elm.className.split(' '),
+						contained = false;
+
+					forEach(elmClasses, function (elmClass) {
+						if (elmClass === className) {
+							contained = true;
+						}
+					});
+
+					return contained;
 				}
 			};
+		},
+
+		getData = function (elm, dataName) {
+			var dataset = elm.dataset,
+				dataValue;
+
+			if (dataset) {
+				dataValue = dataset[dataName];
+			} else {
+				dataValue = elm.getAttribute('data-' + dataName);
+			}
+
+			return dataValue;
+		},
+
+		setData = function (elm, dataName, dataValue) {
+			var dataset = elm.dataset;
+
+			if (dataset) {
+				dataset[dataName] = dataValue;
+			} else {
+				elm.setAttribute('data-' + dataName, dataValue);
+			}
+		},
+
+		removeData = function (elm, dataName) {
+			var dataset = elm.dataset;
+
+			if (dataset) {
+				delete dataset[dataName];
+			} else {
+				elm.removeAttribute('data-' + dataName);
+			}
 		},
 
 		bubbleElement = function (elm, tester) {
@@ -100,6 +156,14 @@
 			}
 
 			return passed ? elm : undefined;
+		},
+
+		removeNode = function (node) {
+			if (typeof node.remove === 'function') {
+				node.remove();
+			} else {
+				node.parentNode.removeChild(node);
+			}
 		},
 
 		ajax = function (config) {
@@ -294,6 +358,14 @@
 							focusElm.focus();
 						}, 20);
 					}
+
+					if (autoClose) {
+						setTimeout(close, autoClose);
+					}
+
+					if (onopen) {
+						onopen();
+					}
 				},
 
 				close = function (e) {
@@ -313,7 +385,7 @@
 				},
 
 				center = function () {
-					body.style.cssText += '; margin: ' + -(body.offsetHeight / 2) + 'px 0 0 ' + -(body.offsetWidth / 2) + 'px;';
+					body.style.cssText += '; margin-top: ' + -(body.offsetHeight / 2) + 'px;';
 				},
 
 				listenClose = function () {
@@ -339,7 +411,9 @@
 				bodyOpenedCn = 'boring-dialog-opened',
 				maskOpenedCn = 'boring-dialog-mask-opened',
 				focusElm = getByClass('boring-dialog-focus', body)[0],
+				autoClose = config.autoClose,
 				onclose = config.onclose,
+				onopen = config.onopen,
 				onmanualclose = config.onmanualclose,
 				mask,
 				maskCl;
@@ -353,7 +427,7 @@
 			};
 		},
 
-		placeholder = function () {
+		placeholder = function (fieldsWrap) {
 			var
 				initPlaceholder = function (field, defaultValue) {
 					fakePlaceholder(field, defaultValue);
@@ -383,8 +457,12 @@
 					});
 				},
 
-				fields = document.querySelectorAll('[placeholder]'),
+				fields = (fieldsWrap || document).querySelectorAll('[placeholder]'),
 				i;
+
+			if ('placeholder' in document.createElement('input')) {
+				return;
+			}
 
 			for (i = 0; i < fields.length; i++) {
 				initPlaceholder(fields[i], fields[i].getAttribute('placeholder'));
@@ -395,17 +473,21 @@
 			getByClass: getByClass,
 			forEach: forEach,
 			listen: listen,
+			preventEventDefault: preventEventDefault,
 			bubbleElement: bubbleElement,
+			removeNode: removeNode,
 			getClassList: getClassList,
+			getData: getData,
+			setData: setData,
+			removeData: removeData,
 			ajax: ajax,
 			tab: tab,
 			lazyload: lazyload,
+			placeholder: placeholder,
 			dialog: dialog
 		};
 
-	if (!('placeholder' in document.createElement('input'))) {
-		placeholder();
-	}
+	placeholder();
 
 	if (typeof window.define === 'function') {
 		define(boring);

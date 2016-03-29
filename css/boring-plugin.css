@@ -1,6 +1,6 @@
 /*!
  * Author: Boring
- * Update: 2015-09-10
+ * Update: 2016-03-20 16:54
  */
 
 
@@ -17,33 +17,30 @@
 .boring-dialog-mask,
 .boring-dialog {
 	position: fixed;
-	z-index: 9999;
-	opacity: 0;
-	filter: alpha(opacity=0);
-	visibility: hidden;
-	-webkit-transition: 0.3s ease-in-out;
-	transition: 0.3s ease-in-out;
-}
-.boring-dialog-mask {
 	left: 0;
 	right: 0;
+	z-index: 9999;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.boring-dialog-mask {
 	top: 0;
 	bottom: 0;
 	background: #000;
+	background: rgba(0,0,0,0.4);
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
 }
 .boring-dialog {
-	left: 50%;
 	top: 50%;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	overflow: auto;
 }
 .boring-dialog-mask-opened,
 .boring-dialog-opened {
 	visibility: visible;
-}
-.boring-dialog-mask-opened {
-	opacity: 0.4;
-	filter: alpha(opacity=40);
-}
-.boring-dialog-opened {
 	opacity: 1;
-	filter: alpha(opacity=100);
 }
