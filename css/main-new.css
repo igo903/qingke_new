@@ -284,11 +284,11 @@ a.rsContent:hover {
 	height: 420px;
 	line-height: 2.6;
 	color: #999;
-	background: #2b2b2b;
+	background: rgba(0,0,0,0.8);
 }
 .focus-tabs-head {
 	text-align: center;
-	background: #404040;
+	background: inherit;
 }
 .focus-tabs-title {
 	display: inline-block;
@@ -306,6 +306,7 @@ a.rsContent:hover {
 	padding: 10px 0;
 }
 .focus-tabs-list {
+	color: #fff;
 	-webkit-animation: fadein 0.5s;
 	animation: fadein 0.5s;
 }
@@ -316,27 +317,23 @@ a.rsContent:hover {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	opacity: 0.618;
 	-webkit-transition: 0.2s;
 	transition: 0.2s;
 }
-.focus-tabs-list a:hover {
-	text-decoration: none;
-	background: #404040;
-}
-.focus-tabs-item-num {
+.focus-tabs-list a:before {
+	content: "";
 	display: inline-block;
-	width: 1.7em;
-	height: 1.7em;
-	font-size: 12px;
-	line-height: 1.6;
-	text-align: center;
-	border: 1px solid #6f6f6f;
+	width: 4px;
+	height: 4px;
+	vertical-align: middle;
+	border-radius: 50%;
+	background: currentColor;
 	margin-right: 0.5em;
 }
-.focus-tabs-item:nth-child(-n+3) .focus-tabs-item-num {
-	color: #fff;
-	background: #d10c20;
-	border-color: #d10c20;
+.focus-tabs-list a:hover {
+	text-decoration: none;
+	opacity: 1;
 }
 
 
