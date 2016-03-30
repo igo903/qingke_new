@@ -384,6 +384,9 @@ a.rsContent:hover {
 }
 .item-title {
 	color: #333;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
 }
 
 
