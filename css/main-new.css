@@ -1,3 +1,22 @@
+*,
+:before,
+:after {
+	padding: 0;
+	margin: 0;
+}
+ol,
+ul {
+	list-style: none;
+}
+
+
+
+body {
+	padding-top: 80px;
+}
+
+
+
 .icon-sn-google {
 	background-color: #4285F4;
 	background-position: 0px 0
@@ -181,25 +200,6 @@
 
 
 
-*,
-:before,
-:after {
-	padding: 0;
-	margin: 0;
-}
-ol,
-ul {
-	list-style: none;
-}
-
-
-
-body {
-	padding-top: 80px;
-}
-
-
-
 .rsDefault .rsBullets{height:30px;background:none;}
 .rsDefault .rsBullet{width: auto; height: auto; cursor: pointer;}
 
@@ -232,6 +232,11 @@ body {
 }
 .navbar-nav.navbar-right li.signup-desktop a i {
 	top: 6px;
+}
+
+.headroom--unpinned {
+	-webkit-transform: translateY(-80px);
+	transform: translateY(-80px);
 }
 
 
@@ -336,8 +341,73 @@ a.rsContent:hover {
 
 
 
+.section {
+	margin-bottom: 30px;
+}
 .section-title {
 	text-align: center;
+}
+
+
+
+.item {
+	margin-bottom: 30px;
+}
+.item a {
+	display: block;
+	color: inherit;
+}
+.item a:hover {
+	text-decoration: none;
+}
+.item-cover {
+	position: relative;
+	overflow: hidden;
+}
+.item-img {
+	width: 100%;
+}
+.item-summary {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 12px;
+	color: #fff;
+	background: rgba(0,0,0,0.618);
+	padding: 0.25em 0.5em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.item-info {
+	line-height: 2;
+	color: #888;
+	padding: 1em;
+}
+.item-title {
+	color: #333;
+}
+
+
+
+.open-item {
+	margin-bottom: 0;
+}
+.open-item .item-info {
+	padding: 0.5em 0;
+	line-height: 1.6;
+}
+.open-item .item-heat {
+	font-size: 12px;
+}
+.open-item .item-img {
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+.open-item:hover .item-img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 
@@ -351,24 +421,6 @@ a.rsContent:hover {
 .course-item:hover {
 	box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 	-webkit-transform: translate(0, -3px);
-}
-.course-item a {
-	display: block;
-	color: inherit;
-}
-.course-item a:hover {
-	text-decoration: none;
-}
-.course-item-cover {
-	width: 100%;
-}
-.course-item-info {
-	line-height: 2;
-	color: #666;
-	padding: 1em;
-}
-.course-item-title {
-	color: #333;
 }
 .course-item-author-avatar {
 	width: 1.5em;
@@ -412,5 +464,13 @@ a.rsContent:hover {
 	}
 	100% {
 		transform: translate(0);
+	}
+}
+
+
+
+@media (min-width: 1200px) {
+	.col:first-child .open-item .item-img {
+		height: 241px;
 	}
 }
