@@ -250,7 +250,7 @@ body {
 }
 .rsContent {
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: auto 100%;
 }
 a.rsContent {
 	display: block;
@@ -348,6 +348,7 @@ a.rsContent:hover {
 
 
 .item {
+	background: #fff;
 	margin-bottom: 30px;
 }
 .item a {
@@ -391,7 +392,20 @@ a.rsContent:hover {
 
 
 
-.open-item {
+.cate-item .item-info {
+	font-size: 1.15em;
+	padding: 3em 1em;
+}
+.cate-item .item-summary {
+	position: static;
+	color: inherit;
+	background: none;
+	padding: 0;
+}
+
+
+
+/*.open-item {
 	margin-bottom: 0;
 }
 .open-item .item-info {
@@ -408,12 +422,11 @@ a.rsContent:hover {
 .open-item:hover .item-img {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-}
+}*/
 
 
 
 .course-item {
-	background: #fff;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 	-webkit-transition: 0.2s ease-in-out;
 	transition: 0.3s ease-in-out;
