@@ -229,6 +229,12 @@ body {
 
 
 
+.btn {
+	border-radius: 99px;
+}
+
+
+
 .navbar, .home .navbar-header {
 	height: 80px;
 }
@@ -355,6 +361,9 @@ body {
 	margin-bottom: 30px;
 }
 .section-title {
+	text-align: center;
+}
+.section-more {
 	text-align: center;
 }
 
