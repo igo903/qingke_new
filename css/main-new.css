@@ -776,3 +776,30 @@ button.toolbar-tool {
 .qualit-course-list .course-item{
 	margin-bottom: 20px;
 }
+.offline-class{
+	padding: 40px 50px 40px;
+	background: #fff;
+	margin-top: 30px;
+}
+.offline-class .main-top{
+	border-bottom: 1px solid #efefef;
+	padding: 0 50px 10px;
+}
+.offline-class .main-top-title{
+	font-size: 22px;
+	text-align: center;
+}
+.offline-class .main-body{
+	padding: 40px 50px 0;
+}
+.offline-class .main-body p{
+	margin-bottom: 20px;
+}
+.offline-class .main-picture{
+	max-width: 100%;
+}
+
+.ds{
+	background: #fff;
+	padding:20px;
+}

@@ -802,7 +802,7 @@ ul.invoices li span.amount {
 }
 #left_content {
   padding: 20px;
-  padding-top: 0px;
+  // padding-top: 0px;
 }
 #left_content pre {
   left: -20px;
