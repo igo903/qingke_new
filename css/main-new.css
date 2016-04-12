@@ -952,3 +952,12 @@ button.toolbar-tool {
 	color: #fff;
 	text-decoration: none;
 }
+.main-top .click-time{
+	float: left;
+	margin-bottom: 0;
+}
+.click-number{
+	float: right;
+	margin-bottom: 0;
+	
+}
