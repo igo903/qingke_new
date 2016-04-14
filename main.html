@@ -4,40 +4,19 @@
 	<meta charset="UTF-8">
 	<title>欢迎来到轻课网</title>
 	<meta name="description" content="Welcome to the Qingke">
-	<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/noty.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/pgwslider.min.css">
 	<link rel="stylesheet" href="css/royalslider.css">
 	<link rel="stylesheet" href="css/rs-default.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/prism.css">
 	<link rel="stylesheet" href="css/boring-plugin.css">
-	<link rel="stylesheet" href="css/main.css">
-	<!--[if gte IE 9]>
-	  <style type="text/css">
-		.gradient {
-		   filter: none;
-		}
-	  </style>
-	<![endif]-->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/rrssb.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-
-
-
-
-	<style type="text/css">.series .block{ margin-bottom:20px; }</style>
-
-	<!-- <script>if (!window.jQuery) { document.write('<script src="http://code.jquery.com/jquery-1.11.2.min.js"><\/script>'); }</script> -->
-	<script src="js/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
 
 	<!-- <link rel="icon" href="/content/uploads/settings/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="/content/uploads//settings/favicon.png" type="image9sx-icon"> -->
-
 </head>
 
 
@@ -46,31 +25,26 @@
 		<div class="container">
 			<div class="navbar-header">
 				<a id="nav-toggle" href="#"><span></span></a>
-				<a href="/" class="navbar-brand"><!--<img src="img/logo.png">--></a>
+				<a href="/" class="navbar-brand">
+					<img src="img/logo-2.png" alt="轻课网" />
+				</a>
 			</div>
 
 			<div class="collapse navbar-collapse right" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-left">
-					<li class="active"><a href="/">首页</a></li>
-					<li class="dropdown">
-						<a href="list.html" class="dropdown-toggle">视频</a>
-						<ul class="dropdown-menu multi-level" role="menu">
-							<li><a href="/videos">常规课程</a></li>
-							<li><a href="/shows">简短视频</a></li>
-							<li><a href="/series">系列教学</a></li>
-						</ul>
-					</li>
+					<li class="active">
 
-					<li class="dropdown">
-						<a href="course.html" class="dropdown-toggle">文章</a>
-						<ul class="dropdown-menu multi-level" role="menu">
-							<li><a href="/posts/category/tutorials">教程</a></li>
-							<li><a href="/posts/category/how-to">有问必答</a></li>
-							<li><a href="/posts/category/technology">前瞻技术</a></li>
-							<li><a href="/posts/category/chitchat">热门讨论</a></li>
-						</ul>
+						<a href="javascript:;">首页</a>
 					</li>
-					<li><a href="/page/laravel-survival-guide">移动端UX设计</a></li>
+					<li>
+						<a href="public-class-list.html" >公开课</a>
+					</li>
+					<li>
+						<a href="quality-course-list.html" >精品课</a>
+					</li>
+					<li>
+						<a href="">线下开班</a>
+					</li>
 				</ul>
 				<!-- <ul class="nav navbar-nav navbar-left">
 					<li class="active"><a href="itcast/itcast1.html" target="_blank">首页</a></li>
@@ -124,20 +98,13 @@
 
 
 
-	<script src="js/jquery.royalslider.min.js"></script>
 
 
 
-
-	 <div class="royalSlider rsDefault">
-
-			<div class="rsContent" style="background-image:url(img/mamp-wall.jpg);">
-				<div class="bgdim"></div>
-				<div class="home-bg-gradient"></div>
-				<a href="http://devdojo.com/video/49">
-					<img src="img/play-button-huge.png">
-				</a>
-				<div class="container">
+	<div class="focus">
+		 <div class="focus-slider royalSlider rsDefault" id="focus">
+			<a href="" class="rsContent" style="background-image:url(img/banner-1.jpg); background-color: #000;">
+				<!-- <div class="container">
 					<div class="details">
 						<div class="headline" style="">
 							<div class="origin">Autolayout for iOS</div>
@@ -146,16 +113,11 @@
 							<div class="origin">还在为不懂Autolayout头疼么？来这里轻松学习autolayout.</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div> -->
+			</a>
 
-				<div class="rsContent" style="background-image:url(img/5584cc68934e6.jpg); ">
-				<div class="bgdim"></div>
-				<div class="home-bg-gradient"></div>
-				<a href="http://devdojo.com/video/49">
-					<img src="img/play-button-huge.png">
-				</a>
-				<div class="container">
+			<a href="" class="rsContent" style="background-image:url(img/banner-2.jpg); background-color: #75c4ff; ">
+				<!-- <div class="container">
 					<div class="details">
 						<div class="headline" style="">
 							<div class="origin">用Sketch 3 来设计移动端UI</div>
@@ -164,16 +126,11 @@
 							<div class="origin">Sketch3 让你的设计更加轻便、有效。</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				</div> -->
+			</a>
 
-				<div class="rsContent" style="background-image:url(img/laravel.jpg); ">
-				<div class="bgdim"></div>
-				<div class="home-bg-gradient"></div>
-				<a href="http://devdojo.com/video/49">
-					<img src="img/play-button-huge.png">
-				</a>
-				<div class="container">
+			<a href="" class="rsContent" style="background-image:url(img/banner-3.jpg); background-color: #000;">
+				<!-- <div class="container">
 					<div class="details">
 						<div class="headline" style="">
 							<div class="origin">Hybrid App, HTML5不止是你知道的这些。</div>
@@ -182,232 +139,603 @@
 							<div class="origin">Ionic Framework让你用H5开发，模拟出原生效果的App应用</div>
 						</div>
 					</div>
+				</div> -->
+			</a>
+		</div><!--royalSlider-->
+
+		<div class="focus-tabs-wrap container">
+			<div class="focus-tabs" id="focus-tabs">
+				<div class="focus-tabs-head boring-tab-handles">
+					<h2 class="focus-tabs-title">开班信息</h2>
+					<h2 class="focus-tabs-title">最新课程</h2>
+				</div>
+				<div class="focus-tabs-body boring-tab-panels">
+					<ul class="focus-tabs-list">
+						<li class="focus-tabs-item">
+							<a href="" target="_blank">在线基础班</a>
+						</li>
+						<li class="focus-tabs-item">
+							<a href="" target="_blank">O2O基础班</a>
+						</li>
+						<li class="focus-tabs-item">
+							<a href="" target="_blank">线下基础班</a>
+						</li>
+					</ul>
+					<ul class="focus-tabs-list">
+						<li class="focus-tabs-item">
+							<a href="" target="_blank">手势识别系列UIGestureRecognizer</a>
+						</li>
+						<li class="focus-tabs-item">
+							<a href="" target="_blank">Xcode技巧</a>
+						</li>
+						<li class="focus-tabs-item">
+							<a href="" target="_blank">SVG</a>
+						</li>
+						<li class="focus-tabs-item">
+							<a href="" target="_blank">Sketch3</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-
-	</div><!--royalSlider-->
-
-	<div class="container">
-		<div id="home-content">
-			<div class="row series" style="margin-bottom:30px; margin-top:0px;">
-				<div class="col-md-12">
-					<h3><a href="/shows"><i class="dojo-lessons"></i>最新系列课</a></h3>
-				</div>
-
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-						<article class="block">
-							<a class="block-thumbnail" href="javascript:;">
-								<img src="http://7xjubq.com1.z0.glb.clouddn.com/6_bird.png">
-							</a>
-							<div class="block-contents">
-								<h2 class="title"><a href="">CSS框架基础</a></h2>
-								<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-								<div class="heat">250人学习</div>
-								<div class="duration">2课时 38分钟</div>
-							</div>
-					</article>
-				</div>
-
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-						<article class="block">
-							<a class="block-thumbnail" href="javascript:;">
-								<img src="http://7xjubq.com1.z0.glb.clouddn.com/6_bird.png">
-							</a>
-							<div class="block-contents">
-								<h2 class="title"><a href="">CSS框架基础</a></h2>
-								<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-								<div class="heat">250人学习</div>
-								<div class="duration">2课时 38分钟</div>
-							</div>
-					</article>
-				</div>
-
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-						<article class="block">
-							<a class="block-thumbnail" href="javascript:;">
-								<img src="http://7xjubq.com1.z0.glb.clouddn.com/6_bird.png">
-							</a>
-							<div class="block-contents">
-								<h2 class="title"><a href="">CSS框架基础</a></h2>
-								<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-								<div class="heat">250人学习</div>
-								<div class="duration">2课时 38分钟</div>
-							</div>
-					</article>
-				</div>
-
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-						<article class="block">
-							<a class="block-thumbnail" href="javascript:;">
-								<img src="http://7xjubq.com1.z0.glb.clouddn.com/6_bird.png">
-							</a>
-							<div class="block-contents">
-								<h2 class="title"><a href="">CSS框架基础</a></h2>
-								<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-								<div class="heat">250人学习</div>
-								<div class="duration">2课时 38分钟</div>
-							</div>
-					</article>
-				</div>
-
-			</div><!--series-->
-
-			<div class="pagination" style="text-align:center; display:block;  margin:0px auto">
-				<ul class="pagination" style="margin:0px; float:right;">
-					<li><a href="list.html">查看全部</a></li>
-				</ul>
-			</div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<h3><a href="list.html"><i class="fa fa-youtube-play" style="position:relative; top:3px;"></i>全部视频</a></h3>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<article class="block">
-						<a class="block-thumbnail" href="list.html">
-							<div class="thumbnail-overlay"></div>
-							<span class="play-button"></span>
-							<img src="img/javascript-prototypal-inheritance-medium.jpg">
-						</a>
-						<div class="block-contents">
-							<span class="label label-info">免费</span>
-							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
-							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-							<p class="duration">
-								1小时25分
-							</p>
-						</div>
-					</article>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<article class="block">
-						<a class="block-thumbnail" href="list.html">
-							<div class="thumbnail-overlay"></div>
-							<span class="play-button"></span>
-							<img src="img/faker-medium.jpg">
-						</a>
-						<div class="block-contents">
-							<span class="label label-info">免费</span>
-							<h2 class="title"><a href="">CSS3动画解析</a></h2>
-							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-							<p class="duration">
-								1小时25分
-							</p>
-						</div>
-					</article>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<article class="block">
-						<a class="block-thumbnail" href="list.html">
-							<div class="thumbnail-overlay"></div>
-							<span class="play-button"></span>
-							<img src="img/javascript-prototypal-inheritance-medium.jpg">
-						</a>
-						<div class="block-contents">
-							<span class="label label-info">免费</span>
-							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
-							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-							<p class="duration">
-								1小时25分
-							</p>
-						</div>
-					</article>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<article class="block">
-						<a class="block-thumbnail" href="list.html">
-							<div class="thumbnail-overlay"></div>
-							<span class="play-button"></span>
-							<img src="img/faker-medium.jpg">
-						</a>
-						<div class="block-contents">
-							<span class="label label-info">免费</span>
-							<h2 class="title"><a href="">CSS3动画解析</a></h2>
-							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-							<p class="duration">
-								1小时25分
-							</p>
-						</div>
-					</article>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<article class="block">
-						<a class="block-thumbnail" href="list.html">
-							<div class="thumbnail-overlay"></div>
-							<span class="play-button"></span>
-							<img src="img/javascript-prototypal-inheritance-medium.jpg">
-						</a>
-						<div class="block-contents">
-							<span class="label label-info">免费</span>
-							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
-							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-							<p class="duration">
-								1小时25分
-							</p>
-						</div>
-					</article>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<article class="block">
-						<a class="block-thumbnail" href="list.html">
-							<div class="thumbnail-overlay"></div>
-							<span class="play-button"></span>
-							<img src="img/faker-medium.jpg">
-						</a>
-						<div class="block-contents">
-							<span class="label label-info">免费</span>
-							<h2 class="title"><a href="">CSS3动画解析</a></h2>
-							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
-							<p class="duration">
-								1小时25分
-							</p>
-						</div>
-					</article>
-				</div>
-
-
-
-
-			</div>
-
-			<div class="pagination" style="text-align:center; display:block;  margin:0px auto">
-				<ul class="pagination" style="margin:0px; float:right;">
-					<li><a href="list.html">查看全部</a></li>
-				</ul>
-			</div>
-
-			<div style="clear:both; height:30px;"></div>
-
-		</div><!--home-content-->
-	</div><!--container-->
-
-	<div class="bottom_bar">
-		<div class="container">
-			<div class="notification">
-				<h1>Copyright © 2015 轻课网 - 你的私人轻学习专家. </h1>
-			</div>
-			<!-- <div class="social">
-				<h3>关注我们</h3>
-				<a href="javascript:;" target="_blank" class="share"><i class="fa fa-facebook"></i></a>
-				<a href="javascript:;" target="_blank" class="share"><i class="fa fa-twitter"></i></a>
-				<a href="javascript:;" target="_blank" class="share"><i class="fa fa-google-plus"></i></a>
-				<a href="javascript:;" target="_blank" class="share"><i class="fa fa-youtube"></i></a>
-			</div> -->
 		</div>
 	</div>
 
-
-	<footer>
+	<section class="section">
 		<div class="container">
+			<h1 class="section-title">所授课程</h1>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="item cate-item">
+						<a href="" target="_blank">
+							<div class="item-info">
+								<div class="item-title">前端开发</div>
+								<div class="item-summary">啊啊啊啊啊啊啊啊啊啊啊</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="item cate-item">
+						<a href="" target="_blank">
+							<div class="item-info">
+								<div class="item-title">数据库</div>
+								<div class="item-summary">啊啊啊啊啊啊啊啊啊啊啊</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="item cate-item">
+						<a href="iOS.html" target="_blank">
+							<div class="item-info">
+								<div class="item-title">iOS 开发</div>
+								<div class="item-summary">啊啊啊啊啊啊啊啊啊啊啊</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="item cate-item">
+						<a href="" target="_blank">
+							<div class="item-info">
+								<div class="item-title">Windows Phone 开发</div>
+								<div class="item-summary">啊啊啊啊啊啊啊啊啊啊啊</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<h1 class="section-title">公开课</h1>
+			<!-- <div class="row">
+				<div class="col col-sm-6 col-md-4 col-lg-4">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/90_page1-1.png" alt="" class="item-img" />
+								<div class="item-summary">使用UIActionSheet实现提示弹出框</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">UIActionSheet在iOS8之后已被禁用，官方推荐的是使用UIAlertControl...</div>
+								<div class="item-heat">6分50秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/89_page1-2.png" alt="" class="item-img" />
+								<div class="item-summary">svg从零开始－基本的svg元素</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">基本的svg元素介绍</div>
+								<div class="item-heat">14分39秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/88_page1-3.png"  alt="" class="item-img" />
+								<div class="item-summary">svg从零开始－课程简介</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">从零开始学svg</div>
+								<div class="item-heat">1分21秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/87_page1-4.png"  alt="" class="item-img" />
+								<div class="item-summary">轻松学UIGestureRecognizer #7 - 边缘拖动手势识别器UIScreenEdgePanGestureRecognizer</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">UIScreenEdgePanGestureRecognizer是iOS自带的识别边缘拖动手势...</div>
+								<div class="item-heat">4分5秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/86_page1-5.png"  alt="" class="item-img" />
+								<div class="item-summary">轻松学UIGestureRecognizer #6 - 长按手势识别器UILongPressGestureRecognizer</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">UILongPressGestureRecognizer是iOS自带的长按手势识别器，它可以配...</div>
+								<div class="item-heat">6分42秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/85_page1-6.png"  alt="" class="item-img" />
+								<div class="item-summary">轻松学UIGestureRecognizer #5 - 旋转手势识别器UIRotationGestureRecognizer</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">UIRotationGestureRecognizer是iOS自带的旋转手势识别器。对一个vi...</div>
+								<div class="item-heat">6分10秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/84_page1-7.png" alt="" class="item-img" />
+								<div class="item-summary">轻松学UIGestureRecognizer #4 - UIPinchGestureRecognizer</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">UIPinchGestureRecognizer可以识别放大缩小的手势。最常见的就是对地图放大...</div>
+								<div class="item-heat">5分17秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/83_page1-8.png" alt="" class="item-img" />
+								<div class="item-summary">轻松学UIGestureRecognizer #3 - UIPanGestureRecognizer</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">Pan在这里是Drag(拖动）的意思。UIPanGestureRecognizer可以监控用户...</div>
+								<div class="item-heat">5分25秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col col-sm-6 col-md-4 col-lg-2">
+					<div class="item open-item">
+						<a href="show.html" target="_blank">
+							<div class="item-cover">
+								<img src="img/82_page1-9.png"  alt="" class="item-img" />
+								<div class="item-summary">轻松学UIGestureRecognizer #2 - UISwipeGestureRecognizer</div>
+							</div>
+							<div class="item-info">
+								<div class="item-title">Swipe是滑动的意思，是iPhone里面最常用的操作之一。使用UISwipeGestureR...</div>
+								<div class="item-heat">6分53秒</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/javascript-prototypal-inheritance-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								<i class="fa fa-play-circle"></i>
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/faker-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">CSS3动画解析</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								<i class="fa fa-play-circle"></i>
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/javascript-prototypal-inheritance-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								<i class="fa fa-play-circle"></i>
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/faker-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">CSS3动画解析</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								<i class="fa fa-play-circle"></i>
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/javascript-prototypal-inheritance-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								<i class="fa fa-play-circle"></i>
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/faker-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">CSS3动画解析</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								<i class="fa fa-play-circle"></i>
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="section-more">
+				<a href="public-class-list.html" target="_blank" class="btn btn-default">查看更多</a>
+			</div>
 
 		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<h1 class="section-title">在线精品课</h1>
+			<div class="courses-slider royalSlider rsDefault" id="courses">
+				<div class="row">
+					<div class="col col-sm-6 col-md-3">
+						<div class="item course-item">
+							<a href="" target="_blank">
+								<img src="img/javascript-prototypal-inheritance-medium.jpg" alt="" class="item-img" />
+								<div class="item-info">
+									<div class="item-title">JavaScript 新手入门</div>
+									<div class="course-item-price pull-right">￥250.00</div>
+									<div>
+										<img src="https://tse1.mm.bing.net/th?&id=OIP.M377aff37bc79377886d093987b03dba6o2&w=299&h=299&c=0&pid=1.9&rs=0&p=0" alt="" class="course-item-author-avatar" />
+										<span>李小龙</span>
+									</div>
+									<div class="pull-right">250 人在学</div>
+									<div>4 小时 38 分</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col col-sm-6 col-md-3">
+						<div class="item course-item">
+							<a href="" target="_blank">
+								<img src="img/javascript-prototypal-inheritance-medium.jpg" alt="" class="item-img" />
+								<div class="item-info">
+									<div class="item-title">JavaScript 新手入门</div>
+									<div class="course-item-price pull-right">￥250.00</div>
+									<div>
+										<img src="https://tse1.mm.bing.net/th?&id=OIP.M377aff37bc79377886d093987b03dba6o2&w=299&h=299&c=0&pid=1.9&rs=0&p=0" alt="" class="course-item-author-avatar" />
+										<span>李小龙</span>
+									</div>
+									<div class="pull-right">250 人在学</div>
+									<div>4 小时 38 分</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col col-sm-6 col-md-3">
+						<div class="item course-item">
+							<a href="" target="_blank">
+								<img src="img/javascript-prototypal-inheritance-medium.jpg" alt="" class="item-img" />
+								<div class="item-info">
+									<div class="item-title">JavaScript 新手入门</div>
+									<div class="course-item-price pull-right">￥250.00</div>
+									<div>
+										<img src="https://tse1.mm.bing.net/th?&id=OIP.M377aff37bc79377886d093987b03dba6o2&w=299&h=299&c=0&pid=1.9&rs=0&p=0" alt="" class="course-item-author-avatar" />
+										<span>李小龙</span>
+									</div>
+									<div class="pull-right">250 人在学</div>
+									<div>4 小时 38 分</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col col-sm-6 col-md-3">
+						<div class="item course-item">
+							<a href="" target="_blank">
+								<img src="img/javascript-prototypal-inheritance-medium.jpg" alt="" class="item-img" />
+								<div class="item-info">
+									<div class="item-title">JavaScript 新手入门</div>
+									<div class="course-item-price pull-right">￥250.00</div>
+									<div>
+										<img src="https://tse1.mm.bing.net/th?&id=OIP.M377aff37bc79377886d093987b03dba6o2&w=299&h=299&c=0&pid=1.9&rs=0&p=0" alt="" class="course-item-author-avatar" />
+										<span>李小龙</span>
+									</div>
+									<div class="pull-right">250 人在学</div>
+									<div>4 小时 38 分</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-sm-6 col-md-3">
+						<div class="item course-item">
+							<a href="" target="_blank">
+								<img src="img/javascript-prototypal-inheritance-medium.jpg" alt="" class="item-img" />
+								<div class="item-info">
+									<div class="item-title">JavaScript 新手入门</div>
+									<div class="course-item-price pull-right">￥250.00</div>
+									<div>
+										<img src="https://tse1.mm.bing.net/th?&id=OIP.M377aff37bc79377886d093987b03dba6o2&w=299&h=299&c=0&pid=1.9&rs=0&p=0" alt="" class="course-item-author-avatar" />
+										<span>李小龙</span>
+									</div>
+									<div class="pull-right">250 人在学</div>
+									<div>4 小时 38 分</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col col-sm-6 col-md-3">
+						<div class="item course-item">
+							<a href="" target="_blank">
+								<img src="img/javascript-prototypal-inheritance-medium.jpg" alt="" class="item-img" />
+								<div class="item-info">
+									<div class="item-title">JavaScript 新手入门</div>
+									<div class="course-item-price pull-right">￥250.00</div>
+									<div>
+										<img src="https://tse1.mm.bing.net/th?&id=OIP.M377aff37bc79377886d093987b03dba6o2&w=299&h=299&c=0&pid=1.9&rs=0&p=0" alt="" class="course-item-author-avatar" />
+										<span>李小龙</span>
+									</div>
+									<div class="pull-right">250 人在学</div>
+									<div>4 小时 38 分</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-teachers">
+		<div class="container">
+			<h1 class="section-title">教师资源</h1>
+			<div class="royalSlider rsDefault" id="teachers">
+				<ul class="teachers row">
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+				</ul>
+				<ul class="teachers row">
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+				</ul>
+				<ul class="teachers row">
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+					<li class="teacher col col-xs-6">
+						<div class="teacher-photo" style="background-image: url(http://pic.newssc.org/0/12/53/35/12533554_894939.jpg);"></div>
+						<div class="teacher-intro">阿里巴巴国际支付业务研发部经理, 专注Java开发、技术团队管理10年。</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<h1 class="section-title">我们的学生毕业后，去哪儿？</h1>
+			<div class="where-wrap">
+				<div class="where center-block">实习推荐合作，签约企业包括：阿里巴巴、网易、51信用卡、乐港游戏、今日捷财等</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<!-- <nav class="footer-nav">
+				<ul>
+					<li class="footer-nav-item">
+						<a href="" target="_blank">关于我们</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="" target="_blank">法律声明</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="" target="_blank">帮助中心</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="" target="_blank">友情链接</a>
+					</li>
+				</ul>
+			</nav> -->
+			<p>杭州君强科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;地址：杭州市文一西路998号浙江海外高层次人才创新园号楼612室&nbsp;&nbsp;&nbsp;&nbsp;邮编：311100
+				<br/>
+				电话：0571-85027260&nbsp;&nbsp;&nbsp;&nbsp;传真：0571-85027260&nbsp;&nbsp;&nbsp;&nbsp;邮箱: qingke618@sina.com&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" target="_blank">浙ICP备13012753号-1</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			</p>
+			<!-- <div>Copyright &copy; 2015 - 2016 <a href="" target="_blank">浙ICP备13012753号-1</a></div> -->
+		</div>
 	</footer>
+
 	<div class="modal boring-dialog" id="loginDialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -477,50 +805,66 @@
 		</div>
 	</div>
 
+	<div class="toolbar visible-lg-block">
+		<button type="button" class="toolbar-tool toolbar-to-top" title="回到顶部" id="to-top">
+			<i class="fa fa-arrow-up"></i>
+		</button>
+		<div class="toolbar-tool toolbar-tool-has-popup" title="扫码关注轻课网">
+			<i class="fa fa-qrcode"></i>
+			<div class="toolbar-tool-popup">
+				<img src="img/qingke.jpg"  alt="" class="toolbar-qrcode" />
+			</div>
+		</div>
+		<a href="" class="toolbar-tool" title="QQ 客服">
+			<i class="fa fa-qq"></i>
+		</a>
+	</div>
 
-
-	<script src="js/pgwslider.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('.pgwSlider').pgwSlider({ maxHeight: 360 });
-
-			$('.signup-sidebar').hover(function(){
-				$(this).find('a').removeClass('bounce').addClass('animated rubberBand');
-				$(this).find('img').removeClass('bounce').addClass('animated ');
-			}, function(){
-				$(this).find('a').removeClass('rubberBand').addClass('bounce');
-				//$(this).find('img').removeClass('pulse').addClass('bounce');
-			});
-
-		});
-	</script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.royalslider.min.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script type="text/javascript" src="js/boring.js"></script>
 
 	<script>
 		jQuery(document).ready(function($) {
-			$(".royalSlider").royalSlider({
+			$("#focus").royalSlider({
 				// options go here
 				// as an example, enable keyboard arrows nav
 				keyboardNavEnabled: true,
 				loop: true,
 				transitionType: 'fade',
+				arrowsNav: false,
+				addActiveClass: true,
+				sliderDrag: false,
 				autoPlay: {
 					// autoplay options go gere
 					enabled: true,
-					pauseOnHover: false,
+					pauseOnHover: true,
 					delay: 5500
 				}
 			});
-		});
-	</script>
 
-	<script src="js/rrssb.min.js"></script>
-	<script src="js/headroom.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/moment.min.js"></script>
-	<script type="text/javascript" src="js/jquery.noty.js"></script>
-	<script type="text/javascript" src="js/default.js"></script>
-	<script type="text/javascript" src="js/top.js"></script>
-	<script type="text/javascript" src="js/boring.js"></script>
+			$("#courses").royalSlider({
+				keyboardNavEnabled: true,
+				controlNavigation: 'none',
+				loopRewind: true,
+				sliderDrag: false,
+				autoHeight: true
+			});
+
+			$('#teachers').royalSlider({
+				arrowsNav: false,
+				loopRewind: true,
+				navigateByClick: false,
+				sliderDrag: false,
+				transitionSpeed: 400
+			});
+		});
+
+		(function () {
+			boring.tab('focus-tabs');
+		}());
+	</script>
 
 
 
@@ -568,54 +912,36 @@
 
 		  });
 
+		(function () {
+			var loginDialog = boring.dialog('loginDialog'),
+				regDialog = boring.dialog('regDialog');
 
-		  /********** LOGIN MODAL FUNCTIONALITY **********/
+			$('.j-login-btn').on('click', function () {
+				loginDialog.open();
+			});
 
-		 //  var loginSignupModal = $('<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button><h4 class="modal-title" id="myModalLabel">登录</h4></div><div class="modal-body"><form><div class="form-group"><label for="login-email">E-mail</label><input type="email" class="form-control" id="login-email" placeholder="E-mail"></div><div class="form-group"><label for="login-password">密码</label><input type="password" class="form-control" id="login-password" placeholder="密码"></div><div class="form-group clearfix"><div class="checkbox pull-left"><label><input type="checkbox"> 记住登录状态</label></div><button type="submit" class="btn btn-primary pull-right">登录</button></div></form></div></div></div></div>');
+			$('.j-reg-btn').on('click', function () {
+				regDialog.open();
+			});
+		}());
 
-			// $(document).ready(function(){
+		(function () {
+			var NOT_AT_TOP_CLASS = 'not-at-top',
+				bodyCl = document.body.classList;
 
-			// 	// Load the Modal Window for login signup when they are clicked
-			// 	$('.login-desktop a').click(function(e){
-			// 		e.preventDefault();
-			// 		$('body').prepend(loginSignupModal);
-			// 		$('#loginSignupModal .modal-body').load($(this).attr('href') + '?redirect=' + document.URL + ' .form-signin', function(){
-			// 			$('#loginSignupModal').show(200, function(){
-			// 				setTimeout(function() { $('#email').focus() }, 300);
+			window.addEventListener('scroll', function () {
+				if (document.body.scrollTop + document.documentElement.scrollTop > 0) {
+					bodyCl.add(NOT_AT_TOP_CLASS);
+				} else {
+					bodyCl.remove(NOT_AT_TOP_CLASS);
+				}
+			});
 
-
-			// 			});
-			// 			$('#loginSignupModal').modal();
-
-			// 		});
-
-			// 		// Be sure to remove the modal from the DOM after it is closed
-			// 		$('#loginSignupModal').on('hidden.bs.modal', function (e) {
-			// 			$('#loginSignupModal').remove();
-			// 		});
-
-			// 	});
-
-
-
-
-			// });
-
-			/********** END LOGIN MODAL FUNCTIONALITY **********/
-
-			(function () {
-				var loginDialog = boring.dialog('loginDialog'),
-					regDialog = boring.dialog('regDialog');
-
-				$('.j-login-btn').on('click', function () {
-					loginDialog.open();
-				});
-
-				$('.j-reg-btn').on('click', function () {
-					regDialog.open();
-				});
-			}());
-		</script>
+			document.getElementById('to-top').addEventListener('click', function () {
+				window.scrollTo(0, 0);
+			});
+		}());
+	</script>
 
 
 

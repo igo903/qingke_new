@@ -1,0 +1,196 @@
+.icon-sn-google {
+	background-color: #4285F4;
+	background-position: 0px 0
+}
+
+.icon-sn-github {
+	background-color: #333;
+	background-position: -20px 0
+}
+
+.icon-sn-weibo {
+	background-color: #E90D24;
+	background-position: -40px 0
+}
+
+.icon-sn-qq {
+	background-color: #0098E6;
+	background-position: -60px 0
+}
+
+.icon-sn-twitter {
+	background-color: #50ABF1;
+	background-position: -80px 0
+}
+
+.icon-sn-facebook {
+	background-color: #4862A3;
+	background-position: -100px 0
+}
+
+.icon-sn-renren {
+	background-color: #197BC8;
+	background-position: -120px 0
+}
+
+.icon-sn-tqq {
+	background-color: #1F9ED2;
+	background-position: -140px 0
+}
+
+.icon-sn-douban {
+	background-color: #279738;
+	background-position: -160px 0
+}
+
+.icon-sn-weixin {
+	background-color: #00B500;
+	background-position: -180px 0
+}
+
+.icon-sn-wechat {
+	background-color: #00B500;
+	background-position: -200px 0
+}
+
+.icon-sn-wechat {
+	background-position: -180px 0
+}
+
+[class*="icon-sn-"] {
+	display: inline-block;
+	background-image: url(../img/icon-sn.png);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-background-size: auto 20px;
+	-o-background-size: auto 20px;
+	-webkit-background-size: auto 20px;
+	background-size: auto 20px
+}
+
+.btn-sn-google {
+	background: #4285F4
+}
+
+.btn-sn-google:hover,.btn-sn-google:active,.btn-sn-google:focus {
+	background: #2a75f3
+}
+
+.btn-sn-github {
+	background: #333
+}
+
+.btn-sn-github:hover,.btn-sn-github:active,.btn-sn-github:focus {
+	background: #262626
+}
+
+.btn-sn-weibo {
+	background: #E90D24
+}
+
+.btn-sn-weibo:hover,.btn-sn-weibo:active,.btn-sn-weibo:focus {
+	background: #d10c20
+}
+
+.btn-sn-qq {
+	background: #0098E6
+}
+
+.btn-sn-qq:hover,.btn-sn-qq:active,.btn-sn-qq:focus {
+	background: #0087cd
+}
+
+.btn-sn-twitter {
+	background: #50ABF1
+}
+
+.btn-sn-twitter:hover,.btn-sn-twitter:active,.btn-sn-twitter:focus {
+	background: #38a0ef
+}
+
+.btn-sn-facebook {
+	background: #4862A3
+}
+
+.btn-sn-facebook:hover,.btn-sn-facebook:active,.btn-sn-facebook:focus {
+	background: #405791
+}
+
+.btn-sn-renren {
+	background: #197BC8
+}
+
+.btn-sn-renren:hover,.btn-sn-renren:active,.btn-sn-renren:focus {
+	background: #166db1
+}
+
+.btn-sn-tqq {
+	background: #1F9ED2
+}
+
+.btn-sn-tqq:hover,.btn-sn-tqq:active,.btn-sn-tqq:focus {
+	background: #1c8dbc
+}
+
+.btn-sn-douban {
+	background: #279738
+}
+
+.btn-sn-douban:hover,.btn-sn-douban:active,.btn-sn-douban:focus {
+	background: #228330
+}
+
+.btn-sn-weixin {
+	background: #00B500
+}
+
+.btn-sn-weixin:hover,.btn-sn-weixin:active,.btn-sn-weixin:focus {
+	background: #009c00
+}
+
+.btn-sn-wechat {
+	background: #00B500
+}
+
+.btn-sn-wechat:hover,.btn-sn-wechat:active,.btn-sn-wechat:focus {
+	background: #009c00
+}
+
+[class*="btn-sn-"],[class*="btn-sn-"]:hover,[class*="btn-sn-"]:active,[class*="btn-sn-"]:focus {
+	border: none;
+	color: #fff
+}
+
+.btn-sn-more {
+	background: #eee;
+	color: #999 !important
+}
+
+.btn-sn-more:hover,.btn-sn-more:active {
+	background: #e1e1e1
+}
+
+[class*="btn-sn-"] [class*="icon-sn-"] {
+	background-color: transparent
+}
+
+
+
+.rsDefault .rsBullets{height:30px;background:none;}
+.rsDefault .rsBullet{width: auto; height: auto;}
+
+
+
+.quick-login-title {
+	float: left;
+	margin: 5px 0.5em 0 0;
+}
+.quick-login .btn-sm {
+	padding-left: 5px;
+	padding-right: 5px;
+}
