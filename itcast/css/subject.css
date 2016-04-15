@@ -415,10 +415,16 @@ li .layer-title {
   padding:10px 0 20px;
 
 }
+.enroll{
+  padding:  0 0  20px 0;
+}
+
+
 .article-main, .article-detail-main, .enroll-main{
-   width:960px;
+   // width:960px;
   margin:0 auto;
   background: #fff;
+  padding:  0 100px;
 }
 .article .item-list{
   padding: 20px;
@@ -545,13 +551,15 @@ li .layer-title {
   text-indent: 2em;
 
 }
-.enroll-form {
+.enroll-form{
   padding: 20px 0;
   margin:0 140px;
+  background: #fff;
 }
 .enroll-form input{
   border:1px solid #c9c9c9;
-  padding: 10px;
+  // padding: 10px;
+  padding:  10px 5px;
   box-shadow: inset 1px 2px 3px #f1f1f1;
   border-radius: 4px;
   margin-bottom: 0;
@@ -564,11 +572,12 @@ li .layer-title {
   height: 57px;
  
 }
+ 
 .enroll-form .red-star{
   font-size: 18px;
   line-height: 40px;
   padding-right: 4px;
-  width:30%;
+  width:31%;
   display: inline-block;
   text-align: right;
 }
@@ -577,6 +586,7 @@ li .layer-title {
   color: red;
   font-size: 15px;
   line-height: 40px;
+  vertical-align: middle;
 } 
 .enroll-main .purchase{
   padding-bottom: 10px;
@@ -1278,4 +1288,32 @@ tr.odd td{
   margin-top: 39px;
   padding-left: 33px;
   background: url(../../itcast/img/zx_qq.jpg) left center no-repeat;
+}
+.enroll-label{
+  padding: 20px 0;
+}
+.enroll-label .red-star{
+  font-size: 18px;
+  line-height: 40px;
+  text-align: right;
+  width:31%;
+  display: inline-block;
+  text-decoration: none;
+}
+.enroll-label input{
+  border: 1px solid #c9c9c9;
+  box-shadow: inset 1px 2px 3px #f1f1f1;
+  padding: 10px 4px;
+  border-radius: 4px;
+  margin-bottom: 0px;
+}
+.enroll-label span s{
+  color: red;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.enroll-item{
+   margin: 0 40px;
+  margin-bottom: 6px;
+
 }
