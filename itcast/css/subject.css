@@ -421,7 +421,7 @@ li .layer-title {
 
 
 .article-main, .article-detail-main, .enroll-main{
-   // width:960px;
+   width:960px;
   margin:0 auto;
   background: #fff;
   padding:  0 100px;
