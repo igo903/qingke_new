@@ -374,8 +374,11 @@ body {
 .section-more {
 	text-align: center;
 }
-.section video {
-	width: 100%;
+.section .video-js {
+	max-width: 100%;
+	width: auto;
+	height: 0;
+	padding-bottom: 56.25%;
 }
 
 
