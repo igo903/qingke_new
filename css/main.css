@@ -374,6 +374,9 @@ body {
 .section-more {
 	text-align: center;
 }
+.section video {
+	max-width: 100%;
+}
 
 
 
@@ -551,19 +554,6 @@ body {
 	bottom: 0;
 	padding: 0.5em;
 	background: rgba(0,0,0,0.6);
-}
-
-
-
-.where-wrap {
-	background: url(../img/circles.jpg) no-repeat center #fafafa;
-	padding: 100px 0 80px;
-}
-.where {
-	max-width: 120px;
-	font-size: 12px;
-	text-align: center;
-	color: #fff;
 }
 
 
@@ -960,5 +950,5 @@ button.toolbar-tool {
 .click-number{
 	float: right;
 	margin-bottom: 0;
-	
+
 }
