@@ -242,6 +242,15 @@ body {
 
 
 
+.video-js {
+	max-width: 100%;
+	width: auto;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+
+
 .navbar, .home .navbar-header {
 	height: 80px;
 }
@@ -373,12 +382,6 @@ body {
 }
 .section-more {
 	text-align: center;
-}
-.section .video-js {
-	max-width: 100%;
-	width: auto;
-	height: 0;
-	padding-bottom: 56.25%;
 }
 
 
