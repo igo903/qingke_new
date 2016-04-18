@@ -375,7 +375,7 @@ body {
 	text-align: center;
 }
 .section video {
-	max-width: 100%;
+	width: 100%;
 }
 
 
@@ -555,6 +555,10 @@ body {
 	padding: 0.5em;
 	background: rgba(0,0,0,0.6);
 }
+
+
+
+
 
 
 
