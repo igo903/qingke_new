@@ -276,7 +276,8 @@ body {
 }
 .focus-slider .rsContent {
 	background-repeat: no-repeat;
-	background-size: auto 100%;
+	// background-size: auto 100%;
+	background-size: contain;
 }
 .focus-slider a.rsContent {
 	display: block;
