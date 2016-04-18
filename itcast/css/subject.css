@@ -420,15 +420,20 @@ li .layer-title {
 }
 
 
-.article-main, .article-detail-main, .enroll-main{
+.article-main, .article-detail-main {
    width:960px;
+  margin:0 auto;
+  background: #fff;
+  padding:  0 100px;
+}
+.enroll-main{
   margin:0 auto;
   background: #fff;
   padding:  0 100px;
 }
 .article .item-list{
   padding: 20px;
-  border-bottom:1px solid #efefef;
+  // border-bottom:1px solid #efefef;
 }
 .article .item-list-picture{
   width:226px;

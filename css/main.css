@@ -772,7 +772,7 @@ button.toolbar-tool {
 	margin-bottom: 20px;
 }
 .offline-class{
-	padding: 40px 50px 40px;
+	padding: 40px 0px 40px;
 	background: #fff;
 	margin-top: 30px;
 }
@@ -807,18 +807,19 @@ button.toolbar-tool {
 	width:100%;
 }
 .iOS-article-detail{
-	padding: 10px 0 20px;
+	// padding: 10px 0 20px;
+	padding-top: 10px;
 	background: #f5f5f5;
 }
 .article-detail-main{
-	padding: 0 50px 42px;
-	width: 960px;
+	padding: 0 40px 42px;
+	// width: 960px;
 	margin: 0 auto;
 	background: #fff;
 }
 .article-detail .main-top{
 	border-bottom: 1px solid #efefef;
-	padding: 40px 50px 10px;
+	padding: 40px 0px 10px;
 }
 .article-detail .main-title{
 	font-size: 22px;
@@ -827,7 +828,7 @@ button.toolbar-tool {
 	padding-bottom: 28px;
 }
 .article-detail .main-body{
-	padding: 40px 50px 0;
+	padding: 40px 0px 0;
 }
 .article-detail .main-body p{
 	text-indent: 2em;
@@ -852,8 +853,11 @@ button.toolbar-tool {
 	float: right;
 }
 .course-page .period-list .period{
-	padding: 10px 100px 10px 15px;
+	padding: 10px 0px 10px 15px;
 	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .course-page .circle{
 	width:16px;
@@ -868,10 +872,10 @@ button.toolbar-tool {
 	color: #333;
 	text-decoration: none;
 }
-.teachers-wrap{
-	width: 1072px;
-	margin: 0 auto;
-}
+// .teachers-wrap{
+// 	width: 1072px;
+// 	margin: 0 auto;
+// }
 .teachers-wrap .title{
 	text-align: center;
 	padding-top: 60px;
@@ -921,9 +925,15 @@ button.toolbar-tool {
 	background: url(../img/4.png) no-repeat 50%;
 }
 .teachers-wrap .teacher-name{
-	padding: 20px 0;
+	padding: 6px 0;
 	font-size: 16px;
 	color: #000;
+}
+.teachers-wrap .teacher-detail{
+	padding: 0 10px;
+}
+.teachers-wrap .teacher-list-info{
+	margin-bottom: 10px;
 }
 .contact{
 	text-align: center;
@@ -937,7 +947,8 @@ button.toolbar-tool {
 	font-size: 26px;
 	background: #40aae7;
 	color: #fff;
-	padding: 0 186px;
+	// padding: 0 186px;
+	padding: 0 50px;
 	margin-bottom: 14px;
 	display: inline-block;
 	border-radius: 10px;
@@ -955,4 +966,7 @@ button.toolbar-tool {
 	float: right;
 	margin-bottom: 0;
 
+}
+.teachers-wrap .row{
+	text-align: center;
 }
