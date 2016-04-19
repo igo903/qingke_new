@@ -946,6 +946,7 @@ button.toolbar-tool {
 	margin-top: 84px;
 	padding: 130px 0 90px 0;
 	background: #f5f5f5;
+	margin-bottom: 30px;
 }
 .contact-btn{
 	height: 64px;
@@ -1054,6 +1055,7 @@ button.toolbar-tool {
 .enroll-main{
   padding:0 40px 40px;
   background: #fff;
+  margin: 30px 0;
 }
 .enroll-main img{
   width:100%;
