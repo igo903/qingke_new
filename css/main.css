@@ -976,3 +976,52 @@ button.toolbar-tool {
 .teachers-wrap .row{
 	text-align: center;
 }
+.banner{
+	text-align: center;
+}
+.banner .no-matter{
+	font-size: 26px;
+}
+.banner .all-free{
+	color: red;
+	font-size: 30px;
+}
+.banner .free{
+	color: red;
+	font-size: 18px;
+}
+.banner .agree{
+	color: #00B0F0;
+	font-size: 30px;
+}
+.banner .class-feature{
+	max-width:60%;
+	margin: 0 auto;
+	background: #F5EEE8;
+	color: #F87169;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.banner2{
+	text-indent: 2em;
+}
+
+.banner2 .picture-wrap{
+	text-align: center;
+	text-indent: 0;
+}
+.banner .word-wrap{
+	padding: 0 30px;
+}
+.row.word-wrap .col{
+	margin-bottom: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+
+}
+.banner .top-title{
+	font-size: 16px;
+	line-height: 1.6em;
+}
