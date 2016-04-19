@@ -1030,3 +1030,19 @@ button.toolbar-tool {
 	font-size: 16px;
 	line-height: 1.6em;
 }
+.planning{
+	text-decoration:underline;
+	color: #40aae7; 
+}
+.planning:hover{
+	color: #40aae7;
+}
+.planning-img{
+	background: url(../img/pdf.jpg);
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-size: contain;
+	vertical-align: middle;
+	margin-right: 4px;
+}
