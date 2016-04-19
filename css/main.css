@@ -953,12 +953,17 @@ button.toolbar-tool {
 	font-size: 26px;
 	background: #40aae7;
 	color: #fff;
-	// padding: 0 186px;
-	padding: 0 50px;
+	padding: 0 186px;
+	
 	margin-bottom: 14px;
 	display: inline-block;
 	border-radius: 10px;
 
+}
+@media (max-width:960px){
+	.contact-btn{
+		padding: 0 50px;
+	}
 }
 .contact-btn:hover{
 	color: #fff;
