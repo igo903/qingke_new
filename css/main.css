@@ -1029,8 +1029,10 @@ button.toolbar-tool {
 
 }
 .banner .top-title{
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.6em;
+	margin-bottom: 20px;
+	font-weight: 900;
 }
 .planning{
 	text-decoration:underline;
