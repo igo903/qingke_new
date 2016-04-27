@@ -774,6 +774,7 @@ button.toolbar-tool {
 }
 
 
+
 .qualit-course-list .course-item{
 	margin-bottom: 20px;
 }
@@ -1134,7 +1135,7 @@ button.toolbar-tool {
 .enroll .tip-message{
   color: red;
   font-size: 12px;
-  margin-left: 30%;
+  margin-left: 31%;
   text-align: left;
   padding-left:8px;
   display: block;
@@ -1186,5 +1187,19 @@ button.toolbar-tool {
  .submit{
   text-align: center;
 }
-
+@media (max-width: 375px) {
+	.enroll-label .red-star {
+		width:100%;
+		text-align: center;
+		line-height: 1.2em;
+	}
+	.enroll-item {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.enroll-item input {
+		text-align: center;
+		width: 100%;
+	}
+}
 
