@@ -1137,6 +1137,7 @@ button.toolbar-tool {
   margin-left: 30%;
   text-align: left;
   padding-left:8px;
+  display: block;
 
 }
 .enroll .tip-message-hide{
