@@ -1160,6 +1160,7 @@ button.toolbar-tool {
   padding: 10px 4px;
   border-radius: 4px;
   margin-bottom: 0px;
+  min-width: 40%;
 }
 .enroll-label span s{
   color: red;
