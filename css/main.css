@@ -882,12 +882,12 @@ button.toolbar-tool {
 // 	width: 1072px;
 // 	margin: 0 auto;
 // }
-.teachers-wrap .title{
+.teachers-wrap .title, .training-methods .title{
 	text-align: center;
 	padding-top: 60px;
 	padding-bottom: 72px;
 }
-.teachers-wrap .title-content{
+.teachers-wrap .title-content, .training-methods .title-content{
 	border-bottom: 3px solid #40aae7;
 	display: inline-block;
 	padding-bottom: 10px;
