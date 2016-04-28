@@ -1,10 +1,13 @@
 /*!
  * Author: Boring
- * Update: 2016-03-20 16:54
+ * Update: 2016-04-28 14:01
  */
 
 
 
+.boring-tab-handles > * {
+	cursor: pointer;
+}
 .boring-tab-panels > * {
 	display: none;
 }
@@ -17,8 +20,6 @@
 .boring-dialog-mask,
 .boring-dialog {
 	position: fixed;
-	left: 0;
-	right: 0;
 	z-index: 9999;
 	visibility: hidden;
 	opacity: 0;
@@ -26,6 +27,8 @@
 	transition: 0.3s;
 }
 .boring-dialog-mask {
+	left: 0;
+	right: 0;
 	top: 0;
 	bottom: 0;
 	background: #000;
@@ -33,11 +36,16 @@
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
 }
 .boring-dialog {
+	left: 50%;
 	top: 50%;
 	max-width: 100%;
 	max-height: 100%;
 	margin: auto;
 	overflow: auto;
+	-webkit-transition-property: all, margin;
+	transition-property: all, margin;
+	-webkit-transition-duration: 0.3s, 0s;
+	transition-duration: 0.3s, 0s;
 }
 .boring-dialog-mask-opened,
 .boring-dialog-opened {

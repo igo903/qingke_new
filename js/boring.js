@@ -1,497 +1,528 @@
 /*!
  * Author: Boring
- * Update: 2016-03-28 10:14
+ * Update: 2016-04-26 12:12
  */
 
 (function () {
-	var
-		getByClass = function (className, container) {
-			var container = container || document,
-				allElms,
-				elms,
-				i;
+	function getByClass(className, container) {
+		var container = container || document,
+			elms,
+			i;
 
-			if (container.getElementsByClassName) {
-				elms = container.getElementsByClassName(className);
-			} else if (container.querySelector) {
-				elms = container.querySelectorAll('.' + className);
+		if (container.getElementsByClassName) {
+			elms = container.getElementsByClassName(className);
+		} else if (container.querySelectorAll) {
+			elms = container.querySelectorAll('.' + className);
+		}
+
+		return elms;
+	}
+
+	function forEach(array, handler) {
+		var i;
+
+		if ([].forEach) {
+			[].forEach.call(array, handler);
+		} else {
+			for (i = 0; i < array.length; i++) {
+				handler(array[i], i, array);
 			}
+		}
+	}
 
-			return elms;
-		},
+	function filter(array, handler) {
+		var newArray = [],
+			i;
 
-		forEach = function (array, handler) {
-			var i;
-
-			if (array.forEach) {
-				array.forEach(function (item) {
-					handler(item);
-				});
-			} else {
-				for (i = 0; i < array.length; i++) {
-					handler(array[i], i);
-				}
-			}
-		},
-
-		filter = function (array, handler) {
-			var newArray = [],
-				i;
-
-			if (array.filter) {
-				newArray = array.filter(function (item) {
-					return handler(item);
-				});
-			} else {
-				forEach(array, function (item) {
-					if (handler(item)) {
-						newArray.push(item);
-					}
-				});
-			}
-
-			return newArray;
-		},
-
-		listen = function (elm, type, handler, capture) {
-			if (elm.addEventListener) {
-				elm.addEventListener(type, handler, capture || false);
-			} else if (elm.attachEvent) {
-				elm.attachEvent('on' + type, handler);
-			}
-		},
-
-		preventEventDefault = function (e) {
-			if (e.preventDefault) {
-				e.preventDefault();
-			} else {
-				e.returnValue = false;
-			}
-		},
-
-		getClassList = function (elm) {
-			return elm.classList || {
-				add: function (className) {
-					if (this.contains(className)) {
-						return;
-					}
-
-					elm.className += " " + className;
-				},
-
-				remove: function (className) {
-					if (!this.contains(className)) {
-						return;
-					}
-
-					elm.className = elm.className.replace(className, "");
-				},
-
-				toggle: function (className) {
-					if (this.contains(className)) {
-						this.remove(className);
-					} else {
-						this.add(className);
-					}
-				},
-
-				contains: function (className) {
-					var elmClasses = elm.className.split(' '),
-						contained = false;
-
-					forEach(elmClasses, function (elmClass) {
-						if (elmClass === className) {
-							contained = true;
-						}
-					});
-
-					return contained;
-				}
-			};
-		},
-
-		getData = function (elm, dataName) {
-			var dataset = elm.dataset,
-				dataValue;
-
-			if (dataset) {
-				dataValue = dataset[dataName];
-			} else {
-				dataValue = elm.getAttribute('data-' + dataName);
-			}
-
-			return dataValue;
-		},
-
-		setData = function (elm, dataName, dataValue) {
-			var dataset = elm.dataset;
-
-			if (dataset) {
-				dataset[dataName] = dataValue;
-			} else {
-				elm.setAttribute('data-' + dataName, dataValue);
-			}
-		},
-
-		removeData = function (elm, dataName) {
-			var dataset = elm.dataset;
-
-			if (dataset) {
-				delete dataset[dataName];
-			} else {
-				elm.removeAttribute('data-' + dataName);
-			}
-		},
-
-		bubbleElement = function (elm, tester) {
-			var passed = true;
-
-			while (!tester(elm)) {
-				elm = elm.parentNode;
-
-				if (elm.nodeType !== 1) {
-					passed = false;
-					break;
-				}
-			}
-
-			return passed ? elm : undefined;
-		},
-
-		removeNode = function (node) {
-			if (typeof node.remove === 'function') {
-				node.remove();
-			} else {
-				node.parentNode.removeChild(node);
-			}
-		},
-
-		ajax = function (config) {
-			var config = config || {},
-				url = config.url,
-				method = config.method || 'get',
-				async = typeof config.async !== 'undefined' ? config.async : true,
-				success = config.success,
-				xhr = new XMLHttpRequest();
-
-			xhr.open(method, url, async);
-
-			listen(xhr, 'readystatechange', function () {
-				if (xhr.readyState === 4 && xhr.status === 200) {
-					if (success) {
-						success(xhr.responseText);
-					}
+		if ([].filter) {
+			[].filter.call(array, handler);
+		} else {
+			forEach(array, function (item) {
+				if (handler(item)) {
+					newArray.push(item);
 				}
 			});
+		}
 
-			xhr.send();
-		},
+		return newArray;
+	}
 
-		tab = function (container, config) {
-			var
-				init = function () {
-					listenTrigger();
-					go(current);
-				},
+	function listen(elm, type, handler, capture) {
+		if (elm.addEventListener) {
+			elm.addEventListener(type, handler, capture || false);
+		} else if (elm.attachEvent) {
+			elm.attachEvent('on' + type, handler);
+		}
+	}
 
-				listenTrigger = function () {
-					forEach(handles, function (handle, index) {
-						listen(handle, eventType, function () {
-							go(index);
+	function preventEventDefault(e) {
+		if (e.preventDefault) {
+			e.preventDefault();
+		} else {
+			e.returnValue = false;
+		}
+	}
+
+	function getClassList(elm) {
+		return elm.classList || {
+			add: function (className) {
+				if (this.contains(className)) {
+					return;
+				}
+
+				elm.className += " " + className;
+			},
+
+			remove: function (className) {
+				if (!this.contains(className)) {
+					return;
+				}
+
+				elm.className = elm.className.replace(className, "");
+			},
+
+			toggle: function (className) {
+				if (this.contains(className)) {
+					this.remove(className);
+				} else {
+					this.add(className);
+				}
+			},
+
+			contains: function (className) {
+				var elmClasses = elm.className.split(' '),
+					contained = false;
+
+				forEach(elmClasses, function (elmClass) {
+					if (elmClass === className) {
+						contained = true;
+					}
+				});
+
+				return contained;
+			}
+		};
+	}
+
+	function getData(elm, dataName) {
+		var dataset = elm.dataset,
+			dataValue;
+
+		if (dataset) {
+			dataValue = dataset[dataName];
+		} else {
+			dataValue = elm.getAttribute('data-' + dataName);
+		}
+
+		return dataValue;
+	}
+
+	function setData(elm, dataName, dataValue) {
+		var dataset = elm.dataset;
+
+		if (dataset) {
+			dataset[dataName] = dataValue;
+		} else {
+			elm.setAttribute('data-' + dataName, dataValue);
+		}
+	}
+
+	function removeData(elm, dataName) {
+		var dataset = elm.dataset;
+
+		if (dataset) {
+			delete dataset[dataName];
+		} else {
+			elm.removeAttribute('data-' + dataName);
+		}
+	}
+
+	function bubbleElement(elm, tester) {
+		var passed = true;
+
+		while (!tester(elm)) {
+			elm = elm.parentNode;
+
+			if (elm.nodeType !== 1) {
+				passed = false;
+				break;
+			}
+		}
+
+		return passed ? elm : undefined;
+	}
+
+	function removeNode(node) {
+		if (node.remove) {
+			node.remove();
+		} else {
+			node.parentNode.removeChild(node);
+		}
+	}
+
+	function createObject(proto) {
+		function Temp() {}
+
+		var newObj = null;
+
+		if (Object.create) {
+			newObj = Object.create(proto);
+		} else {
+			Temp.prototype = proto;
+			newObj = new Temp();
+		}
+
+		return newObj;
+	}
+
+	var boring = {
+		getByClass: getByClass,
+		forEach: forEach,
+		listen: listen,
+		preventEventDefault: preventEventDefault,
+		bubbleElement: bubbleElement,
+		removeNode: removeNode,
+		getClassList: getClassList,
+		getData: getData,
+		setData: setData,
+		removeData: removeData
+	};
+
+	(function () {
+		var
+			HANDLES_CLASS = 'boring-tab-handles',
+			PANELS_CLASS = 'boring-tab-panels',
+			CURRENT_CLASS = 'boring-tab-current',
+
+			tab = {
+				listenEvents: function () {
+					var _this = this;
+
+					forEach(this.handles, function (handle, index) {
+						listen(handle, _this.eventType, function () {
+							_this.go(index);
 						});
 					});
 				},
 
-				go = function (index) {
-					if (!panels[index]) {
+				go: function (index) {
+					if (!this.panels[index]) {
 						return;
 					}
 
-					clearCurrentStatus();
-					addTargetStatus(index);
+					this.clearCurrentStatus();
+					this.addTargetStatus(index);
+					this.current = index;
 
-					current = index;
-
-					if (ongo) {
-						ongo(index);
-					}
+					this.config.ongo && this.config.ongo(this);
 				},
 
-				forward = function () {
-					go(current + 1);
+				clearCurrentStatus: function () {
+					getClassList(this.handles[this.current]).remove(CURRENT_CLASS);
+					getClassList(this.panels[this.current]).remove(CURRENT_CLASS);
 				},
 
-				back = function () {
-					go(current - 1);
+				addTargetStatus: function (index) {
+					getClassList(this.handles[index]).add(CURRENT_CLASS);
+					getClassList(this.panels[index]).add(CURRENT_CLASS);
 				},
 
-				clearCurrentStatus = function () {
-					getClassList(handles[current]).remove(currentHandleClassName);
-					getClassList(panels[current]).remove(currentPanelClassName);
+				forward: function () {
+					this.go(this.current + 1);
 				},
 
-				addTargetStatus = function (index) {
-					getClassList(handles[index]).add(currentHandleClassName);
-					getClassList(panels[index]).add(currentPanelClassName);
+				back: function () {
+					this.go(this.current - 1);
 				},
 
-				container = typeof container === 'string' ? document.getElementById(container) : container,
-				config = config || {},
-				sign = config.sign || '',
-				signSuffix = sign ? '-' + sign : '',
-				handlesWrap = getByClass('boring-tab-handles' + signSuffix, container)[0],
-				handles = handlesWrap.children,
-				panelsWrap = getByClass('boring-tab-panels' + signSuffix, container)[0],
-				panels = panelsWrap.children,
-				eventType = config.event || 'click',
-				current = 0,
-				currentClassName = 'boring-tab-current',
-				ongo = config.ongo,
-				currentHandleClassName = config.currentHandleClassName || currentClassName,
-				currentPanelClassName = config.currentPanelClassName || currentClassName;
+				init: function (container, config) {
+					var config = config || {},
+						sign = config.sign || '',
+						signSuffix = sign ? '-' + sign : '',
+						container = typeof container === 'string' ? document.getElementById(container) : container;
 
-			init();
+					this.handles = [].slice.call(getByClass(HANDLES_CLASS + signSuffix, container)[0].children);
+					this.panels = [].slice.call(getByClass(PANELS_CLASS + signSuffix, container)[0].children);
+					this.eventType = config.event || 'click';
+					this.current = 0;
+					this.config = config;
 
-			return {
-				go: go,
-				forward: forward,
-				back: back
+					this.listenEvents();
+					config.oninit && config.oninit(this);
+
+					this.go(0);
+				}
 			};
-		},
 
-		lazyload = function (config) {
-			var
-				init = function () {
-					loadImgsInView();
-					listenScroll();
-				},
+		boring.tab = function (container, config) {
+			var newTab = createObject(tab);
 
-				loadImgsInView = function () {
-					var imgsInView = getImgsInView();
+			newTab.init(container, config);
 
-					forEach(imgsInView, loadImg);
-				},
+			return newTab;
+		};
+	}());
 
-				loadImg = function (img) {
-					var src = img.dataset.boringLazyloadSrc,
-						tempImg;
+	(function () {
+		var DIALOG_OPENED_CLASS = 'boring-dialog-opened',
+			MASK_CLASS = 'boring-dialog-mask',
+			MASK_OPENED_CLASS = 'boring-dialog-mask-opened',
+			CLOSER_CLASS = 'boring-dialog-closer',
+			CONFIRM_CLASS = 'boring-dialog-confirm',
+			CANCEL_CLASS = 'boring-dialog-cancel',
 
-					if (!src) {
-						return;
+			dialog = {
+				init: function (container, config) {
+					var config = config || {};
+
+					this.element = typeof container === 'string' ? document.getElementById(container) : container;
+
+					if (!config.noMask) {
+						this.mask = createObject(mask);
+						this.mask.init(this);
 					}
 
-					tempImg = document.createElement('img');
+					this.config = config;
+					this.centerAfterLoaded();
+					this.listenEvents();
+				},
 
-					listen(tempImg, 'load', function () {
-						img.src = src;
+				open: function () {
+					var _this = this;
 
-						if (onload) {
-							onload(img);
+					this.center();
+					getClassList(this.element).add(DIALOG_OPENED_CLASS);
+					this.mask && this.mask.open();
+					this.config.onopen && this.config.onopen();
+
+					if (this.config.autoClose) {
+						setTimeout(function () {
+							if (_this.isOpened()) {
+								_this.close();
+							}
+						}, this.config.autoClose);
+					}
+				},
+
+				close: function () {
+					getClassList(this.element).remove(DIALOG_OPENED_CLASS);
+					this.mask && this.mask.close();
+					this.config.onclose && this.config.onclose();
+					this.config.onmanualclose && arguments[0] instanceof Event && this.config.onmanualclose();
+				},
+
+				isOpened: function () {
+					return getClassList(this.element).contains(DIALOG_OPENED_CLASS);
+				},
+
+				centerAfterLoaded: function () {
+					var imgs = [].slice.call(this.element.getElementsByTagName('img')),
+						loadedCount = 0,
+						_this = this;
+
+					if (imgs.length === 0) {
+						this.center();
+					}
+
+					forEach(imgs, function (img) {
+						listen(img, 'load', function () {
+							loadedCount++;
+
+							if (loadedCount >= imgs.length) {
+								_this.center();
+							}
+						});
+					});
+				},
+
+				center: function () {
+					this.element.style.cssText += '; margin: -' + this.element.offsetHeight / 2 + 'px 0 0 -' + this.element.offsetWidth / 2 + 'px;';
+				},
+
+				listenEvents: function () {
+					var _this = this;
+
+					listen(this.element, 'click', function (e) {
+						var t = e.target || event.srcElement,
+							closeBtn = bubbleElement(t, function (element) {
+								return getClassList(element).contains(CLOSER_CLASS);
+							}),
+							confirmBtn = bubbleElement(t, function (element) {
+								return getClassList(element).contains(CONFIRM_CLASS);
+							}),
+							cancelBtn = bubbleElement(t, function (element) {
+								return getClassList(element).contains(CANCEL_CLASS);
+							});
+
+						if (closeBtn) {
+							_this.close(e);
+						} else if (confirmBtn) {
+							_this.config.onconfirm && _this.config.onconfirm();
+							_this.close(e);
+						} else if (cancelBtn) {
+							_this.config.oncancel && _this.config.oncancel();
+							_this.close(e);
 						}
 					});
 
-					tempImg.src = src;
-					delete img.dataset.boringLazyloadSrc;
+					if (this.config.blankClose) {
+						listen(this.mask.element, 'click', function (e) {
+							_this.close(e);
+						});
+					}
+
+					if (this.config.selfClose) {
+						listen(this.element, 'click', function (e) {
+							_this.close(e);
+						});
+					}
 				},
 
-				getImgsInView = function () {
-					return filter(imgs, function (img) {
-						return isInview(img);
-					});
+				setConfig: function(config) {
+					var i;
+
+					for (i in config) {
+						if (config.hasOwnProperty(i)) {
+							this.config[i] = config[i];
+						}
+					}
+				}
+			},
+
+			mask = {
+				init: function (dialog) {
+					this.element = document.createElement('div');
+					getClassList(this.element).add(MASK_CLASS);
+					dialog.element.parentNode.insertBefore(this.element, dialog.element);
 				},
 
-				isInview = function (img) {
-					var imgRect = img.getBoundingClientRect();
-
-					return imgRect.top < window.innerHeight && imgRect.bottom > 0;
+				open: function () {
+					getClassList(this.element).add(MASK_OPENED_CLASS);
 				},
 
-				listenScroll = function () {
-					listen(window, 'scroll', loadImgsInView);
-				},
+				close: function () {
+					getClassList(this.element).remove(MASK_OPENED_CLASS);
+				}
+			};
 
-				config = config || {},
+		boring.dialog = function (container, config) {
+			var newDialog = createObject(dialog);
+
+			newDialog.init(container, config);
+
+			return newDialog;
+		};
+	}());
+
+	(function () {
+		function init() {
+			loadImgsInView();
+			listenScroll();
+		}
+
+		function loadImgsInView() {
+			var imgsInView = getImgsInView();
+
+			forEach(imgsInView, loadImg);
+		}
+
+		function loadImg(img) {
+			var src = img.dataset.boringLazyloadSrc,
+				tempImg;
+
+			if (!src) {
+				return;
+			}
+
+			tempImg = document.createElement('img');
+
+			listen(tempImg, 'load', function () {
+				img.src = src;
+
+				if (onload) {
+					onload(img);
+				}
+			});
+
+			tempImg.src = src;
+			delete img.dataset.boringLazyloadSrc;
+		}
+
+		function getImgsInView() {
+			return filter(imgs, function (img) {
+				return isInview(img);
+			});
+		}
+
+		function isInview(img) {
+			var imgRect = img.getBoundingClientRect();
+
+			return imgRect.top < window.innerHeight && imgRect.bottom > 0;
+		}
+
+		function listenScroll() {
+			listen(window, 'scroll', loadImgsInView);
+		}
+
+		boring.lazyload = function (config) {
+			var config = config || {},
 				onload = config.onload,
 				imgs = getByClass('boring-lazyload');
 
 			init();
-		},
+		};
+	}());
 
-		dialog = function (id, config) {
-			var
-				init = function () {
-					if (!noMask) {
-						initMask();
-					}
+	(function () {
+		function initPlaceholder(field, defaultValue) {
+			fakePlaceholder(field, defaultValue);
+			listenFocus(field, defaultValue);
+			listenBlur(field, defaultValue);
+		}
 
-					if (blankClose) {
-						if (mask) {
-							listen(mask, 'click', close);
-						}
-					}
+		function fakePlaceholder(field, defaultValue) {
+			if (field.type !== 'password') {
+				field.value = defaultValue;
+			}
+		}
 
-					if (selfClose) {
-						listen(body, 'click', close);
-					}
+		function listenFocus(field, defaultValue) {
+			listen(field, 'focus', function () {
+				if (field.value === defaultValue) {
+					field.value = '';
+				}
+			});
+		}
 
-					center();
-					listenClose();
-				},
-
-				initMask = function () {
-					mask = document.createElement('div');
-					maskCl = getClassList(mask);
-					maskCl.add('boring-dialog-mask');
-					body.parentNode.insertBefore(mask, body);
-				},
-
-				open = function () {
-					if (mask) {
-						maskCl.add(maskOpenedCn);
-					}
-
-					bodyCl.add(bodyOpenedCn);
-					center();
-
-					if (focusElm) {
-						setTimeout(function () {
-							focusElm.focus();
-						}, 20);
-					}
-
-					if (autoClose) {
-						setTimeout(close, autoClose);
-					}
-
-					if (onopen) {
-						onopen();
-					}
-				},
-
-				close = function (e) {
-					if (mask) {
-						maskCl.remove(maskOpenedCn);
-					}
-
-					bodyCl.remove(bodyOpenedCn);
-
-					if (onclose) {
-						onclose();
-					}
-
-					if (onmanualclose && e) {
-						onmanualclose();
-					}
-				},
-
-				center = function () {
-					body.style.cssText += '; margin-top: ' + -(body.offsetHeight / 2) + 'px;';
-				},
-
-				listenClose = function () {
-					listen(body, 'click', function (e) {
-						var e = e || event,
-							t = e.target || e.srcElement,
-							closeBtn = bubbleElement(t, function (elm) {
-								return getClassList(elm).contains('boring-dialog-closer');
-							});
-
-						if (closeBtn) {
-							close(e);
-						}
-					});
-				},
-
-				body = document.getElementById(id),
-				config = config || {},
-				noMask = config.noMask || false,
-				blankClose = config.blankClose || false,
-				selfClose = config.selfClose || false,
-				bodyCl = getClassList(body),
-				bodyOpenedCn = 'boring-dialog-opened',
-				maskOpenedCn = 'boring-dialog-mask-opened',
-				focusElm = getByClass('boring-dialog-focus', body)[0],
-				autoClose = config.autoClose,
-				onclose = config.onclose,
-				onopen = config.onopen,
-				onmanualclose = config.onmanualclose,
-				mask,
-				maskCl;
-
-			init();
-
-			return {
-				open: open,
-				close: close,
-				center: center
-			};
-		},
-
-		placeholder = function (fieldsWrap) {
-			var
-				initPlaceholder = function (field, defaultValue) {
+		function listenBlur(field, defaultValue) {
+			listen(field, 'blur', function () {
+				if (!field.value) {
 					fakePlaceholder(field, defaultValue);
-					listenFocus(field, defaultValue);
-					listenBlur(field, defaultValue);
-				},
+				}
+			});
+		}
 
-				fakePlaceholder = function (field, defaultValue) {
-					if (field.type !== 'password') {
-						field.value = defaultValue;
-					}
-				},
-
-				listenFocus = function (field, defaultValue) {
-					listen(field, 'focus', function () {
-						if (field.value === defaultValue) {
-							field.value = '';
-						}
-					});
-				},
-
-				listenBlur = function (field, defaultValue) {
-					listen(field, 'blur', function () {
-						if (!field.value) {
-							fakePlaceholder(field, defaultValue);
-						}
-					});
-				},
-
-				fields = (fieldsWrap || document).querySelectorAll('[placeholder]'),
+		boring.placeholder = function (fieldsWrap) {
+			var fields = null,
 				i;
 
 			if ('placeholder' in document.createElement('input')) {
 				return;
 			}
 
+			fields = (fieldsWrap || document).querySelectorAll('[placeholder]');
+
 			for (i = 0; i < fields.length; i++) {
 				initPlaceholder(fields[i], fields[i].getAttribute('placeholder'));
 			}
-		},
-
-		boring = {
-			getByClass: getByClass,
-			forEach: forEach,
-			listen: listen,
-			preventEventDefault: preventEventDefault,
-			bubbleElement: bubbleElement,
-			removeNode: removeNode,
-			getClassList: getClassList,
-			getData: getData,
-			setData: setData,
-			removeData: removeData,
-			ajax: ajax,
-			tab: tab,
-			lazyload: lazyload,
-			placeholder: placeholder,
-			dialog: dialog
 		};
-
-	placeholder();
+	}());
 
 	if (typeof window.define === 'function') {
 		define(boring);
 	}
 
 	window.boring = boring;
+
+	boring.placeholder();
 }());
