@@ -616,6 +616,23 @@ footer ul li a, .home footer ul li a {
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
+.student-dialog .modal-body {
+	padding: 0;
+}
+.student-dialog .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: #fff;
+	border-radius: 50%;
+}
+.student-dialog .close i {
+	position: static;
+	display: block;
+}
+.student-dialog .dojo-close-delete:before {
+	display: block;
+}
 
 
 

@@ -847,13 +847,10 @@
 	<div class="modal boring-dialog student-dialog" id="student-dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
-					<h4 class="modal-title">学员风采</h4>
-				</div>
 				<div class="modal-body">
 					<video class="video-js" src="oceans-clip.mp4" controls preload="auto" data-setup="{}" id="student-video"></video>
 				</div>
+				<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
 			</div>
 		</div>
 	</div>
@@ -997,7 +994,11 @@
 		}());
 
 		(function () {
-			var videoDialog = boring.dialog('student-dialog'),
+			var videoDialog = boring.dialog('student-dialog', {
+				onclose: function () {
+					studentPlayer.pause();
+				}
+			}),
 				studentPlayer = videojs('student-video'),
 				STUDENT_CLASS = 'j-student';
 
