@@ -492,10 +492,11 @@ body {
 	-webkit-transition: 0.2s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
-/*.course-item:hover {
+.course-item:hover {
 	box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 	-webkit-transform: translate(0, -3px);
-}*/
+	transform: translate(0, -3px);
+}
 .course-item-author-avatar {
 	width: 1.5em;
 	height: 1.5em;
@@ -503,6 +504,10 @@ body {
 }
 .course-item-price {
 	color: #d10c20;
+}
+
+.rsSlide .course-item {
+	margin: 3px 0 23px;
 }
 
 
@@ -956,7 +961,7 @@ button.toolbar-tool {
 	background: #40aae7;
 	color: #fff;
 	padding: 0 186px;
-	
+
 	margin-bottom: 14px;
 	display: inline-block;
 	border-radius: 10px;
@@ -1037,7 +1042,7 @@ button.toolbar-tool {
 }
 .planning{
 	text-decoration:underline;
-	color: #40aae7; 
+	color: #40aae7;
 }
 .planning:hover{
 	color: #40aae7;
@@ -1107,9 +1112,9 @@ button.toolbar-tool {
   // margin:0 3%;
   margin-bottom: 10px;
   height: 57px;
- 
+
 }
- 
+
 .enroll-form .red-star{
   font-size: 18px;
   line-height: 40px;
@@ -1124,7 +1129,7 @@ button.toolbar-tool {
   font-size: 15px;
   line-height: 40px;
   vertical-align: middle;
-} 
+}
 .enroll-main .purchase{
   padding-bottom: 10px;
 }
