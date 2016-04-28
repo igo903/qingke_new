@@ -606,6 +606,19 @@ footer ul li a, .home footer ul li a {
 
 
 
+.student-dialog .modal-dialog {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: 0;
+	margin-bottom: 0;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+
+
 .toolbar {
 	position: fixed;
 	left: 50%;
@@ -676,6 +689,14 @@ button.toolbar-tool {
 	margin: 0 auto;
 	width:100px;
 	display: block;
+}
+
+
+
+@media (min-width: 768px) {
+	.student-dialog .modal-dialog {
+		width: 600px;
+	}
 }
 
 
