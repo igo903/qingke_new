@@ -1454,6 +1454,7 @@ form {
   width: 100% !important;
   height: 480px !important;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 .pgwSlider .ps-current img,
 ul.pgwSlider > li img,
