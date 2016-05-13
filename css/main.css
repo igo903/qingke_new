@@ -1076,7 +1076,14 @@ button.toolbar-tool {
 	font-size: 18px;
 	line-height: 1.6em;
 	margin-bottom: 20px;
-	font-weight: 900;
+	// font-weight: 900;
+}
+.banner-title {
+	font-size: 20px;
+	line-height: 1.6em;
+	margin-bottom: 40px;
+	font-weight: bold;
+	text-align: center;
 }
 .planning{
 	text-decoration:underline;
@@ -1324,7 +1331,8 @@ button.toolbar-tool {
 }
 .article .info-detail p {
 	margin-bottom: 0;
-}	
+}
+
 @media (max-width:414px) {
 	.article .item-info-title {
 		font-size: 16px;
