@@ -2,7 +2,6 @@ let
 	gulp = require('gulp'),
 	cleanCss = require('gulp-clean-css'),
 	uglify = require('gulp-uglify'),
-	babel = require('gulp-babel'),
 	includeTag = require('gulp-include-tag'),
 	sourcemaps = require('gulp-sourcemaps'),
 	prettify = require('gulp-prettify'),
@@ -24,7 +23,7 @@ const
 	BUILD_IMG_PATH = BUILD_PATH + 'img/',
 	SOURCEMAP_PATH = './';
 
-gulp.task('default', ['html', 'css', 'js', 'img']);
+gulp.task('default', ['html', 'css'/*, 'js', 'img'*/]);
 
 gulp.task('html', function () {
 	del(BUILD_HTML_PATH + '*.html').then(function () {
@@ -32,7 +31,7 @@ gulp.task('html', function () {
 			base: SRC_PATH
 		})
 			.pipe(includeTag())
-			.pipe(replace('../lib', 'lib'))
+			.pipe(replace('"../', '"'))
 			.pipe(prettify({
 				indent_with_tabs: true,
 				preserve_newlines: true,
@@ -61,9 +60,6 @@ gulp.task('js', function () {
 			base: SRC_PATH
 		})
 			.pipe(sourcemaps.init())
-			.pipe(babel({
-				presets: ['es2015']
-			}))
 			.pipe(uglify())
 			.pipe(sourcemaps.write(SOURCEMAP_PATH))
 			.pipe(gulp.dest(BUILD_PATH));
@@ -82,6 +78,6 @@ gulp.task('img', function () {
 gulp.task('watch', ['default'], function () {
 	gulp.watch([SRC_HTML_PATH, SRC_TEMPLATE_PATH], ['html']);
 	gulp.watch(SRC_CSS_PATH, ['css']);
-	gulp.watch(SRC_JS_PATH, ['js']);
-	gulp.watch(SRC_IMG_PATH, ['img']);
+	// gulp.watch(SRC_JS_PATH, ['js']);
+	// gulp.watch(SRC_IMG_PATH, ['img']);
 });
