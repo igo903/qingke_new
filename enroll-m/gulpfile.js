@@ -17,10 +17,6 @@ const
 	SRC_JS_PATH = SRC_PATH + 'js/*.js',
 	SRC_IMG_PATH = SRC_PATH + 'img/*',
 	BUILD_PATH = './',
-	BUILD_HTML_PATH = BUILD_PATH,
-	BUILD_CSS_PATH = BUILD_PATH + 'css/',
-	BUILD_JS_PATH = BUILD_PATH + 'js/',
-	BUILD_IMG_PATH = BUILD_PATH + 'img/',
 	SOURCEMAP_PATH = './';
 
 gulp.task('default', ['html', 'css'/*, 'js', 'img'*/]);
@@ -29,7 +25,6 @@ gulp.task('html', function () {
 	gulp.src(SRC_HTML_PATH, {
 		base: SRC_PATH
 	})
-		.pipe(changed(BUILD_PATH))
 		.pipe(includeTag())
 		.pipe(replace('"../', '"'))
 		.pipe(prettify({
