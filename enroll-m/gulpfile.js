@@ -7,7 +7,7 @@ let
 	prettify = require('gulp-prettify'),
 	myth = require('gulp-myth'),
 	replace = require('gulp-replace'),
-	del = require('del');
+	changed = require('gulp-changed');
 
 const
 	SRC_PATH = 'src/',
@@ -26,53 +26,49 @@ const
 gulp.task('default', ['html', 'css'/*, 'js', 'img'*/]);
 
 gulp.task('html', function () {
-	del(BUILD_HTML_PATH + '*.html').then(function () {
-		gulp.src(SRC_HTML_PATH, {
-			base: SRC_PATH
-		})
-			.pipe(includeTag())
-			.pipe(replace('"../', '"'))
-			.pipe(prettify({
-				indent_with_tabs: true,
-				preserve_newlines: true,
-				extra_liners: []
-			}))
-			.pipe(gulp.dest(BUILD_PATH));
-	});
+	gulp.src(SRC_HTML_PATH, {
+		base: SRC_PATH
+	})
+		.pipe(changed(BUILD_PATH))
+		.pipe(includeTag())
+		.pipe(replace('"../', '"'))
+		.pipe(prettify({
+			indent_with_tabs: true,
+			preserve_newlines: true,
+			extra_liners: []
+		}))
+		.pipe(gulp.dest(BUILD_PATH));
 });
 
 gulp.task('css', function () {
-	del(BUILD_CSS_PATH).then(function () {
-		gulp.src(SRC_CSS_PATH, {
-			base: SRC_PATH
-		})
-			.pipe(sourcemaps.init())
-			.pipe(myth())
-			.pipe(cleanCss())
-			.pipe(sourcemaps.write(SOURCEMAP_PATH))
-			.pipe(gulp.dest(BUILD_PATH));
-	});
+	gulp.src(SRC_CSS_PATH, {
+		base: SRC_PATH
+	})
+		.pipe(changed(BUILD_PATH))
+		.pipe(sourcemaps.init())
+		.pipe(myth())
+		.pipe(cleanCss())
+		.pipe(sourcemaps.write(SOURCEMAP_PATH))
+		.pipe(gulp.dest(BUILD_PATH));
 });
 
 gulp.task('js', function () {
-	del(BUILD_JS_PATH).then(function () {
-		gulp.src(SRC_JS_PATH, {
-			base: SRC_PATH
-		})
-			.pipe(sourcemaps.init())
-			.pipe(uglify())
-			.pipe(sourcemaps.write(SOURCEMAP_PATH))
-			.pipe(gulp.dest(BUILD_PATH));
-	});
+	gulp.src(SRC_JS_PATH, {
+		base: SRC_PATH
+	})
+		.pipe(changed(BUILD_PATH))
+		.pipe(sourcemaps.init())
+		.pipe(uglify())
+		.pipe(sourcemaps.write(SOURCEMAP_PATH))
+		.pipe(gulp.dest(BUILD_PATH));
 });
 
 gulp.task('img', function () {
-	del(BUILD_IMG_PATH).then(function () {
-		gulp.src(SRC_IMG_PATH, {
-			base: SRC_PATH
-		})
-			.pipe(gulp.dest(BUILD_PATH));
-	});
+	gulp.src(SRC_IMG_PATH, {
+		base: SRC_PATH
+	})
+		.pipe(changed(BUILD_PATH))
+		.pipe(gulp.dest(BUILD_PATH));
 });
 
 gulp.task('watch', ['default'], function () {
