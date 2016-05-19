@@ -120,11 +120,14 @@
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #777;
-	background: rgba(255,255,255,0.5);
+	// background: #777;
+	// background: rgba(255,255,255,0.5);
+	background: rgb(131,195,249);
+	background: rgba(8,135,243,0.5)
 }
 .rsDefault .rsBullet.rsNavSelected span {
-	background-color: #FFF;
+	// background-color: #FFF;
+	background-color: rgb(8,135,243);
 }
 
 
