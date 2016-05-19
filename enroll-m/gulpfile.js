@@ -13,18 +13,16 @@ const
 	SRC_PATH = 'src/',
 	SRC_HTML_PATH = SRC_PATH + '*.html',
 	SRC_TEMPLATE_PATH = SRC_PATH + 'template/*.html',
-	SRC_CSS_PATH = SRC_PATH + 'css/*.css',
-	SRC_JS_PATH = SRC_PATH + 'js/*.js',
-	SRC_IMG_PATH = SRC_PATH + 'img/*',
+	SRC_CSS_PATH = SRC_PATH + '**/*.css',
+	SRC_JS_PATH = SRC_PATH + '**/*.js',
+	SRC_IMG_PATH = SRC_PATH + '**/*.*(png|jpg|jpeg|gif|svg)',
 	BUILD_PATH = './',
 	SOURCEMAP_PATH = './';
 
-gulp.task('default', ['html', 'css'/*, 'js', 'img'*/]);
+gulp.task('default', ['html', 'css'/*, 'js'*/, 'img']);
 
 gulp.task('html', function () {
-	gulp.src(SRC_HTML_PATH, {
-		base: SRC_PATH
-	})
+	return gulp.src(SRC_HTML_PATH)
 		.pipe(includeTag())
 		.pipe(replace('"../', '"'))
 		.pipe(prettify({
@@ -36,9 +34,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('css', function () {
-	gulp.src(SRC_CSS_PATH, {
-		base: SRC_PATH
-	})
+	return gulp.src(SRC_CSS_PATH)
 		.pipe(changed(BUILD_PATH))
 		.pipe(sourcemaps.init())
 		.pipe(myth())
@@ -48,9 +44,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('js', function () {
-	gulp.src(SRC_JS_PATH, {
-		base: SRC_PATH
-	})
+	return gulp.src(SRC_JS_PATH)
 		.pipe(changed(BUILD_PATH))
 		.pipe(sourcemaps.init())
 		.pipe(uglify())
@@ -59,9 +53,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('img', function () {
-	gulp.src(SRC_IMG_PATH, {
-		base: SRC_PATH
-	})
+	return gulp.src(SRC_IMG_PATH)
 		.pipe(changed(BUILD_PATH))
 		.pipe(gulp.dest(BUILD_PATH));
 });
@@ -70,5 +62,5 @@ gulp.task('watch', ['default'], function () {
 	gulp.watch([SRC_HTML_PATH, SRC_TEMPLATE_PATH], ['html']);
 	gulp.watch(SRC_CSS_PATH, ['css']);
 	// gulp.watch(SRC_JS_PATH, ['js']);
-	// gulp.watch(SRC_IMG_PATH, ['img']);
+	gulp.watch(SRC_IMG_PATH, ['img']);
 });
