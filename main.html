@@ -104,81 +104,53 @@
 
 	<div class="focus">
 		 <div class="focus-slider royalSlider rsDefault" id="focus">
-			<a href="" class="rsContent" style="background-image:url(img/banner-1.png); background-color: #FFF57A;">
-				<!-- <div class="container">
-					<div class="details">
-						<div class="headline" style="">
-							<div class="origin">Autolayout for iOS</div>
-						</div>
-						<div class="description" style="">
-							<div class="origin">还在为不懂Autolayout头疼么？来这里轻松学习autolayout.</div>
-						</div>
-					</div>
-				</div> -->
+			<a href="" class="rsContent" style="background-color: #FFF57A;">
+				<img src="img/banner-1.png" alt="" />
 			</a>
 
-			<a href="" class="rsContent" style="background-image:url(img/banner-2.png); background-color:  #fff; ">
-				<!-- <div class="container">
-					<div class="details">
-						<div class="headline" style="">
-							<div class="origin">用Sketch 3 来设计移动端UI</div>
-						</div>
-						<div class="description" style="">
-							<div class="origin">Sketch3 让你的设计更加轻便、有效。</div>
-						</div>
-					</div>
-				</div> -->
+			<a href="" class="rsContent" style="background-color:  #fff; ">
+				<img src="img/banner-2.png" alt="" />
 			</a>
 
-			<a href="" class="rsContent" style="background-image:url(img/banner-3.png); background-color:  #0887F3;">
-				<!-- <div class="container">
-					<div class="details">
-						<div class="headline" style="">
-							<div class="origin">Hybrid App, HTML5不止是你知道的这些。</div>
-						</div>
-						<div class="description" style="">
-							<div class="origin">Ionic Framework让你用H5开发，模拟出原生效果的App应用</div>
-						</div>
-					</div>
-				</div> -->
+			<a href="" class="rsContent" style="background-color:  #0887F3;">
+				<img src="img/banner-3.png" alt="" />
 			</a>
-			<a href="" class="rsContent" style="background-image:url(img/banner-4.png); background-color:#FF6578;">
+			<a href="" class="rsContent" style="background-color:#FF6578;">
+				<img src="img/banner-4.png" alt="" />
 			</a>
 		</div><!--royalSlider-->
 
-		<div class="focus-tabs-wrap container">
-			<div class="focus-tabs" id="focus-tabs">
-				<div class="focus-tabs-head boring-tab-handles">
-					<h2 class="focus-tabs-title">开班信息</h2>
-					<h2 class="focus-tabs-title">最新课程</h2>
-				</div>
-				<div class="focus-tabs-body boring-tab-panels">
-					<ul class="focus-tabs-list">
-						<li class="focus-tabs-item">
-							<a href="" target="_blank">在线基础班</a>
-						</li>
-						<li class="focus-tabs-item">
-							<a href="" target="_blank">O2O基础班</a>
-						</li>
-						<li class="focus-tabs-item">
-							<a href="" target="_blank">线下基础班</a>
-						</li>
-					</ul>
-					<ul class="focus-tabs-list">
-						<li class="focus-tabs-item">
-							<a href="" target="_blank">手势识别系列UIGestureRecognizer</a>
-						</li>
-						<li class="focus-tabs-item">
-							<a href="" target="_blank">Xcode技巧</a>
-						</li>
-						<li class="focus-tabs-item">
-							<a href="" target="_blank">SVG</a>
-						</li>
-						<li class="focus-tabs-item">
-							<a href="" target="_blank">Sketch3</a>
-						</li>
-					</ul>
-				</div>
+		<div class="focus-tabs visible-lg-block" id="focus-tabs">
+			<div class="focus-tabs-head boring-tab-handles">
+				<h2 class="focus-tabs-title">开班信息</h2>
+				<h2 class="focus-tabs-title">最新课程</h2>
+			</div>
+			<div class="focus-tabs-body boring-tab-panels">
+				<ul class="focus-tabs-list">
+					<li class="focus-tabs-item">
+						<a href="" target="_blank">在线基础班</a>
+					</li>
+					<li class="focus-tabs-item">
+						<a href="" target="_blank">O2O基础班</a>
+					</li>
+					<li class="focus-tabs-item">
+						<a href="" target="_blank">线下基础班</a>
+					</li>
+				</ul>
+				<ul class="focus-tabs-list">
+					<li class="focus-tabs-item">
+						<a href="" target="_blank">手势识别系列UIGestureRecognizer</a>
+					</li>
+					<li class="focus-tabs-item">
+						<a href="" target="_blank">Xcode技巧</a>
+					</li>
+					<li class="focus-tabs-item">
+						<a href="" target="_blank">SVG</a>
+					</li>
+					<li class="focus-tabs-item">
+						<a href="" target="_blank">Sketch3</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -883,6 +855,7 @@
 			$("#focus").royalSlider({
 				// options go here
 				// as an example, enable keyboard arrows nav
+				autoHeight: true,
 				keyboardNavEnabled: true,
 				loop: true,
 				transitionType: 'fade',
@@ -891,7 +864,7 @@
 				sliderDrag: false,
 				autoPlay: {
 					// autoplay options go gere
-					enabled: true,
+					// enabled: true,
 					pauseOnHover: true,
 					delay: 2000
 				}
