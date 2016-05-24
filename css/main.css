@@ -1333,6 +1333,10 @@ button.toolbar-tool {
 	margin-bottom: 0;
 }
 
+.block-contents .title.student-name{
+	text-align: center;
+}
+
 @media (max-width:414px) {
 	.article .item-info-title {
 		font-size: 16px;
