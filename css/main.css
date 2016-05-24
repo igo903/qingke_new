@@ -19,12 +19,6 @@ button {
 
 
 
-body {
-	padding-top: 80px;
-}
-
-
-
 .icon-sn-google {
 	background-color: #4285F4;
 	background-position: 0px 0
@@ -247,31 +241,6 @@ body {
 	width: auto;
 	height: 0;
 	padding-bottom: 56.25%;
-}
-
-
-
-.navbar, .home .navbar-header {
-	height: 80px;
-}
-.navbar-default .navbar-nav > li > a {
-	font-size: 14px;
-	line-height: 1;
-	padding-top: 18px;
-	padding-bottom: 18px;
-}
-.navbar-nav.navbar-right li.signup-desktop a {
-	padding-top: 9px;
-	padding-bottom: 9px;
-	margin-top: 24px;
-}
-.navbar-nav.navbar-right li.signup-desktop a i {
-	top: 6px;
-}
-
-.headroom--unpinned {
-	-webkit-transform: translateY(-80px);
-	transform: translateY(-80px);
 }
 
 
@@ -573,38 +542,6 @@ body {
 
 
 
-footer ul li a, .home footer ul li a {
-	display: inline;
-	padding: 0;
-}
-
-
-
-.footer {
-	border-top: 1px solid #e0e0e0;
-	text-align: center;
-	color: #666;
-	padding: 30px 0;
-	background: none;
-}
-.footer a {
-	color: inherit;
-}
-.footer-nav {
-	line-height: 1;
-}
-.footer-nav-item {
-	display: inline-block;
-	padding: 0 1em;
-}
-.footer-nav-item:nth-child(n+2) {
-	border-left: 1px solid;
-}
-.footer-nav a:hover {
-	text-decoration: none;
-}
-
-
 
 .student-dialog .modal-dialog {
 	position: absolute;
@@ -632,75 +569,6 @@ footer ul li a, .home footer ul li a {
 }
 .student-dialog .dojo-close-delete:before {
 	display: block;
-}
-
-
-
-.toolbar {
-	position: fixed;
-	left: 50%;
-	bottom: 15%;
-	z-index: 1;
-	text-align: center;
-	margin-left: 580px;
-}
-.toolbar a {
-	color: inherit;
-}
-.toolbar-tool {
-	display: block;
-	width: 40px;
-	line-height: 40px;
-	background: #fff;
-	border: 1px solid #f1f1f1;
-	margin-top: -1px;
-	-webkit-transition: 0.2s;
-	transition: 0.2s;
-}
-button.toolbar-tool {
-	height: 40px;
-	line-height: normal;
-}
-.toolbar-tool:hover {
-	background: #f1f1f1;
-}
-
-.toolbar-tool-has-popup {
-	position: relative;
-}
-.toolbar-tool-popup {
-	position: absolute;
-	right: 100%;
-	bottom: 0;
-	margin-bottom: -1px;
-	border: inherit;
-	background: #fff;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	-webkit-transform-origin: right bottom;
-	transform-origin: right bottom;
-	-webkit-transition: 0.4s;
-	transition: 0.4s;
-}
-.toolbar-tool-has-popup:hover .toolbar-tool-popup {
-	opacity: 1;
-	visibility: visible;
-	transform: scale(1);
-}
-
-.toolbar-to-top {
-	opacity: 0;
-	visibility: hidden;
-}
-.not-at-top .toolbar-to-top {
-	opacity: 1;
-	visibility: visible;
-}
-
-.toolbar-qrcode {
-	max-width: 150px;
 }
 .more-btn{
 	margin: 0 auto;
