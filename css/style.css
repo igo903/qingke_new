@@ -14,7 +14,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
-  padding-top: 65px;
+  padding-top: 80px;
   background: #f1f1f1;
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -2456,4 +2456,131 @@ p.time{margin-top:1em;margin-bottom: 0;}
 .ds{
   background: #fff;
   padding: 20px;
+}
+
+
+
+.navbar, .home .navbar-header {
+  height: 80px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 14px;
+  line-height: 1;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.navbar-nav.navbar-right li.signup-desktop a {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-top: 24px;
+}
+.navbar-nav.navbar-right li.signup-desktop a i {
+  top: 6px;
+}
+
+.headroom--unpinned {
+  -webkit-transform: translateY(-80px);
+  transform: translateY(-80px);
+}
+
+
+
+footer ul li a, .home footer ul li a {
+  display: inline;
+  padding: 0;
+}
+
+
+
+.footer {
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  color: #666;
+  padding: 30px 0;
+  background: none;
+}
+.footer a {
+  color: inherit;
+}
+.footer-nav {
+  line-height: 1;
+}
+.footer-nav-item {
+  display: inline-block;
+  padding: 0 1em;
+}
+.footer-nav-item:nth-child(n+2) {
+  border-left: 1px solid;
+}
+.footer-nav a:hover {
+  text-decoration: none;
+}
+
+
+
+.toolbar {
+  position: fixed;
+  left: 50%;
+  bottom: 15%;
+  z-index: 1;
+  text-align: center;
+  margin-left: 580px;
+}
+.toolbar a {
+  color: inherit;
+}
+.toolbar-tool {
+  display: block;
+  width: 40px;
+  line-height: 40px;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  margin-top: -1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button.toolbar-tool {
+  height: 40px;
+  line-height: normal;
+}
+.toolbar-tool:hover {
+  background: #f1f1f1;
+}
+
+.toolbar-tool-has-popup {
+  position: relative;
+}
+.toolbar-tool-popup {
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  margin-bottom: -1px;
+  border: inherit;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.toolbar-tool-has-popup:hover .toolbar-tool-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.toolbar-to-top {
+  opacity: 0;
+  visibility: hidden;
+}
+.not-at-top .toolbar-to-top {
+  opacity: 1;
+  visibility: visible;
+}
+
+.toolbar-qrcode {
+  max-width: 150px;
 }
