@@ -200,7 +200,12 @@ button {
 	background-color: transparent
 }
 
-
+body{
+	background: #fff;
+}
+.main-color{
+	background: #f1f1f1;
+}
 
 .fa {
 	font-size: 1.2em;
@@ -1217,4 +1222,116 @@ button {
 		margin-right: -15px;
 	}
 
+}
+.news-page{
+	background: #fff;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 40px;
+}
+.news-page .page-title{
+	color: #333;
+	font-size: 30px;
+	line-height: 56px;
+
+}
+.news-page .author{
+	color: #adadad;
+	font-size: 14px;
+}
+.news-page .author-name{
+	margin-right: 14px;
+}
+.news-page .author-time{
+	margin-left: 14px;
+}
+.news-page .page-article p{
+	margin: 1em 0;
+	line-height: 1.8em;
+	font-size: 16px;
+}
+.news-page .page-article p img{
+	max-width: 100%;
+}
+.news-page .link-news{
+	margin-bottom: 20px;
+}
+.news-page .share-title{
+	float: left;
+	line-height: 32px;
+	color: #999;
+}
+.news-page .share-item{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	margin-left: 15px;
+}
+.news-page .share-qq{
+	background: url(../img/share-news.png) no-repeat 0 0;
+}
+.news-page .share-weixin{
+	background: url(../img/share-news.png) no-repeat -50px 0;
+}
+.news-page .link-news-icon{
+	width: 4px;
+	height: 20px;
+	background: #44b336;
+	float: left;
+	margin-right: 12px;
+}
+.news-page .link-news-title{
+	font-size: 20px;
+	line-height: 20px;
+}
+.news-page .link-news{
+	margin-top: 50px;
+}
+.news-page .link-news-content{
+	margin-top: 30px;
+}
+.news-page .items-name{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 32px;
+	color: #666;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: none;
+}
+.news-page .link-news-item{
+	border-bottom: 1px dashed #d8d8d8;
+	padding: 14px 0;
+}
+.news-page .item-detail{
+	color: #999;
+	text-decoration: none;
+	line-height: 28px;
+}
+.news-page .link-news a:hover, .news-page .hot-item a:hover{
+	color: #00C300;
+}
+.hot-item a{
+	text-decoration: none;
+	color: #666;
+	font-size: 16px;
+	line-height: 28px;
+}
+.news-page .immediately-go{
+	color: #ff6600;
+}
+.news-page .hot-wrap{
+	position: relative;
+}
+.news-page .hot{
+	position: absolute;
+	top:200px;
+	max-width:80%;
+}
+.news-page .hot-head{
+	margin-bottom: 20px;
+}
+.news-page .hot-item img{
+	width: 100%;
 }
