@@ -32,7 +32,7 @@ body.home .navbar-default .navbar-nav > li > a {
   color: #fff;
 }
 body.home .navbar-default .navbar-nav > li.active > a {
-  color: #DB1D1B;
+  color: #39a9ea;
 }
 body.home .navbar-nav.navbar-right li.login-desktop a:hover,
 body.home .navbar-nav.navbar-right li.login-desktop a:active,
@@ -323,15 +323,15 @@ input {
 .navbar-default .navbar-nav > a:visited,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #DB1D1B;
+  color: #39a9ea;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a {
-  color: #DB1D1B;
+  color: #39a9ea;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover {
-  color: #DB1D1B;
+  color: #39a9ea;
 }
 .navbar-default .navbar-nav > li > a {
   padding: 11px 13px;
@@ -350,7 +350,7 @@ input {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   background: none;
-  color: #DB1D1B;
+  color: #39a9ea;
 }
 .navbar-default .navbar-nav > li > a:hover {
   background: none;
@@ -636,8 +636,8 @@ input {
 /********** END HOME OPTINBAR **********/
 .btn-primary:hover,
 .btn-primary:active {
-  background: #a8db10;
-  border-color: #a8db10;
+  background: #4ab3ef;
+  border-color: #4ab3ef;
 }
 .user h2 {
   margin: 20px;
@@ -1423,7 +1423,7 @@ h4.modal-title {
 .signup-sidebar a {
   border: 0px;
   border-radius: 2px;
-  background: #DB1D1B;
+  background: #39a9ea;
   width: 200px;
   color: #fff;
   padding: 10px;
@@ -1563,7 +1563,7 @@ footer ul li a,
 }
 footer ul li a:hover,
 .home footer ul li a:hover {
-  color: #a8db10;
+  color: #4ab3ef;
 }
 footer a.social-link,
 .home footer a.social-link {
@@ -1727,10 +1727,10 @@ ul.pages li {
   list-style: none;
 }
 ul.pages li a {
-  color: #DB1D1B;
+  color: #39a9ea;
 }
 ul.pages li a:hover {
-  color: #DB1D1B;
+  color: #39a9ea;
 }
 /********** END POST STYLES **********/
 .navbar-nav > li > a.user-link-desktop {
@@ -2364,17 +2364,17 @@ Navbar Toggle
 }
 
 .theme_color_background, #signup-form .panel-heading, .post .post-img h3, .block .block-contents p.date .label.label-success, .btn-primary, .second-nav.navbar-default .navbar-nav li.active a, .second-nav.navbar-default .navbar-nav li a:hover, .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level {
-  background: #DB1D1B;
+  background: #39a9ea;
 }
 .btn-primary, .form-control:focus, .second-nav.navbar-default .navbar-nav li:hover, .second-nav.navbar-default .navbar-nav li.active {
-  border-color: #DB1D1B;
+  border-color: #39a9ea;
 }
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:active:focus {
-  background-color: #BD1917;
-  border-color: #BB1816;
+  background-color: #4ab3ef;
+  border-color: #4ab3ef;
 }
 .post .post-img h6 {
   background: #ef312f;
@@ -2384,7 +2384,7 @@ a,
 .page a,
 footer ul li a,
 .home footer ul li a {
-  color: #DB1D1B;
+  color: #39a9ea;
 }
 .theme_color:hover,
 .theme_color:focus,
@@ -2396,7 +2396,7 @@ footer ul li a:hover,
 footer ul li a:focus,
 .home footer ul li a:hover,
 .home footer ul li a:focus {
-  color: #BB1816;
+  color: #4ab3ef;
 }
 footer ul li a:hover, .home footer ul li a:hover {
   color: #ef312f;
@@ -2462,6 +2462,9 @@ p.time{margin-top:1em;margin-bottom: 0;}
 
 .navbar, .home .navbar-header {
   height: 80px;
+}
+.navbar {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 14px;

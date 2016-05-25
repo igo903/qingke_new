@@ -18,17 +18,6 @@ img {
 
 
 
-.btn-primary {
-	border-color: #39a9ea;
-	background: #39a9ea;
-}
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus {
-	background-color: #4ab3ef;
-	border-color: #4ab3ef;
-}
-
-
-
 .breadcrumb {
 	background-color: transparent;
 	color: #999;
