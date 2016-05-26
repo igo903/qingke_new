@@ -33,6 +33,7 @@ img {
 
 .lesson-cover-wrap {
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .lesson-cover {
@@ -191,6 +192,8 @@ img {
   padding: 0.5em 0;
   margin-top: 6px;
   box-shadow: 5px 5px rgba(220,220,220,0.7);
+  -webkit-animation: down-110 0.4s cubic-bezier(.31,.9,.5,1.26) 0.5s backwards;
+  animation: down-110 0.4s cubic-bezier(.31,.9,.5,1.26) 0.5s backwards;
 }
 
 .lesson-act > * {
@@ -321,4 +324,28 @@ img {
   background: #ddd;
   -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
+}
+
+@-webkit-keyframes down-110 {
+  0% {
+    -webkit-transform: translateY(-110%);
+    transform: translateY(-110%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes down-110 {
+  0% {
+    -webkit-transform: translateY(-110%);
+    transform: translateY(-110%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
