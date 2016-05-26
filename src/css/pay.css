@@ -1,0 +1,108 @@
+img {
+	max-width: 100%;
+}
+
+
+
+.btn-lg {
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+
+
+:root {
+	--blue: #39a9ea;
+	--lightblue: #cee1ec;
+	--span: 30px;
+}
+
+
+
+body {
+	padding-top: 0;
+}
+
+
+
+.pay-head {
+	padding: var(--span) 0;
+}
+
+.pay-summary {
+	padding: var(--span);
+	background: var(--lightblue);
+	border-bottom: 3px solid var(--blue);
+}
+
+.order-msg {
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-bottom: 1em;
+}
+.order-data {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.order-data dt,
+.order-data dd {
+	display: inline;
+}
+.order-data dt {
+	font-weight: inherit;
+}
+.order-data dd + dt {
+	margin-left: 2em;
+}
+.order-data a {
+	color: inherit;
+}
+
+.order-amount {
+	float: right;
+	font-size: 2.5em;
+	color: var(--blue);
+	margin-top: calc(-var(--span) - 0.5em);
+}
+
+
+
+.pay-main,
+.pay-actions {
+	background: white;
+	padding: var(--span);
+}
+
+.pay-ways-title {
+	font-weight: inherit;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+.pay-ways-list .radio-inline input {
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.pay-way-logo-wrap {
+	position: relative;
+	width: 150px;
+	height: 40px;
+	border: 1px solid #e1e1e1;
+}
+.pay-way-logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	max-width: 80%;
+	max-height: 80%;
+	margin: auto;
+}
+
+
+
+.pay-actions {
+	border-top: 1px solid #e1e1e1;
+}

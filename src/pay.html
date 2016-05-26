@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include src="template/meta.html" title="支付"></include>
+		<include src="template/styles.html"></include>
+		<link rel="stylesheet" href="css/pay.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="pay-head">
+				<img src="" alt="轻课支付中心" class="pay-logo" style="width: 200px; height: 40px; border: 1px solid;" />
+			</header>
+			<div class="pay-summary">
+				<div class="order-msg">订单已提交，请在 72 小时内完成支付！逾期订单将被取消。</div>
+				<dl class="order-data">
+					<dt>订单号：</dt>
+					<dd>250250</dd>
+					<dt>商品：</dt>
+					<dd>
+						<a href="lesson.html" target="_blank">Swift 从入门到放弃</a>
+					</dd>
+				</dl>
+				<div class="order-amount">￥250.00</div>
+			</div>
+			<div class="pay-main">
+				<section class="pay-ways">
+					<h1 class="pay-ways-title">付款方式：</h1>
+					<div class="pay-ways-list">
+						<label class="radio-inline">
+							<input type="radio" name="way" />
+							<div class="pay-way-logo-wrap">
+								<img src="https://t.alipayobjects.com/images/T1HHFgXXVeXXXXXXXX.png" alt="支付宝" class="pay-way-logo" />
+							</div>
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="way" />
+							<div class="pay-way-logo-wrap">
+								<img src="https://wx.gtimg.com/pay/img/wechatpay/logo.png" alt="微信" class="pay-way-logo" />
+							</div>
+						</label>
+					</div>
+				</section>
+			</div>
+			<div class="pay-actions">
+				<button type="button" class="btn btn-lg btn-primary">立即支付</button>
+			</div>
+		</div>
+
+		<include src="template/footer.html"></include>
+	</body>
+</html>
