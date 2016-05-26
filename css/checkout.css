@@ -22,6 +22,25 @@ img {
   background: white;
 }
 
+.checkout .form-group {
+  display: block;
+}
+
+.checkout .form-group:nth-child(n+2) {
+  margin-top: 1em;
+}
+
+.checkout label {
+  font-weight: normal;
+  display: inline-block;
+}
+
+.checkout input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
 .checkout-head,
 .checkout-section,
 .checkout-foot {
@@ -141,5 +160,61 @@ img {
   font-weight: bold;
   font-size: 1.3em;
   margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+.discount-tip {
   margin-bottom: 1em;
+}
+
+.discount-amount {
+  float: right;
+}
+
+.discount-widget {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.discount-widget input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.discount-widget-handle {
+  color: #39a9ea;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+.discount-widget-panel {
+  display: inline-block;
+  visibility: hidden;
+}
+
+.discount-widget input:checked ~ .discount-widget-panel {
+  visibility: visible;
+}
+
+.discount-widget .form-group {
+  display: inline-block;
+}
+
+.checkout-foot {
+  text-align: right;
+}
+
+.order-amount {
+  font-size: 2em;
+  color: #39a9ea;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+.order-action .btn-lg {
+  width: 8em;
+}
+
+.checkout-tip {
+  margin-top: 1em;
 }

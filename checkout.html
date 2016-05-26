@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
+<html>
+	<head>
+		<meta charset="UTF-8" />
 <title>结算 - 欢迎来到轻课网</title>
 <meta name="description" content="Welcome to the Qingke" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/font-awesome.min.css" />
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/boring-plugin.css" />
 <link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/checkout.css">
-</head>
+		<link rel="stylesheet" href="css/checkout.css">
+	</head>
 
-<body>
-	<nav class="navbar navbar-default navbar-static-top headroom headroom--not-top headroom--unpinned" role="navigation">
+	<body>
+		<nav class="navbar navbar-default navbar-static-top headroom headroom--not-top headroom--unpinned" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<a id="nav-toggle" href="#"><span></span></a>
@@ -88,66 +88,119 @@
 <div class="clear"></div>
 
 
-	<div class="container">
-		<div class="checkout">
-			<div class="checkout-head clearfix">
-				<!-- value 控制进度 -->
-				<ol class="order-progress" value="1">
-					<li class="order-progress-node">
-						<div class="order-progress-node-num">1</div>
-						<div class="order-progress-node-name">确认订单</div>
-					</li>
-					<li class="order-progress-node">
-						<div class="order-progress-node-num">2</div>
-						<div class="order-progress-node-name">支付订单</div>
-					</li>
-					<li class="order-progress-node">
-						<div class="order-progress-node-num">3</div>
-						<div class="order-progress-node-name">订单完成</div>
-					</li>
-				</ol>
-			</div>
-			<div class="checkout-body">
-				<div class="checkout-section">
-					<table class="checkout-data">
-						<thead>
-							<tr>
-								<th scope="col">商品清单</th>
-								<th scope="col">原价</th>
-								<th scope="col">数量</th>
-								<th scope="col">套餐优惠</th>
-								<th scope="col">促销优惠</th>
-								<th scope="col">小计</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<a href="lesson.html" target="_blank">Swift 从入门到放弃</a>
-								</td>
-								<td>￥250</td>
-								<td>1</td>
-								<td>￥0</td>
-								<td>￥0</td>
-								<td>￥250</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<td colspan="10">合计：￥250</td>
-							</tr>
-						</tfoot>
-					</table>
+		<div class="container">
+			<div class="checkout form-inline">
+				<div class="checkout-head clearfix">
+					<!-- value 控制进度 -->
+					<ol class="order-progress" value="1">
+						<li class="order-progress-node">
+							<div class="order-progress-node-num">1</div>
+							<div class="order-progress-node-name">确认订单</div>
+						</li>
+						<li class="order-progress-node">
+							<div class="order-progress-node-num">2</div>
+							<div class="order-progress-node-name">支付订单</div>
+						</li>
+						<li class="order-progress-node">
+							<div class="order-progress-node-num">3</div>
+							<div class="order-progress-node-name">订单完成</div>
+						</li>
+					</ol>
 				</div>
-				<div class="checkout-section">
-					<h2 class="checkout-section-title">联系信息</h2>
+				<div class="checkout-body">
+					<div class="checkout-section">
+						<table class="checkout-data">
+							<thead>
+								<tr>
+									<th scope="col">商品清单</th>
+									<th scope="col">原价</th>
+									<th scope="col">数量</th>
+									<th scope="col">套餐优惠</th>
+									<th scope="col">促销优惠</th>
+									<th scope="col">小计</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a href="lesson.html" target="_blank">Swift 从入门到放弃</a>
+									</td>
+									<td>￥250</td>
+									<td>1</td>
+									<td>￥0</td>
+									<td>￥0</td>
+									<td>￥250</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="10">合计：￥250</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="checkout-section">
+						<h2 class="checkout-section-title">联系信息</h2>
+						<label class="form-group">
+							<span>真实姓名：</span>
+							<input type="text" class="form-control" />
+						</label>
+						<label class="form-group">
+							<span>手机号码：</span>
+							<input type="tel" class="form-control" />
+						</label>
+					</div>
+					<div class="checkout-section">
+						<h2 class="checkout-section-title">
+							优惠券/学习卡抵扣
+							<span class="discount-amount">-￥0</span>
+						</h2>
+						<div class="discount-tip">当前订单无可用优惠券。</div>
+						<div class="discount-tip">
+							<span>只有卡券号码或实体卡券？</span>
+							<div class="discount-widget">
+								<input type="checkbox" id="coupon" />
+								<label for="coupon" class="discount-widget-handle">点击输入卡券</label>
+								<div class="discount-widget-panel">
+									<div class="form-group">
+										<input type="text" class="form-control" />
+									</div>
+									<button type="button" class="btn btn-primary">确定</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="checkout-section">
+						<h2 class="checkout-section-title">
+							邀请码
+							<span class="discount-amount">-￥0</span>
+						</h2>
+						<div class="discount-tip">
+							<span>是否有邀请码</span>
+							<div class="discount-widget">
+								<input type="checkbox" id="invite-code" />
+								<label for="invite-code" class="discount-widget-handle">点击输入邀请码</label>
+								<div class="discount-widget-panel">
+									<div class="form-group">
+										<input type="text" class="form-control" />
+									</div>
+									<button type="button" class="btn btn-primary">确定</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="checkout-foot">
+					<div class="order-action">
+						<span class="order-amount">￥250</span>
+						<button type="button" class="btn btn-lg btn-primary">提交订单</button>
+					</div>
+					<div class="checkout-tip">提示：本课程全部学完后，将以奖励学币形式返还全部实际支付金额。</div>
 				</div>
 			</div>
-			<div class="checkout-foot"></div>
 		</div>
-	</div>
 
-	<footer class="footer">
+		<footer class="footer">
 	<div class="container">
 		<!-- <nav class="footer-nav">
 			<ul>
@@ -172,7 +225,7 @@
 		<!-- <div>Copyright &copy; 2015 - 2016 <a href="" target="_blank">浙ICP备13012753号-1</a></div> -->
 	</div>
 </footer>
-	<div class="modal boring-dialog" id="loginDialog">
+		<div class="modal boring-dialog" id="loginDialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -240,7 +293,7 @@
 		</div>
 	</div>
 </div>
-	<div class="toolbar visible-lg-block">
+		<div class="toolbar visible-lg-block">
 	<button type="button" class="toolbar-tool toolbar-to-top" title="回到顶部" id="to-top">
 		<i class="fa fa-arrow-up"></i>
 	</button>
@@ -255,10 +308,9 @@
 	</a>
 </div>
 
-	<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/headroom.min.js"></script>
 <script type="text/javascript" src="js/boring.js"></script>
 <script type="text/javascript" src="js/global.js"></script>
-	<script type="text/javascript" src="js/checkout.js"></script>
-</body>
+	</body>
 </html>

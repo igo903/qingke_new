@@ -18,11 +18,34 @@ img {
 
 
 
+:root {
+	--blue: #39a9ea;
+}
+
+
+
 .checkout {
 	margin: 10px 0;
 	color: #666;
 	background: white;
 }
+
+.checkout .form-group {
+	display: block;
+}
+.checkout .form-group:nth-child(n+2) {
+	margin-top: 1em;
+}
+.checkout label {
+	font-weight: normal;
+	display: inline-block;
+}
+.checkout input {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+}
+
 .checkout-head,
 .checkout-section,
 .checkout-foot {
@@ -78,9 +101,9 @@ img {
 .order-progress[value="3"] .order-progress-node:nth-child(1) .order-progress-node-num,
 .order-progress[value="3"] .order-progress-node:nth-child(2) .order-progress-node-num,
 .order-progress[value="3"] .order-progress-node:nth-child(3) .order-progress-node-num {
-	background: #39a9ea;
+	background: var(--blue);
 	color: white;
-	border-color: #39a9ea;
+	border-color: var(--blue);
 }
 .order-progress[value="1"] .order-progress-node:nth-child(1) .order-progress-node-name,
 .order-progress[value="2"] .order-progress-node:nth-child(1) .order-progress-node-name,
@@ -88,12 +111,12 @@ img {
 .order-progress[value="3"] .order-progress-node:nth-child(1) .order-progress-node-name,
 .order-progress[value="3"] .order-progress-node:nth-child(2) .order-progress-node-name,
 .order-progress[value="3"] .order-progress-node:nth-child(3) .order-progress-node-name {
-	color: #39a9ea;
+	color: var(--blue);
 }
 .order-progress[value="2"] .order-progress-node:nth-child(2):before,
 .order-progress[value="3"] .order-progress-node:nth-child(2):before,
 .order-progress[value="3"] .order-progress-node:nth-child(3):before {
-	background: #39a9ea;
+	background: var(--blue);
 }
 
 
@@ -132,5 +155,57 @@ img {
 	font-weight: bold;
 	font-size: 1.3em;
 	margin-top: 0;
+	margin-bottom: 1.5em;
+}
+
+
+
+.discount-tip {
 	margin-bottom: 1em;
+}
+
+.discount-amount {
+	float: right;
+}
+.discount-widget {
+	display: inline-block;
+	margin-left: 2em;
+}
+.discount-widget input[type="checkbox"] {
+	position: absolute;
+	left: -9999px;
+}
+.discount-widget-handle {
+	color: var(--blue);
+	cursor: pointer;
+	margin-right: 0.5em;
+}
+.discount-widget-panel {
+	display: inline-block;
+	visibility: hidden;
+}
+.discount-widget input:checked ~ .discount-widget-panel {
+	visibility: visible;
+}
+.discount-widget .form-group {
+	display: inline-block;
+}
+
+
+
+.checkout-foot {
+	text-align: right;
+}
+
+.order-amount {
+	font-size: 2em;
+	color: var(--blue);
+	vertical-align: middle;
+	margin-right: 0.5em;
+}
+.order-action .btn-lg {
+	width: 8em;
+}
+.checkout-tip {
+	margin-top: 1em;
 }
