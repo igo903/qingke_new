@@ -245,7 +245,7 @@ label {
   transition: .5s;
 }
 .navbar-default {
-  background: #FFFFFF;
+  // background: #FFFFFF;
   border-bottom: 0px;
   margin-bottom: 0px;
   z-index: 999998;
