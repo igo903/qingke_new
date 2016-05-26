@@ -2,6 +2,7 @@ let
 	gulp = require('gulp'),
 	changed = require('gulp-changed'),
 	includeTag = require('gulp-include-tag'),
+	prettify = require('gulp-prettify'),
 	myth = require('gulp-myth');
 
 const
@@ -16,6 +17,11 @@ gulp.task('default', ['html', 'css']);
 gulp.task('html', function () {
 	return gulp.src(SRC_HTML_PATH)
 		.pipe(includeTag())
+		.pipe(prettify({
+			indent_with_tabs: true,
+			preserve_newlines: true,
+			extra_liners: []
+		}))
 		.pipe(gulp.dest(BUILD_PATH));
 });
 
