@@ -1,0 +1,295 @@
+*,
+:before,
+:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+.breadcrumb {
+	background-color: transparent;
+	color: #999;
+	padding: 0;
+	margin-bottom: 1em;
+}
+.breadcrumb a {
+	color: inherit;
+}
+.breadcrumb > * {
+	margin-right: 0.5em;
+}
+
+
+
+.lesson-cover-wrap {
+	padding: 30px 0;
+}
+.lesson-cover {
+	position: relative;
+	color: #666;
+	padding: 15px 30px;
+	background: white;
+}
+.lesson-head {
+	margin-bottom: 10px;
+}
+.lesson-title {
+	font-weight: normal;
+	font-size: 28px;
+	margin-top: 0;
+	margin-bottom: 0.2em;
+}
+.lesson-pic {
+	float: left;
+	width: 480px;
+	height: 360px;
+}
+.lesson-info {
+	margin-left: 510px;
+}
+.lesson-price-act-icon {
+	vertical-align: -0.5em;
+}
+.lesson-price-area > * {
+	margin-right: 0.4em;
+}
+.lesson-price {
+	font-size: 3em;
+	color: #39a9ea;
+}
+.lesson-price small {
+	font-size: 0.6em;
+}
+.lesson-price-act {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1.8;
+	color: white;
+	border-radius: 0.3em;
+	background: #39a9ea;
+	vertical-align: 0.5em;
+	padding: 0 0.5em;
+}
+
+.lesson-data {
+	margin: 20px 0;
+}
+.lesson-data-key {
+	float: left;
+	color: #999;
+}
+.lesson-data-val {
+	margin-left: 70px;
+}
+
+.lesson-data-act {
+	border-bottom: 1px solid #e9e9e9;
+	padding: 15px 0;
+	margin-top: -15px;
+}
+.lesson-data-act .lesson-data-val {
+	color: #39a9ea;
+}
+
+.lesson-data-val-item {
+	display: inline-block;
+	font-size: 12px;
+	padding: 0 0.5em;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.lesson-data-service {
+	line-height: 30px;
+}
+.lesson-data-service .lesson-data-val-item {
+	background: #f4f4f4;
+}
+
+.lesson-data-class {
+	line-height: 30px;
+}
+.lesson-data-class .lesson-data-val-item {
+	background: white;
+	border: 1px solid #e9e9e9;
+	margin-top: -1px;
+	cursor: pointer;
+}
+.lesson-data-class .lesson-data-val-item-checked {
+	border-width: 2px;
+	border-color: #39a9ea;
+	margin: -1px;
+	margin-right: 9px;
+	margin-top: -2px;
+}
+
+.lesson-data-time {
+	background: #e9e9e9;
+	padding: 10px 0;
+}
+
+.lesson-actions .btn {
+	margin-right: 0.5em;
+}
+.lesson-buy {
+	width: 10em;
+}
+
+.lesson-pay-features {
+	margin-top: 15px;
+}
+.lesson-pay-feature {
+	display: inline-block;
+	padding-left: 25px;
+	background: no-repeat left;
+	margin-right: 1em;
+}
+.lesson-pay-feature-mianxi {
+	background-image: url(http://res.c.hjfile.cn/skin2/5282016/timeIcon.png);
+}
+.lesson-pay-feature-fenqi {
+	background-image: url(http://res.c.hjfile.cn/app/course/images/icon/wallet.png);
+}
+
+.lesson-act {
+	position: absolute;
+	right: 0;
+	top: -30px;
+	width: 25%;
+	text-align: center;
+	background: #6fe0ff;
+	padding: 0.5em 0;
+	margin-top: 6px;
+	box-shadow: 5px 5px rgba(220,220,220,0.7);
+}
+.lesson-act > * {
+	margin: 10px 0;
+}
+.lesson-act-title {
+	font-size: 1.6em;
+	color: #39a9ea;
+}
+.lesson-act-link a {
+	color: #39a9ea;
+}
+.lesson-act:before,
+.lesson-act:after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	width: 4px;
+	height: 6px;
+	background: #ddd;
+}
+.lesson-act:before {
+	left: 10%;
+}
+.lesson-act:after {
+	right: 10%;
+}
+
+
+
+.lesson-tabs-wrap {
+	background: #e3e3e3;
+	border-bottom: 1px solid #d5d5d5;
+}
+.lesson-tabs {
+	font-size: 20px;
+	line-height: 2.7;
+	margin-bottom: 0;
+}
+.lesson-tab {
+	position: relative;
+	float: left;
+	padding: 0 2.7em;
+	margin-bottom: -1px;
+	cursor: pointer;
+}
+.lesson-tab:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	height: 1.5em;
+	background: #d5d5d5;
+	margin: auto;
+}
+
+.lesson-tab:hover {
+	background: #d5d5d5;
+
+}
+.lesson-tab.boring-tab-current {
+	color: white;
+	background: #39a9ea;
+}
+.lesson-tab.boring-tab-current:before,
+.lesson-tab.boring-tab-current + .lesson-tab:before {
+	content: none;
+}
+
+
+
+.lesson-section-head {
+	padding: 20px 0;
+}
+.lesson-section-title {
+	font-size: 18px;
+	color: #39a9ea;
+	border-left: 0.4em solid;
+	padding-left: 0.5em;
+	margin: 0;
+}
+
+
+
+.lesson-teachers {
+	text-align: center;
+}
+.lesson-teacher {
+	position: relative;
+	display: inline-block;
+	max-width: 24%;
+	padding: 0 2%;
+}
+.lesson-teacher-photo {
+	width: 80px;
+	height: 80px;
+	border: 3px solid #ddd;
+	border-radius: 50%;
+	margin-bottom: 0.5em;
+}
+.lesson-teacher-name {
+	font-size: 1.4em;
+	margin-bottom: 0.8em;
+}
+.lesson-teacher-intro {
+	font-size: 12px;
+	line-height: 1.8;
+	text-align: left;
+}
+.lesson-teacher:nth-child(n+2):before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 90px;
+	background: #ddd;
+	transform: rotate(-15deg);
+}

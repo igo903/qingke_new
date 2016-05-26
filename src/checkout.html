@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<include src="template/meta.html" title="结算"></include>
+	<include src="template/styles.html"></include>
+	<link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+	<include src="template/nav.html"></include>
+
+	<div class="container">
+		<div class="checkout">
+			<div class="checkout-head clearfix">
+				<!-- value 控制进度 -->
+				<ol class="order-progress" value="1">
+					<li class="order-progress-node">
+						<div class="order-progress-node-num">1</div>
+						<div class="order-progress-node-name">确认订单</div>
+					</li>
+					<li class="order-progress-node">
+						<div class="order-progress-node-num">2</div>
+						<div class="order-progress-node-name">支付订单</div>
+					</li>
+					<li class="order-progress-node">
+						<div class="order-progress-node-num">3</div>
+						<div class="order-progress-node-name">订单完成</div>
+					</li>
+				</ol>
+			</div>
+			<div class="checkout-body">
+				<div class="checkout-section">
+					<table class="checkout-data">
+						<thead>
+							<tr>
+								<th scope="col">商品清单</th>
+								<th scope="col">原价</th>
+								<th scope="col">数量</th>
+								<th scope="col">套餐优惠</th>
+								<th scope="col">促销优惠</th>
+								<th scope="col">小计</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="lesson.html" target="_blank">Swift 从入门到放弃</a>
+								</td>
+								<td>￥250</td>
+								<td>1</td>
+								<td>￥0</td>
+								<td>￥0</td>
+								<td>￥250</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="10">合计：￥250</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="checkout-section">
+					<h2 class="checkout-section-title">联系信息</h2>
+				</div>
+			</div>
+			<div class="checkout-foot"></div>
+		</div>
+	</div>
+
+	<include src="template/footer.html"></include>
+	<include src="template/dialogs.html"></include>
+	<include src="template/toolbar.html"></include>
+
+	<include src="template/scripts.html"></include>
+	<script type="text/javascript" src="js/checkout.js"></script>
+</body>
+</html>
