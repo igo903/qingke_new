@@ -1198,7 +1198,7 @@ body{
 	vertical-align: middle;
 }
 .article .item-list-info .info-time, .article .item-list-info h3{
-		white-space: nowrap;
+		// white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 }
