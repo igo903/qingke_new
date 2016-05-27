@@ -1167,6 +1167,10 @@ body{
 	background: url(../img/icons.png) left 2px no-repeat;
 	padding-left: 20px;
 }
+.article .item-list-info .info-detail{
+	height: 80px;
+	overflow: hidden;
+}
 .article .article-foot {
 	padding: 20px 0;
 	text-align: center;
