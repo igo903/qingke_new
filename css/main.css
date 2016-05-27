@@ -1160,13 +1160,7 @@ body{
 	border-bottom: 0;
 	padding-bottom: 0;
 }
-.article .item-list-info .info-time {
-	color: #888;
-	font-size: 12px;
-	line-height: 26px;
-	background: url(../img/icons.png) left 2px no-repeat;
-	padding-left: 20px;
-}
+
 .article .item-list-info .info-detail{
 	height: 80px;
 	overflow: hidden;
@@ -1202,9 +1196,18 @@ body{
 	vertical-align: middle;
 }
 .article .item-list-info .info-time, .article .item-list-info h3{
-		// white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
+	color: #000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.article .item-list-info .info-time {
+	color: #888;
+	font-size: 12px;
+	line-height: 26px;
+	background: url(../img/icons.png) left 2px no-repeat;
+	padding-left: 20px;
 }
 .article .info-detail p {
 	margin-bottom: 0;
