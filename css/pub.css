@@ -202,6 +202,7 @@
 	background: url(../img/mycourselisticon.png) 5px -106px;
 	width:20px;
 	height: 20px;
+	margin-left: -4px;
 	display: inline-block;
 	vertical-align: bottom;
 	cursor: pointer;
@@ -209,6 +210,33 @@
 .user-detail-info .slogan {
 	position: absolute;
 	left: -9999px;
+}
+.user-detail-info .slogan-edit {
+	visibility: hidden;
+}
+.user-detail-info .slogan-input-label {
+	position: relative;
+}
+.user-detail-info .slogan-input {
+	position: absolute;
+	left: -9999px;
+}
+.user-detail-info .slogan-input:checked ~  .slogan-edit{
+	visibility: visible;
+}
+.user-detail-info .slogan-input:checked ~ .slogan-set{
+	visibility: hidden;
+}
+.user-detail-info .edited {
+	float: right;
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 2em;
+	background: #39a9ea;
+	text-align: right;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
 }
 .user-detail-info .user-time li{
 	position: relative;
