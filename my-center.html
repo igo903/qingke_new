@@ -6,22 +6,10 @@
 		<meta name="description" content="Welcome to the Qingke">
 		<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-
-		<link rel="stylesheet" href="css/noty.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/prism.css">
-		<!--[if gte IE 9]>
-		  <style type="text/css">
-			.gradient {
-			   filter: none;
-			}
-		  </style>
-		<![endif]-->
 		<link rel="stylesheet" href="css/boring-plugin.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/rrssb.css">
-		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/pub.css">
 		<link rel="stylesheet" href="css/main.css">
 
@@ -458,6 +446,19 @@
 							<a href="javascript:;" class="prev" title="上一页"></a>
 							<a href="javascript:;" >1</a>
 							<a href="javascript:;" class="active">2</a>
+							<a href="javascript:;" >3</a>
+							<a href="javascript:;">4</a>
+							<a href="javascript:;">5</a>
+							<a href="javascript:;">6</a>
+							<a href="javascript:;">7</a>
+							<a href="javascript:;">8</a>
+							<a href="javascript:;">9</a>
+							<a href="javascript:;">10</a>
+							<a href="javascript:;">11</a>
+							<a href="javascript:;">12</a>
+							<a href="javascript:;">13</a>
+							<a href="javascript:;">14</a>
+							<a href="javascript:;">15</a>
 							<a href="javascript:;" class="next" title="下一页"></a>
 						</div>
 					</div>
@@ -492,8 +493,8 @@
 							<div class="form-group clearfix">
 								<div class="checkbox pull-left">
 									<label>
-										<input type="checkbox"> 记住登录状态
-									</label>
+								<input type="checkbox"> 记住登录状态
+							</label>
 								</div>
 								<button type="submit" class="btn btn-primary pull-right">登录</button>
 							</div>
@@ -540,202 +541,24 @@
 				</div>
 			</div>
 		</div>
-		<script src="js/rrssb.min.js"></script>
+		<div class="toolbar visible-lg-block">
+			<button type="button" class="toolbar-tool toolbar-to-top" title="回到顶部" id="to-top">
+				<i class="fa fa-arrow-up"></i>
+			</button>
+			<div class="toolbar-tool toolbar-tool-has-popup" title="扫码关注轻课网">
+				<i class="fa fa-qrcode"></i>
+				<div class="toolbar-tool-popup">
+					<img src="img/qingke.jpg" alt="" class="toolbar-qrcode" />
+				</div>
+			</div>
+			<a href="" class="toolbar-tool" title="QQ 客服">
+				<i class="fa fa-qq"></i>
+			</a>
+		</div>
+		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/headroom.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/moment.min.js"></script>
-		<script type="text/javascript" src="js/jquery.noty.js"></script>
-		<script type="text/javascript" src="js/default.js"></script>
-		<script type="text/javascript" src="js/top.js"></script>
-		<script src="js/prism.js"></script>
-		<script src="tinymce/tinymce.min.js"></script>
-		<script src="js/boring.js"></script>
-		<script type="text/javascript">
-			//********** Headroom js functionality **********/
-				// grab an element
-				var myElement = document.querySelector(".navbar");
-				// construct an instance of Headroom, passing the element
-				var headroom  = new Headroom(myElement, { offset: 65 });
-				// initialise
-				headroom.init();
-
-
-			  $('document').ready(function(){
-
-
-				    $('.dropdown').hover(function(){
-				        $(this).addClass('open');
-				    }, function(){
-				        $(this).removeClass('open');
-				    });
-
-
-			    $('#nav-toggle').click(function(){
-			    	$(this).toggleClass('active');
-			    	$('.navbar-collapse').toggle();
-			    	$('body').toggleClass('nav-open');
-			    });
-
-			    $('#mobile-subnav').click(function(){
-			    	if($('.second-nav .navbar-left').css('display') == 'block'){
-			    		$('.second-nav .navbar-left').slideUp(function(){
-			    			$(this).addClass('not-visible');
-			    		});
-			    		$(this).html('<i class="fa fa-bars"></i> Open Submenu');
-			    	} else {
-			    		$('.second-nav .navbar-left').slideDown(function(){
-			    			$(this).removeClass('not-visible');
-			    		});
-			    		$(this).html('<i class="fa fa-close"></i> Close Submenu');
-			    	}
-
-			    });
-
-			  });
-
-			(function () {
-				tinymce.init({
-					selector: '#handout',
-					language: 'zh_CN',
-					plugins: 'code',
-					min_height: 300,
-					body_class: 'editor-body',
-					content_style: '.editor-body { font-size: 14px; }'
-				});
-			}());
-
-			(function () {
-				var tagsInput = document.getElementById('tags');
-
-				document.addEventListener('click', function (e) {
-					var t = e.target || event.srcElement,
-						tagText;
-
-					if (t.classList.contains('j-tag')) {
-						tagText = t.innerHTML;
-						tagsInput.value += tagsInput.value ? ', ' + tagText : tagText;
-					}
-				});
-			}());
-
-			var fileManager = (function () {
-				var
-					initFiles = function (fileBoxes) {
-						var i;
-
-						for (i = 0; i < fileBoxes.length; i++) {
-							initFile(fileBoxes[i]);
-						}
-					},
-
-					initFile = function (fileBox) {
-						var fileBoxCl = fileBox.classList,
-							fileInput = fileBox.getElementsByTagName('input')[0],
-							fileName = fileBox.getElementsByClassName('j-file-name')[0],
-							fileDelete = fileBox.getElementsByClassName('j-file-delete')[0];
-
-						fileInput.addEventListener('change', function () {
-							fileBoxCl.add(FILE_SELECTED_CLASS);
-							fileName.innerHTML = this.files[0].name;
-						});
-
-						fileDelete.addEventListener('click', function () {
-							clearFile(fileInput, fileBoxCl);
-						});
-					},
-
-					clearFile = function (fileInput, fileBoxCl) {
-						try {
-							fileInput.value = '';
-						} catch (e) {
-							fileInput.type = 'text';
-							fileInput.type = 'file';
-						} finally {
-							fileBoxCl.remove(FILE_SELECTED_CLASS);
-						}
-					},
-
-					FILE_SELECTED_CLASS = 'file-selected';
-
-				initFiles(document.getElementsByClassName('j-file'));
-
-				return {
-					initFiles: initFiles
-				};
-			}());
-
-			
-
-			(function () {
-				var
-					init = function () {
-						bindGroups();
-						listenAdd();
-					},
-
-					bindGroups = function () {
-						var handles = document.getElementsByClassName(ADD_HANDLE_CLASS),
-							groupId,
-							group,
-							i;
-
-						for (i = 0; i < handles.length; i++) {
-							groupId = getGroupId(handles[i]);
-							group = document.getElementById(groupId);
-							groups[groupId] = {
-								origin: group,
-								template: clearGroup(group.cloneNode(true))
-							};
-						}
-					},
-
-					getGroupId = function (handle) {
-						return handle.dataset.target;
-					},
-
-					listenAdd = function () {
-						document.addEventListener('click', function (e) {
-							var t = e.target;
-
-							if (t.classList.contains(ADD_HANDLE_CLASS)) {
-								cloneGroup(groups[getGroupId(t)], t);
-							}
-						});
-					},
-
-					cloneGroup = function (groupData, handle) {
-						var newGroup = groupData.template.cloneNode(true);
-
-						handle.parentNode.insertBefore(newGroup, handle);
-						fileManager.initFiles(newGroup.getElementsByClassName('j-file'));
-					},
-
-					clearGroup = function (group) {
-						group.removeAttribute('id');
-
-						return group;
-					},
-
-					ADD_HANDLE_CLASS = 'j-qk-add',
-					groups = {};
-
-				init();
-			}());
-
-			(function () {
-				var loginDialog = boring.dialog('loginDialog'),
-					regDialog = boring.dialog('regDialog');
-
-				$('.j-login-btn').on('click', function () {
-					loginDialog.open();
-				});
-
-				$('.j-reg-btn').on('click', function () {
-					regDialog.open();
-				});
-				boring.tab('main');
-			}());
-		</script>
+		<script type="text/javascript" src="js/boring.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
 
 	</body>
 </html>
