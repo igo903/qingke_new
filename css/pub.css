@@ -212,7 +212,8 @@
 	left: -9999px;
 }
 .user-detail-info .slogan-edit {
-	visibility: hidden;
+	// visibility: hidden;
+	display: none;
 }
 .user-detail-info .slogan-input-label {
 	position: relative;
@@ -222,7 +223,8 @@
 	left: -9999px;
 }
 .user-detail-info .slogan-input:checked ~  .slogan-edit{
-	visibility: visible;
+	// visibility: visible;
+	display: block;
 }
 .user-detail-info .slogan-input:checked ~ .slogan-set{
 	visibility: hidden;
