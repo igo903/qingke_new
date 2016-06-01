@@ -11,8 +11,9 @@ body {
   padding-top: 0;
 }
 
-.pay-head {
-  padding: 30px 0;
+.navbar {
+  box-shadow: none;
+  margin-bottom: 0;
 }
 
 .pay-summary {

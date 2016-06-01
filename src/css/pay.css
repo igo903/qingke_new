@@ -25,8 +25,9 @@ body {
 
 
 
-.pay-head {
-	padding: var(--span) 0;
+.navbar {
+	box-shadow: none;
+	margin-bottom: 0;
 }
 
 .pay-summary {
