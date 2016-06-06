@@ -1,0 +1,1 @@
+{"version":3,"sources":["css/pay.css"],"names":[],"mappings":"AAAA,YACE,YAAa,IACb,UAAW,IAGb,SACE,UAAW,KACX,MAAO","file":"css/pay.css","sourceRoot":"/source/","sourcesContent":[".pay-amount {\r\n\tfont-weight: bold;\r\n\tfont-size: 2em;\r\n}\r\n.pay-tip {\r\n\tfont-size: 0.8em;\r\n\tcolor: #999;\r\n}"]}

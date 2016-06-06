@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎来到轻课网</title>
+    <meta name="description" content="Welcome to the Qingke">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/noty.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+	<link rel="stylesheet" href="css/boring-plugin.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/rrssb.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+
+
+	<style type="text/css">.theme_color_background, #signup-form .panel-heading, .post .post-img h3, .block .block-contents p.date .label.label-success, .btn.btn-primary, .second-nav.navbar-default .navbar-nav li.active a, .second-nav.navbar-default .navbar-nav li a:hover, .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level{ background: #DB1D1B; }.btn.btn-primary, .form-control:focus, .second-nav.navbar-default .navbar-nav li:hover, .second-nav.navbar-default .navbar-nav li.active{ border-color:#DB1D1B; }.post .post-img h6{ background: #ef312f; }.theme_color, a, .page a, footer ul li a, .home footer ul li a{ color:#DB1D1B; }footer ul li a:hover, .home footer ul li a:hover{ color:#ef312f; }
+	</style>
+
+	<style type="text/css">.series .block{ margin-bottom:20px; }</style>
+
+	<!-- <script>if (!window.jQuery) { document.write('<script src="http://code.jquery.com/jquery-1.11.2.min.js"><\/script>'); }</script> -->
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- <link rel="icon" href="/content/uploads/settings/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/content/uploads//settings/favicon.png" type="image9sx-icon"> -->
+
+</head>
+
+
+<body class="">
+	<nav class="navbar navbar-default navbar-static-top headroom headroom--top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a id="nav-toggle" href="#"><span></span></a>
+				<a href="/" class="navbar-brand"><!--<img src="img/logo.png">--></a>
+			</div>
+
+			<div class="collapse navbar-collapse right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="main.html">首页</a></li>
+					<li class="dropdown">
+						<a href="/videos" class="dropdown-toggle">视频</a>
+						<ul class="dropdown-menu multi-level" role="menu">
+							<li><a href="/videos">常规课程</a></li>
+							<li><a href="/shows">简短视频</a></li>
+							<li><a href="/series">系列教学</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="/posts" class="dropdown-toggle">文章</a>
+						<ul class="dropdown-menu multi-level" role="menu">
+							<li><a href="/posts/category/tutorials">教程</a></li>
+							<li><a href="/posts/category/how-to">有问必答</a></li>
+							<li><a href="/posts/category/technology">前瞻技术</a></li>
+							<li><a href="/posts/category/chitchat">热门讨论</a></li>
+						</ul>
+					</li>
+					<li><a href="/page/laravel-survival-guide">移动端UX设计</a></li>
+				</ul>
+
+				<!--ul class="navbar-right">
+				    <li>
+				        <div id="navbar-search-form">
+				            <form role="search" action="/search" method="GET">
+				                <i class="fa fa-search"></i>
+				                <input type="text" id="value" name="value" placeholder="Type and Find">
+				            </form>
+				        </div>
+				    </li>
+				</ul-->
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="login-desktop"><a href="javascript:;" class="j-login-btn"><i class="fa fa-lock"></i> 登录</a></li>
+					<li class="signup-desktop"><a href="javascript:;" class="j-reg-btn"><i class="dojo-user-circle"></i> 注册</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="user-info">
+						<a href="">
+							<img src="https://tse1.mm.bing.net/th?&id=OIP.M377aff37bc79377886d093987b03dba6o2&w=299&h=299&c=0&pid=1.9&rs=0&p=0" alt="" class="user-avatar" />
+							<span class="user-name">李小龙</span>
+						</a>
+					</li>
+					<li class="logout">
+						<a href="">退出登录</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="clear"></div>
+	<div class="sectionHeader">
+		<div class="container">
+			<i class="dojo-lessons"></i>
+			<div class="copy">
+				<h1>系列教程</h1>
+				<span>每套视频教程都彻底解决一个你心中的疑惑</span>
+			</div>
+		</div>
+	</div>
+
+
+	<link rel="stylesheet" href="css/rs-default.css">
+
+	<script src="js/jquery.royalslider.min.js"></script>
+	<style type="text/css">
+		.rsDefault .rsBullets{height:30px;background:none;}
+		.rsDefault .rsBullet{padding:6px 6px 6px;}
+	</style>
+
+
+
+
+	<div class="container">
+		<div id="home-content">
+			<div class="course-cover">
+				<h1 class="course-name">Web前端开发</h1>
+				<div class="course-intro">设计模式并不抽象，它源于编码过程中遇到的一些困境，为了解决这些困境而抽象出来的一个个设计思想，对于提升我们的编码技巧大有帮助，本体系将会对常见的设计模式辅以实际开发中遇到的具体事例给予讲解，相信在学完本体系后，能够提升你对软件设计的认知水平，提升你的编码技术。</div>
+				<div class="course-info">
+					<span>8课时</span>
+					<span>9小时50分</span>
+					<span>250万人学习</span>
+				</div>
+			</div>
+
+			<div class="row series" style="margin-bottom:30px; margin-top:0px;">
+
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<article class="block">
+							<a class="block-thumbnail" href="javascript:;">
+								<img src="http://7xjubq.com1.z0.glb.clouddn.com/6_bird.png">
+							</a>
+							<div class="block-contents">
+								<h2 class="title"><a href="">CSS框架基础CSS框架基础CSS框架基础CSS框架基础CSS框架基础CSS框架基础CSS框架基础</a></h2>
+								<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+								<div class="heat">250人学习</div>
+								<div class="duration">2课时 38分钟</div>
+							</div>
+					</article>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<article class="block">
+							<a class="block-thumbnail" href="javascript:;">
+								<img src="http://7xjubq.com1.z0.glb.clouddn.com/6_bird.png">
+							</a>
+							<div class="block-contents">
+								<h2 class="title"><a href="">CSS框架基础</a></h2>
+								<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+								<div class="heat">250人学习</div>
+								<div class="duration">2课时 38分钟</div>
+							</div>
+					</article>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<article class="block">
+							<a class="block-thumbnail" href="javascript:;">
+								<img src="http://7xjubq.com1.z0.glb.clouddn.com/6_bird.png">
+							</a>
+							<div class="block-contents">
+								<h2 class="title"><a href="">CSS框架基础</a></h2>
+								<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+								<div class="heat">250人学习</div>
+								<div class="duration">2课时 38分钟</div>
+							</div>
+					</article>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<article class="block">
+							<a class="block-thumbnail" href="javascript:;">
+								<img src="http://7xjubq.com1.z0.glb.clouddn.com/6_bird.png">
+							</a>
+							<div class="block-contents">
+								<h2 class="title"><a href="">CSS框架基础</a></h2>
+								<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+								<div class="heat">250人学习</div>
+								<div class="duration">2课时 38分钟</div>
+							</div>
+					</article>
+				</div>
+
+			</div><!--series-->
+
+			<div class="pagination" style="width:100%; text-align:center;">
+				<ul class="pager">
+					<li class="disabled"><span>«</span></li>
+					<li><a href="javascript:;" rel="next">»</a></li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h3><a href="/videos"><i class="fa fa-youtube-play" style="position:relative; top:3px;"></i>最新视频</a></h3>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/javascript-prototypal-inheritance-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/faker-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">CSS3动画解析</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/javascript-prototypal-inheritance-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/faker-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">CSS3动画解析</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/javascript-prototypal-inheritance-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">浅谈Javascript的原型与继承</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<article class="block">
+						<a class="block-thumbnail" href="list.html">
+							<div class="thumbnail-overlay"></div>
+							<span class="play-button"></span>
+							<img src="img/faker-medium.jpg">
+						</a>
+						<div class="block-contents">
+							<span class="label label-info">免费</span>
+							<h2 class="title"><a href="">CSS3动画解析</a></h2>
+							<p class="desc">Javascript的面对对象属性，从学习原型与继承起了解JS的框架源头。</p>
+							<p class="duration">
+								1小时25分
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<div class="pagination" style="width:100%; text-align:center;">
+				<ul class="pager">
+					<li class="disabled"><span>«</span></li>
+					<li><a href="javascript:;" rel="next">»</a></li>
+				</ul>
+			</div>
+
+			<div style="clear:both; height:30px;"></div>
+
+		</div><!--home-content-->
+	</div><!--container-->
+
+	<div class="bottom_bar">
+	    <div class="container">
+	        <div class="notification">
+	            <h1>Copyright © 2015 轻课网 - 你的私人轻学习专家. </h1>
+	        </div>
+	        <div class="social">
+	            <h3>关注我们</h3>
+	            <a href="javascript:;" target="_blank" class="share"><i class="fa fa-facebook"></i></a>
+	            <a href="javascript:;" target="_blank" class="share"><i class="fa fa-twitter"></i></a>
+	            <a href="javascript:;" target="_blank" class="share"><i class="fa fa-google-plus"></i></a>
+	            <a href="javascript:;" target="_blank" class="share"><i class="fa fa-youtube"></i></a>
+	        </div>
+	    </div>
+	</div>
+
+
+	<footer>
+		<div class="container">
+
+		</div>
+	</footer>
+	<div class="modal boring-dialog" id="loginDialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<h4 class="modal-title" id="myModalLabel">登录</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="login-email">E-mail</label>
+							<input type="email" class="form-control" id="login-email" placeholder="E-mail">
+						</div>
+						<div class="form-group">
+							<label for="login-password">密码</label>
+							<input type="password" class="form-control" id="login-password" placeholder="密码">
+						</div>
+						<div class="form-group clearfix">
+							<div class="checkbox pull-left">
+								<label>
+									<input type="checkbox"> 记住登录状态
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary pull-right">登录</button>
+						</div>
+					</form>
+					<div class="quick-login">
+						<div class="quick-login-title text-muted hidden-xs">快速登录</div>
+						<a href="javascript:;" class="btn btn-sm btn-sn-github"><span class="icon-sn-github"></span> <strong class="visible-xs-inline">Github 账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-weibo"><span class="icon-sn-weibo"></span> <strong class="visible-xs-inline">新浪微博账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-qq"><span class="icon-sn-qq"></span> <strong class="visible-xs-inline">QQ 账号</strong></a>
+						<a href="javascript:;" class="btn btn-sm btn-sn-wechat"><span class="icon-sn-wechat"></span> <strong class="visible-xs-inline">微信账号</strong></a>
+						<a href="javascript:;" class="btn btn-sn-douban btn-sm hidden"><span class="icon-sn-douban"></span> <strong class="visible-xs-inline">豆瓣账号</strong></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal boring-dialog" id="regDialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close boring-dialog-closer" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">关闭</span></button>
+					<h4 class="modal-title" id="myModalLabel">注册</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="reg-username">用户名</label>
+							<input type="text" class="form-control" id="reg-username" placeholder="字母、数字等，用户名唯一">
+						</div>
+						<div class="form-group">
+							<label for="reg-email">E-mail</label>
+							<input type="email" class="form-control" id="reg-email" placeholder="ilove@qingke.me">
+						</div>
+						<div class="form-group">
+							<label for="reg-password">密码</label>
+							<input type="password" class="form-control" id="reg-password" placeholder="不少于 6 位">
+						</div>
+						<div class="form-group clearfix">
+							<div class="checkbox pull-left">同意并接受<a href="javascript:;" target="_blank">《服务条款》</a></div>
+							<button type="submit" class="btn btn-primary pull-right">注册</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="js/rrssb.min.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/jquery.noty.js"></script>
+	<script type="text/javascript" src="js/default.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/boring.js"></script>
+
+
+
+	<script type="text/javascript">
+
+		//********** Headroom js functionality **********/
+			// grab an element
+			var myElement = document.querySelector(".navbar");
+			// construct an instance of Headroom, passing the element
+			var headroom  = new Headroom(myElement, { offset: 65 });
+			// initialise
+			headroom.init();
+
+
+		  $('document').ready(function(){
+
+
+			    $('.dropdown').hover(function(){
+			        $(this).addClass('open');
+			    }, function(){
+			        $(this).removeClass('open');
+			    });
+
+
+		    $('#nav-toggle').click(function(){
+		    	$(this).toggleClass('active');
+		    	$('.navbar-collapse').toggle();
+		    	$('body').toggleClass('nav-open');
+		    });
+
+		    $('#mobile-subnav').click(function(){
+		    	if($('.second-nav .navbar-left').css('display') == 'block'){
+		    		$('.second-nav .navbar-left').slideUp(function(){
+		    			$(this).addClass('not-visible');
+		    		});
+		    		$(this).html('<i class="fa fa-bars"></i> Open Submenu');
+		    	} else {
+		    		$('.second-nav .navbar-left').slideDown(function(){
+		    			$(this).removeClass('not-visible');
+		    		});
+		    		$(this).html('<i class="fa fa-close"></i> Close Submenu');
+		    	}
+
+		    });
+
+		  });
+
+		  (function () {
+		  	var loginDialog = boring.dialog('loginDialog'),
+		  		regDialog = boring.dialog('regDialog');
+
+		  	$('.j-login-btn').on('click', function () {
+		  		loginDialog.open();
+		  	});
+
+		  	$('.j-reg-btn').on('click', function () {
+		  		regDialog.open();
+		  	});
+		  }());
+
+		</script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include src="template/head.html" title="报名"></include>
+	</head>
+	<body ontouchstart>
+		<video src="../../oceans-clip.mp4" controls></video>
+		<form action="pay.html" method="post">
+			<div class="weui_cells weui_cells_form">
+				<label class="weui_cell">
+					<div class="weui_cell_hd">
+						<span class="weui_label">姓名</span>
+					</div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<input class="weui_input" type="text" required autofocus placeholder="王大拿">
+					</div>
+				</label>
+				<label class="weui_cell">
+					<div class="weui_cell_hd">
+						<span class="weui_label">手机号</span>
+					</div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<input class="weui_input" type="tel" required placeholder="13987654321">
+					</div>
+				</label>
+				<label class="weui_cell">
+					<div class="weui_cell_hd">
+						<span class="weui_label">微信号</span>
+					</div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<input class="weui_input" type="text" required placeholder="wangdana">
+					</div>
+				</label>
+			</div>
+			<div class="weui_btn_area">
+				<button type="submit" class="weui_btn weui_btn_primary">立即报名</button>
+			</div>
+		</form>
+	</body>
+</html>
