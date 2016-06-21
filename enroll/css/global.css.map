@@ -1,0 +1,1 @@
+{"version":3,"sources":["css/global.css"],"names":[],"mappings":"AAAA,MACE,QAAS,MACT,UAAW,KACX,OAAQ","file":"css/global.css","sourceRoot":"/source/","sourcesContent":["video {\r\n\tdisplay: block;\r\n\tmax-width: 100%;\r\n\tmargin: auto;\r\n}"]}

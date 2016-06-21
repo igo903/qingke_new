@@ -1197,9 +1197,9 @@ body{
 }
 .article .item-list-info .info-time, .article .item-list-info h3{
 	color: #000;
-	white-space: nowrap;
+	// white-space: nowrap;
 	overflow: hidden;
-	text-overflow: ellipsis;
+	// text-overflow: ellipsis;
 }
 
 .article .item-list-info .info-time {
