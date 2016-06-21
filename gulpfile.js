@@ -1,4 +1,3 @@
-'use strict'
 let
 	gulp = require('gulp'),
 	includeTag = require('gulp-include-tag'),
