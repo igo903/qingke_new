@@ -1,6 +1,5 @@
 let
 	gulp = require('gulp'),
-	changed = require('gulp-changed'),
 	includeTag = require('gulp-include-tag'),
 	prettify = require('gulp-prettify'),
 	myth = require('gulp-myth');
@@ -28,7 +27,6 @@ gulp.task('html', function () {
 
 gulp.task('css', function () {
 	return gulp.src(SRC_CSS_PATH)
-		.pipe(changed(BUILD_PATH))
 		.pipe(myth())
 		.pipe(gulp.dest(BUILD_PATH));
 });
