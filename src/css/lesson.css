@@ -298,6 +298,15 @@ img {
 
 
 
+.lesson-menu {
+	table-layout: fixed;
+}
+.lesson-menu-content {
+	width: 50%;
+}
+
+
+
 @keyframes down-110 {
 	0% {
 		transform: translateY(-110%);

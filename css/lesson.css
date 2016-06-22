@@ -326,6 +326,14 @@ img {
   transform: rotate(-15deg);
 }
 
+.lesson-menu {
+  table-layout: fixed;
+}
+
+.lesson-menu-content {
+  width: 50%;
+}
+
 @-webkit-keyframes down-110 {
   0% {
     -webkit-transform: translateY(-110%);
