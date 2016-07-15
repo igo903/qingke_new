@@ -14,9 +14,7 @@ const
 	SRC_IMG_PATH = SRC_PATH + '**/*.*(png|jpg|jpeg|gif|svg)',
 	BUILD_PATH = './';
 
-gulp.task('default', ['html', 'css', 'js', 'img']);
-
-gulp.task('html', function () {
+function html() {
 	return gulp.src(SRC_HTML_PATH)
 		.pipe(includeTag())
 		.pipe(prettify({
@@ -25,30 +23,38 @@ gulp.task('html', function () {
 			extra_liners: []
 		}))
 		.pipe(gulp.dest(BUILD_PATH));
-});
+}
 
-gulp.task('css', function () {
+function css() {
 	return gulp.src(SRC_CSS_PATH)
 		.pipe(myth())
 		.pipe(gulp.dest(BUILD_PATH));
-});
+}
 
-gulp.task('js', function () {
+function js() {
 	return gulp.src(SRC_JS_PATH)
 		.pipe(babel({
 			presets: ['es2015']
 		}))
 		.pipe(gulp.dest(BUILD_PATH));
-});
+}
 
-gulp.task('img', function () {
+function img() {
 	return gulp.src(SRC_IMG_PATH)
 		.pipe(gulp.dest(BUILD_PATH));
-});
+}
 
-gulp.task('watch', ['default'], function () {
-	gulp.watch([SRC_HTML_PATH, SRC_TEMPLATE_PATH], ['html']);
-	gulp.watch(SRC_CSS_PATH, ['css']);
-	gulp.watch(SRC_JS_PATH, ['js']);
-	gulp.watch(SRC_IMG_PATH, ['img']);
-});
+function watch() {
+	gulp.watch([SRC_HTML_PATH, SRC_TEMPLATE_PATH], html);
+	gulp.watch(SRC_CSS_PATH, css);
+	gulp.watch(SRC_JS_PATH, js);
+	gulp.watch(SRC_IMG_PATH, img);
+}
+
+gulp.task(html);
+gulp.task(css);
+gulp.task(js);
+gulp.task(img);
+
+gulp.task('default', gulp.parallel('html', 'css', 'js', 'img'));
+gulp.task('watch', gulp.series('default', watch));
