@@ -1,3 +1,9 @@
+:root {
+	--blue: #39a9ea;
+}
+
+
+
 *,
 :before,
 :after {
@@ -1140,7 +1146,10 @@ body{
 	font-size: 18px;
 	line-height: 28px;
 	color: #000;
-
+}
+.article .item-info-title:hover {
+	color: var(--blue);
+	text-decoration: none;
 }
 .article .item-list-info h3 {
 	border-bottom: 0;
@@ -1194,6 +1203,7 @@ body{
 	padding-left: 20px;
 }
 .article .info-detail p {
+	font-size: 12px;
 	margin-bottom: 0;
 }
 

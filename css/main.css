@@ -1271,6 +1271,11 @@ body {
   color: #000;
 }
 
+.article .item-info-title:hover {
+  color: #39a9ea;
+  text-decoration: none;
+}
+
 .article .item-list-info h3 {
   border-bottom: 0;
   padding-bottom: 0;
@@ -1332,6 +1337,7 @@ body {
 }
 
 .article .info-detail p {
+  font-size: 12px;
   margin-bottom: 0;
 }
 
