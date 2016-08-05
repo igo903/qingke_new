@@ -1,3 +1,9 @@
 :root {
 	--blue: #39a9ea;
 }
+
+
+
+@custom-media --bs-lg (min-width: 1200px);
+@custom-media --bs-md (min-width: 992px);
+@custom-media --bs-sm (min-width: 768px);
