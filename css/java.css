@@ -169,6 +169,8 @@ h1 {
 
 .java-jobs-num-char-wrap {
   display: inline-block;
+  max-width: 60px;
+  width: 15%;
   padding: 0 5px;
   background: -webkit-linear-gradient(top, #2f2f2f 50%, #070707 0%);
   background: linear-gradient(to bottom, #2f2f2f 50%, #070707 0%);
@@ -177,8 +179,7 @@ h1 {
 
 .java-jobs-num-char {
   display: block;
-  width: 50px;
-  height: 100px;
+  padding-bottom: 200%;
   background: url(../img/numbers.png) no-repeat;
   background-size: 100%;
   -webkit-transition: 0.5s ease-in-out;
@@ -433,6 +434,10 @@ h1 {
   margin-bottom: 15px;
   overflow: hidden;
   cursor: pointer;
+}
+
+.java-teacher-photo {
+  width: 100%;
 }
 
 .java-teacher .carousel-caption {
@@ -803,6 +808,7 @@ h1 {
 .java-courses-tabs > li {
   float: none;
   display: inline-block;
+  max-width: 22%;
 }
 
 .java-courses-tabs > li > a {
@@ -851,6 +857,7 @@ h1 {
 
 .java-courses-table td {
   text-align: left;
+  word-wrap: break-word;
 }
 
 .java-courses-table ol {
