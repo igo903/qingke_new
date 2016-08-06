@@ -4,6 +4,7 @@
 
 :root {
 	--java-blue: #9de0ff;
+	--blue-1: #2483c7;
 	--blue-2: #27b4f5;
 	--blue-3: #0398dd;
 	--percent-1-9: calc(100% / 9);
@@ -11,12 +12,15 @@
 	--search-line-height: 1.9;
 	--search-height: calc(18px * var(--search-line-height));
 	--gray: #282828;
+	--gray-1: #b2b2b2;
 	--red: #f06009;
+	--red-1: #f74955;
 	--platform-logo-size: 94px;
 	--table-border: 2px solid white;
 	--table-radius: 5px;
 	--tab-padding: 1.5em;
 	--tab-radius: 20px;
+	--orange: #ff8309;
 }
 
 
@@ -38,6 +42,18 @@ h1 {
 	font-size: 14px;
 	margin-top: 0.5em;
 	opacity: 0.5;
+}
+.java-section .table-bordered {
+	border: none;
+}
+.java-section th {
+	font-weight: inherit;
+	text-align: center;
+}
+.java-section .table-bordered > thead > tr > th,
+.java-section .table-bordered > tbody> tr > th,
+.java-section .table-bordered > tbody > tr > td {
+	border: var(--table-border);
 }
 .java-section-head {
 	margin-bottom: 50px;
@@ -68,6 +84,7 @@ h1 {
 }
 .java-title {
 	font-size: 60px;
+	margin-bottom: 25px;
 }
 .java-slogan {
 	display: inline-block;
@@ -76,7 +93,7 @@ h1 {
 	border: solid color(var(--java-blue) alpha(30%));
 	border-width: 2px 0;
 	padding: 0.2em 0;
-	margin-top: 0.5em;
+	margin-top: 1em;
 }
 
 
@@ -147,7 +164,6 @@ h1 {
 	background-image: url(../img/dev-2.jpg);
 }
 .java-section-job .java-section-head {
-	/*max-width: 50%;*/
 	padding: 25px;
 	border: 10px solid;
 	border-top-color: var(--blue-2);
@@ -173,6 +189,7 @@ h1 {
 	height: 100px;
 	background: url(../img/numbers.png) no-repeat;
 	background-size: 100%;
+	transition: 0.5s ease-in-out;
 }
 
 .java-jobs-num-char[value="1"] {
@@ -360,12 +377,7 @@ h1 {
 	background: var(--red);
 }
 
-.java-students-table {
-	border: none;
-}
 .java-students-table th {
-	font-weight: inherit;
-	text-align: center;
 	color: white;
 	background: var(--blue-2);
 }
@@ -375,11 +387,6 @@ h1 {
 .java-students-table th:last-child {
 	border-top-right-radius: var(--table-radius);
 }
-.java-students-table > tbody > tr > th,
-.java-students-table > tbody > tr > td,
-.java-students-table > thead > tr > th {
-	border: var(--table-border);
-}
 .java-students-table td {
 	color: #7a7a7a;
 	background: #e9f8ff;
@@ -387,7 +394,447 @@ h1 {
 
 
 
-.java-section-teachers {
+.java-section-teacher {
 	color: white;
 	background: #36bfff;
+}
+
+.java-teachers .carousel-inner .item {
+	display: block;
+}
+
+.java-teacher {
+	position: relative;
+	margin-bottom: 15px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.java-teacher .carousel-caption {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: color(white alpha(20%));
+	padding: 1em 0.5em;
+	transform: translateY(100%);
+	transition: 0.4s;
+}
+.java-teacher:hover .carousel-caption {
+	transform: translateY(0);
+}
+.java-teacher-name {
+	font-weight: bold;
+	font-size: 22px;
+}
+.java-teacher-capacity {
+	font-size: 16px;
+}
+
+.java-teachers .carousel-control {
+	width: 8%;
+	background: no-repeat center;
+}
+.java-teachers .carousel-control.left {
+	left: auto;
+	right: 100%;
+	background-image: url(../img/arrow-left.png);
+}
+.java-teachers .carousel-control.right {
+	left: 100%;
+	background-image: url(../img/arrow-right.png);
+}
+
+@media (--bs-lg) {
+	.java-teachers .carousel-inner .item {
+		display: none;
+	}
+	.java-teachers .carousel-inner .item.prev,
+	.java-teachers .carousel-inner .item.next,
+	.java-teachers .carousel-inner .item.active {
+		display: block;
+	}
+	.java-teacher {
+		margin-bottom: 0;
+	}
+}
+
+.java-teacher-intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 8em;
+	padding: 1em;
+	margin-top: 20px;
+	background: color(black alpha(20%));
+}
+.java-teacher-intro:empty {
+	display: none;
+}
+
+
+
+.java-section-class {
+	color: white;
+	background-image: url(../img/dev-3.jpg);
+}
+
+.java-class-features {
+	color: black;
+}
+.java-class-features .col {
+	margin-bottom: 15px;
+}
+.java-class-feature {
+	min-height: 320px;
+	padding: 30px 15px;
+	background: no-repeat center 85% color(white alpha(90%));
+}
+.java-class-feature-title {
+	font-size: 22px;
+	margin-bottom: 1em;
+}
+.java-class-feature-intro {
+	line-height: 1.7;
+	text-align: left;
+	color: #3a3a3a;
+	opacity: 0.8;
+}
+
+.java-class-feature-pay {
+	background-image: url(../img/money.png);
+}
+.java-class-feature-agreement {
+	background-image: url(../img/note.png);
+}
+.java-class-feature-work {
+	background-image: url(../img/screen.png);
+}
+.java-class-feature-book {
+	background-image: url(../img/book.png);
+}
+
+.java-class-slogan {
+	font-size: 30px;
+	margin-top: 40px;
+}
+
+
+
+.java-section-company {
+	background: #ececec;
+}
+
+.java-companies .col {
+	padding-left: 0;
+	padding-right: 0;
+}
+.java-company {
+	position: relative;
+	padding-bottom: 200%;
+}
+.java-company-grid,
+.java-company-detail {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.java-company-grid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+}
+.java-company-grid:nth-child(1) {
+	top: 0;
+	border: 1px solid var(--gray-1);
+	flex-direction: column;
+}
+.java-company-grid:nth-child(2) {
+	bottom: 0;
+}
+.java-company-logo {
+	height: 60px;
+}
+.java-company-category {
+	font-size: 16px;
+	margin-top: 1em;
+}
+.java-company-index {
+	font-size: 80px;
+	color: #cdcdcd;
+}
+.java-company-index:after {
+	content: "";
+	display: block;
+	width: 0.3em;
+	height: 1px;
+	margin: -0.15em auto 0;
+	background: var(--gray-1);
+}
+.java-company-detail {
+	top: 0;
+	bottom: 0;
+	color: white;
+	padding: 25% 1em 0;
+	background: #1cc5a3;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s;
+}
+.java-company-intro {
+	text-align: left;
+	margin-top: 1em;
+}
+
+.java-company:hover .java-company-detail {
+	visibility: visible;
+	opacity: 1;
+}
+
+.java-companies .col:nth-child(even) .java-company-grid:nth-child(1) {
+	top: auto;
+	bottom: 0;
+}
+.java-companies .col:nth-child(even) .java-company-grid:nth-child(2) {
+	top: 0;
+	bottom: auto;
+}
+
+
+
+.java-section-project {
+	color: white;
+	background: url(../img/shapes.png) no-repeat right -50px #1d9ab5;
+}
+
+.java-project,
+.java-project .caption {
+	transition: 0.5s;
+}
+.java-project {
+	padding: 0;
+	border: none;
+	border-radius: 8px;
+	background: none;
+	overflow: hidden;
+	transform: scale(0.8);
+	transform-origin: center 20%;
+	transition-delay: 0.3s;
+}
+.java-project > img {
+	width: 100%;
+}
+.java-project .caption {
+	padding: 1em;
+	color: inherit;
+}
+.java-project-name {
+	font-size: 22px;
+	margin-bottom: 0.3em;
+}
+.java-project-intro {
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: left;
+}
+
+.java-project:hover {
+	transform: scale(1);
+}
+.java-project:hover .caption {
+	background: color(black alpha(80%));
+	transform: translateY(-100%);
+}
+
+.java-course-link,
+.java-course-link:hover,
+.java-course-link:focus {
+	color: inherit;
+}
+.java-course-link {
+	display: block;
+	padding: 15px;
+	background: var(--red-1);
+}
+.java-course-link-logo {
+	float: left;
+	padding: 25px;
+	background: color(#571212 alpha(30%));
+}
+.java-course-link-title {
+	font-size: 38px;
+	margin: 0.5em 0;
+}
+.java-course-link-btn {
+	color: var(--red-1);
+	border-radius: 1em;
+	padding: 0.4em 0.8em;
+	background: #ffd800;
+}
+
+.java-course-link:hover {
+	text-decoration: none;
+	background: color(var(--red-1) tint(5%));
+}
+
+
+
+.java-enroll {
+	text-align: center;
+	color: white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: url(../img/dev-4.jpg) no-repeat center;
+	background-size: cover;
+}
+.java-enroll-title {
+	font-size: 42px;
+}
+.java-enroll-link {
+	background: var(--orange);
+	border-color: var(--orange);
+	box-shadow: 0 2px 4px color(black alpha(45%));
+}
+.java-enroll-link:hover,
+.java-enroll-link:active,
+.java-enroll-link:focus,
+.java-enroll-link:active:focus {
+	background: color(var(--orange) tint(10%));
+	border-color: color(var(--orange) tint(10%));
+}
+.java-enroll-link {
+	font-size: 28px;
+	padding: 0.3em 1.5em;
+}
+
+
+
+.java-section-course {
+	background: white;
+}
+.java-courses-tabs {
+	border-bottom: none;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.java-courses-tabs > li {
+	float: none;
+	display: inline-block;
+}
+.java-courses-tabs > li > a {
+	color: #ababab;
+	border-color: #7f7f7f;
+	border-radius: 0;
+	padding: 5px var(--tab-padding);
+	margin-right: 0;
+}
+
+.java-courses-tabs > li.active > a,
+.java-courses-tabs > li.active > a:hover,
+.java-courses-tabs > li.active > a:focus {
+	color: white;
+	border-color: var(--blue-1);
+	background: var(--blue-1);
+}
+
+.java-courses-table {
+	table-layout: fixed;
+}
+.java-courses-table col:first-child {
+	width: 15%;
+}
+.java-courses-table th {
+	font-size: 16px;
+	background: #ededed;
+}
+.java-courses-table tbody th,
+.java-courses-table td {
+	background: #fafafa;
+}
+.java-courses-table tbody > tr > th,
+.java-courses-table tbody > tr > td {
+	line-height: 1.6;
+	padding: 1em;
+}
+.java-courses-table tbody > tr > th {
+	vertical-align: middle;
+}
+.java-courses-table td {
+	text-align: left;
+}
+.java-courses-table ol {
+	list-style: inside decimal;
+}
+
+
+
+.java-toolbar {
+	position: fixed;
+	left: 1%;
+	bottom: 10%;
+	width: 140px;
+}
+.java-toolbar-logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	max-width: 80%;
+	margin: auto;
+}
+.java-toolbar-links {
+	position: relative;
+	font-size: 22px;
+	line-height: 2.28;
+	padding: 5px;
+	background: #39a9ea;
+}
+.java-toolbar-link {
+	background: no-repeat 105px 0.5em;
+	box-shadow: 0 0 1px color(black alpha(45%));
+}
+.java-toolbar-link:nth-child(n+2) {
+	margin-top: 4px;
+}
+.java-toolbar-links a {
+	display: block;
+	padding: 0 0.5em;
+	color: white;
+}
+.java-toolbar-links a:hover {
+	text-decoration: none;
+	box-shadow: inset -999px -999px color(white alpha(10%));
+}
+
+.java-toolbar-link-consult {
+	background-image: url(../img/question.png);
+	background-color: #fa7d03;
+}
+.java-toolbar-link-enter {
+	background-image: url(../img/badge.png);
+	background-color: #cd17c7;
+}
+.java-toolbar-link-listen {
+	background-image: url(../img/pin.png);
+	background-color: #84d70e;
+}
+
+.java-toolbar:before,
+.java-toolbar:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: #70cbff;
+}
+.java-toolbar:before {
+	bottom: 100%;
+	padding-bottom: 45%;
+	transform: perspective(200px) rotateX(60deg);
+	transform-origin: bottom;
+}
+.java-toolbar:after {
+	top: 100%;
+	z-index: -1;
+	padding-bottom: 100%;
+	transform: perspective(200px) translateY(-50%) rotateX(55deg) rotate(45deg) scale(0.7);
 }

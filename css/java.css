@@ -16,6 +16,21 @@ h1 {
   opacity: 0.5;
 }
 
+.java-section .table-bordered {
+  border: none;
+}
+
+.java-section th {
+  font-weight: inherit;
+  text-align: center;
+}
+
+.java-section .table-bordered > thead > tr > th,
+.java-section .table-bordered > tbody> tr > th,
+.java-section .table-bordered > tbody > tr > td {
+  border: 2px solid white;
+}
+
 .java-section-head {
   margin-bottom: 50px;
 }
@@ -48,6 +63,7 @@ h1 {
 
 .java-title {
   font-size: 60px;
+  margin-bottom: 25px;
 }
 
 .java-slogan {
@@ -57,7 +73,7 @@ h1 {
   border: solid rgba(157, 224, 255, 0.3);
   border-width: 2px 0;
   padding: 0.2em 0;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 .java-section-why {
@@ -136,7 +152,6 @@ h1 {
 }
 
 .java-section-job .java-section-head {
-  /*max-width: 50%;*/
   padding: 25px;
   border: 10px solid;
   border-top-color: #27b4f5;
@@ -166,6 +181,8 @@ h1 {
   height: 100px;
   background: url(../img/numbers.png) no-repeat;
   background-size: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .java-jobs-num-char[value="1"] {
@@ -384,13 +401,7 @@ h1 {
   background: #f06009;
 }
 
-.java-students-table {
-  border: none;
-}
-
 .java-students-table th {
-  font-weight: inherit;
-  text-align: center;
   color: white;
   background: #27b4f5;
 }
@@ -403,18 +414,530 @@ h1 {
   border-top-right-radius: 5px;
 }
 
-.java-students-table > tbody > tr > th,
-.java-students-table > tbody > tr > td,
-.java-students-table > thead > tr > th {
-  border: 2px solid white;
-}
-
 .java-students-table td {
   color: #7a7a7a;
   background: #e9f8ff;
 }
 
-.java-section-teachers {
+.java-section-teacher {
   color: white;
   background: #36bfff;
+}
+
+.java-teachers .carousel-inner .item {
+  display: block;
+}
+
+.java-teacher {
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.java-teacher .carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1em 0.5em;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.java-teacher:hover .carousel-caption {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.java-teacher-name {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.java-teacher-capacity {
+  font-size: 16px;
+}
+
+.java-teachers .carousel-control {
+  width: 8%;
+  background: no-repeat center;
+}
+
+.java-teachers .carousel-control.left {
+  left: auto;
+  right: 100%;
+  background-image: url(../img/arrow-left.png);
+}
+
+.java-teachers .carousel-control.right {
+  left: 100%;
+  background-image: url(../img/arrow-right.png);
+}
+
+@media (min-width: 1200px) {
+  .java-teachers .carousel-inner .item {
+    display: none;
+  }
+
+  .java-teachers .carousel-inner .item.prev,
+  .java-teachers .carousel-inner .item.next,
+  .java-teachers .carousel-inner .item.active {
+    display: block;
+  }
+
+  .java-teacher {
+    margin-bottom: 0;
+  }
+}
+
+.java-teacher-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 8em;
+  padding: 1em;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.java-teacher-intro:empty {
+  display: none;
+}
+
+.java-section-class {
+  color: white;
+  background-image: url(../img/dev-3.jpg);
+}
+
+.java-class-features {
+  color: black;
+}
+
+.java-class-features .col {
+  margin-bottom: 15px;
+}
+
+.java-class-feature {
+  min-height: 320px;
+  padding: 30px 15px;
+  background: no-repeat center 85% rgba(255, 255, 255, 0.9);
+}
+
+.java-class-feature-title {
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+
+.java-class-feature-intro {
+  line-height: 1.7;
+  text-align: left;
+  color: #3a3a3a;
+  opacity: 0.8;
+}
+
+.java-class-feature-pay {
+  background-image: url(../img/money.png);
+}
+
+.java-class-feature-agreement {
+  background-image: url(../img/note.png);
+}
+
+.java-class-feature-work {
+  background-image: url(../img/screen.png);
+}
+
+.java-class-feature-book {
+  background-image: url(../img/book.png);
+}
+
+.java-class-slogan {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.java-section-company {
+  background: #ececec;
+}
+
+.java-companies .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.java-company {
+  position: relative;
+  padding-bottom: 200%;
+}
+
+.java-company-grid,
+.java-company-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.java-company-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50%;
+}
+
+.java-company-grid:nth-child(1) {
+  top: 0;
+  border: 1px solid #b2b2b2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.java-company-grid:nth-child(2) {
+  bottom: 0;
+}
+
+.java-company-logo {
+  height: 60px;
+}
+
+.java-company-category {
+  font-size: 16px;
+  margin-top: 1em;
+}
+
+.java-company-index {
+  font-size: 80px;
+  color: #cdcdcd;
+}
+
+.java-company-index:after {
+  content: "";
+  display: block;
+  width: 0.3em;
+  height: 1px;
+  margin: -0.15em auto 0;
+  background: #b2b2b2;
+}
+
+.java-company-detail {
+  top: 0;
+  bottom: 0;
+  color: white;
+  padding: 25% 1em 0;
+  background: #1cc5a3;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.java-company-intro {
+  text-align: left;
+  margin-top: 1em;
+}
+
+.java-company:hover .java-company-detail {
+  visibility: visible;
+  opacity: 1;
+}
+
+.java-companies .col:nth-child(even) .java-company-grid:nth-child(1) {
+  top: auto;
+  bottom: 0;
+}
+
+.java-companies .col:nth-child(even) .java-company-grid:nth-child(2) {
+  top: 0;
+  bottom: auto;
+}
+
+.java-section-project {
+  color: white;
+  background: url(../img/shapes.png) no-repeat right -50px #1d9ab5;
+}
+
+.java-project,
+.java-project .caption {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.java-project {
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  overflow: hidden;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transform-origin: center 20%;
+  transform-origin: center 20%;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.java-project > img {
+  width: 100%;
+}
+
+.java-project .caption {
+  padding: 1em;
+  color: inherit;
+}
+
+.java-project-name {
+  font-size: 22px;
+  margin-bottom: 0.3em;
+}
+
+.java-project-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.java-project:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.java-project:hover .caption {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.java-course-link,
+.java-course-link:hover,
+.java-course-link:focus {
+  color: inherit;
+}
+
+.java-course-link {
+  display: block;
+  padding: 15px;
+  background: #f74955;
+}
+
+.java-course-link-logo {
+  float: left;
+  padding: 25px;
+  background: rgba(87, 18, 18, 0.3);
+}
+
+.java-course-link-title {
+  font-size: 38px;
+  margin: 0.5em 0;
+}
+
+.java-course-link-btn {
+  color: #f74955;
+  border-radius: 1em;
+  padding: 0.4em 0.8em;
+  background: #ffd800;
+}
+
+.java-course-link:hover {
+  text-decoration: none;
+  background: rgb(247, 82, 94);
+}
+
+.java-enroll {
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url(../img/dev-4.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.java-enroll-title {
+  font-size: 42px;
+}
+
+.java-enroll-link {
+  background: #ff8309;
+  border-color: #ff8309;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.java-enroll-link:hover,
+.java-enroll-link:active,
+.java-enroll-link:focus,
+.java-enroll-link:active:focus {
+  background: rgb(255, 143, 34);
+  border-color: rgb(255, 143, 34);
+}
+
+.java-enroll-link {
+  font-size: 28px;
+  padding: 0.3em 1.5em;
+}
+
+.java-section-course {
+  background: white;
+}
+
+.java-courses-tabs {
+  border-bottom: none;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.java-courses-tabs > li {
+  float: none;
+  display: inline-block;
+}
+
+.java-courses-tabs > li > a {
+  color: #ababab;
+  border-color: #7f7f7f;
+  border-radius: 0;
+  padding: 5px 1.5em;
+  margin-right: 0;
+}
+
+.java-courses-tabs > li.active > a,
+.java-courses-tabs > li.active > a:hover,
+.java-courses-tabs > li.active > a:focus {
+  color: white;
+  border-color: #2483c7;
+  background: #2483c7;
+}
+
+.java-courses-table {
+  table-layout: fixed;
+}
+
+.java-courses-table col:first-child {
+  width: 15%;
+}
+
+.java-courses-table th {
+  font-size: 16px;
+  background: #ededed;
+}
+
+.java-courses-table tbody th,
+.java-courses-table td {
+  background: #fafafa;
+}
+
+.java-courses-table tbody > tr > th,
+.java-courses-table tbody > tr > td {
+  line-height: 1.6;
+  padding: 1em;
+}
+
+.java-courses-table tbody > tr > th {
+  vertical-align: middle;
+}
+
+.java-courses-table td {
+  text-align: left;
+}
+
+.java-courses-table ol {
+  list-style: inside decimal;
+}
+
+.java-toolbar {
+  position: fixed;
+  left: 1%;
+  bottom: 10%;
+  width: 140px;
+}
+
+.java-toolbar-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+.java-toolbar-links {
+  position: relative;
+  font-size: 22px;
+  line-height: 2.28;
+  padding: 5px;
+  background: #39a9ea;
+}
+
+.java-toolbar-link {
+  background: no-repeat 105px 0.5em;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.45);
+}
+
+.java-toolbar-link:nth-child(n+2) {
+  margin-top: 4px;
+}
+
+.java-toolbar-links a {
+  display: block;
+  padding: 0 0.5em;
+  color: white;
+}
+
+.java-toolbar-links a:hover {
+  text-decoration: none;
+  box-shadow: inset -999px -999px rgba(255, 255, 255, 0.1);
+}
+
+.java-toolbar-link-consult {
+  background-image: url(../img/question.png);
+  background-color: #fa7d03;
+}
+
+.java-toolbar-link-enter {
+  background-image: url(../img/badge.png);
+  background-color: #cd17c7;
+}
+
+.java-toolbar-link-listen {
+  background-image: url(../img/pin.png);
+  background-color: #84d70e;
+}
+
+.java-toolbar:before,
+.java-toolbar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #70cbff;
+}
+
+.java-toolbar:before {
+  bottom: 100%;
+  padding-bottom: 45%;
+  -webkit-transform: perspective(200px) rotateX(60deg);
+  transform: perspective(200px) rotateX(60deg);
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.java-toolbar:after {
+  top: 100%;
+  z-index: -1;
+  padding-bottom: 100%;
+  -webkit-transform: perspective(200px) translateY(-50%) rotateX(55deg) rotate(45deg) scale(0.7);
+  transform: perspective(200px) translateY(-50%) rotateX(55deg) rotate(45deg) scale(0.7);
 }
