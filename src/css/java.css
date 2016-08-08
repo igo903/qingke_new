@@ -556,9 +556,9 @@ h1 {
 	bottom: 0;
 }
 .java-company-logo {
-	height: 60px;
+	height: 80px;
 }
-.java-company-category {
+.java-company-name {
 	font-size: 16px;
 	margin-top: 1em;
 }
@@ -638,7 +638,6 @@ h1 {
 .java-project-intro {
 	font-size: 16px;
 	line-height: 1.6;
-	text-align: left;
 }
 
 .java-project:hover {

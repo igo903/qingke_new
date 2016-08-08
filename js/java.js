@@ -25,7 +25,9 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 		newNumChars = fixedZeros + newNumChars;
 		newNumChars.split('').forEach(function (newNumChar, index) {
-			charBoxes[index].setAttribute('value', newNumChar);
+			var charBox = charBoxes[index];
+			charBox.setAttribute('value', newNumChar);
+			charBox.innerHTML = newNumChar;
 		});
 	}
 

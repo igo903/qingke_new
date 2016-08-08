@@ -21,7 +21,9 @@
 
 		newNumChars = fixedZeros + newNumChars;
 		newNumChars.split('').forEach((newNumChar, index) => {
-			charBoxes[index].setAttribute('value', newNumChar);
+			let charBox = charBoxes[index];
+			charBox.setAttribute('value', newNumChar);
+			charBox.innerHTML = newNumChar;
 		});
 	}
 
