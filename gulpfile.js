@@ -51,10 +51,5 @@ function watch() {
 	gulp.watch(SRC_IMG_PATH, img);
 }
 
-gulp.task(html);
-gulp.task(css);
-gulp.task(js);
-gulp.task(img);
-
-gulp.task('default', gulp.parallel('html', 'css', 'js', 'img'));
+gulp.task('default', gulp.parallel(html, css, js, img));
 gulp.task('watch', gulp.series('default', watch));
