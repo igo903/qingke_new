@@ -51,3 +51,12 @@
 
 	document.getElementById('teachers').addEventListener('click', handleClick);
 }());
+
+(() => {
+	function scroll(el) {
+
+	}
+
+	let tables = [...document.getElementsByClassName('j-scrolled-table')];
+	tables.forEach(scroll);
+})();

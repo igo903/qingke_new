@@ -104,6 +104,7 @@ h1 {
 }
 
 .java-feature {
+	position: relative;
 	margin-bottom: 70px;
 }
 .java-feature-icon {
@@ -119,9 +120,27 @@ h1 {
 .java-feature-name {
 	font-size: 18px;
 }
+.java-feature-intro {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	@apply --flex-center-middle;
+	color: white;
+	background: var(--blue-2);
+	padding: 1em;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+.java-feature:hover .java-feature-intro {
+	visibility: visible;
+	opacity: 1;
+}
 
 @media (--bs-lg) {
-	.java-feature.col-lg-2 {
+	.java-features .col-lg-2 {
 		width: 20%;
 	}
 }
@@ -378,19 +397,28 @@ h1 {
 	background: var(--red);
 }
 
-.java-students-table th {
-	color: white;
-	background: var(--blue-2);
+.java-students-table-wrap {
+	max-height: 400px;
+	overflow: hidden;
 }
-.java-students-table th:first-child {
-	border-top-left-radius: var(--table-radius);
-}
-.java-students-table th:last-child {
-	border-top-right-radius: var(--table-radius);
-}
-.java-students-table td {
-	color: #7a7a7a;
-	background: #e9f8ff;
+.java-students-table {
+	table-layout: fixed;
+	margin-bottom: 0;
+
+	& th {
+		color: white;
+		background: var(--blue-2);
+	}
+	& th:first-child {
+		border-top-left-radius: var(--table-radius);
+	}
+	& th:last-child {
+		border-top-right-radius: var(--table-radius);
+	}
+	& td {
+		color: #7a7a7a;
+		background: #e9f8ff;
+	}
 }
 
 

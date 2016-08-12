@@ -1,5 +1,11 @@
 :root {
 	--blue: #39a9ea;
+
+	--flex-center-middle: {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 

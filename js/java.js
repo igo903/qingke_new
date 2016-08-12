@@ -57,3 +57,10 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 	document.getElementById('teachers').addEventListener('click', handleClick);
 })();
+
+(function () {
+	function scroll(el) {}
+
+	var tables = [].concat(_toConsumableArray(document.getElementsByClassName('j-scrolled-table')));
+	tables.forEach(scroll);
+})();

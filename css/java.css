@@ -112,6 +112,7 @@ h1 {
 
 
 .java-feature {
+	position: relative;
 	margin-bottom: 70px;
 }
 
@@ -136,8 +137,41 @@ h1 {
 
 
 
+.java-feature-intro {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: white;
+	background: #27b4f5;
+	padding: 1em;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+
+
+.java-feature:hover .java-feature-intro {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
 @media (min-width: 1200px) {
-	.java-feature.col-lg-2 {
+	.java-features .col-lg-2 {
 		width: 20%;
 	}
 }
@@ -550,6 +584,20 @@ h1 {
 	color: white;
 	border-color: #f06009;
 	background: #f06009;
+}
+
+
+
+.java-students-table-wrap {
+	max-height: 400px;
+	overflow: hidden;
+}
+
+
+
+.java-students-table {
+	table-layout: fixed;
+	margin-bottom: 0
 }
 
 
