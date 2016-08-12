@@ -3,7 +3,9 @@ let
 	includeTag = require('gulp-include-tag'),
 	prettify = require('gulp-prettify'),
 	babel = require('gulp-babel'),
-	myth = require('gulp-myth');
+	postcss = require('gulp-postcss'),
+	cssnext = require('postcss-cssnext'),
+	cssimport = require('postcss-import');
 
 const
 	SRC_PATH = 'src/',
@@ -27,7 +29,7 @@ function html() {
 
 function css() {
 	return gulp.src(SRC_CSS_PATH)
-		.pipe(myth())
+		.pipe(postcss([cssimport(), cssnext()]))
 		.pipe(gulp.dest(BUILD_PATH));
 }
 
