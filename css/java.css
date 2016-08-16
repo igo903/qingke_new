@@ -1235,6 +1235,7 @@ h1 {
 	position: fixed;
 	left: 1%;
 	bottom: 10%;
+	z-index: 1;
 	width: 140px;
 }
 
