@@ -668,6 +668,11 @@ h1 {
 	line-height: 1.6;
 }
 
+.java-projects:hover .col:nth-child(2) .java-project {
+	transform: scale(0.8);
+}
+.java-projects .col:nth-child(2) .java-project,
+.java-projects .col:nth-child(2) .java-project:hover,
 .java-project:hover {
 	transform: scale(1);
 }
@@ -710,6 +715,11 @@ h1 {
 
 
 .java-enroll {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 	text-align: center;
 	color: white;
 	padding-top: 60px;
