@@ -25,6 +25,10 @@
 
 
 
+body {
+	margin-bottom: 280px;
+}
+
 h1 {
 	color: inherit;
 }
@@ -797,12 +801,12 @@ h1 {
 	line-height: 1.6;
 	padding: 1em;
 }
-.java-courses-table tbody > tr > th {
-	vertical-align: middle;
-}
 .java-courses-table td {
 	text-align: left;
 	word-wrap: break-word;
+}
+.java-courses-table td:empty:before {
+	content: "-";
 }
 .java-courses-table ol {
 	list-style: inside decimal;
