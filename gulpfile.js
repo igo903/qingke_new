@@ -1,6 +1,6 @@
 let
 	gulp = require('gulp'),
-	includeTag = require('gulp-include-tag'),
+	htmlTagInclude = require('gulp-html-tag-include'),
 	prettify = require('gulp-prettify'),
 	babel = require('gulp-babel'),
 	postcss = require('gulp-postcss'),
@@ -18,7 +18,7 @@ const
 
 function html() {
 	return gulp.src(SRC_HTML_PATH)
-		.pipe(includeTag())
+		.pipe(htmlTagInclude())
 		.pipe(prettify({
 			indent_with_tabs: true,
 			preserve_newlines: true,
