@@ -1101,18 +1101,32 @@ h1 {
 	right: 0;
 	bottom: 0;
 	z-index: 1;
-	text-align: center;
 	color: white;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background: url(../img/dev-4.jpg) no-repeat center;
-	background-size: cover;
+	background-size: cover
+}
+
+
+
+.java-enroll .col {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+a.java-enroll:hover {
+	color: white;
 }
 
 
 
 .java-enroll-title {
-	font-size: 42px;
+	font-size: 18px;
+	line-height: 1.8;
+	margin: 0;
 }
 
 
@@ -1135,9 +1149,34 @@ h1 {
 
 
 
+.java-enroll-link-wrap {
+	text-align: right;
+}
+
+
+
 .java-enroll-link {
-	font-size: 28px;
-	padding: 0.3em 1.5em;
+	padding: 0.3em 1em;
+}
+
+
+
+@media (min-width: 768px) {
+	.java-enroll {
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.java-enroll-title {
+		font-size: 42px;
+		margin-bottom: 0.5em;
+	}
+	.java-enroll-link-wrap {
+		text-align: inherit;
+	}
+	.java-enroll-link {
+		font-size: 28px;
+	}
 }
 
 
