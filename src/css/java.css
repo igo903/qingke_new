@@ -775,6 +775,11 @@ h1 {
 	height: var(--enroll-icon-size);
 	background: url(../img/x.png) no-repeat center;
 	background-size: calc(var(--enroll-icon-size) / 2);
+	opacity: 0.8;
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
 @media (--bs-sm) {
