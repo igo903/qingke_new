@@ -104,3 +104,18 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 	scroll();
 })();
+
+(function () {
+	function handleClick(e) {
+		e.preventDefault();
+		closeEnroll();
+	}
+
+	function closeEnroll() {
+		document.body.classList.add(NO_FIXED_BOTTOM_CLASS);
+	}
+
+	var NO_FIXED_BOTTOM_CLASS = 'no-fixed-bottom';
+
+	document.getElementById('enroll-close').addEventListener('click', handleClick);
+})();

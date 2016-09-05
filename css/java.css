@@ -4,6 +4,12 @@ body {
 
 
 
+.no-fixed-bottom {
+	margin-bottom: 0;
+}
+
+
+
 h1 {
 	color: inherit;
 }
@@ -1161,6 +1167,20 @@ a.java-enroll:hover {
 
 
 
+.java-enroll-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	width: 44px;
+	height: 44px;
+	background: url(../img/x.png) no-repeat center;
+	background-size: 22px;
+}
+
+
+
 @media (min-width: 768px) {
 	.java-enroll {
 		text-align: center;
@@ -1176,6 +1196,24 @@ a.java-enroll:hover {
 	}
 	.java-enroll-link {
 		font-size: 28px;
+	}
+	.java-enroll-close {
+		display: block;
+	}
+
+
+	.no-fixed-bottom {
+	}
+
+
+	.no-fixed-bottom .java-enroll {
+		position: relative;
+		display: block;
+	}
+
+
+	.no-fixed-bottom .java-enroll-close {
+		display: none;
 	}
 }
 

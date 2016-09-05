@@ -21,12 +21,16 @@
 	--tab-padding: 1.5em;
 	--tab-radius: 20px;
 	--orange: #ff8309;
+	--enroll-icon-size: 44px;
 }
 
 
 
 body {
 	margin-bottom: 280px;
+}
+.no-fixed-bottom {
+	margin-bottom: 0;
 }
 
 h1 {
@@ -761,6 +765,17 @@ h1 {
 .java-enroll-link {
 	padding: 0.3em 1em;
 }
+.java-enroll-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	width: var(--enroll-icon-size);
+	height: var(--enroll-icon-size);
+	background: url(../img/x.png) no-repeat center;
+	background-size: calc(var(--enroll-icon-size) / 2);
+}
 
 @media (--bs-sm) {
 	.java-enroll {
@@ -777,6 +792,20 @@ h1 {
 	}
 	.java-enroll-link {
 		font-size: 28px;
+	}
+	.java-enroll-close {
+		display: block;
+	}
+
+
+	.no-fixed-bottom {
+		& .java-enroll {
+			position: relative;
+			display: block;
+		}
+		& .java-enroll-close {
+			display: none;
+		}
 	}
 }
 
