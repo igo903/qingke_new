@@ -101,6 +101,7 @@ h1 {
 
 .java-course-cover {
 	& .java-title {
+		padding-bottom: 0;
 		margin-top: 0;
 		margin-bottom: 0.3em;
 		background: none;
