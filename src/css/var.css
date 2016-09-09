@@ -6,9 +6,13 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	--round-radius {
+		border-radius: 999px;
+	}
 }
 
-
+@custom-selector :--before-after :before, :after;
 
 @custom-media --bs-lg (min-width: 1200px);
 @custom-media --bs-md (min-width: 992px);

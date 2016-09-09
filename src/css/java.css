@@ -22,6 +22,8 @@
 	--tab-radius: 20px;
 	--orange: #ff8309;
 	--enroll-icon-size: 44px;
+	--toolbar-aside-height: 184px;
+	--toolbar-rope-length: 26px;
 }
 
 
@@ -84,24 +86,29 @@ h1 {
 	background-image: url(../img/dev-1.jpg);
 }
 .java-logo {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .java-summary {
-	font-size: 18px;
-	opacity: 0.3;
+	font-size: 22px;
+	color: #a7dfff;
 }
 .java-title {
-	font-size: 60px;
-	margin-bottom: 25px;
+	font-size: 70px;
+	padding-bottom: 55px;
+	margin-bottom: 0;
+	background: url(../img/wave-1.png) no-repeat bottom;
 }
-.java-slogan {
-	display: inline-block;
-	font-size: 40px;
-	color: var(--java-blue);
-	border: solid color(var(--java-blue) alpha(30%));
-	border-width: 2px 0;
-	padding: 0.2em 0;
-	margin-top: 1em;
+
+.java-course-cover {
+	& .java-title {
+		margin-top: 0;
+		margin-bottom: 0.3em;
+		background: none;
+	}
+	& .java-summary {
+		font-size: 30px;
+		color: inherit;
+	}
 }
 
 
@@ -324,6 +331,12 @@ h1 {
 
 .java-section-work {
 	background: white;
+
+	& .java-section-title small {
+		font-size: 16px;
+		color: var(--blue-3);
+		opacity: 1;
+	}
 }
 
 @media (--bs-md) {
@@ -880,9 +893,34 @@ h1 {
 .java-toolbar {
 	position: fixed;
 	left: 1%;
-	bottom: 10%;
+	bottom: 5%;
 	z-index: 1;
-	width: 140px;
+	width: 142px;
+	margin-bottom: var(--toolbar-aside-height);
+
+	&:matches(
+		:before,
+		:after
+	) {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	&:before {
+		bottom: 100%;
+		padding-bottom: 45%;
+		background: #70cbff;
+		transform: perspective(200px) rotateX(60deg);
+		transform-origin: bottom;
+	}
+	&:after {
+		top: 100%;
+		height: 21px;
+		z-index: -1;
+		background: url(../img/triangle.png) no-repeat;
+		background-size: contain;
+	}
 }
 .java-toolbar-logo {
 	position: absolute;
@@ -929,23 +967,32 @@ h1 {
 	background-color: #84d70e;
 }
 
-.java-toolbar:before,
-.java-toolbar:after {
-	content: "";
+.java-toolbar-aside {
 	position: absolute;
 	left: 0;
 	right: 0;
-	background: #70cbff;
-}
-.java-toolbar:before {
-	bottom: 100%;
-	padding-bottom: 45%;
-	transform: perspective(200px) rotateX(60deg);
-	transform-origin: bottom;
-}
-.java-toolbar:after {
-	top: 100%;
-	z-index: -1;
-	padding-bottom: 100%;
-	transform: perspective(200px) translateY(-50%) rotateX(55deg) rotate(45deg) scale(0.7);
+	top: 97%;
+	min-height: var(--toolbar-aside-height);
+	font-size: 20px;
+	color: white;
+	padding: 1em 0.5em;
+	margin-top: var(--toolbar-rope-length);
+	background: url(../img/rect.png) no-repeat;
+	background-size: 100%;
+
+	&:--before-after {
+		@apply --round-radius;
+		content: "";
+		position: absolute;
+		top: -18px;
+		width: 2px;
+		height: var(--toolbar-rope-length);
+		background: #3396cf;
+	}
+	&:before {
+		left: 10.5%;
+	}
+	&:after {
+		right: 12%;
+	}
 }
