@@ -3,17 +3,21 @@ let
 	htmlTagInclude = require('gulp-html-tag-include'),
 	prettify = require('gulp-prettify'),
 	babel = require('gulp-babel'),
+	rollup = require('gulp-rollup'),
+	uglify = require('gulp-uglify'),
+	cleanCss = require('gulp-clean-css'),
 	postcss = require('gulp-postcss'),
 	cssnext = require('postcss-cssnext'),
 	cssimport = require('postcss-import');
 
 const
 	SRC_PATH = 'src/',
-	SRC_HTML_PATH = SRC_PATH + '*.html',
-	SRC_TEMPLATE_PATH = SRC_PATH + 'template/*.html',
-	SRC_CSS_PATH = SRC_PATH + '**/*.css',
-	SRC_JS_PATH = SRC_PATH + '**/*.js',
-	SRC_IMG_PATH = SRC_PATH + '**/*.*(png|jpg|jpeg|gif|svg)',
+	SRC_HTML_PATH = `${SRC_PATH}*.html`,
+	SRC_TEMPLATE_PATH = `${SRC_PATH}template/*.html`,
+	SRC_CSS_PATH = `${SRC_PATH}**/*.css`,
+	SRC_JS_PATH = `${SRC_PATH}**/*.js`,
+	SRC_IMG_PATH = `${SRC_PATH}**/*.*(png|jpg|jpeg|gif|svg)`,
+	ROLLUP_ENTRY_PATH = `${SRC_PATH}js/`,
 	BUILD_PATH = './';
 
 function html() {
@@ -30,14 +34,23 @@ function html() {
 function css() {
 	return gulp.src(SRC_CSS_PATH)
 		.pipe(postcss([cssimport(), cssnext()]))
+		.pipe(cleanCss())
 		.pipe(gulp.dest(BUILD_PATH));
 }
 
 function js() {
 	return gulp.src(SRC_JS_PATH)
+		.pipe(rollup({
+			entry: [
+				`${ROLLUP_ENTRY_PATH}java.js`,
+				`${ROLLUP_ENTRY_PATH}java-course.js`
+			],
+			format: 'iife'
+		}))
 		.pipe(babel({
 			presets: ['es2015']
 		}))
+		.pipe(uglify())
 		.pipe(gulp.dest(BUILD_PATH));
 }
 
