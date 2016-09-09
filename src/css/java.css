@@ -757,6 +757,7 @@ h1 {
 	display: inline-block;
 }
 .java-enroll-title {
+	position: relative;
 	float: left;
 	font-size: 18px;
 	line-height: 1.8;
@@ -783,9 +784,8 @@ h1 {
 }
 .java-enroll-close {
 	position: absolute;
-	right: 0;
+	left: 100%;
 	top: 0;
-	bottom: 0;
 	display: none;
 	width: var(--enroll-icon-size);
 	height: var(--enroll-icon-size);
