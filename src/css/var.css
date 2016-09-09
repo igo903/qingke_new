@@ -7,7 +7,7 @@
 		align-items: center;
 	}
 
-	--round-radius {
+	--round-radius: {
 		border-radius: 999px;
 	}
 }

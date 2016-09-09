@@ -747,20 +747,23 @@ h1 {
 	background: url(../img/dev-4.jpg) no-repeat center;
 	background-size: cover;
 
-	& .col {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
 	@nest a&:hover {
 		color: white;
+		text-decoration: none;
 	}
 }
+.java-enroll-title,
+.java-enroll-link {
+	display: inline-block;
+}
 .java-enroll-title {
+	float: left;
 	font-size: 18px;
 	line-height: 1.8;
 	margin: 0;
 }
 .java-enroll-link {
+	float: right;
 	background: var(--orange);
 	border-color: var(--orange);
 	box-shadow: 0 2px 4px color(black alpha(45%));
@@ -797,16 +800,11 @@ h1 {
 
 @media (--bs-sm) {
 	.java-enroll {
-		text-align: center;
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
 	.java-enroll-title {
 		font-size: 42px;
-		margin-bottom: 0.5em;
-	}
-	.java-enroll-link-wrap {
-		text-align: inherit;
 	}
 	.java-enroll-link {
 		font-size: 28px;
@@ -814,16 +812,29 @@ h1 {
 	.java-enroll-close {
 		display: block;
 	}
+}
+
+@media (--bs-md) {
+	.java-enroll {
+		text-align: center;
+	}
+	.java-enroll-title,
+	.java-enroll-link {
+		float: none;
+		vertical-align: middle;
+		margin: 0 60px;
+	}
+}
 
 
-	.no-fixed-bottom {
-		& .java-enroll {
-			position: relative;
-			display: block;
-		}
-		& .java-enroll-close {
-			display: none;
-		}
+
+.no-fixed-bottom {
+	& .java-enroll {
+		position: relative;
+		display: block;
+	}
+	& .java-enroll-close {
+		display: none;
 	}
 }
 
