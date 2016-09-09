@@ -32,7 +32,7 @@ function html() {
 }
 
 function css() {
-	return gulp.src(SRC_CSS_PATH)
+	return gulp.src([SRC_CSS_PATH, `!**/var.css`])
 		.pipe(postcss([cssimport(), cssnext()]))
 		.pipe(cleanCss())
 		.pipe(gulp.dest(BUILD_PATH));
