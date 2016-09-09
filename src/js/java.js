@@ -1,3 +1,5 @@
+import enroll from './java-enroll';
+
 (function () {
 	function handleClick(e) {
 		let t = e.target;
@@ -99,17 +101,4 @@
 	scroll();
 })();
 
-(() => {
-	function handleClick(e) {
-		e.preventDefault();
-		closeEnroll();
-	}
-
-	function closeEnroll() {
-		document.body.classList.add(NO_FIXED_BOTTOM_CLASS);
-	}
-
-	const NO_FIXED_BOTTOM_CLASS = 'no-fixed-bottom';
-
-	document.getElementById('enroll-close').addEventListener('click', handleClick);
-})();
+enroll.init();
