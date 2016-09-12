@@ -747,10 +747,24 @@ h1 {
 	padding-bottom: 20px;
 	background: url(../img/dev-4.jpg) no-repeat center;
 	background-size: cover;
+	visibility: hidden;
+	transform: translateY(100%);
+	transition: 0.4s;
 
 	@nest a&:hover {
 		color: white;
 		text-decoration: none;
+	}
+	@nest :matches(
+		.no-fixed-bottom,
+		.not-at-top
+	) & {
+		visibility: visible;
+		transform: translateY(0);
+	}
+	@nest .no-fixed-bottom & {
+		position: relative;
+		display: block;
 	}
 }
 .java-enroll-title,
@@ -797,6 +811,9 @@ h1 {
 	&:hover {
 		opacity: 1;
 	}
+	@nest .no-fixed-bottom & {
+		display: none;
+	}
 }
 
 @media (--bs-sm) {
@@ -824,18 +841,6 @@ h1 {
 		float: none;
 		vertical-align: middle;
 		margin: 0 60px;
-	}
-}
-
-
-
-.no-fixed-bottom {
-	& .java-enroll {
-		position: relative;
-		display: block;
-	}
-	& .java-enroll-close {
-		display: none;
 	}
 }
 
