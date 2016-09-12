@@ -1,0 +1,83 @@
+@import "var.css";
+
+
+
+.main {
+	background: white;
+	padding-bottom: 90px;
+}
+
+
+
+.enroll-cover {
+	text-align: center;
+	padding: 90px 0;
+	background: url(../img/dev-1.jpg) no-repeat top;
+	background-size: cover;
+	margin-bottom: 55px;
+
+	& h1 {
+		color: #6fe0ff;
+	}
+}
+
+
+
+.enroll-form {
+	font-size: 18px;
+
+	& input {
+		margin-bottom: 0;
+	}
+	& .container {
+		max-width: 780px;
+	}
+	& .col:first-child {
+		padding-right: 0;
+	}
+	& .col:last-child {
+		padding-left: 0;
+	}
+	& .form-group {
+		@apply --round-radius;
+		border: 1px solid #e5e5e5;
+		box-shadow: 0 1px 6px color(#0a0102 alpha(12%));
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 4%;
+		overflow: hidden;
+	}
+	& .control-label {
+		text-align: left;
+		color: #8f8f8f;
+		padding-top: 20px;
+
+		@media (--bs-sm) {
+			padding-left: 1em;
+		}
+	}
+	& .form-control {
+		height: 60px;
+		font-size: inherit;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+		border: none;
+		box-shadow: none;
+	}
+}
+.enroll-form-submit {
+	@apply --round-radius;
+	font-size: 22px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 5%;
+}
+
+
+
+.enroll-result-cover {
+	& h1 {
+		color: #ffba42;
+	}
+}

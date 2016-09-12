@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<include src="template/meta.html" title="报名 - "></include>
+		<include src="template/styles.html"></include>
+		<link rel="stylesheet" href="css/offline-enroll.css">
+	</head>
+
+	<body>
+		<include src="template/nav.html"></include>
+		<main class="main">
+			<div class="enroll-cover jumbotron">
+				<div class="container">
+					<h1 class="enroll-title">轻松三步 搞定报名</h1>
+				</div>
+			</div>
+			<form class="form-horizontal enroll-form" action="offline-enroll-result.html">
+				<div class="container">
+					<label class="form-group">
+						<div class="col col-xs-5 col-sm-3">
+							<div class="control-label">* 姓名：</div>
+						</div>
+						<div class="col col-xs-7 col-sm-9">
+							<input type="text" name="" class="form-control" placeholder="请填写真实姓名">
+						</div>
+					</label>
+					<label class="form-group">
+						<div class="col col-xs-5 col-sm-3">
+							<div class="control-label">* 手机号：</div>
+						</div>
+						<div class="col col-xs-7 col-sm-9">
+							<input type="tel" name="" class="form-control" placeholder="方便我们联系得到你">
+						</div>
+					</label>
+					<label class="form-group">
+						<div class="col col-xs-5 col-sm-3">
+							<div class="control-label">* 微信号：</div>
+						</div>
+						<div class="col col-xs-7 col-sm-9">
+							<input type="text" name="" class="form-control" placeholder="具体报名信息会通过微信互动">
+						</div>
+					</label>
+					<label class="form-group">
+						<div class="col col-xs-5 col-sm-3">
+							<div class="control-label">所在学校：</div>
+						</div>
+						<div class="col col-xs-7 col-sm-9">
+							<input type="text" name="" class="form-control" placeholder="可以认识你的同学">
+						</div>
+					</label>
+					<label class="form-group">
+						<div class="col col-xs-5 col-sm-3">
+							<div class="control-label">期望学习课程：</div>
+						</div>
+						<div class="col col-xs-7 col-sm-9">
+							<select class="form-control" name="">
+								<option value="">Java</option>
+								<option value="">iOS</option>
+							</select>
+						</div>
+					</label>
+					<button type="submit" class="btn btn-primary btn-lg btn-block enroll-form-submit">提交报名</button>
+				</div>
+			</form>
+		</main>
+
+		<include src="template/footer.html"></include>
+		<include src="template/toolbar.html"></include>
+		<include src="template/dialogs.html"></include>
+
+		<include src="template/scripts.html"></include>
+	</body>
+</html>
