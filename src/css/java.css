@@ -21,7 +21,7 @@
 	--tab-padding: 1.5em;
 	--tab-radius: 20px;
 	--orange: #ff8309;
-	--enroll-icon-size: 44px;
+	--enroll-icon-size: 34px;
 	--toolbar-aside-height: 184px;
 	--toolbar-rope-length: 26px;
 }
@@ -742,15 +742,19 @@ h1 {
 	right: 0;
 	bottom: 0;
 	z-index: 1;
+	text-align: center;
 	color: white;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 	background: url(../img/dev-4.jpg) no-repeat center;
 	background-size: cover;
 	visibility: hidden;
 	transform: translateY(100%);
 	transition: 0.4s;
 
+	& .container {
+		position: relative;
+	}
 	@nest a&:hover {
 		color: white;
 		text-decoration: none;
@@ -768,44 +772,67 @@ h1 {
 	}
 }
 .java-enroll-title,
-.java-enroll-link {
+.java-enroll-pointer,
+.java-enroll-qrcode {
 	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5%;
 }
 .java-enroll-title {
 	position: relative;
-	float: left;
-	font-size: 18px;
-	line-height: 1.8;
-	margin: 0;
+	width: 180px;
+	height: 64px;
+	background: url(../img/tzgxcqkwks.png) no-repeat center;
+	background-size: contain;
 }
-.java-enroll-link {
-	float: right;
-	background: var(--orange);
-	border-color: var(--orange);
-	box-shadow: 0 2px 4px color(black alpha(45%));
+.java-enroll-pointer {
+	width: 47px;
+	height: 47px;
+	background: url(../img/arrow-right-1.png) no-repeat center;
+	background-size: contain;
 }
-.java-enroll-link:hover,
-.java-enroll-link:active,
-.java-enroll-link:focus,
-.java-enroll-link:active:focus {
-	background: color(var(--orange) tint(10%));
-	border-color: color(var(--orange) tint(10%));
+.java-enroll-qrcode {
+	position: relative;
+	width: 160px;
+
+	&:--before-after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: no-repeat bottom;
+		background-size: contain;
+	}
+	&:before {
+		background-image: url(../img/mail-back.png);
+	}
+	&:after {
+		background-image: url(../img/mail-front.png);
+	}
 }
-.java-enroll-link-wrap {
-	text-align: right;
+.java-enroll-qrcode-img {
+	position: relative;
+	padding: 6.25%;
 }
-.java-enroll-link {
-	padding: 0.3em 1em;
+.java-enroll-qrcode-tip {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 }
 .java-enroll-close {
 	position: absolute;
-	left: 100%;
+	right: 3%;
 	top: 0;
-	display: none;
-	width: var(--enroll-icon-size);
-	height: var(--enroll-icon-size);
+	bottom: 0;
+	width: calc(var(--enroll-icon-size) * 2);
+	height: calc(var(--enroll-icon-size) * 2);
+	margin: auto;
 	background: url(../img/x.png) no-repeat center;
-	background-size: calc(var(--enroll-icon-size) / 2);
+	background-size: calc(var(--enroll-icon-size));
 	opacity: 0.8;
 
 	&:hover {
@@ -816,31 +843,14 @@ h1 {
 	}
 }
 
-@media (--bs-sm) {
-	.java-enroll {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	.java-enroll-title {
-		font-size: 42px;
-	}
-	.java-enroll-link {
-		font-size: 28px;
-	}
-	.java-enroll-close {
-		display: block;
-	}
-}
-
 @media (--bs-md) {
-	.java-enroll {
-		text-align: center;
+	.java-enroll-title {
+		width: 361px;
+		height: 125px;
 	}
-	.java-enroll-title,
-	.java-enroll-link {
-		float: none;
-		vertical-align: middle;
-		margin: 0 60px;
+	.java-enroll-pointer {
+		width: 94px;
+		height: 94px;
 	}
 }
 
