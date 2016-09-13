@@ -18,13 +18,16 @@
 
 	& h1 {
 		color: #6fe0ff;
+		margin-bottom: 0;
 	}
 }
 
 
 
 .enroll-form {
-	font-size: 18px;
+	@media (--bs-sm) {
+		font-size: 18px;
+	}
 
 	& input {
 		margin-bottom: 0;
@@ -50,14 +53,14 @@
 	& .control-label {
 		text-align: left;
 		color: #8f8f8f;
-		padding-top: 20px;
+		padding-top: 1em;
 
 		@media (--bs-sm) {
 			padding-left: 1em;
 		}
 	}
 	& .form-control {
-		height: 60px;
+		height: 3.33em;
 		font-size: inherit;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -68,9 +71,9 @@
 }
 .enroll-form-submit {
 	@apply --round-radius;
-	font-size: 22px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	font-size: 1.22em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
 	margin-top: 5%;
 }
 
@@ -80,4 +83,17 @@
 	& h1 {
 		color: #ffba42;
 	}
+}
+
+.enroll-result {
+	text-align: center;
+}
+.enroll-result-msg {
+	font-size: 18px;
+	line-height: 2;
+	margin-bottom: 2em;
+}
+
+.qrcode-pop-img {
+	max-width: 220px;
 }
