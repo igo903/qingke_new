@@ -40,13 +40,12 @@ function css() {
 
 function js() {
 	return gulp.src(SRC_JS_PATH)
-		.pipe(rollup({
-			entry: [
-				`${ROLLUP_ENTRY_PATH}java.js`,
-				`${ROLLUP_ENTRY_PATH}java-course.js`
-			],
-			format: 'iife'
-		}))
+		// .pipe(rollup({
+		// 	entry: [
+		// 		`${ROLLUP_ENTRY_PATH}java.js`
+		// 	],
+		// 	format: 'iife'
+		// }))
 		.pipe(babel({
 			presets: ['es2015']
 		}))

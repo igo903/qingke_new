@@ -1,5 +1,3 @@
-import enroll from './java-enroll';
-
 (function () {
 	function handleClick(e) {
 		let t = e.target;
@@ -100,5 +98,3 @@ import enroll from './java-enroll';
 
 	scroll();
 })();
-
-enroll.init();

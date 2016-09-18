@@ -29,13 +29,6 @@
 
 
 
-body {
-	margin-bottom: 280px;
-}
-.no-fixed-bottom {
-	margin-bottom: 0;
-}
-
 h1 {
 	color: inherit;
 }
@@ -738,20 +731,13 @@ h1 {
 
 
 .java-enroll {
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 1;
+	display: block;
 	text-align: center;
 	color: white;
 	padding-top: 1.5%;
 	padding-bottom: 1.5%;
 	background: url(../img/dev-4.jpg) no-repeat center;
 	background-size: cover;
-	visibility: hidden;
-	transform: translateY(100%);
-	transition: 0.4s;
 
 	& .container {
 		position: relative;
@@ -759,17 +745,6 @@ h1 {
 	@nest a&:hover {
 		color: white;
 		text-decoration: none;
-	}
-	@nest :matches(
-		.no-fixed-bottom,
-		.not-at-top
-	) & {
-		visibility: visible;
-		transform: translateY(0);
-	}
-	@nest .no-fixed-bottom & {
-		position: relative;
-		display: block;
 	}
 }
 .java-enroll-title,
@@ -825,25 +800,6 @@ h1 {
 	z-index: 1;
 	font-size: 12px;
 	line-height: 1.8;
-}
-.java-enroll-close {
-	position: absolute;
-	right: 3%;
-	top: 0;
-	bottom: 0;
-	width: calc(var(--enroll-icon-size) * 2);
-	height: calc(var(--enroll-icon-size) * 2);
-	margin: auto;
-	background: url(../img/x.png) no-repeat center;
-	background-size: calc(var(--enroll-icon-size));
-	opacity: 0.8;
-
-	&:hover {
-		opacity: 1;
-	}
-	@nest .no-fixed-bottom & {
-		display: none;
-	}
 }
 
 @media (--bs-md) {

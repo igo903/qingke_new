@@ -1,12 +1,1 @@
-'use strict';
-
-(function () {
-	var TAB_ID = 'detail',
-	    tab = boring.tab(TAB_ID),
-	    tabEl = document.getElementById(TAB_ID);
-
-	document.getElementById('consult').addEventListener('click', function () {
-		tab.go(1);
-		tabEl.scrollIntoView();
-	});
-})();
+"use strict";!function(){var t="detail",e=boring.tab(t),n=document.getElementById(t);document.getElementById("consult").addEventListener("click",function(){e.go(1),n.scrollIntoView()})}();
