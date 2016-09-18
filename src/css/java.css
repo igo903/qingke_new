@@ -24,6 +24,7 @@
 	--enroll-icon-size: 34px;
 	--toolbar-aside-height: 184px;
 	--toolbar-rope-length: 26px;
+	--courses-tab-radius: 6px;
 }
 
 
@@ -861,60 +862,139 @@ h1 {
 .java-section-course {
 	background: white;
 }
+
 .java-courses-tabs {
-	border-bottom: none;
-	font-size: 16px;
-	margin-bottom: 30px;
-}
-.java-courses-tabs > li {
-	float: none;
-	display: inline-block;
-	max-width: 22%;
-}
-.java-courses-tabs > li > a {
-	color: #ababab;
-	border-color: #7f7f7f;
-	border-radius: 0;
-	padding: 5px var(--tab-padding);
-	margin-right: 0;
+	text-align: center;
+
+	& > li.active > a {
+		&:any-link {
+			background-color: var(--blue);
+		}
+	}
 }
 
-.java-courses-tabs > li.active > a,
-.java-courses-tabs > li.active > a:hover,
-.java-courses-tabs > li.active > a:focus {
-	color: white;
-	border-color: var(--blue-1);
-	background: var(--blue-1);
+.java-courses-tabs-sup {
+	margin-bottom: 60px;
+
+	& > li {
+		& + li {
+			margin-left: 0;
+
+			@media (--bs-md) {
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					width: 10px;
+					height: 10px;
+					margin: auto;
+					margin-left: -5px;
+					background: url(../img/arrow-right-2.png) no-repeat center;
+					background-size: contain;
+				}
+			}
+		}
+		& > a {
+			color: #ababab;
+			border-radius: var(--courses-tab-radius);
+
+			@media (--bs-md) {
+				border: 1px solid #d8d8d8;
+			}
+		}
+		&.active a {
+			border-color: transparent;
+
+			&:any-link {
+				background-color: #3dadeb;
+			}
+		}
+	}
+	& .java-courses-tab-title {
+		font-style: italic;
+		font-size: 26px;
+	}
+}
+
+.java-courses-tabs-sub {
+	display: table;
+	width: 100%;
+	border-bottom: 4px solid var(--blue);
+
+	& > li {
+		float: none;
+		display: table-cell;
+		border: solid white;
+		border-width: 0 1px;
+		background-color: #eef8ff;
+
+		&:first-child {
+			border-left: none;
+			border-top-left-radius: var(--courses-tab-radius);
+		}
+		&:last-child {
+			border-right: none;
+			border-top-right-radius: var(--courses-tab-radius);
+		}
+		&.active {
+			background-color: var(--blue);
+		}
+		& > a {
+			color: inherit;
+			border-radius: 0;
+		}
+	}
+	& .java-courses-tab-num {
+		font-style: italic;
+		font-size: 12px;
+	}
+	& .java-courses-tab-title {
+		font-size: 16px;
+	}
 }
 
 .java-courses-table {
-	table-layout: fixed;
-}
-.java-courses-table col:first-child {
-	width: 15%;
-}
-.java-courses-table th {
-	font-size: 16px;
-	background: #ededed;
-}
-.java-courses-table tbody th,
-.java-courses-table td {
-	background: #fafafa;
-}
-.java-courses-table tbody > tr > th,
-.java-courses-table tbody > tr > td {
-	line-height: 1.6;
-	padding: 1em;
-}
-.java-courses-table td {
-	text-align: left;
-	word-wrap: break-word;
-}
-.java-courses-table td:empty:before {
-	content: "-";
-}
-.java-courses-table ol {
-	list-style: inside decimal;
+	& td {
+		text-align: left;
+		word-wrap: break-word;
+	}
+	& td:empty:before {
+		content: "-";
+	}
+	& > :matches(
+		thead,
+		tbody
+	) {
+		& > tr > :matches(
+			th,
+			td
+		) {
+			line-height: 1.6;
+
+			@nest .java-section & {
+				border-color: #f4f4f4;
+			}
+		}
+	}
+	& > tbody > tr > :matches(
+		th,
+		td
+	) {
+		padding: 1.5em;
+	}
+	& ol {
+		list-style: inside decimal;
+	}
+
+	@media (--bs-sm) {
+		table-layout: fixed;
+
+		& col:first-child {
+			width: 12%;
+		}
+	}
 }
 
 
