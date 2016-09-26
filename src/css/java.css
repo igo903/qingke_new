@@ -22,8 +22,8 @@
 	--tab-radius: 20px;
 	--orange: #ff8309;
 	--enroll-icon-size: 34px;
-	--toolbar-aside-height: 184px;
-	--toolbar-rope-length: 26px;
+	--toolbar-aside-height: 138px;
+	--toolbar-rope-length: 20px;
 	--courses-tab-radius: 6px;
 }
 
@@ -960,7 +960,7 @@ h1 {
 	left: 1%;
 	bottom: 5%;
 	z-index: 1;
-	width: 142px;
+	width: 106px;
 	margin-bottom: var(--toolbar-aside-height);
 
 	&:matches(
@@ -976,12 +976,12 @@ h1 {
 		bottom: 100%;
 		padding-bottom: 45%;
 		background: #70cbff;
-		transform: perspective(200px) rotateX(60deg);
+		transform: perspective(150px) rotateX(60deg);
 		transform-origin: bottom;
 	}
 	&:after {
 		top: 100%;
-		height: 21px;
+		height: 16px;
 		z-index: -1;
 		background: url(../img/triangle.png) no-repeat;
 		background-size: contain;
@@ -997,17 +997,17 @@ h1 {
 }
 .java-toolbar-links {
 	position: relative;
-	font-size: 22px;
+	font-size: 16px;
 	line-height: 2.28;
-	padding: 5px;
+	padding: 4px;
 	background: #39a9ea;
 }
 .java-toolbar-link {
-	background: no-repeat 105px 0.5em;
+	background: no-repeat 79px 0.5em;
 	box-shadow: 0 0 1px color(black alpha(45%));
 }
 .java-toolbar-link:nth-child(n+2) {
-	margin-top: 4px;
+	margin-top: 3px;
 }
 .java-toolbar-links a {
 	display: block;
@@ -1038,7 +1038,7 @@ h1 {
 	right: 0;
 	top: 97%;
 	min-height: var(--toolbar-aside-height);
-	font-size: 20px;
+	font-size: 15px;
 	color: white;
 	padding: 1em 0.5em;
 	margin-top: var(--toolbar-rope-length);
@@ -1049,13 +1049,13 @@ h1 {
 		@apply --round-radius;
 		content: "";
 		position: absolute;
-		top: -18px;
+		top: -14px;
 		width: 2px;
 		height: var(--toolbar-rope-length);
 		background: #3396cf;
 	}
 	&:before {
-		left: 10.5%;
+		left: 10%;
 	}
 	&:after {
 		right: 12%;
