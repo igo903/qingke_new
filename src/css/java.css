@@ -836,7 +836,7 @@ h1 {
 		& + li {
 			margin-left: 0;
 
-			@media (--bs-md) {
+			@media (--bs-sm) {
 				&:before {
 					content: "";
 					position: absolute;
@@ -856,7 +856,7 @@ h1 {
 			color: #ababab;
 			border-radius: var(--courses-tab-radius);
 
-			@media (--bs-md) {
+			@media (--bs-sm) {
 				border: 1px solid #d8d8d8;
 			}
 		}
