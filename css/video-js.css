@@ -31,7 +31,7 @@
        left: 50%;
        margin-left: -40px;
        margin-top: -40px;
-       transition: opacity 0.2s linear; 
+       transition: opacity 0.2s linear;
        opacity: 1;}
 .vjs-icon-play-circle {
   font-family: VideoJS;
@@ -1197,29 +1197,29 @@ and the native poster can take over */
       position: relative;
     }
     .full_column #video_container{
-      
+
           width: 100%;
           height: 100%;
-         
-          
+
+
     }
     /*.full_column #video_container #preview-player{
-      
+
           width: 100%;
           height: 100%;
-         
-          
+
+
     }*/
     #my-video{
-      width: 750px;
-      height: 440px;
+      /*width: 750px;*/
+      /*height: 440px;*/
     }
   .full_column #video_container #preview-player #my-video{
-    
+
         width: 100%;
         height: 660px;
-       
-        
+
+
   }
   .full_column #video_container{
     width: 100%;
