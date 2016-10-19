@@ -10,6 +10,9 @@
 	--round-radius: {
 		border-radius: 999px;
 	}
+	--circle-radius: {
+		border-radius: 50%;
+	}
 }
 
 @custom-selector :--before-after :before, :after;
