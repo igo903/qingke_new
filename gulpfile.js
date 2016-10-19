@@ -1,7 +1,6 @@
 let
 	gulp = require('gulp'),
 	htmlTagInclude = require('gulp-html-tag-include'),
-	prettify = require('gulp-prettify'),
 	babel = require('gulp-babel'),
 	rollup = require('gulp-rollup'),
 	uglify = require('gulp-uglify'),
@@ -23,11 +22,6 @@ const
 function html() {
 	return gulp.src(SRC_HTML_PATH)
 		.pipe(htmlTagInclude())
-		.pipe(prettify({
-			indent_with_tabs: true,
-			preserve_newlines: true,
-			extra_liners: []
-		}))
 		.pipe(gulp.dest(BUILD_PATH));
 }
 
