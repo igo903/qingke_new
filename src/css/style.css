@@ -469,7 +469,6 @@ input {
   border-right: 0px;
 }
 .navbar-default .navbar-nav > li.login-desktop a {
-  font-weight: lighter;
   position: relative;
 }
 .navbar-nav.navbar-right li.signup-desktop a {
