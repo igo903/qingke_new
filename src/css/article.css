@@ -82,9 +82,15 @@ a.list-group-item {
 
 
 
+.article-main > .col {
+	background: white;
+	background-clip: content-box;
+}
+
+
+
 .article-list {
 	padding-bottom: 100px;
-	background: white;
 
 	& .list-group-item {
 		padding: 0 40px;
@@ -206,7 +212,6 @@ a.list-group-item {
 
 .article {
 	padding: 0 40px 80px;
-	background: white;
 
 	& .article-title {
 		font-size: 24px;
