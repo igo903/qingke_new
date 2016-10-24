@@ -90,8 +90,6 @@ a.list-group-item {
 
 
 .article-list {
-	padding-bottom: 100px;
-
 	& .list-group-item {
 		padding: 0 40px;
 		background-color: transparent;
