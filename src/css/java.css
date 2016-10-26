@@ -956,6 +956,12 @@ h1 {
 
 
 
+.toolbar {
+	display: none !important;
+}
+
+
+
 .java-toolbar {
 	position: fixed;
 	right: 1%;
