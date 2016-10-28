@@ -16,6 +16,7 @@
 }
 
 @custom-selector :--before-after :before, :after;
+@custom-selector :--hf :hover, :focus;
 
 @custom-media --bs-lg (min-width: 1200px);
 @custom-media --bs-md (min-width: 992px);

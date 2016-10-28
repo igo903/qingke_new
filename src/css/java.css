@@ -106,6 +106,32 @@ h1 {
 	}
 }
 
+.swiper-container .java-cover {
+	display: flex;
+	height: 580px;
+	align-items: center;
+}
+
+.weekend-cover {
+	background-image: url(../img/study.jpg);
+
+	@nest a&:--hf {
+		color: white;
+		text-decoration: none;
+	}
+	& .java-section-title {
+		font-size: 60px;
+		line-height: 1.9;
+		color: #130a05;
+		background: color(#f4fd02 alpha(0.9));
+		margin: 0 18% 0.3em;
+	}
+	& .java-section-summary {
+		font-size: 22px;
+		text-shadow: 2px 1px 2px black;
+	}
+}
+
 
 
 .java-section-why {

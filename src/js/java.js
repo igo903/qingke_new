@@ -1,4 +1,13 @@
 (function () {
+	new Swiper('#cover', {
+		effect: 'fade',
+		simulateTouch: false,
+		autoplay: 3000,
+		speed: 1000
+	});
+}());
+
+(function () {
 	function handleClick(e) {
 		let t = e.target;
 

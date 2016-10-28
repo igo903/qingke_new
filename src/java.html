@@ -3,17 +3,32 @@
 	<head>
 		<include src="template/meta.html" title="杭州 Java 线下课全新开班 - "></include>
 		<include src="template/styles.html"></include>
+		<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
 		<link rel="stylesheet" href="css/java.css">
 	</head>
 
 	<body>
 		<include src="template/nav.html"></include>
 
-		<div class="java-section java-cover">
-			<div class="container">
-				<img src="img/logo-zjdx.png" alt="浙江大学" class="java-logo" />
-				<div class="java-summary">轻课网与浙江大学计算机学院深度合作 联合培养高端开发人才</div>
-				<h1 class="java-title">Java名企实战特训营</h1>
+		<div class="swiper-container" id="cover">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="java-section java-cover">
+						<div class="container">
+							<img src="img/logo-zjdx.png" alt="浙江大学" class="java-logo" />
+							<div class="java-summary">轻课网与浙江大学计算机学院深度合作 联合培养高端开发人才</div>
+							<h1 class="java-title">Java名企实战特训营</h1>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<a href="weekend.html" target="_blank" class="java-section java-cover weekend-cover">
+						<div class="container">
+							<h1 class="java-section-title">轻课网名企实训营周末班</h1>
+							<div class="java-section-summary">领先迈出你的第一步，提前锁定名企Offer</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 		<section class="java-section java-section-why">
@@ -705,6 +720,7 @@
 		<include src="template/dialogs.html"></include>
 
 		<include src="template/scripts.html"></include>
+		<script type="text/javascript" src="lib/swiper/js/swiper.jquery.min.js"></script>
 		<script type="text/javascript" src="js/java.js"></script>
 	</body>
 </html>
