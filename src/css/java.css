@@ -25,19 +25,24 @@
 	--toolbar-aside-height: 138px;
 	--toolbar-rope-length: 20px;
 	--courses-tab-radius: 6px;
+	--prepare-aboard-color: #7fd3ff;
+	--prepare-upgrade-color: #c795ff;
+	--prepare-job-color: #ffd571;
+	--brown: #4f4334;
 }
 
 
 
 h1 {
 	color: inherit;
+	margin: 0;
 }
 
 
 
 .java-section {
 	text-align: center;
-	background: no-repeat center;
+	background: no-repeat center white;
 	background-size: cover;
 	padding: 60px 0;
 }
@@ -113,6 +118,7 @@ h1 {
 }
 
 .weekend-cover {
+	padding: 200px 0;
 	background-image: url(../img/study.jpg);
 
 	@nest a&:--hf {
@@ -121,9 +127,9 @@ h1 {
 	}
 	& .java-section-title {
 		font-size: 60px;
-		line-height: 1.9;
 		color: #130a05;
 		background: color(#f4fd02 alpha(0.9));
+		padding: 0.4em;
 		margin: 0 18% 0.3em;
 	}
 	& .java-section-summary {
@@ -136,7 +142,6 @@ h1 {
 
 .java-section-why {
 	border-bottom: 6px solid #59caff;
-	background: white;
 }
 
 .java-feature {
@@ -351,7 +356,6 @@ h1 {
 
 
 .java-section-work {
-	background: white;
 
 	& .java-section-title small {
 		font-size: 16px;
@@ -842,10 +846,6 @@ h1 {
 
 
 
-.java-section-course {
-	background: white;
-}
-
 .java-courses-tabs {
 	text-align: center;
 
@@ -1093,4 +1093,177 @@ h1 {
 	&:after {
 		right: 12%;
 	}
+}
+
+
+
+.prepare-data-title {
+	font-size: 1em;
+	color: #ff9461;
+	margin-bottom: 2.5em;
+}
+.prepare-chart {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	height: 230px;
+	background: url(../img/shapes-1.png) no-repeat center;
+	background-size: 140%;
+}
+.prepare-chart-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 30%;
+	max-width: 80px;
+}
+.prepare-chart-col-duration,
+.prepare-chart-col-title {
+	@apply --text-cut;
+}
+.prepare-chart-col-duration {
+	margin-bottom: 0.5em;
+}
+.prepare-chart-col-img {
+	position: relative;
+	margin: 0 8%;
+
+	&:--before-after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	&:before {
+		left: 8px;
+		top: 7px;
+	}
+	&:after {
+		left: 0;
+		top: 0;
+		border: 3px solid;
+	}
+
+	@nest .prepare-chart-col-aboard & {
+		height: 80%;
+		color: var(--prepare-aboard-color);
+
+		&:before {
+			background: color(var(--prepare-aboard-color) tint(50%));
+		}
+	}
+	@nest .prepare-chart-col-upgrade & {
+		height: 61%;
+		color: var(--prepare-upgrade-color);
+
+		&:before {
+			background: color(var(--prepare-upgrade-color) tint(50%));
+		}
+	}
+	@nest .prepare-chart-col-job & {
+		height: 9%;
+		color: var(--prepare-job-color);
+
+		&:before {
+			background: color(var(--prepare-job-color) tint(50%));
+		}
+	}
+}
+.prepare-chart-col-title {
+	font-size: 12px;
+	color: var(--brown);
+	margin-top: 1em;
+}
+
+.prepare-companies {
+	text-align: left;
+	margin-top: 20px;
+}
+.prepare-companies-text {
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+
+
+
+.weekend-section-explain {
+	color: #fffefe;
+	background-image: url(../img/buildings.jpg);
+}
+
+.explain-text {
+	font-size: 18px;
+	line-height: 2;
+	margin-top: 40px;
+}
+
+
+
+.weekend-section-plan .java-section-title {
+	font-size: 30px;
+
+	&:--before-after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 1.8em;
+		border-top: 1px solid var(--brown);
+		margin: 0 0.5em;
+	}
+}
+
+.planned-courses {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+.planned-course {
+	width: 14%;
+}
+.planned-course-icon {
+	display: inline-block;
+	width: 76%;
+	padding-bottom: 76%;
+	background: no-repeat center;
+	background-size: contain;
+	margin-bottom: 1em;
+
+	@nest .planned-course-lesson & {
+		background-image: url(../img/code-1.png);
+	}
+	@nest .planned-course-training & {
+		background-image: url(../img/buildings.png);
+	}
+	@nest .planned-course-ol & {
+		background-image: url(../img/blackboard.png);
+	}
+	@nest .planned-course-learn & {
+		background-image: url(../img/students.png);
+	}
+	@nest .planned-course-question & {
+		background-image: url(../img/blackboard-1.png);
+	}
+}
+
+
+
+.weekend-warning {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	background: #ff9714;
+	padding: 0.3em 0;
+	margin-bottom: 35px;
+
+	& .fa {
+		font-size: 1.8em;
+		vertical-align: -0.15em;
+		margin-right: 0.5em;
+	}
+}
+
+.weekend-course-link .java-course-link-btn {
+	display: inline-block;
+	font-size: 30px;
+	margin-top: 30px;
 }

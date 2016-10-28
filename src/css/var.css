@@ -13,6 +13,12 @@
 	--circle-radius: {
 		border-radius: 50%;
 	}
+
+	--text-cut {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
 
 @custom-selector :--before-after :before, :after;
