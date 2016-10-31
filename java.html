@@ -320,7 +320,7 @@
 				</header>
 				<ul class="java-students row">
 					<li class="col-xs-6 col-sm-4 col-md-2">
-						<div class="thumbnail java-student">
+						<div class="thumbnail java-student" data-toggle="modal" data-target="#students-detail-dialog">
 							<img src="img/zhoujiayu.jpg" alt="周**" />
 							<div class="caption">
 								<!-- <div class="java-student-pay"><strong>15000</strong> 元</div> -->
@@ -330,17 +330,17 @@
 						</div>
 					</li>
 					<li class="col-xs-6 col-sm-4 col-md-2">
-						<div class="thumbnail java-student">
-							<img src="img/licongcong.jpg" alt="李**" />
+						<div class="thumbnail java-student" data-toggle="modal" data-target="#students-detail-dialog">
+							<img src="img/yuchangda.jpg" alt="尉**" />
 							<div class="caption">
 								<!-- <div class="java-student-pay"><strong>15000</strong> 元</div> -->
-								<div class="java-student-name">李**</div>
+								<div class="java-student-name">尉**</div>
 								<!-- <div>阿里巴巴</div> -->
 							</div>
 						</div>
 					</li>
 					<li class="col-xs-6 col-sm-4 col-md-2">
-						<div class="thumbnail java-student">
+						<div class="thumbnail java-student" data-toggle="modal" data-target="#students-detail-dialog">
 							<img src="img/taoyuejie.jpg" alt="陶**" />
 							<div class="caption">
 								<!-- <div class="java-student-pay"><strong>15000</strong> 元</div> -->
@@ -350,21 +350,21 @@
 						</div>
 					</li>
 					<li class="col-xs-6 col-sm-4 col-md-2">
-						<div class="thumbnail java-student">
-							<img src="img/louzong.jpg" alt="楼*" />
+						<div class="thumbnail java-student" data-toggle="modal" data-target="#students-detail-dialog">
+							<img src="img/lichao.jpg" alt="李*" />
 							<div class="caption">
 								<!-- <div class="java-student-pay"><strong>15000</strong> 元</div> -->
-								<div class="java-student-name">楼*</div>
+								<div class="java-student-name">李*</div>
 								<!-- <div>阿里巴巴</div> -->
 							</div>
 						</div>
 					</li>
 					<li class="col-xs-6 col-sm-4 col-md-2">
-						<div class="thumbnail java-student">
-							<img src="img/lichao.jpg" alt="李*" />
+						<div class="thumbnail java-student" data-toggle="modal" data-target="#students-detail-dialog">
+							<img src="img/xubangbang.jpg" alt="许**" />
 							<div class="caption">
 								<!-- <div class="java-student-pay"><strong>15000</strong> 元</div> -->
-								<div class="java-student-name">李*</div>
+								<div class="java-student-name">许**</div>
 								<!-- <div>阿里巴巴</div> -->
 							</div>
 						</div>
@@ -822,6 +822,7 @@
 				</div>
 			</div>
 		</section>
+
 		<a href="offline-enroll.html" target="_blank" class="java-enroll">
 			<div class="container">
 				<div class="java-enroll-title text-hide">挑战高薪 从轻课网开始</div>
@@ -832,6 +833,128 @@
 				</div>
 			</div>
 		</a>
+
+		<div class="modal students-detail-dialog" id="students-detail-dialog">
+			<div class="modal-dialog modal-lg">
+				<section class="modal-content">
+					<header class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"></button>
+						<h1 class="modal-title">个人简介</h1>
+					</header>
+					<div class="modal-body">
+						<div class="swiper-container" id="students-detail">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<section class="student-detail">
+										<header class="student-detail-head">
+											<img src="img/zhoujiayu.jpg" alt="周**" class="student-detail-photo">
+											<h1 class="student-detail-name">周**</h2>
+											<div class="student-detail-company">魔蝎科技</div>
+										</header>
+										<section class="student-detail-part panel">
+											<header class="panel-heading">
+												<h1 class="panel-title">就业信息</h1>
+											</header>
+											<div class="panel-body">
+												<div class="container-fluid">
+													<dl class="student-field">
+														<div class="row">
+															<div class="col col-md-6">
+																<dt>公司名称：</dt><dd>魔蝎科技</dd>
+															</div>
+															<div class="col col-md-6">
+																<dt>入职时间：</dt><dd>2016年5月</dd>
+															</div>
+															<div class="col col-md-6">
+																<dt>薪资待遇：</dt><dd>8000/月</dd>
+															</div>
+														</div>
+													</dl>
+												</div>
+											</div>
+										</section>
+										<section class="student-detail-part panel">
+											<header class="panel-heading">
+												<h1 class="panel-title">个人信息</h1>
+											</header>
+											<div class="panel-body">
+												<div class="container-fluid">
+													<dl class="student-field">
+														<div class="row">
+															<div class="col col-md-6">
+																<dt>毕业院校：</dt><dd>杭州师范大学</dd>
+															</div>
+															<div class="col col-md-6">
+																<dt>所学专业：</dt><dd>软件工程</dd>
+															</div>
+															<div class="col col-md-6">
+																<dt>轻课网入学时间：</dt><dd>2016年1月</dd>
+															</div>
+															<div class="col col-md-6">
+																<dt>轻课网毕业时间：</dt><dd>2016年4月</dd>
+															</div>
+														</div>
+													</dl>
+												</div>
+											</div>
+										</section>
+										<section class="student-detail-part panel">
+											<header class="panel-heading">
+												<h1 class="panel-title">联系方式</h1>
+											</header>
+											<div class="panel-body">
+												<div class="container-fluid">
+													<dl class="student-field">
+														<div class="row">
+															<div class="col col-md-6">
+																<dt>邮箱：</dt><dd>139872*****@qq.com</dd>
+															</div>
+															<div class="col col-md-6">
+																<dt>电话：</dt><dd data-tip="如有需要请联系轻课学堂">188571*****</dd>
+															</div>
+															<div class="col col-md-12">
+																<dt><span class="fa fa-github"></span>Github：</dt><dd><a href="https://github.com/taoyuejie" target="_blank">https://github.com/taoyuejie</a></dd>
+															</div>
+															<div class="col col-md-12">
+																<dt><span class="fa fa-home"></span>个人博客：</dt><dd><a href="http://www.blogbus.com/taoyuejie/2016.html" target="_blank">http://www.blogbus.com/taoyuejie/2016.html</a></dd>
+															</div>
+														</div>
+													</dl>
+												</div>
+											</div>
+										</section>
+										<section class="student-detail-part panel">
+											<header class="panel-heading">
+												<h1 class="panel-title">毕业感言</h1>
+											</header>
+											<div class="panel-body">
+												<div class="container-fluid">
+													<p>不懈努力成就最好的自己</p>
+												</div>
+											</div>
+										</section>
+										<section class="student-detail-part panel">
+											<header class="panel-heading">
+												<h1 class="panel-title">求职经历</h1>
+											</header>
+											<div class="panel-body">
+												<div class="container-fluid">
+													<p>那天午休嘛，我趴在桌子上睡觉。然后韩总过来拍拍我肩膀，当时我什么都不知道，一脸懵逼。然后在办公室递给我一张OFFER，我看到上面写着是我的名字，知道自己被企业录用了，脑子一热，其他的内容就没往下看。这个对我也是个鼓励，说明老师们对我的努力都很肯定， 自己出了点成绩也很高兴。</p>
+													<p>我在学校的专业是计算机，之前学过一些基础的Java知识，很简单。来到这边的话呢，Java讲解的很深入，也很全面，是以前没有接触过的。</p>
+													<p>我觉得应该是自我学习的能力。因为一天下来接受的内容比较多，如果被动的死记硬背效果不会太好，碰到问题，要先自己摸索摸索嘛，不能一上来就找老师解决，要学会自己解决问题，那样理解会更深，自己对学过的知识心里也更有底。</p>
+												</div>
+											</div>
+										</section>
+									</section>
+								</div>
+							</div>
+							<button type="button" class="swiper-button-prev">&lt;</button>
+							<button type="button" class="swiper-button-next">&gt;</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
 
 		<footer class="footer">
 			<div class="container">

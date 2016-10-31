@@ -107,3 +107,37 @@
 
 	scroll();
 })();
+
+(() => {
+	function initStudentsSwiper() {
+		studentsSwiper = new Swiper('#students-detail', {
+			prevButton: '.swiper-button-prev',
+			nextButton: '.swiper-button-next',
+			effect: 'flip',
+			speed: 0,
+			simulateTouch: false,
+			onlyExternal: true,
+
+			onSlideChangeEnd(swiper) {
+				$studentsDetailDialog[0].scrollTop = 0;
+			}
+		});
+	}
+
+	function getStudentIndex(studentEl) {
+		let studentBox = studentEl.parentNode
+
+		return [...studentBox.parentNode.children].indexOf(studentBox);
+	}
+
+	let studentsSwiper = null;
+	let $studentsDetailDialog = $('#students-detail-dialog');
+
+	$studentsDetailDialog.on('shown.bs.modal', (e) => {
+		if (!studentsSwiper) {
+			initStudentsSwiper();
+		}
+
+		studentsSwiper.slideTo(getStudentIndex(e.relatedTarget), 0);
+	});
+})();
