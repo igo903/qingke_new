@@ -1273,7 +1273,6 @@ h3 {
 .prepare-chart {
 	display: flex;
 	justify-content: space-between;
-	align-items: stretch;
 	height: 230px;
 	background: url(../img/shapes-1.png) no-repeat center;
 	background-size: 140%;
@@ -1283,6 +1282,7 @@ h3 {
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 30%;
+	height: 100%;
 	max-width: 80px;
 }
 .prepare-chart-col-duration,
