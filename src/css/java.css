@@ -86,6 +86,7 @@ h3 {
 	color: white;
 	padding: 115px 0 90px;
 	background-image: url(../img/dev-1.jpg);
+	background-color: #010000;
 }
 .java-logo {
 	margin-bottom: 20px;
@@ -225,6 +226,7 @@ h3 {
 .java-section-job {
 	color: white;
 	background-image: url(../img/dev-2.jpg);
+	background-color: #384145;
 }
 .java-section-job .java-section-head {
 	padding: 25px;
@@ -557,6 +559,7 @@ h3 {
 .java-section-class {
 	color: white;
 	background-image: url(../img/dev-3.jpg);
+	background-color: #281c12;
 }
 
 .java-class-features {
@@ -770,7 +773,7 @@ h3 {
 	color: white;
 	padding-top: 1.5%;
 	padding-bottom: 1.5%;
-	background: url(../img/dev-4.jpg) no-repeat center;
+	background: url(../img/dev-4.jpg) no-repeat center #315d8e;
 	background-size: cover;
 
 	& .container {
