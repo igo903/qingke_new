@@ -15,7 +15,6 @@ const
 	SRC_TEMPLATE_PATH = `${SRC_PATH}template/*.html`,
 	SRC_CSS_PATH = `${SRC_PATH}**/*.css`,
 	SRC_JS_PATH = `${SRC_PATH}**/*.js`,
-	SRC_IMG_PATH = `${SRC_PATH}**/*.*(png|jpg|jpeg|gif|svg)`,
 	ROLLUP_ENTRY_PATH = `${SRC_PATH}js/`,
 	BUILD_PATH = './';
 
@@ -47,17 +46,11 @@ function js() {
 		.pipe(gulp.dest(BUILD_PATH));
 }
 
-function img() {
-	return gulp.src(SRC_IMG_PATH)
-		.pipe(gulp.dest(BUILD_PATH));
-}
-
 function watch() {
 	gulp.watch([SRC_HTML_PATH, SRC_TEMPLATE_PATH], html);
 	gulp.watch(SRC_CSS_PATH, css);
 	gulp.watch(SRC_JS_PATH, js);
-	gulp.watch(SRC_IMG_PATH, img);
 }
 
-gulp.task('default', gulp.parallel(html, css, js, img));
+gulp.task('default', gulp.parallel(html, css, js));
 gulp.task('watch', gulp.series('default', watch));
