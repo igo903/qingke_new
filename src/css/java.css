@@ -7,6 +7,7 @@
 	--blue-1: #2483c7;
 	--blue-2: #27b4f5;
 	--blue-3: #0398dd;
+	--blue-4: #36bfff;
 	--percent-1-9: calc(100% / 9);
 	--search-padding: 0.8em;
 	--search-line-height: 1.9;
@@ -763,6 +764,79 @@ h3 {
 .java-course-link:hover {
 	text-decoration: none;
 	background: color(var(--red-1) tint(5%));
+}
+
+
+
+.news-nav {
+	@apply --round-radius;
+	font-size: 20px;
+	margin-bottom: 50px;
+	border: 1px solid var(--blue-4);
+	overflow: hidden;
+
+	& .col {
+		padding: 0;
+	}
+	& > li {
+		& + li {
+			margin-left: 0;
+		}
+		& > a {
+			color: var(--blue-4);
+			padding-top: 8px;
+			padding-bottom: 8px;
+			border-radius: 0;
+		}
+		&.active > a {
+			&,
+			&:--hf {
+				background-color: var(--blue-4);
+			}
+		}
+	}
+}
+
+.news-jumbotron {
+	border-radius: 10px;
+}
+
+.news-list {
+	text-align: left;
+
+	& .list-group-item {
+		display: flex;
+		align-items: center;
+		padding: 1.3em 0;
+		border: none;
+
+		@nest &:nth-child(n+2) {
+			border-top: 1px dashed #ddd;
+		}
+	}
+}
+.news-time {
+	display: flex;
+	align-items: center;
+	margin-right: 1em;
+}
+.news-day,
+.news-year-month {
+	padding: 0 10px;
+}
+.news-day {
+	font-size: 1.6em;
+	color: var(--blue-4);
+	padding-left: 0;
+}
+.news-year-month {
+	border-left: 1px solid #d1d1d1;
+}
+
+.news-more-link {
+	font-size: 16px;
+	padding: 0.5em 2em;
+	border-radius: 0;
 }
 
 
